@@ -91,3 +91,104 @@
     height:400px;
     
 }
+.share-link{
+    margin-top:10px;
+}
+.share-link span {
+    margin: 0;
+   
+    font-size: 15px;
+    margin-right:4px;
+}
+.share-link span a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #ffffff;
+
+
+}
+.box1{
+    margin-top: 20px ;
+}
+.box1 button{
+    background-color: rgb(0, 123, 255);
+    width: 85px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 123, 255);
+    
+}
+.box1 button a {
+    text-decoration: none;
+    font-weight:bold;
+    color: white;
+   
+}
+.box2{
+    margin-top: 20px ;
+}
+.box2 button{
+    background-color: #416cb5;
+    width: 85px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #416cb5;
+    
+}
+.box2 button a {
+    text-decoration: none;
+    font-weight:bold;
+    color: white;
+   
+}
+.box3{
+    margin-top: 20px ;
+}
+.box3 button{
+    background-color: #ffffff;
+    width: 140px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #b5b4b4;
+    
+}
+.box3 button a {
+    margin-left:-3px;
+    text-decoration: none;
+    font-weight:bold;
+    color: #2a4576;
+   
+}
+.box3 a:hover {
+    text-decoration: none; 
+}
+.box3 button:hover {
+    background-color: rgb(236, 235, 235); 
+}
+.box4{
+    margin-top: 20px ;
+}
+.box4 button{
+    background-color: #000000;
+    width: 30px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #b5b4b4;
+}
+.box5{
+    margin-top: 20px ;
+    padding-left:102px;
+}
+.box5 button{
+    background-color: #e6e5e5;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #e6e5e5;
+    
+}
+.box5 button a {
+    text-decoration: none;
+    font-weight:bold;
+    color: rgb(0, 0, 0);
+}
