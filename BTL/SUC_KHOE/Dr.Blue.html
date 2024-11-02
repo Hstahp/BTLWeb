@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenh14 </title>
+    <link rel="stylesheet" href="/BTL/CSS_1/styles.css">
+    <link rel="import" href="component.html">
+    <script src="/BTL/Scrip.js/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+        <!-- Linking SwiperJS CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Linking SwiperJS script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <img src="/BTL/images/logo.png" alt="Kenh14 Logo">
+                    <div class="logo-text">
+                        <span class="logo-main">kenh14.vn</span>
+                        <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                    </div>
+                </div>
+                <div class="trending-topics">
+                    <span class="arrow-icon">&#x2197;</span>
+                    <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                    <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                    <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="mains-menu">
+                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#">Star</a></li>
+                    <li><a href="#">Ciné</a></li>
+                    <li><a href="#">Musik</a></li>
+                    <li><a href="#">Beauty & Fashion</a></li>
+                    <li><a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a></li>
+                    <li><a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a></li>
+                    <li><a href="/BTL/AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a></li>
+                    <li><a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a></li>
+                    <li><a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a></li>
+                    <li><a href="#">Tek-life</a></li>
+                    <li><a href="#">Học đường</a></li>
+                    <li><a href="#">Xem Mua Luôn</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li class="main-menu">
+                        <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="subs-menu">
+            <div class="container">
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a>
+                        <div class="submenu">
+                            <a href="/BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="/BTL/DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
+                            <a href="/BTL/DOI_SONG/House_n_Home.html">House n Home</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Xem mua luôn</a>
+                        <div class="submenu">
+                            <a href="#">Thời trang</a>
+                            <a href="#">Đẹp</a>
+                            <a href="#">Mommy mua di</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Sport</a>
+                        <div class="submenu">
+                            <a href="#">Bóng đá</a>
+                            <a href="#">Bóng rổ</a>
+                            <a href="#">Bóng chuyền</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Musik</a>
+                        <div class="submenu">
+                            <a href="#">Âu-Mỹ</a>
+                            <a href="#">Châu Á</a>
+                            <a href="#">Việt Nam</a>
+                            <a href="#">Hip-hop neva die</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Ciné</a>
+                        <div class="submenu">
+                            <a href="#">Phim chiếu rạp</a>
+                            <a href="#">Phim Việt Nam</a>
+                            <a href="#">Series truyền hình</a>
+                            <a href="#">Hoa ngữ - Hàn Quốc</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Ciné</a>
+                        <div class="submenu">
+                            <a href="#">Metaverse</a>
+                            <a href="#">How-To</a>
+                            <a href="#">Wow</a>
+                            <a href="#">2-Mall</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="#">Star</a>
+                        <div class="submenu">
+                            <a href="#">Sao Việt</a>
+                            <a href="#">Hội bạn thân showbiz</a>
+                            <a href="#">TV Show</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a>
+                        <div class="submenu">
+                            <a href="/BTL/XA_HOI/PhapLuat.html">Pháp luật</a>
+                            <a href="/BTL/XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
+                            <a href="/BTL/XA_HOI/SongXanh.html">Sống xanh</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Học đường</a>
+                        <div class="submenu">
+                            <a href="/BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="">Du học</a>
+                            <a href="#">Bản tin 46'</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
+                        <div class="submenu">
+                            <a href="/BTL/DOI_SONG/ChumAnh.html">Chùm ảnh</a>
+                            <a href="/BTL/DOI_SONG/KhamPha.html">Khám phá</a>
+                            <a href="/BTL/DOI_SONG/Di.html">Dị</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                        <div class="submenu">
+                            <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                            <a href="/BTL/SUC_KHOE/TinTuc.html">Tin tức</a>
+                            <a href="/BTL/SUC_KHOE/DinhDuong.html">Dinh dưỡng</a>
+                            <a href="/BTL/SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
+                            <a href="/BTL/SUC_KHOE/GioiTinh.html">Giới tính</a>
+                            <a href="/BTL/SUC_KHOE/Cacbenh/CacBenh.html">Các bệnh</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="border-solid"></div>
+            <div class="web-info">
+                <span class="title-mini-web">Tải app</span>
+                <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BA%BB/id670518264?ls=1" target="_blank">IOS</a>
+                <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                <a class="title-mini-web" href="#">Liên hệ</a>
+                <a class="mini-web" href="#">Quảng cáo</a>
+            </div>
+        </div>
+    </header>
+    </div>
+    <div class="space">
+    </div>
+    <div id="page">
+        <div class="hi_5">
+            <ul>
+                <li><a href=""><b>Trang Chủ</b></a></li>
+                <li><a href="#timmachkhoe"><b>Tim Mạch Khỏe</b></a></li>
+                <li><a href="#bikipsonglau"><b>Bí Kíp Sống lâu</b></a></li>
+                <li><a href="#xuongchackhoe"><b>Xương Chắc Khỏe</b></a></li>
+                <li><a href=""><b>Bụng khỏe Nhẹ Thân</b></a></li>
+            </ul>
+        </div><br>
+        <hr>
+        <div class="body">
+            <div class="one_1">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh461.png"width=450px></a>
+                    <p><b><a href="#">4 loại gia vị này thực ra chính là "thầy thuốc trường thọ" có sẵn trong thiên nhiên, loại cuối cùng ngâm cùng mật ong sẽ rất tốt</a></b></p>
+                    <p>Không phải tất cả gia vị đều gây hại, ngược lại có không ít loại gia vị làm món ăn thêm phần hấp dẫn và mang lại lợi ích sức khỏe lớn.</a></p>
+                </section>
+                <aside>
+                    <div class="one_1_1">
+                        <div>
+                            <a href="#"><img src="/BTL/images/anh462.png" width="120px"></a>
+                       </div>
+                       <div class="text_1">
+                            <span>Sức Khỏe</span><br>
+                            <span><b><a href="#">Cụ ông thích ăn đồ ăn nhanh vẫn sống thọ 111 tuổi: Bí quyết nằm ở 3 thói quen đơn giản ai cũng có thể làm theo</a></b></span>
+                        </div>
+                    </div><br>
+                    <div class="one_1_1">
+                        <div>
+                            <a href="#"><img src="/BTL/images/anh356.png" width="120px"></a>
+                       </div>
+                       <div class="text_1">
+                            <span>Sức Khỏe</span><br>
+                            <span><b><a href="#">Cụ bà 103 tuổi nhưng trí óc minh mẫn như hồi 20: Nhờ thức dậy lúc 5 giờ sáng và làm 1 việc đơn giản</a></b></span>
+                        </div>
+                    </div><br>
+                   <div class="one_1_1">
+                        <div>
+                            <a href="#"><img src="/BTL/images/anh463.png" width="120px"></a>
+                            </div>
+                        <div class="text_1">
+                            <span>Sức Khỏe</span><br>
+                            <span><b><a href="#">Cụ ông thọ tới 114 tuổi, có 41 cháu, 18 chắt và 12 chút: Bí quyết không phải tập thể dục</a></b></span>
+                        </div>
+                    </div><br>
+                        <div class="one_1_1">
+                        <div>
+                            <a href="#"><img src="/BTL/images/anh464.png" width="120px"></a>
+                        </div>
+                        <div class="text_1">
+                            <span>Sức Khỏe</span><br>
+                            <span><b><a href="#">Cụ ông 95 tuổi vẫn tập gym, chống đẩy, gập bụng mỗi sáng: Bí quyết dẻo dai nằm ở 5 chữ, ai cũng dễ làm</a></b></span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="two_2">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh465.png" width="300px" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Gia đình có 3 chị em cùng sống thọ trên 90 tuổi: Bí quyết là 1 thói quen vừa đơn giản, vừa miễn phí</a></b></p>
+                    <p><b>Sức khỏe </b><time>- 7 ngày trước</time></p>
+                    <p>Bí quyết sống thọ của 3 chị em họ Yan nằm ở việc bồi dưỡng sức khỏe tinh thần.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two_2">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh466.png"width="300px"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nghiên cứu gần 150.000 người tiết lộ 3 bí quyết chống lão hóa, kéo dài tuổi thọ tốt nhất</a></b></p>
+                    <p><b>Sức khỏe </b><time>- 9 ngày trước</time></p>
+                    <p>Mới đây, các nhà nghiên cứu từ Đại học Lan Châu (Trung Quốc) đã phát hiện ra 3 lối sống chống lão hóa tốt nhất.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two_2">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh467.png"width="300px" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Gia đình có 4 chị em cùng sống thọ trên 90 tuổi: Bí quyết không phải tập thể dục hay nghỉ ngơi mà 2 thói quen đơn giản</a></b></p>
+                    <p><b>Sức khỏe </b><time>- 9 ngày trước</time></p>
+                    <p>Thói quen giúp trường thọ của cụ Pearl Taylor khiến nhiều người bất ngờ vì quá đơn giản.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two_2">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh468.png"width="300px" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Người sống thọ thường có 5 đặc điểm này khi ngủ: Nếu có đủ cả thì xin chúc mừng!</a></b></p>
+                    <p><b>Sức khỏe </b><time>- 10 ngày trước</time></p>
+                    <p>Các đặc điểm khi ngủ cũng có thể tiết lộ khả năng sống thọ của một người. Điều này đã được chứng minh bằng nghiên cứu khoa học của Đại học Y Harvard.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two_2">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh469.png"width="300px" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Người trường thọ thường làm điều này một cách dễ dàng, không cần trợ giúp: Ai làm được thì xin chúc mừng</a></b></p>
+                    <p><b>Sức khỏe </b><time>- 12 ngày trước</time></p>
+                    <p>Để dự đoán tuổi thọ, bạn có thể thực hiện 1 bài kiểm tra đơn giản. Người nào hoàn thành bài kiểm tra này mà không cần trợ giúp thì khả năng sống thọ sẽ cao hơn.</p>
+                </aside>
+            </div><br>
+            <div class="two_3">
+                <h1 id="timmachkhoe">Tim Mạch khỏe</h1>
+                <hr>
+                <div class="two_3_1">
+                    <section>
+                        <a href="#"><img src="/BTL/images/anh470.png"width=560px></a>
+                        <p><b><a href="#">Người đàn ông ngừng tim phổi do nhồi máu cơ tim</a></b></p>
+                    </section>
+                    <aside>
+                        <a href="#"><img src="/BTL/images/anh471.png"></a>
+                        <p><b><a href="#">Người ngủ ít và ngủ nhiều, ai dễ bị đột quỵ hơn? Kết quả của 1 nghiên cứu khiến không ít người "chột dạ"</a></b></p><br>
+                        <a href="#"><img src="/BTL/images/anh472.png"></a>
+                        <p><b><a href="#">Xôn xao thông tin "bé 3 tuổi đột quỵ, ra đi trong tích tắc": Bác sĩ nêu 3 tình huống có thể đã xảy ra</a></b></p>
+                    </aside>
+                </div>
+            </div><br>
+            <div class="two_2">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh471.png"width="300px" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Người ngủ ít và ngủ nhiều, ai dễ bị đột quỵ hơn? Kết quả của 1 nghiên cứu khiến không ít người "chột dạ"</a></b></p>
+                    <p><b>Sức khỏe </b><time>- 13 ngày trước</time></p>
+                    <p>Thời gian ngủ có tác động đáng kể tới nguy cơ đột quỵ của mỗi người.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two_2">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh472.png"width="300px" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Xôn xao thông tin "bé 3 tuổi đột quỵ, ra đi trong tích tắc": Bác sĩ nêu 3 tình huống có thể đã xảy ra</a></b></p>
+                    <p><b>Sức khỏe </b><time>- 15 ngày trước</time></p>
+                    <p>Mới đây, trên mạng xã hội xôn xao thông tin "một bé trai 3 tuổi đột quỵ, ra đi trong tích tắc". Bác sĩ nhận định có 3 tình huống có thể đã xảy ra.</p>
+                </aside>
+            </div><br>
+            <div class="two_3">
+                <h1 id="bikipsonglau">Bí Kíp Sống Lâu</h1>
+                <hr>
+                <div class="two_3_1">
+                    <section>
+                        <a href="#"><img src="/BTL/images/anh475.png"width=560px></a>
+                        <p><b><a href="#">Hơn 100 tuổi lấy vợ lần hai, khi chết đi con cả 99 tuổi</a></b></p>
+                    </section>
+                    <aside>
+                        <a href="#"><img src="/BTL/images/anh476.png"></a>
+                        <p><b><a href="#">Bí quyết sống của người dân ngôi làng trường thọ nhất thế giới: Không hề khó nhưng không phải ai cũng làm được</a></b></p><br>
+                    </aside>
+                </div>
+            </div><br>
+            <div class="two_3">
+                <h1 id="xuongchackhoe">Xương Chắc Khỏe</h1>
+                <hr>
+                <div class="two_3_1">
+                    <section>
+                        <a href="#"><img src="/BTL/images/anh477.png"width=560px></a>
+                        <p><b><a href="#">Xương chắc khỏe với bí quyết bổ sung canxi an toàn, hiệu quả trong bữa ăn hàng ngày</a></b></p>
+                    </section>
+                    <aside>
+                        <a href="#"><img src="/BTL/images/anh478.png"></a>
+                        <p><b><a href="#">Không muốn da xấu, xương yếu, già nhanh thì chị em phụ nữ hãy thường xuyên ăn 9 loại thực phẩm siêu giàu collagen này</a></b></p><br>
+                        <a href="#"><img src="/BTL/images/anh479.png"></a>
+                        <p><b><a href="#">7 loại rau giàu protein hơn thịt và nhiều canxi hơn cả sữa, ăn thường xuyên để đủ chất mà vẫn giữ dáng, đẹp da, xương chắc khỏe</a></b></p><br>
+                    </aside>
+                </div>
+            </div><br>
+            <div class="two_2">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh478.png"width="300px" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Không muốn da xấu, xương yếu, già nhanh thì chị em phụ nữ hãy thường xuyên ăn 9 loại thực phẩm siêu giàu collagen này</a></b></p>
+                    <p><b>Sức khỏe </b><time>- 2 năm trước</time></p>
+                    <p>Collagen rất quan trọng đối với chị em phụ nữ. Đặc biệt là trong việc làm đẹp, chăm sóc da, tóc và đẩy lùi lão hóa.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two_2">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh479.png"width="300px" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">7 loại rau giàu protein hơn thịt và nhiều canxi hơn cả sữa, ăn thường xuyên để đủ chất mà vẫn giữ dáng, đẹp da, xương chắc khỏe</a></b></p>
+                    <p><b>Sức khỏe </b><time>- 2 năm trước</time></p>
+                    <p>Rau là thực phẩm tốt cho cả nhan sắc và sức khỏe. Chúng ta thường được khuyên ăn nhiều rau hơn để bổ sung chất xơ, vitamin, giảm cân… và ngăn ngừa nhiều bệnh tật, bao gồm cả ung thư.</p>
+                </aside>
+            </div><br>
+        </div>
+        <div class="footer-menu">
+            <a href="#">Star</a> | <a href="#">Ciné</a> | <a href="#">Musik</a> | <a href="#">Beauty & Fashion</a> | <a href="#">Sport</a> | <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a> | <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a> | <a href="/BTL/AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a> | <a href="#">Xem Mua Luôn</a> | <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | <a href="#">Tek-Life</a> | <a href="#">Học đường</a> | <a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a> | <a href="#">Video</a>
+        </div>
+        <div class="footer-max">
+            <div class="footer-table1">
+                <table>
+                    <tr>
+                        <td>
+                            <section>
+                                <a href=""><img src="/BTL/images/logo1.png" ></img></a>
+                            </section>
+                            <aside>
+                                <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                                <div class="footer-table-mini">
+                                    <div class="footer-mini1">
+                                        <a href="#"><img src="/BTL/images/logodauHoi.png" width="20px"></a>
+                                        <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                    </div>
+                                    <div class="footer-mini2">
+                                        <a href="#"><img src="/BTL/images/logoEmaildo.png" width="25px"></a>
+                                        <p><a href="#">bandoc@kenh14</a></p>
+                                    </div>
+                                </div>
+                                <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                            </aside>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-table2">
+                <a href="#"><img src="/BTL/images/logo2.png" width="530px" height="130px"></img></a>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="footer-mini-one">
+                <h4>TRỤ SỞ HÀ NỘI</h4>
+                <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+                <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+                <div class="logo-mini">
+                    <a href="#"><img src="/BTL/images/logoDC.png" width="17px"></a>
+                    <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                </div>
+    
+                <div class="footer-mini-one-1">
+                    <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                    <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                    <span>Điện thoại: 028 7307 7979</span>
+                    <div class="logo-mini">
+                        <a href="#"><img src="/BTL/images/logoDC.png" width="15px"></a>
+                        <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                    </div>
+                </div>    
+            </div>
+            <hr/>
+            <div class="footer-mini-two">
+                <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+                <span>Bà Nguyễn Bích Minh</span><br>
+                <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+                <div class="logo-mini">
+                    <img src="/BTL/images/logoDT.png" width="20px"></a>
+                    <span>024.73095555 (máy lẻ 62.370)</span><br>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="/BTL/images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                <div class="logo-mini">
+                    <img src="/BTL/images/logoDT.png" width="20px"></a>
+                    <span>02473007108</span>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="/BTL/images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <div class="chat-table-1">
+                    <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+                </div>
+                <div class="chat-table-2">
+                    <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="chat-table-3">
+                    <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+                </div>
+            </div>
+            <hr class="DK"/>
+            <div class="footer-mini-three">
+                <a href=""><img src="/BTL/images/logoVCCorp.png" width="120px" ></a>
+                <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+                <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+                <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+           
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

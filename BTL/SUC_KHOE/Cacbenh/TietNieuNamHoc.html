@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenh14 </title>
+    <link rel="stylesheet" href="/BTL/CSS_1/styles.css">
+    <link rel="import" href="component.html">
+    <script src="/BTL/Scrip.js/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+        <!-- Linking SwiperJS CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Linking SwiperJS script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <img src="/BTL/images/logo.png" alt="Kenh14 Logo">
+                    <div class="logo-text">
+                        <span class="logo-main">kenh14.vn</span>
+                        <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                    </div>
+                </div>
+                <div class="trending-topics">
+                    <span class="arrow-icon">&#x2197;</span>
+                    <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                    <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                    <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="mains-menu">
+                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#">Star</a></li>
+                    <li><a href="#">Ciné</a></li>
+                    <li><a href="#">Musik</a></li>
+                    <li><a href="#">Beauty & Fashion</a></li>
+                    <li><a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a></li>
+                    <li><a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a></li>
+                    <li><a href="/BTL/AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a></li>
+                    <li><a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a></li>
+                    <li><a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a></li>
+                    <li><a href="#">Tek-life</a></li>
+                    <li><a href="#">Học đường</a></li>
+                    <li><a href="#">Xem Mua Luôn</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li class="main-menu">
+                        <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="subs-menu">
+            <div class="container">
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a>
+                        <div class="submenu">
+                            <a href="/BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="/BTL/DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
+                            <a href="/BTL/DOI_SONG/House_n_Home.html">House n Home</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Xem mua luôn</a>
+                        <div class="submenu">
+                            <a href="#">Thời trang</a>
+                            <a href="#">Đẹp</a>
+                            <a href="#">Mommy mua di</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Sport</a>
+                        <div class="submenu">
+                            <a href="#">Bóng đá</a>
+                            <a href="#">Bóng rổ</a>
+                            <a href="#">Bóng chuyền</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Musik</a>
+                        <div class="submenu">
+                            <a href="#">Âu-Mỹ</a>
+                            <a href="#">Châu Á</a>
+                            <a href="#">Việt Nam</a>
+                            <a href="#">Hip-hop neva die</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Ciné</a>
+                        <div class="submenu">
+                            <a href="#">Phim chiếu rạp</a>
+                            <a href="#">Phim Việt Nam</a>
+                            <a href="#">Series truyền hình</a>
+                            <a href="#">Hoa ngữ - Hàn Quốc</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Ciné</a>
+                        <div class="submenu">
+                            <a href="#">Metaverse</a>
+                            <a href="#">How-To</a>
+                            <a href="#">Wow</a>
+                            <a href="#">2-Mall</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="#">Star</a>
+                        <div class="submenu">
+                            <a href="#">Sao Việt</a>
+                            <a href="#">Hội bạn thân showbiz</a>
+                            <a href="#">TV Show</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a>
+                        <div class="submenu">
+                            <a href="/BTL/XA_HOI/PhapLuat.html">Pháp luật</a>
+                            <a href="/BTL/XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
+                            <a href="/BTL/XA_HOI/SongXanh.html">Sống xanh</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Học đường</a>
+                        <div class="submenu">
+                            <a href="/BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="">Du học</a>
+                            <a href="#">Bản tin 46'</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
+                        <div class="submenu">
+                            <a href="/BTL/DOI_SONG/ChumAnh.html">Chùm ảnh</a>
+                            <a href="/BTL/DOI_SONG/KhamPha.html">Khám phá</a>
+                            <a href="/BTL/DOI_SONG/Di.html">Dị</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                        <div class="submenu">
+                            <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                            <a href="/BTL/SUC_KHOE/TinTuc.html">Tin tức</a>
+                            <a href="/BTL/SUC_KHOE/DinhDuong.html">Dinh dưỡng</a>
+                            <a href="/BTL/SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
+                            <a href="/BTL/SUC_KHOE/GioiTinh.html">Giới tính</a>
+                            <a href="/BTL/SUC_KHOE/CacBenh.html">Các bệnh</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="border-solid"></div>
+            <div class="web-info">
+                <span class="title-mini-web">Tải app</span>
+                <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BA%BB/id670518264?ls=1" target="_blank">IOS</a>
+                <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                <a class="title-mini-web" href="#">Liên hệ</a>
+                <a class="mini-web" href="#">Quảng cáo</a>
+            </div>
+        </div>
+    </header>
+    </div>
+    <div class="space">
+    </div>
+    <div id="page">
+        <div class="hi_3">
+            <ul>
+                <li><a href="/BTL/SUC_KHOE/SucKhoe.html"><b>SỨC KHỎE</b></a></li>
+                <li><a href="/BTL/SUC_KHOE/TinTuc.html"><b>TIN TỨC</b></a></li>
+                <li><a href="/BTL/SUC_KHOE/DinhDuong.html"><b>DINH DƯỠNG</b></a></li>
+                <li><a href="/BTL/SUC_KHOE/KhoeDep.html"><b>KHỎE ĐẸP</b></a></li>
+                <li><a href="/BTL/SUC_KHOE/GioiTinh.html"><b>GIỚI TÍNH</b></a></li>
+                <li><a href="CacBenh.html"><b>CÁC BỆNH</b></a></li>
+                <li><a href="/BTL/SUC_KHOE/Dr.Blue.html"><img src="/BTL/images/logo_dr.blue.png.png"></a></li>
+                <li><a href="/BTL/DOI_SONG/DoiSong.html"><b>ĐỜI SỐNG</b></a></li>
+                <li><a href="/BTL/DOI_SONG/KhamPha.html"><b>KHÁM PHÁ</b></a></li>
+            </ul>
+        </div><br>
+        <div class="hi_4">
+            <ul>
+                <li><a href="CacBenh.html">Các bệnh</a></li>
+                <li><a href="UngThu.html">Ung thư</a></li>
+                <li><a href="TimMach.html">Tim mạch</a></li>
+                <li><a href="TieuDuong.html">Tiểu đường</a></li>
+                <li><a href="GanThan.html">Gan thận</a></li>
+                <li><a href="CoXuongKhop.html">Cơ xương khớp</a></li>
+                <li><a href="TieuHoa.html">Tiêu hóa</a></li>
+                <li><a href="DaLieu.html">Da liễu</a></li>
+                <li><a href="DinhDuongKhoe.html">Dinh dưỡng khỏe</a></li>
+                <li><a href="HoHap.html">Hô hấp</a></li>
+                <li><a href="SanPhuKhoa.html">Sản phụ khoa</a></li>
+                <li><a href="TietNieuNamHoc.html">Tiết niệu nam học</a></li>
+            </ul>
+        </div><br>
+        <div class="body">
+            <div class="one_2">
+                <p>TIN TỨC VỀ TIẾT NIỆU NAM HỌC - TIẾT NIỆU NAM HỌC</p>
+                <p id="box1">tiết niệu nam học</p>
+            </div>
+            <hr>
+            <div class="two_4">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh713.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nghiên cứu mới tiết lộ: Gần 1/3 nam giới trên toàn thế giới nhiễm virus ở 'vùng kín'</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 21 ngày trước</time></p>
+                    <p>Gần đây, một nghiên cứu được công bố trên tạp chí The Lancet Global Health đã tiết lộ mức độ phổ biến đến khó tin trên toàn...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh714.png"></a>
+                </section>
+                <aside>
+                    <p><a href="#"><img src="/BTL/images/anh707.1.png" width="150px"></a></p>
+                    <p><b><a href="#">Hoại tử "cậu nhỏ" chỉ vì... tò mò</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 25 ngày trước</time></p>
+                    <p>Đây là trường hợp của một nam sinh 15 tuổi (ở Nam Định). Khi thấy "cậu nhỏ" có những biểu hiện khác lạ, vì tò mò nên nam sinh đã tự lộn ra để "khám phá" dẫn đến tình trạng hoại tử.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh715.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Ăn trứng vịt lộn có cải thiện sinh lý nam giới?</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 26 ngày trước</time></p>
+                    <p>Nhiều người nghĩ rằng ăn trứng vịt lộn giúp quý ông cải thiện sinh lý, điều này có đúng?</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh716.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Thanh niên tìm cảm giác lạ trong cơn say khiến 'cậu nhỏ' kẹt trong bạc đạn</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 29 ngày trước</time></p>
+                    <p>Trong cơn say sau cuộc nhậu, nam thanh niên đưa “cậu nhỏ” của mình vào vòng bạc đạn kim loại để tìm cảm giác lạ khiến dương vật bị kẹt trong vòng bạc đạn, nạn nhân nhập viện trong tình trạng đau đớn.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh717.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Loại gia vị "quốc dân" của người Việt chính là "thần dược" tăng cường sinh lý phái mạnh, chồng nên tích cực sử dụng</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 2 tháng trước</time></p>
+                    <p>Tỏi không chỉ là một loại gia vị thông thường mà còn là "thần dược" tự nhiên giúp cải thiện sức khỏe sinh lý của nam giới.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh718.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nam giới ăn loại quả ngọt này có làm thay đổi mùi của tinh dịch?</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 2 tháng trước</time></p>
+                    <p>Nếu là nam giới, chế độ ăn uống có làm thay đổi mùi vị của tinh dịch không?</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh719.png"></a>
+                </section>
+                <aside>
+                    <p><a href="#"><img src="/BTL/images/anh707.1.png" width="150px"></a></p>
+                    <p><b><a href="#">Muốn biết nam giới mạnh hay yếu trong "chuyện ấy", cứ nhìn vào 3 điểm này sẽ rõ ngay</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 6 tháng trước</time></p>
+                    <p>Nhà trị liệu tình dục, Đồng Tụng Trân tại Đài Loan, Trung Quốc mới đây đã chia sẻ về 3 đặc điểm giúp nhận biết đàn ông sung mãn trong “chuyện ấy”.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh720.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Tiểu khó, người đàn ông đi khám phát hiện ống dẫn nước tiểu chỗ hẹp nhất chỉ 1mm</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 6 tháng trước</time></p>
+                    <p>Đây là trường hợp hẹp niệu đạo dương vật mức độ nặng, đường kính niệu đạo chỗ hẹp nhất khoảng 1mm, chiều dài đoạn hẹp khoảng 3cm.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh721.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cô gái 24 tuổi tiểu ra máu do sỏi thận sau nửa năm ăn món yêu thích của nhiều người</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 6 tháng trước</time></p>
+                    <p>Mới đây, một blogger người Mỹ 24 tuổi đã chia sẻ rằng cô đã phải điều trị cấp cứu sỏi thận sau khi ăn mỳ gà cay trong thời gian dài.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh722.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Người đàn ông đi lệch hẳn về một phía, nguyên nhân đến từ... vùng kín</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 6 tháng trước</time></p>
+                    <p>Gần đây, Khoa Nam học, Bệnh viện TWQĐ 108 vừa khám và điều trị cho một bệnh nhân bị nang mào tinh hoàn phải kích thước lớn, đường kính tới gần 12cm.</p>
+                </aside>
+            </div>
+            <hr/>
+        </div>
+        <div class="footer-menu">
+            <a href="#">Star</a> | <a href="#">Ciné</a> | <a href="#">Musik</a> | <a href="#">Beauty & Fashion</a> | <a href="#">Sport</a> | <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a> | <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a> | <a href="/BTL/AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a> | <a href="#">Xem Mua Luôn</a> | <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | <a href="#">Tek-Life</a> | <a href="#">Học đường</a> | <a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a> | <a href="#">Video</a>
+        </div>
+        <div class="footer-max">
+            <div class="footer-table1">
+                <table>
+                    <tr>
+                        <td>
+                            <section>
+                                <a href=""><img src="/BTL/images/logo1.png" ></img></a>
+                            </section>
+                            <aside>
+                                <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                                <div class="footer-table-mini">
+                                    <div class="footer-mini1">
+                                        <a href="#"><img src="/BTL/images/logodauHoi.png" width="20px"></a>
+                                        <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                    </div>
+                                    <div class="footer-mini2">
+                                        <a href="#"><img src="/BTL/images/logoEmaildo.png" width="25px"></a>
+                                        <p><a href="#">bandoc@kenh14</a></p>
+                                    </div>
+                                </div>
+                                <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                            </aside>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-table2">
+                <a href="#"><img src="/BTL/images/logo2.png" width="530px" height="130px"></img></a>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="footer-mini-one">
+                <h4>TRỤ SỞ HÀ NỘI</h4>
+                <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+                <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+                <div class="logo-mini">
+                    <a href="#"><img src="/BTL/images/logoDC.png" width="17px"></a>
+                    <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                </div>
+    
+                <div class="footer-mini-one-1">
+                    <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                    <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                    <span>Điện thoại: 028 7307 7979</span>
+                    <div class="logo-mini">
+                        <a href="#"><img src="/BTL/images/logoDC.png" width="15px"></a>
+                        <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                    </div>
+                </div>    
+            </div>
+            <hr/>
+            <div class="footer-mini-two">
+                <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+                <span>Bà Nguyễn Bích Minh</span><br>
+                <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+                <div class="logo-mini">
+                    <img src="/BTL/images/logoDT.png" width="20px"></a>
+                    <span>024.73095555 (máy lẻ 62.370)</span><br>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="/BTL/images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                <div class="logo-mini">
+                    <img src="/BTL/images/logoDT.png" width="20px"></a>
+                    <span>02473007108</span>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="/BTL/images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <div class="chat-table-1">
+                    <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+                </div>
+                <div class="chat-table-2">
+                    <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="chat-table-3">
+                    <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+                </div>
+            </div>
+            <hr class="DK"/>
+            <div class="footer-mini-three">
+                <a href=""><img src="/BTL/images/logoVCCorp.png" width="120px" ></a>
+                <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+                <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+                <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+           
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenh14 </title>
+    <link rel="stylesheet" href="/BTL/CSS_1/styles.css">
+    <link rel="import" href="component.html">
+    <script src="/BTL/Scrip.js/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+        <!-- Linking SwiperJS CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Linking SwiperJS script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <img src="/BTL/images/logo.png" alt="Kenh14 Logo">
+                    <div class="logo-text">
+                        <span class="logo-main">kenh14.vn</span>
+                        <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                    </div>
+                </div>
+                <div class="trending-topics">
+                    <span class="arrow-icon">&#x2197;</span>
+                    <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                    <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                    <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="mains-menu">
+                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#">Star</a></li>
+                    <li><a href="#">Ciné</a></li>
+                    <li><a href="#">Musik</a></li>
+                    <li><a href="#">Beauty & Fashion</a></li>
+                    <li><a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a></li>
+                    <li><a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a></li>
+                    <li><a href="/BTL/AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a></li>
+                    <li><a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a></li>
+                    <li><a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a></li>
+                    <li><a href="#">Tek-life</a></li>
+                    <li><a href="#">Học đường</a></li>
+                    <li><a href="#">Xem Mua Luôn</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li class="main-menu">
+                        <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="subs-menu">
+            <div class="container">
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a>
+                        <div class="submenu">
+                            <a href="/BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="/BTL/DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
+                            <a href="/BTL/DOI_SONG/House_n_Home.html">House n Home</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Xem mua luôn</a>
+                        <div class="submenu">
+                            <a href="#">Thời trang</a>
+                            <a href="#">Đẹp</a>
+                            <a href="#">Mommy mua di</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Sport</a>
+                        <div class="submenu">
+                            <a href="#">Bóng đá</a>
+                            <a href="#">Bóng rổ</a>
+                            <a href="#">Bóng chuyền</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Musik</a>
+                        <div class="submenu">
+                            <a href="#">Âu-Mỹ</a>
+                            <a href="#">Châu Á</a>
+                            <a href="#">Việt Nam</a>
+                            <a href="#">Hip-hop neva die</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Ciné</a>
+                        <div class="submenu">
+                            <a href="#">Phim chiếu rạp</a>
+                            <a href="#">Phim Việt Nam</a>
+                            <a href="#">Series truyền hình</a>
+                            <a href="#">Hoa ngữ - Hàn Quốc</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Ciné</a>
+                        <div class="submenu">
+                            <a href="#">Metaverse</a>
+                            <a href="#">How-To</a>
+                            <a href="#">Wow</a>
+                            <a href="#">2-Mall</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="#">Star</a>
+                        <div class="submenu">
+                            <a href="#">Sao Việt</a>
+                            <a href="#">Hội bạn thân showbiz</a>
+                            <a href="#">TV Show</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a>
+                        <div class="submenu">
+                            <a href="/BTL/XA_HOI/PhapLuat.html">Pháp luật</a>
+                            <a href="/BTL/XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
+                            <a href="/BTL/XA_HOI/SongXanh.html">Sống xanh</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Học đường</a>
+                        <div class="submenu">
+                            <a href="/BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="">Du học</a>
+                            <a href="#">Bản tin 46'</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
+                        <div class="submenu">
+                            <a href="/BTL/DOI_SONG/ChumAnh.html">Chùm ảnh</a>
+                            <a href="/BTL/DOI_SONG/KhamPha.html">Khám phá</a>
+                            <a href="/BTL/DOI_SONG/Di.html">Dị</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                        <div class="submenu">
+                            <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                            <a href="/BTL/SUC_KHOE/TinTuc.html">Tin tức</a>
+                            <a href="/BTL/SUC_KHOE/DinhDuong.html">Dinh dưỡng</a>
+                            <a href="/BTL/SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
+                            <a href="/BTL/SUC_KHOE/GioiTinh.html">Giới tính</a>
+                            <a href="/BTL/SUC_KHOE/CacBenh.html">Các bệnh</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="border-solid"></div>
+            <div class="web-info">
+                <span class="title-mini-web">Tải app</span>
+                <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BA%BB/id670518264?ls=1" target="_blank">IOS</a>
+                <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                <a class="title-mini-web" href="#">Liên hệ</a>
+                <a class="mini-web" href="#">Quảng cáo</a>
+            </div>
+        </div>
+    </header>
+    </div>
+    <div class="space">
+    </div>
+    <div id="page">
+        <div class="hi_3">
+            <ul>
+                <li><a href="SucKhoe.html"><b>SỨC KHỎE</b></a></li>
+                <li><a href="TinTuc.html"><b>TIN TỨC</b></a></li>
+                <li><a href="DinhDuong.html"><b>DINH DƯỠNG</b></a></li>
+                <li><a href="KhoeDep.html"><b>KHỎE ĐẸP</b></a></li>
+                <li><a href="GioiTinh.html"><b>GIỚI TÍNH</b></a></li>
+                <li><a href="/BTL/SUC_KHOE/Cacbenh/CacBenh.html"><b>CÁC BỆNH</b></a></li>
+                <li><a href="Dr.Blue.html"><img src="/BTL/images/logo_dr.blue.png.png"></a></li>
+                <li><a href="/BTL/DOI_SONG/DoiSong.html"><b>ĐỜI SỐNG</b></a></li>
+                <li><a href="/BTL/DOI_SONG/KhamPha.html"><b>KHÁM PHÁ</b></a></li>
+            </ul>
+        </div><br>
+        <hr>
+        <div class="body">
+            <div class="one">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh437.png"width=570px></a>
+                    <p><b><a href="#">Cố 3 năm vẫn không có con, người vợ trẻ hoảng hốt khi bác sĩ gọi chồng mình là “cô ấy”</a></b></p>
+                    <p>Có những người có ngoại hình, thậm chí cả cơ quan sinh dục là nam nhưng giới tính thật lại là nữ hoặc ngược lại. Chồng chị Từ là 1 trong số đó.</a></p>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh438.png"></a>
+                    <p><b><a href="#">Thanh niên 25 tuổi nhập viện cấp cứu trong đêm sau khi ăn 1 loại hải sản...</a></b></p><br>
+                    <a href="#"><img src="/BTL/images/anh439.png"></a>
+                    <p><b><a href="#">Chồng đi công tác 9 tháng thì nhận được cuộc gọi từ bệnh viện: Cả gia đình...</a></b></p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh440.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Bố công khai di chúc khiến gia đình lục đục, con gái đi xét nghiệm ADN để dập tắt tin đồn</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 1 ngày trước</time></p>
+                    <p>Sau khi người bố công khai bản di chúc chia nhiều tài sản cho con gái út, các anh trai và chị dâu đã rất bất bình, cho rằng cô con gái không phải...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh441.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh376.1.png" width="150px"></a>
+                    <p><b><a href="#">Quy trình khám vô sinh hiếm muộn ở nữ giới: 3 mốc quan trọng chị em cần thực hiện</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 2 ngày trước</time></p>
+                    <p>Vô sinh, hiếm muộn vẫn có thể điều trị được nếu phát hiện sớm và áp dụng các phương pháp hỗ trợ, can thiệp hiện đại, phù hợp. Do đó, việc...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh442.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh442.1.png" width="150px"></a>
+                    <p><b><a href="#">Những thực phẩm hay ăn là thủ phạm gây hại cho 'bản lĩnh đàn ông'</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 3 ngày trước</time></p>
+                    <p>Vô sinh ở nam giới đang gia tăng ở mức báo động. Bên cạnh các nguyên nhân y tế, một số loại thực phẩm là ‘thủ phạm’ gây hại cho tinh trùng,...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh443.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Vợ có bầu 8 tháng đã sinh con, chồng lẳng lặng đi xét nghiệm ADN: Kết quả trả về đúng như dự đoán ban đầu</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 3 ngày trước</time></p>
+                    <p>Trong câu chuyện này, người vợ vừa đáng thương nhưng cũng đáng trách.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh444.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Ngủ dậy thấy đau "vùng kín" bất thường, nam sinh 15 tuổi làm ngay 1 việc để bảo tồn chức năng sinh sản</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 4 ngày trước</time></p>
+                    <p>Quyết định kịp thời của nam sinh 15 tuổi đã giúp cậu bảo tồn chức năng sinh sản, bác sĩ cũng phải dành lời khen ngợi.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh445.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh442.1.png" width="150px"></a>
+                    <p><b><a href="#">Nam giới tránh thai, tại sao không?</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 6 ngày trước</time></p>
+                    <p>Những năm gần đây, khá đông nam giới áp dụng phương pháp tránh thai để chia sẻ trách nhiệm với nữ giới.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh446.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Đi xét nghiệm ADN hộ bạn thân, người đàn ông bất ngờ phát hiện sự thật về con trai</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 8 ngày trước</time></p>
+                    <p>Đây là câu chuyện xét nghiệm ADN có nhiều tình tiết gây bất ngờ. Người đàn ông sau khi nhận kết quả đã bị sốc và phải nhờ bạn tới đưa về.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh447.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh442.1.png" width="150px"></a>
+                    <p><b><a href="#">Vợ chồng đều khỏe mạnh, sao lại hiếm muộn?</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 8 ngày trước</time></p>
+                    <p>Các thống kê gần đây của Tổ chức Y tế Thế giới và Bộ Y tế Việt Nam cho thấy tỷ lệ vô sinh (hiếm muộn) ở Việt Nam ở mức cao, và đáng lo...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh448.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Mẫu “nhí” xinh đẹp nhất xứ Hàn dậy thì sớm vì 1 lý do có liên quan đến mẹ ruột</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 9 ngày trước</time></p>
+                    <p>Từng được mệnh danh là "mẫu nhí đẹp nhất Hàn Quốc", cô bé này đã được chẩn đoán dậy thì sớm, dừng tăng chiều cao khi mới 9 tuổi vì 1...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh449.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Sao phim "Sex and the city" gợi ý 3 bí quyết cho 'chuyện ấy' thăng hoa</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 11 ngày trước</time></p>
+                    <p>Trong một bài phỏng vấn, sao phim “Sex and the city” chia sẻ 3 bí quyết mà cô cho rằng có thể giúp cải thiện đời sống tình dục.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh450.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Vào viện chữa lậu, sùi mào gà, nam thanh niên nhận thêm tin đã nhiễm HIV từ bao giờ</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 12 ngày trước</time></p>
+                    <p>Anh Nguyễn Anh Phong khẳng định, bạn nam này bị nhiễm HIV đáng tiếc do thiếu kiến thức.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh451.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Bỏ ngoài tai lời bác sĩ nói, cặp đôi làm một việc khiến cả 2 cùng phải đến viện khám</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 13 ngày trước</time></p>
+                    <p>Một cặp đôi đã phải tới bệnh viện thăm khám do nghi ngờ mắc bệnh lây qua đường tình dục.</p>
+                </aside>
+            </div>
+            <hr>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh452.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nữ giới thông minh sẽ làm 6 việc này mỗi ngày để “đánh đuổi” bệnh phụ khoa</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 14 ngày trước</time></p>
+                    <p>Nếu muốn phòng các bệnh phụ khoa, chị em cần phải xây dựng lối sống lành mạnh với một số thói quen hàng ngày dưới đây.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh453.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Đau "vòng một" trước kỳ "đèn đỏ" liệu có phải triệu chứng đáng ngờ của ung thư vú? BS ung bướu giải đáp SỰ THẬT</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 14 ngày trước</time></p>
+                    <p>Không ít người bắt đầu lo lắng liệu cơn đau này có phải là dấu hiệu cảnh báo sớm của ung thư vú hay không.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh454.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh454.1.png" width="150px"></a>
+                    <p><b><a href="#">Đau bụng dữ dội, cô gái phải nhập viện cấp cứu, vài giờ sau bác sĩ bước ra chúc mừng cả gia đình</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 14 ngày trước</time></p>
+                    <p>Ra kinh bất thường trong vài tháng, hôm trước, cô gái bỗng đau bụng dữ dội, vội vàng đi cấp cứu. Mọi chuyện sau đó không ai ngờ tới.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh455.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nghiên cứu mới tiết lộ: Gần 1/3 nam giới trên toàn thế giới nhiễm virus ở 'vùng kín'</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 15 ngày trước</time></p>
+                    <p>Gần đây, một nghiên cứu được công bố trên tạp chí The Lancet Global Health đã tiết lộ mức độ phổ biến đến khó tin trên toàn cầu của virus...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh456.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh376.1.png" width="150px"></a>
+                    <p><b><a href="#">Vị bác sĩ bỏ tiết kiệm 4 năm để xây dựng phòng khám cho người thu nhập thấp tiếp cận IVF</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 15 ngày trước</time></p>
+                    <p>Sau nhiều năm ấp ủ, giấc mơ giúp đỡ những gia đình có thu nhập thấp tiếp cận với phương pháp thụ tinh trong ống nghiệm của ThS. BS...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh457.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh376.1.png" width="150px"></a>
+                    <p><b><a href="#">Mẹ U50 sinh con sau 2 thập kỷ hiếm muộn</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 16 ngày trước</time></p>
+                    <p>Sau hơn 2 thập kỷ dành cả thanh xuân "tìm con", mới đây, nhờ y học hiện đại, chị Nguyễn Thanh Hương (SN 1979), anh Nguyễn Văn Khoá...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh458.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Xét nghiệm ADN với 3 con trai, người đàn ông ngã ngửa với kết quả bẽ bàng</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 18 ngày trước</time></p>
+                    <p>Rất nhiều năm làm xét nghiệm ADN nhưng đây là lần đầu tiên bà Nga gặp một người đàn ông xét nghiệm ADN cùng lúc với cả ba con trai.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh459.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh442.1.png" width="150px"></a>
+                    <p><b><a href="#">Uống 1 thứ mỗi ngày để 'hồi xuân', người phụ nữ nhận chẩn đoán ung thư nội mạc tử cung</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 18 ngày trước</time></p>
+                    <p>Uống thứ này hàng ngày, người phụ nữ mãn kinh đã 10 năm chưa kịp 'hồi xuân' thì đã nhận chẩn đoán mắc ung thư.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh460.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh442.1.png" width="150px"></a>
+                    <p><b><a href="#">Hoại tử "cậu nhỏ" chỉ vì... tò mò</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 18 ngày trước</time></p>
+                    <p>Đây là trường hợp của một nam sinh 15 tuổi (ở Nam Định). Khi thấy "cậu nhỏ" có những biểu hiện khác lạ, vì tò mò nên nam sinh đã tự lộn ra...</p>
+                </aside>
+            </div>
+            <hr/>
+        </div>
+        <div class="footer-menu">
+            <a href="#">Star</a> | <a href="#">Ciné</a> | <a href="#">Musik</a> | <a href="#">Beauty & Fashion</a> | <a href="#">Sport</a> | <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a> | <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a> | <a href="/BTL/AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a> | <a href="#">Xem Mua Luôn</a> | <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | <a href="#">Tek-Life</a> | <a href="#">Học đường</a> | <a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a> | <a href="#">Video</a>
+        </div>
+        <div class="footer-max">
+            <div class="footer-table1">
+                <table>
+                    <tr>
+                        <td>
+                            <section>
+                                <a href=""><img src="/BTL/images/logo1.png" ></img></a>
+                            </section>
+                            <aside>
+                                <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                                <div class="footer-table-mini">
+                                    <div class="footer-mini1">
+                                        <a href="#"><img src="/BTL/images/logodauHoi.png" width="20px"></a>
+                                        <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                    </div>
+                                    <div class="footer-mini2">
+                                        <a href="#"><img src="/BTL/images/logoEmaildo.png" width="25px"></a>
+                                        <p><a href="#">bandoc@kenh14</a></p>
+                                    </div>
+                                </div>
+                                <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                            </aside>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-table2">
+                <a href="#"><img src="/BTL/images/logo2.png" width="530px" height="130px"></img></a>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="footer-mini-one">
+                <h4>TRỤ SỞ HÀ NỘI</h4>
+                <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+                <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+                <div class="logo-mini">
+                    <a href="#"><img src="/BTL/images/logoDC.png" width="17px"></a>
+                    <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                </div>
+    
+                <div class="footer-mini-one-1">
+                    <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                    <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                    <span>Điện thoại: 028 7307 7979</span>
+                    <div class="logo-mini">
+                        <a href="#"><img src="/BTL/images/logoDC.png" width="15px"></a>
+                        <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                    </div>
+                </div>    
+            </div>
+            <hr/>
+            <div class="footer-mini-two">
+                <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+                <span>Bà Nguyễn Bích Minh</span><br>
+                <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+                <div class="logo-mini">
+                    <img src="/BTL/images/logoDT.png" width="20px"></a>
+                    <span>024.73095555 (máy lẻ 62.370)</span><br>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="/BTL/images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                <div class="logo-mini">
+                    <img src="/BTL/images/logoDT.png" width="20px"></a>
+                    <span>02473007108</span>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="/BTL/images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <div class="chat-table-1">
+                    <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+                </div>
+                <div class="chat-table-2">
+                    <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="chat-table-3">
+                    <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+                </div>
+            </div>
+            <hr class="DK"/>
+            <div class="footer-mini-three">
+                <a href=""><img src="/BTL/images/logoVCCorp.png" width="120px" ></a>
+                <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+                <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+                <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+           
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

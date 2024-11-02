@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenh14 </title>
+    <link rel="stylesheet" href="/BTL/CSS_1/styles.css">
+    <link rel="import" href="component.html">
+    <script src="/BTL/Scrip.js/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+        <!-- Linking SwiperJS CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Linking SwiperJS script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <img src="/BTL/images/logo.png" alt="Kenh14 Logo">
+                    <div class="logo-text">
+                        <span class="logo-main">kenh14.vn</span>
+                        <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                    </div>
+                </div>
+                <div class="trending-topics">
+                    <span class="arrow-icon">&#x2197;</span>
+                    <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                    <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                    <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="mains-menu">
+                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#">Star</a></li>
+                    <li><a href="#">Ciné</a></li>
+                    <li><a href="#">Musik</a></li>
+                    <li><a href="#">Beauty & Fashion</a></li>
+                    <li><a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a></li>
+                    <li><a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a></li>
+                    <li><a href="/BTL/AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a></li>
+                    <li><a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a></li>
+                    <li><a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a></li>
+                    <li><a href="#">Tek-life</a></li>
+                    <li><a href="#">Học đường</a></li>
+                    <li><a href="#">Xem Mua Luôn</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li class="main-menu">
+                        <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="subs-menu">
+            <div class="container">
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a>
+                        <div class="submenu">
+                            <a href="/BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="/BTL/DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
+                            <a href="/BTL/DOI_SONG/House_n_Home.html">House n Home</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Xem mua luôn</a>
+                        <div class="submenu">
+                            <a href="#">Thời trang</a>
+                            <a href="#">Đẹp</a>
+                            <a href="#">Mommy mua di</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Sport</a>
+                        <div class="submenu">
+                            <a href="#">Bóng đá</a>
+                            <a href="#">Bóng rổ</a>
+                            <a href="#">Bóng chuyền</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Musik</a>
+                        <div class="submenu">
+                            <a href="#">Âu-Mỹ</a>
+                            <a href="#">Châu Á</a>
+                            <a href="#">Việt Nam</a>
+                            <a href="#">Hip-hop neva die</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Ciné</a>
+                        <div class="submenu">
+                            <a href="#">Phim chiếu rạp</a>
+                            <a href="#">Phim Việt Nam</a>
+                            <a href="#">Series truyền hình</a>
+                            <a href="#">Hoa ngữ - Hàn Quốc</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Ciné</a>
+                        <div class="submenu">
+                            <a href="#">Metaverse</a>
+                            <a href="#">How-To</a>
+                            <a href="#">Wow</a>
+                            <a href="#">2-Mall</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="#">Star</a>
+                        <div class="submenu">
+                            <a href="#">Sao Việt</a>
+                            <a href="#">Hội bạn thân showbiz</a>
+                            <a href="#">TV Show</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a>
+                        <div class="submenu">
+                            <a href="/BTL/XA_HOI/PhapLuat.html">Pháp luật</a>
+                            <a href="/BTL/XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
+                            <a href="/BTL/XA_HOI/SongXanh.html">Sống xanh</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Học đường</a>
+                        <div class="submenu">
+                            <a href="/BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="">Du học</a>
+                            <a href="#">Bản tin 46'</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
+                        <div class="submenu">
+                            <a href="/BTL/DOI_SONG/ChumAnh.html">Chùm ảnh</a>
+                            <a href="/BTL/DOI_SONG/KhamPha.html">Khám phá</a>
+                            <a href="/BTL/DOI_SONG/Di.html">Dị</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                        <div class="submenu">
+                            <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                            <a href="/BTL/SUC_KHOE/TinTuc.html">Tin tức</a>
+                            <a href="/BTL/SUC_KHOE/DinhDuong.html">Dinh dưỡng</a>
+                            <a href="/BTL/SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
+                            <a href="/BTL/SUC_KHOE/GioiTinh.html">Giới tính</a>
+                            <a href="/BTL/SUC_KHOE/CacBenh.html">Các bệnh</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="border-solid"></div>
+            <div class="web-info">
+                <span class="title-mini-web">Tải app</span>
+                <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BA%BB/id670518264?ls=1" target="_blank">IOS</a>
+                <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                <a class="title-mini-web" href="#">Liên hệ</a>
+                <a class="mini-web" href="#">Quảng cáo</a>
+            </div>
+        </div>
+    </header>
+    </div>
+    <div class="space">
+    </div>
+    <div id="page">
+        <div class="hi_3">
+            <ul>
+                <li><a href="SucKhoe.html"><b>SỨC KHỎE</b></a></li>
+                <li><a href="TinTuc.html"><b>TIN TỨC</b></a></li>
+                <li><a href="DinhDuong.html"><b>DINH DƯỠNG</b></a></li>
+                <li><a href="KhoeDep.html"><b>KHỎE ĐẸP</b></a></li>
+                <li><a href="GioiTinh.html"><b>GIỚI TÍNH</b></a></li>
+                <li><a href="CacBenh.html"><b>CÁC BỆNH</b></a></li>
+                <li><a href="Dr.Blue.html"><img src="/BTL/images/logo_dr.blue.png.png"></a></li>
+                <li><a href="/BTL/DOI_SONG/DoiSong.html"><b>ĐỜI SỐNG</b></a></li>
+                <li><a href="/BTL/DOI_SONG/KhamPha.html"><b>KHÁM PHÁ</b></a></li>
+            </ul>
+        </div><br>
+        <hr>
+        <div class="body">
+            <div class="one">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh381.png"width=570px></a>
+                    <p><b><a href="#">Bé 8 ngày tuổi bị xẹp phổi phải, viêm phổi nặng vì hành động yêu thương của người thân</a></b></p>
+                    <p>Cấp cứu trong tình trạng tím tái, khó thở, xẹp toàn bộ phổi phải do nhiễm virus hợp bào hô hấp RSV, sau 5 ngày em bé đã thoát khỏi "cửa tử".</a></p>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh382.png"></a>
+                    <p><b><a href="#">Phú Thọ: Người đàn ông yếu nửa người đi cấp cứu nghi đột quỵ, bàng...</a></b></p><br>
+                    <a href="#"><img src="/BTL/images/anh383.png"></a>
+                    <p><b><a href="#">Sau khi ăn 1 loại thịt, 3 người đàn ông phải nhập viện cấp cứu ngay...</a></b></p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh384.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh374.1.png" width="200px"></a>
+                    <p><b><a href="#">Vì sao tiêm chủng đã đạt miễn dịch cộng đồng nhưng dịch sởi vẫn tăng?</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 2 giờ trước</time></p>
+                    <p>Tỷ lệ tiêm chủng vắc xin phòng bệnh sởi cho trẻ em từ 1 đến 10 tuổi trên địa bàn TPHCM đã đạt độ bao phủ miễn dịch cộng đồng, tuy nhiên...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh385.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">15 học sinh nôn ói phải nhập viện, trung tâm y tế ở Quảng Nam báo cáo gì?</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 4 giờ trước</time></p>
+                    <p>15 học sinh nhập viện cấp cứu với triệu chứng giống ngộ độc sau khi ăn sữa chua ở trường, tuy nhiên Trung tâm Y tế huyện Đại Lộc kết luận là...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh386.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Lạm dụng thực phẩm chức năng, thực phẩm bổ sung khiến nhiều người gặp họa</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 1 ngày trước</time></p>
+                    <p>Đây chính là lý do điều trị u xơ tử cung cho người phụ nữ này mãi không khỏi.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh387.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">15 học sinh tiểu học ở Quảng Nam nhập viện cấp cứu sau khi ăn sữa chua</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 1 ngày trước</time></p>
+                    <p>Sau khi ăn sữa chua, 15 học sinh tiểu học ở Quảng Nam xuất hiện các triệu chứng của ngộ độc thực phẩm như đau bụng, nôn ói.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh388.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh374.1.png" width="200px"></a>
+                    <p><b><a href="#">Quảng Bình: Ghi nhận ổ dịch thuỷ đậu 'khủng' trong trường học</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 1 ngày trước</time></p>
+                    <p>Ổ dịch bệnh thuỷ đậu đầu tiên của Quảng Bình trong năm 2024 được xác định là 14 học sinh thuộc lớp 7A, Trường Tiểu học – THCS xã Lê...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh359.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Vụ 'bác sĩ' tốt nghiệp ngành văn hóa đi khám bệnh: Nhận thêm hàng loạt đơn tố cáo của bệnh nhân</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 1 ngày trước</time></p>
+                    <p>Liên quan tới vụ 'bác sĩ' tốt nghiệp ngành văn hóa đi khám bệnh tại cơ sở PK ĐHY TP.Hồ Chí Minh ở Gia Lai, Sở Y tế tỉnh này đã nhận thêm 5...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh374.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh374.1.png" width="200px"></a>
+                    <p><b><a href="#">Ghi nhận ca tử vong do cúm A/H1, Bộ Y tế thông tin về cúm mùa do chủng cúm A/H1N1</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 1 ngày trước</time></p>
+                    <p>Cục Y tế dự phòng cho biết, trên địa bàn tỉnh Bình Định vừa ghi nhận trường hợp tử vong nhiễm virus cúm A/H1N1 ở bệnh nhân có nhiều...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh389.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh370.1.png"width="150px"></a>
+                    <p><b><a href="#">Thuốc lá điện tử xâm nhập trường học</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 4 ngày trước</time></p>
+                    <p>Theo Bộ Y tế, tỉ lệ sử dụng thuốc lá điện tử trong học sinh (13-15 tuổi) tăng hơn 50% chỉ trong một năm.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh390.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">6 công nhân tử vong do bụi phổi: Thông tin mới nhất</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 4 ngày trước</time></p>
+                    <p>Trưởng Ban quản lý Khu kinh tế Đông Nam Nghệ An cho biết, đang làm rõ trách nhiệm các tổ chức, cá nhân liên quan vụ việc 6 công nhân tử...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh391.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh374.1.png" width="200px"></a>
+                    <p><b><a href="#">Trẻ dễ mắc bệnh đường hô hấp trong giai đoạn giao mùa</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 4 ngày trước</time></p>
+                    <p>Tây Nguyên nói chung và Đắk Lắk nói riêng đang vào thời điểm giao mùa, là môi trường thuận lợi cho các vi khuẩn, virus gây bệnh sinh sôi và...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh392.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Bé 8 ngày tuổi bị xẹp phổi phải, viêm phổi nặng vì hành động yêu thương của người thân</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 4 ngày trước</time></p>
+                    <p>Cấp cứu trong tình trạng tím tái, khó thở, xẹp toàn bộ phổi phải do nhiễm virus hợp bào hô hấp RSV, sau 5 ngày em bé đã thoát khỏi "cửa tử".</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh393.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh374.1.png" width="200px"></a>
+                    <p><b><a href="#">Cảnh báo trẻ mắc viêm màng não gia tăng</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 5 ngày trước</time></p>
+                    <p>Khoa Nhi - Bệnh viện Đa khoa Hùng Vương (Phú Thọ) đang điều trị cho 3 bé bị viêm màng não, trong đó có 1 bé sơ sinh chỉ mới 46 ngày tuổi.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh394.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Sau bữa liên hoan 20/10, hàng chục công nhân ở Bắc Giang nhập viện cấp cứu</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 5 ngày trước</time></p>
+                    <p>Sau bữa liên hoan nhân ngày Phụ nữ Việt Nam 20/10, hàng chục công nhân Công ty Trách nhiệm hữu hạn Shinsung Vina thuộc khu công...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh395.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cứu bệnh nhân đột quỵ thoát liệt người bằng phương pháp Tiêu sợi huyết</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 5 ngày trước</time></p>
+                    <p>Bệnh nhân người Hàn Quốc, 51 tuổi, vào viện trong tình trạng nguy kịch do nhồi máu não, liệt mặt, liệt nửa người phải và mất hoàn toàn cảm...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh396.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh374.1.png" width="200px"></a>
+                    <p><b><a href="#">Lưu ý khi trẻ mắc tay chân miệng</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 5 ngày trước</time></p>
+                    <p>Bệnh tay chân miệng là một bệnh truyền nhiễm do virus gây ra, có biểu hiện đặc trưng là sốt và mụn nước xuất hiện ở lòng bàn tay, lòng...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh397.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Hà Nội xử phạt 9 cơ sở hành nghề y dược tư nhân, an toàn thực phẩm</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 6 ngày trước</time></p>
+                    <p>Thanh tra Sở Y tế Hà Nội vừa ban hành 9 quyết định xử phạt vi phạm hành chính các cơ sở hành nghề y, dược tư nhân và an toàn thực...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh398.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Phú Thọ: Người đàn ông yếu nửa người đi cấp cứu nghi đột quỵ, bàng hoàng nhận kết quả ung thư phổi giai đoạn cuối</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 6 ngày trước</time></p>
+                    <p>Xuất hiện triệu chứng yếu nửa người bên trái, nam bệnh nhân đã đến Trung tâm Y tế huyện Cẩm Khê (Phú Thọ) khám và nhận kết quả...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh399.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Tử vong do dại sau gần 1 năm bị mèo cắn</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 7 ngày trước</time></p>
+                    <p>Ngày 19/10, Trung tâm Kiểm soát bệnh tật tỉnh Đồng Nai cho biết vừa ghi nhận ca tử vong do bệnh dại sau gần 1 năm bị mèo cắn, không...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh400.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="/BTL/images/anh377.1.png" width="200px"></a>
+                    <p><b><a href="#">Bé trai 7 tuổi tử vong do sốt xuất huyết Dengue</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 7 ngày trước</time></p>
+                    <p>Bé trai được đưa tới Bệnh viện Đa khoa tỉnh Bình Phước và được chẩn đoán sốt xuất huyết Dengue nặng (có triệu chứng sốc, suy gan,...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh401.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nam bệnh nhân không may nuốt phải hàm răng giả khi ăn phở</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 7 ngày trước</time></p>
+                    <p>Cầu răng giả 3 chiếc vừa được các bác sĩ Khoa Thăm dò chức năng, Bệnh viện Đa khoa tỉnh Bắc Giang nội soi lấy ra từ dạ dày nam bệnh...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh402.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cách ông trùm Diddy sử dụng 1000 chai dầu trẻ em: Kết hợp thứ này tác hại cho nạn nhân còn kinh khủng hơn nhiều</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 7 ngày trước</time></p>
+                    <p>Ngày 17/10, xuất hiện cáo buộc Diddy sử dụng dầu trẻ em tẩm GHB - được mệnh danh là "thuốc mê hiếp dâm" để thực hiện hành vi bạo...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="/BTL/images/anh403.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Hà Nội: 2 bác sĩ bị tước chứng chỉ hành nghề</a></b></p>
+                    <p><b>Sức khỏe -</b><time> 8 ngày trước</time></p>
+                    <p>Do vi phạm trong hoạt động khám chữa bệnh, 2 phòng khám đã bị Sở Y tế xử phạt 39 triệu đồng. Ngoài ra, 2 bác sĩ của 2 cơ sở khám chữa...</p>
+                </aside>
+            </div>
+            <hr/>
+        </div>
+        <div class="footer-menu">
+            <a href="#">Star</a> | <a href="#">Ciné</a> | <a href="#">Musik</a> | <a href="#">Beauty & Fashion</a> | <a href="#">Sport</a> | <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a> | <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a> | <a href="/BTL/AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a> | <a href="#">Xem Mua Luôn</a> | <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | <a href="#">Tek-Life</a> | <a href="#">Học đường</a> | <a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a> | <a href="#">Video</a>
+        </div>
+        <div class="footer-max">
+            <div class="footer-table1">
+                <table>
+                    <tr>
+                        <td>
+                            <section>
+                                <a href=""><img src="/BTL/images/logo1.png" ></img></a>
+                            </section>
+                            <aside>
+                                <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                                <div class="footer-table-mini">
+                                    <div class="footer-mini1">
+                                        <a href="#"><img src="/BTL/images/logodauHoi.png" width="20px"></a>
+                                        <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                    </div>
+                                    <div class="footer-mini2">
+                                        <a href="#"><img src="/BTL/images/logoEmaildo.png" width="25px"></a>
+                                        <p><a href="#">bandoc@kenh14</a></p>
+                                    </div>
+                                </div>
+                                <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                            </aside>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-table2">
+                <a href="#"><img src="/BTL/images/logo2.png" width="530px" height="130px"></img></a>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="footer-mini-one">
+                <h4>TRỤ SỞ HÀ NỘI</h4>
+                <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+                <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+                <div class="logo-mini">
+                    <a href="#"><img src="/BTL/images/logoDC.png" width="17px"></a>
+                    <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                </div>
+    
+                <div class="footer-mini-one-1">
+                    <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                    <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                    <span>Điện thoại: 028 7307 7979</span>
+                    <div class="logo-mini">
+                        <a href="#"><img src="/BTL/images/logoDC.png" width="15px"></a>
+                        <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                    </div>
+                </div>    
+            </div>
+            <hr/>
+            <div class="footer-mini-two">
+                <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+                <span>Bà Nguyễn Bích Minh</span><br>
+                <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+                <div class="logo-mini">
+                    <img src="/BTL/images/logoDT.png" width="20px"></a>
+                    <span>024.73095555 (máy lẻ 62.370)</span><br>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="/BTL/images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                <div class="logo-mini">
+                    <img src="/BTL/images/logoDT.png" width="20px"></a>
+                    <span>02473007108</span>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="/BTL/images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <div class="chat-table-1">
+                    <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+                </div>
+                <div class="chat-table-2">
+                    <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="chat-table-3">
+                    <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+                </div>
+            </div>
+            <hr class="DK"/>
+            <div class="footer-mini-three">
+                <a href=""><img src="/BTL/images/logoVCCorp.png" width="120px" ></a>
+                <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+                <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+                <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+           
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

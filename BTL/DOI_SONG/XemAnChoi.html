@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenh14 </title>
+    <link rel="stylesheet" href="../CSS_1/styles.css">
+    <link rel="import" href="component.html">
+    <script src="../Scrip.js/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+        <!-- Linking SwiperJS CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Linking SwiperJS script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="Kenh14 Logo">
+                    <div class="logo-text">
+                        <span class="logo-main">kenh14.vn</span>
+                        <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                    </div>
+                </div>
+                <div class="trending-topics">
+                    <span class="arrow-icon">&#x2197;</span>
+                    <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                    <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                    <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="mains-menu">
+                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#">Star</a></li>
+                    <li><a href="#">Ciné</a></li>
+                    <li><a href="#">Musik</a></li>
+                    <li><a href="#">Beauty & Fashion</a></li>
+                    <li><a href="../DOI_SONG/DoiSong.html">Đời sống</a></li>
+                    <li><a href="../MONEY-Z/Money-Z.html">Money-Z</a></li>
+                    <li><a href="../AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a></li>
+                    <li><a href="../XA_HOI/XaHoi.html">Xã hội</a></li>
+                    <li><a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a></li>
+                    <li><a href="#">Tek-life</a></li>
+                    <li><a href="#">Học đường</a></li>
+                    <li><a href="#">Xem Mua Luôn</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li class="main-menu">
+                        <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="subs-menu">
+            <div class="container">
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="../DOI_SONG/DoiSong.html">Đời sống</a>
+                        <div class="submenu">
+                            <a href="../DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="../DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
+                            <a href="../DOI_SONG/House_n_Home.html">House n Home</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Xem mua luôn</a>
+                        <div class="submenu">
+                            <a href="#">Thời trang</a>
+                            <a href="#">Đẹp</a>
+                            <a href="#">Mommy mua di</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Sport</a>
+                        <div class="submenu">
+                            <a href="#">Bóng đá</a>
+                            <a href="#">Bóng rổ</a>
+                            <a href="#">Bóng chuyền</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Musik</a>
+                        <div class="submenu">
+                            <a href="#">Âu-Mỹ</a>
+                            <a href="#">Châu Á</a>
+                            <a href="#">Việt Nam</a>
+                            <a href="#">Hip-hop neva die</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Ciné</a>
+                        <div class="submenu">
+                            <a href="#">Phim chiếu rạp</a>
+                            <a href="#">Phim Việt Nam</a>
+                            <a href="#">Series truyền hình</a>
+                            <a href="#">Hoa ngữ - Hàn Quốc</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Ciné</a>
+                        <div class="submenu">
+                            <a href="#">Metaverse</a>
+                            <a href="#">How-To</a>
+                            <a href="#">Wow</a>
+                            <a href="#">2-Mall</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="#">Star</a>
+                        <div class="submenu">
+                            <a href="#">Sao Việt</a>
+                            <a href="#">Hội bạn thân showbiz</a>
+                            <a href="#">TV Show</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../XA_HOI/XaHoi.html">Xã hội</a>
+                        <div class="submenu">
+                            <a href="../XA_HOI/PhapLuat.html">Pháp luật</a>
+                            <a href="../XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
+                            <a href="../XA_HOI/SongXanh.html">Sống xanh</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Học đường</a>
+                        <div class="submenu">
+                            <a href="../DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="">Du học</a>
+                            <a href="#">Bản tin 46'</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
+                        <div class="submenu">
+                            <a href="../DOI_SONG/ChumAnh.html">Chùm ảnh</a>
+                            <a href="../DOI_SONG/KhamPha.html">Khám phá</a>
+                            <a href="../DOI_SONG/Di.html">Dị</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                        <div class="submenu">
+                            <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                            <a href="../SUC_KHOE/TinTuc.html">Tin tức</a>
+                            <a href="../SUC_KHOE/DinhDuong.html">Dinh dưỡng</a>
+                            <a href="../SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
+                            <a href="../SUC_KHOE/GioiTinh.html">Giới tính</a>
+                            <a href="../SUC_KHOE/CacBenh.html">Các bệnh</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="border-solid"></div>
+            <div class="web-info">
+                <span class="title-mini-web">Tải app</span>
+                <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BA%BB/id670518264?ls=1" target="_blank">IOS</a>
+                <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                <a class="title-mini-web" href="#">Liên hệ</a>
+                <a class="mini-web" href="#">Quảng cáo</a>
+            </div>
+        </div>
+    </header>
+    </div>
+    <div class="space">
+    </div>
+    <div id="page">
+        <div class="hi">
+            <ul>
+                <li><a href="XemAnChoi.html"><b>XEM ĂN CHƠI</b></a></li>
+            </ul>
+        </div><br>
+        <hr/>
+        <div class="body">
+            <div class="one">
+                <section>
+                    <a href="#"><img src="../images/anh58.png"width=570px></a>
+                    <p><b><a href="#">Hơn 15.000 khán giả quẩy bung nóc tại AU FES 2024 - Đại tiệc sinh nhật Audition 18 tuổi!</a></b></p>
+                    <p>Ngày hội thường niên AU FES 2024 mừng sinh nhật Audition 18 tuổi tại Hà Nội (22/09) và TP.HCM (29/09) quy tụ các Anh Trai Say Hi và ca sĩ, DJ khách mời biểu diễn. Siêu sự kiện game Âm nhạc - Thời trang - Hẹn hò với những trải nghiệm từ sáng đến đêm, không lúc nào hạ nhiệt.</a>
+                    </p>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh59.png"></a>
+                    <p><b><a href="#">Khám phá con tàu bí ẩn, check-in cùng bí ngô khổng lồ tại Crescent...</a></b></p>
+                </aside>
+            </div>
+            <hr/><br>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../images/anh570.png" class="card-image">
+                                    <h3 class="card-title">Đừng chủ quan với da khô: Cấp ẩm ngay cho da bằng những sản phẩm này nếu không muốn lão hóa sớm!</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../images/anh571.png"class="card-image">
+                                    <h3 class="card-title">Fanship - Cộng đồng fan online toàn cầu sắp đổ bộ Việt Nam</h3>          
+                                </a>   
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../images/anh572.png"class="card-image">
+                                    <h3 class="card-title">Giải mã xu hướng Organic – "Cơn sốt" sống xanh từ Âu, Mỹ</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">   
+                                <a href="#" class="card-link">
+                                    <img src="../images/anh576.png"  class="card-image">
+                                    <h3 class="card-title">Shayne Ward chính thức xác nhận sẽ biểu diễn tại Sài Gòn</h3>
+                                </a>                       
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../images/anh577.png "  class="card-image">
+                                    <h3 class="card-title">Các tín đồ thời trang đã sẵn sàng du lịch Maldives cùng Vascara?</h3>
+                                </a>         
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../images/anh578.png"class="card-image">
+                                    <h3 class="card-title">Bose giới thiệu loa Bose Smart Soundbar và công nghệ âm thanh vòm cá nhân mới</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../images/anh579.png"  class="card-image">
+                                    <h3 class="card-title">Founder Nguyễn Mạnh Tuấn: Đầu tư chuỗi nhà hàng “Cơm Lệ” chỉ sau một cuộc trò chuyện</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh60.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Ưu đãi đặc biệt 20/10: Quà tặng đồng hồ sang trọng cho nàng tại Đăng Quang Watch</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 7 giờ trước</time></p>
+                    <p>Hãy để ngày 20/10 trở nên ý nghĩa hơn bao giờ hết với món quà đồng hồ sang trọng từ Đăng Quang Watch, thể hiện tình yêu và phong cách...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh61.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Trải nghiệm không gian cưới ngoài trời tại TP. HCM - Khám phá xu hướng tiệc cưới mới</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 9 giờ trước</time></p>
+                    <p>Vườn Tơ Hồng - Trải nghiệm không gian cưới ngoài trời tại TP. HCM sẽ diễn ra vào 2 ngày 26-27/10 tại GH.Complex với sự tham gia của hơn...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh62.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Mừng tháng 10 rạng ngời phụ nữ Việt, hơn 500 thương hiệu lớn đồng loạt tung deal sốc</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 11 giờ trước</time></p>
+                    <p>Với thông điệp "Gấp đôi ưu đãi - Gấp bội yêu thương", Bigbang Hàng Hiệu mang đến sự kiện Mega Sale lớn nhất tháng 10 tại The Global City...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh63.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Những đóng góp cho thể thao cộng đồng của ANTA qua giải chạy VPBank International Marathon 2024</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 1 ngày trước</time></p></p>
+                    <p>Sau mùa giải 2023, ANTA tiếp tục trở lại với vai trò nhà tài trợ Kim cương của 1 trong các giải chạy lớn nhất Miền Bắc - VPBank...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh64.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Sắc màu cosplay trên đường chạy VPIM 2024</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 1 ngày trước</time></p></p>
+                    <p>Sáng 13/10, 11.000 vận động viên đã có màn tranh đua thể lực tại giải chạy VPIM 2024. Bên cạnh những sắc áo xanh lá truyền thống của...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh65.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Triển lãm Khoa học Công nghệ tại lễ khai giảng năm học mới của Học viện Nông nghiệp Việt Nam</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 1 ngày trước</time></p></p>
+                    <p>Ngày 12/10/2024 tại Học viện Nông nghiệp Việt Nam đã diễn ra lễ khai giảng năm học mới với nhiều hoạt động ý nghĩa, nổi bật là Triển lãm...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh66.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Vxebra Orico - Bứt phá nỗ lực, khẳng định vị thế trên thị trường mỹ phẩm Việt</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 1 ngày trước</time></p></p>
+                    <p>Bộ sản phẩm Vxebra Orico của Công ty Cổ phần Tập đoàn Liên kết Việt Nam (Vinalink Group) đã vinh dự nhận giải thưởng "Sản phẩm Vàng...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh67.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">House Of Luggage tung ưu đãi vali hàng hiệu từ 888.000 đồng</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 5 ngày trước</time></p></p>
+                    <p>Nếu bạn đang tìm một chiếc vali hàng hiệu bền bỉ, mà giá thành phải hợp lý cho những chuyến đi công tác thường xuyên hoặc du lịch sắp tới....</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh68.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Trải nghiệm ẩm thực Nhật Bản tại nhà hàng Latest Recipe</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 5 ngày trước</time></p></p>
+                    <p>Khởi động tháng 10 với chuỗi hành trình trải nghiểm ẩm thực độc đáo tại Le Méridien Saigon, khách sạn 5 sao tại trung tâm quận 1, nhà...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh69.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Trân trọng hành trình đã qua, Việt Hương cùng Hương Thị hướng tới những cột mốc mới</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 6 ngày trước</time></p></p>
+                    <p>Trong lễ kỷ niệm 6 năm thành lập thương hiệu mỹ phẩm cao cấp Hương Thị, nữ nghệ sĩ Việt Hương kỳ vọng sẽ cùng đội ngũ của mình ngày...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh70.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">TPBVSK Codeage Marine Collagen Peptides: Bí quyết tự tin đối mặt mùa khô hanh với làn da khỏe mạnh</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 6 ngày trước</time></p></p>
+                    <p>Mùa thu về, làn da bạn dễ trở nên khô ráp và xỉn màu. Hãy khám phá bí quyết chăm sóc da hoàn hảo với TPBVSK Codeage Marine...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh71.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Hơn 15.000 khán giả quẩy bung nóc tại AU FES 2024 - Đại tiệc sinh nhật Audition 18 tuổi!</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 6 ngày trước</time></p></p>
+                    <p>Ngày hội thường niên AU FES 2024 mừng sinh nhật Audition 18 tuổi tại Hà Nội (22/09) và TP.HCM (29/09) quy tụ các Anh Trai Say Hi và ca sĩ,...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh72.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Khám phá con tàu bí ẩn, check-in cùng bí ngô khổng lồ tại Crescent Mall mùa Halloween 2024</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 10 ngày trước</time></p></p>
+                    <p>Mùa Halloween năm nay, Crescent Mall tiếp tục khuấy đảo không khí lễ hội bằng chuỗi hoạt động vui chơi hấp dẫn và không gian trang trí đầy...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh73.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Chương trình HeeCares của HeeSay hỗ trợ tái thiết các khu vực bị ảnh hưởng bởi bão Yagi</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 10 ngày trước</time></p></p>
+                    <p>HeeSay, một cộng đồng trực tuyến dành cho LGBTQ+, vừa ra mắt chương trình HeeCares nhằm mở rộng sự hỗ trợ đến các cộng đồng...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh74.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">“Thợ săn” áo chạy các mùa giải không nên bỏ qua VPIM 2024</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 11 ngày trước</time></p></p>
+                    <p>Bên cạnh giải thưởng lớn, huy chương độc lạ, racekit siêu “thịnh vượng” thì VPIM 2024 lại đang “gây sốt” khi vừa tung lookbook bộ sưu tập...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh75.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">CGV Việt Nam và Coca-Cola kỷ niệm 10 năm hợp tác chiến lược</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 11 ngày trước</time></p></p>
+                    <p>Ngày 1/10/2024, tại CGV Sư Vạn Hạnh, CGV Việt Nam và Coca-Cola vừa tổ chức sự kiện kỷ niệm 10 năm quan hệ hợp tác, đánh dấu một thập...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh76.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Sức nóng của “Hành trình trang sức xuyên Việt” tại Bình Dương</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 12 ngày trước</time></p></p>
+                    <p>Ngày 28/9 vừa qua, “Hành trình trang sức xuyên Việt - Bừng sắc cho đời bừng sáng” của PNJ đã dừng chân tại Aeon Mall Bình Dương. Mang...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh77.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Bác sĩ CKI. Trần Đắc Quang cảnh báo những rủi ro khi nâng mũi giá rẻ</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 12 ngày trước</time></p></p>
+                    <p>Theo thống kê độ tuổi can thiệp phẫu thuật thẩm mỹ ngày càng trẻ hóa, khoảng 18 đến 19 tuổi. Với các thủ thuật nâng mũi giá "học sinh...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh78.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">NCB chính thức triển khai mở tài khoản thanh toán từ ứng dụng VNeID và ra mắt website ưu đãi</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 12 ngày trước</time></p></p>
+                    <p>Ngân hàng TMCP Quốc Dân (NCB) phối hợp với Trung tâm nghiên cứu, ứng dụng dữ liệu dân cư và căn cước công dân (RAR - thuộc Trung...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh79.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Công nghệ trồng răng implant vượt trội tại Nha khoa Quốc tế Phú Hòa</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 12 ngày trước</time></p></p>
+                    <p>Công nghệ trồng răng implant có thể giúp phục hồi răng đã mất và mang lại cảm giác ăn nhai như thật. Nha khoa Quốc tế Phú Hòa đã giúp...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh80.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Kỳ nghỉ cuối tuần thời thượng tại Wyndham Skylake: Nơi nghỉ dưỡng đẳng cấp dành riêng cho bạn</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 12 ngày trước</time></p></p>
+                    <p>Chỉ cách trung tâm Hà Nội 2 giờ di chuyển, Wyndham Skylake Resort & Villas là lựa chọn hoàn hảo cho những ai muốn tìm kiếm một kỳ nghỉ...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh81.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">CHARLES & KEITH Thu Đông 2024: Khi sự phóng khoáng của các cô nàng biker lên ngôi</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 13 ngày trước</time></p></p>
+                    <p>Mùa thu này, CHARLES & KEITH cùng dàn Hot Influencers Ming Ming và Yum khám phá vẻ đẹp tự do và cá tính của các cô nàng biker qua...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh82.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">SHIN RAMYUN CONCERT: đại tiệc âm nhạc Hàn - Việt đầy sôi động cùng dàn nghệ sĩ hot</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 14 ngày trước</time></p></p>
+                    <p>Shin Ramyun Concert 2024 quy tụ dàn sao Hàn - Việt đình đám, mang đến cơ hội săn vé cực dễ với quà tặng độc quyền từ Nongshim.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh83.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Li-Ning cùng Đại sứ thương hiệu Isaac “bùng nổ” chất riêng, thổi bùng tinh thần thể thao</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 15 ngày trước</time></p></p>
+                    <p>Tối ngày 29/09 vừa qua, giới trẻ Sài thành đã được dịp “đứng ngồi không yên” với sự kiện ra mắt Đại sứ thương hiệu Li-Ning - nam ca sĩ...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh84.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Karaoke ICOOL Đồng Đen “lột xác”: Không gian mới, ưu đãi siêu “hời”</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 15 ngày trước</time></p></p>
+                    <p>Chưa bao giờ việc hát karaoke trong không gian sang trọng, hiện đại lại “hời” đến thế. Nhân dịp thay “áo mới”, chi nhánh ICOOL Đồng Đen (tọa...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh85.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Bắt kịp xu hướng thời trang thu đông qua BST UNIQLO U Thu/Đông 2024</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 17 ngày trước</time></p></p>
+                    <p>Bộ sưu tập (BST) UNIQLO U Thu/Đông 2024 chính thức mở bán vào ngày 27 tháng 09 năm 2024. Vẫn giữ một số phom dáng đặc trưng,...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh86.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Chọn đèn bàn như nào cho chuẩn?</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 17 ngày trước</time></p></p>
+                    <p>Trong nhịp sống hiện đại, đôi mắt của chúng ta đang phải đối mặt với nhiều thách thức hơn bao giờ hết.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh87.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Sự kiện “Vắt sữa từ hạt” có gì khiến giới trẻ Hà thành mê mẩn?</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 18 ngày trước</time></p></p>
+                    <p>Khuấy đảo Thủ đô Hà Nội trong 2 ngày cuối tuần từ 21/09 – 22/09/2024, sự kiện "Vắt sữa từ hạt" do nhãn hàng Sữa hạt Veyo tổ chức đã thu...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh88.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Top 4 cải tiến mạnh mẽ của phiên bản iPhone 16 khiến giới công nghệ “dậy sóng”</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 18 ngày trước</time></p></p>
+                    <p>Phiên bản iPhone 16 ra đời với những cải tiến, nâng cấp mới lạ hứa hẹn sẽ mang lại cho người dùng những trải nghiệm hoàn toàn khác biệt....</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh89.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Trải nghiệm thực đơn ăn trưa kiểu mới tại Le Meridien Saigon</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 19 ngày trước</time></p></p>
+                    <p>Thưởng thức những hương vị quen thuộc đậm tính Á Đông hay lựa chọn những thực đơn mới lạ và hiện đại cho bữa trưa thường ngày? Khám...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh90.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Những người phụ nữ chủ trương "giàu trước khi già"</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 19 ngày trước</time></p></p>
+                    <p>"Khi phụ nữ làm chủ" trở lại mùa 2 trên sóng giờ vàng VTV3 với những thí sinh truyền cảm hứng mạnh mẽ. Họ khởi nghiệp bởi muôn vàn lý do...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh91.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Trải nghiệm tắm khoáng nóng tự nhiên tại Pamukkale, Thổ Nhĩ Kỳ</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 19 ngày trước</time></p></p>
+                    <p>Pamukkale – một trong những kỳ quan thiên nhiên nổi bật nhất Thổ Nhĩ Kỳ, là điểm đến lý tưởng cho những ai yêu thích du lịch, khám phá...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh92.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">4BABIES đưa loạt sản phẩm cho mẹ và bé nổi tiếng tại Úc tham gia Vietbaby Fair Hà Nội 2024</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 19 ngày trước</time></p></p>
+                    <p>Công ty TNHH Dành Cho Bé Yêu (4BABIES) vinh dự tham gia triển lãm Vietbaby Fair Hà Nội 2024 từ 26/09/2024 - 28/09/2024 tại Trung tâm...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh93.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nha khoa NICE SMILE triển khai chương trình “Cười rạng rỡ - sáng tương lai”</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 20 ngày trước</time></p></p>
+                    <p>Vừa qua, Nha Khoa Thẩm Mỹ NICE SMILE đã đồng hành cùng Trường THCS Bế Văn Đàn tổ chức thành công chương trình Nha khoa học...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh94.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nước ép rau củ quả KAGOME - Thức uống dinh dưỡng cho người bận rộn</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 20 ngày trước</time></p></p>
+                    <p>Khám phá nước ép rau củ quả KAGOME - giải pháp dinh dưỡng tiện lợi từ rau củ quả cho một cuộc sống bận rộn của tập đoàn KAGOME...</p>
+                </aside>
+            </div>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh95.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Porkstar USA mùa 3 thăng hạng ẩm thực Việt với thịt heo Mỹ</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 21 ngày trước</time></p></p>
+                    <p>Hàng trăm người đã có mặt tại Sheraton Saigon Grand Opera Hotel vào ngày 11/9 vừa qua để chứng kiến màn tranh tài giữa 3 siêu đầu bếp,...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh96.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Đón Halloween bùng nổ với mì cay SiuKay X2 ớt phiên bản giới hạn</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 21 ngày trước</time></p></p>
+                    <p> Khi độ cay được nhân đôi, thì thử thách cũng tăng gấp bội! Mùa Halloween này, hãy chuẩn bị bùng nổ vị giác và bứt phá bản lĩnh với...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh97.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Định giá sim số đẹp online - Biết ngay giá trị số điện thoại của bạn</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 21 ngày trước</time></p></p>
+                    <p>Trong thời đại sim số đẹp cạnh tranh như vũ bão, việc đánh giá chính xác giá trị của một sim số đẹp, không phải ai cũng nắm rõ. Bài viết này sẽ...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh98.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Công ty Phú Mỹ Hưng và quỹ Đinh Thiện Lý trao tặng học bổng hơn 8 tỷ đồng</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 21 ngày trước</time></p></p>
+                    <p>Sáng ngày 21/9/2024, tại Trung tâm Hội chợ và Triển lãm Sài Gòn (SECC), quận 7, TP.HCM, Công ty TNHH Phát triển Phú Mỹ Hưng và...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh99.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Trẻ tiêu hoá khoẻ, miễn dịch tốt nhờ bổ sung chủng men Nhật L-137 (L 137) độc quyền trong Sữa chua uống KUN</a></b></p>
+                    <p><b>Xem Ăn Chơi -</b><time> 22 ngày trước</time></p></p>
+                    <p>Xây dựng nền móng vững chắc cho hệ miễn dịch và tiêu hoá của bé từ bên trong là điều bất cứ người mẹ nào cũng mong muốn. Một trong...</p>
+                </aside>
+            </div>
+            <hr/>
+        </div>
+        <div class="footer-menu">
+            <a href="#">Star</a> | <a href="#">Ciné</a> | <a href="#">Musik</a> | <a href="#">Beauty & Fashion</a> | <a href="#">Sport</a> | <a href="../DOI_SONG/DoiSong.html">Đời sống</a> | <a href="../XA_HOI/XaHoi.html">Xã hội</a> | <a href="../AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a> | <a href="#">Xem Mua Luôn</a> | <a href="../DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a> | <a href="#">Tek-Life</a> | <a href="#">Học đường</a> | <a href="../MONEY-Z/Money-Z.html">Money-Z</a> | <a href="#">Video</a>
+        </div>
+        <div class="footer-max">
+            <div class="footer-table1">
+                <table>
+                    <tr>
+                        <td>
+                            <section>
+                                <a href=""><img src="../images/logo1.png" ></img></a>
+                            </section>
+                            <aside>
+                                <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                                <div class="footer-table-mini">
+                                    <div class="footer-mini1">
+                                        <a href="#"><img src="../images/logodauHoi.png" width="20px"></a>
+                                        <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                    </div>
+                                    <div class="footer-mini2">
+                                        <a href="#"><img src="../images/logoEmaildo.png" width="25px"></a>
+                                        <p><a href="#">bandoc@kenh14</a></p>
+                                    </div>
+                                </div>
+                                <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                            </aside>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-table2">
+                <a href="#"><img src="../images/logo2.png" width="530px" height="130px"></img></a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-mini-one">
+                <h4>TRỤ SỞ HÀ NỘI</h4>
+                <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+                <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+                <div class="logo-mini">
+                    <a href="#"><img src="../images/logoDC.png" width="17px"></a>
+                    <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                </div>
+
+                <div class="footer-mini-one-1">
+                    <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                    <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                    <span>Điện thoại: 028 7307 7979</span>
+                    <div class="logo-mini">
+                        <a href="#"><img src="../images/logoDC.png" width="15px"></a>
+                        <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                    </div>
+                </div>    
+            </div>
+            <hr/>
+            <div class="footer-mini-two">
+                <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+                <span>Bà Nguyễn Bích Minh</span><br>
+                <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+                <div class="logo-mini">
+                    <img src="../images/logoDT.png" width="20px"></a>
+                    <span>024.73095555 (máy lẻ 62.370)</span><br>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="../images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                <div class="logo-mini">
+                    <img src="../images/logoDT.png" width="20px"></a>
+                    <span>02473007108</span>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="../images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <div class="chat-table-1">
+                    <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+                </div>
+                <div class="chat-table-2">
+                    <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="chat-table-3">
+                    <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+                </div>
+            </div>
+            <hr class="DK"/>
+            <div class="footer-mini-three">
+                <a href=""><img src="../images/logoVCCorp.png" width="120px" ></a>
+                <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+                <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+                <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+            
+            </div>
+        </div>
+    </body>
+
+</html>
