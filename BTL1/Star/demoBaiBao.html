@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diễn viên Hồng Ánh gặp vấn đề về sức khỏe, nhiều sao Việt lo lắng hỏi han </title>
+    <link rel="stylesheet" href="../CSS/skin.css">
+    <link rel="stylesheet" href="../CSS/skin1.css">
+    <link rel="import" href="../component.html">
+    <script src="../JS/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+  
+</head>
+    
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search-bar">
+                        <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                        <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="container">
+                    <div class="logo">
+                        <a href="./demoBTL.html"><img src="../img/logo.png" alt="Kenh14 Logo"></a>
+                        <div class="logo-text">
+                            <span class="logo-main">kenh14.vn</span>
+                            <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                        </div>
+                    </div>
+                    <div class="trending-topics">
+                        <span class="arrow-icon">&#x2197;</span>
+                        <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                        <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                        <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <nav class="main-nav">
+                <div class="container">
+                    <ul class="mains-menu">
+                        <li><a href="../demoBTL.html"><i class="fas fa-home"></i></a></li>
+                        <li><a href="./WebStar.html">Star</a></li>
+                        <li><a href="../Ciné/WebCine.html">Ciné</a></li>
+                        <li><a href="../Musik/WebMusik.html">Musik</a></li>
+                        <li><a href="../Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a></li>
+                        <li><a href="../DoiSong/WebDoiSong.html">Đời sống</a></li>
+                        <li><a href="#">Money-Z</a></li>
+                        <li><a href="#">Ăn - Quẩy - Đi</a></li>
+                        <li><a href="#">Xã hội</a></li>
+                        <li><a href="#">Sức khỏe</a></li>
+                        <li><a href="#">Tek-life</a></li>
+                        <li><a href="#">Học đường</a></li>
+                        <li><a href="#">Xem Mua Luôn</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li class="main-menu">
+                            <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+    
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="subs-menu">
+                <div class="container">
+                    <div class="menu-row">
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Đời sống</a>
+                            <div class="submenu">
+                                <a href="#">Nhân vật</a>
+                                <a href="#">Xem-Ăn-Chơi</a>
+                                <a href="#">House n Home</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Xem mua luôn</a>
+                            <div class="submenu">
+                                <a href="#">Thời trang</a>
+                                <a href="#">Đẹp</a>
+                                <a href="#">Mommy mua di</a>
+                            </div>
+                        </div>
+                        <div  class="menu-column">
+                            <a class="title-menu" href="#">Sport</a>
+                            <div class="submenu">
+                                <a href="#">Bóng đá</a>
+                                <a href="#">Bóng rổ</a>
+                                <a href="#">Bóng chuyền</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="../Musik/WebMusik.html">Musik</a>
+                            <div class="submenu">
+                                <a href="../Musik/WebAuMy.html">Âu-Mỹ</a>
+                                <a href="../Musik/WebChauA.html">Châu Á</a>
+                                <a href="../Musik/WebVietNam.html">Việt Nam</a>
+                                <a href="../demoBTL.html">Hip-hop neva die</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="../Ciné/WebCine.html">Ciné</a>
+                            <div class="submenu">
+                                <a href="../Ciné/WebPhimChieuRap.html">Phim chiếu rạp</a>
+                                <a href="../Ciné/WebPhimVietNam.html">Phim Việt Nam</a>
+                                <a href="../Ciné/WebSeriesTruyenHinh.html">Series truyền hình</a>
+                                <a href="../Ciné/WebHoaNguHanQuoc.html">Hoa ngữ - Hàn Quốc</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Tek-Life</a>
+                            <div class="submenu">
+                                <a href="#">Metaverse</a>
+                                <a href="#">How-To</a>
+                                <a href="#">Wow</a>
+                                <a href="#">2-Mall</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-row">
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Star</a>
+                            <div class="submenu">
+                                <a href="../Star/WebSaoViet.html">Sao Việt</a>
+                                <a href="../Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
+                                <a href="../Star/WebTVShow.html">TV Show</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Xã hội</a>
+                            <div class="submenu">
+                                <a href="#">Pháp luật</a>
+                                <a href="#">Nóng trên mạng</a>
+                                <a href="#">Sống xanh</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Học đường</a>
+                            <div class="submenu">
+                                <a href="#">Nhân vật</a>
+                                <a href="#">Du học</a>
+                                <a href="#">Bản tin 46'</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Thế giới đó đây</a>
+                            <div class="submenu">
+                                <a href="#">Chùm ảnh</a>
+                                <a href="#">Khám phá</a>
+                                <a href="#">Dị</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Sức khỏe</a>
+                            <div class="submenu">
+                                <a href="#">Sức khỏe</a>
+                                <a href="#">Tin tức</a>
+                                <a href="#">Dinh dưỡng</a>
+                                <a href="#">Khỏe đẹp</a>
+                                <a href="#">Giới tính</a>
+                                <a href="#">Các bệnh</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="border-solid"></div>
+                <div class="web-info">
+                    <span class="title-mini-web">Tải app</span>
+                    <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BB%A3/id670518264?ls=1" target="_blank">IOS</a>
+                    <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                    <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                    <a class="title-mini-web" href="#">Liên hệ</a>
+                    <a class="mini-web" href="https://kenh14.vn/adv.chn">Quảng cáo</a>
+                </div>
+            </div>
+        </header>
+        </div>
+        <div class="space">  </div>
+        <main>
+        <div id="page">
+            <div id="page">
+                <div class="hi">
+                    <ul>
+                        <li><a href="./WebStar.html"><b>STAR</b></a></li>
+                        <li><a href="./WebSaoViet.html"><b>SAO VIỆT</b></a></li>
+                        <li><a href="./WebHoiBanThanShowbiz.html"><b>HỘI BẠN THÂN SHOWBIZ</b></a></li>
+                        <li><a href="./WebTVShow.html"><b>TV SHOW</b></a></li>
+                        <li><a href="../Musik/WebMusik.html"><b>MUSIK</b></a></li>
+                    </ul>
+                </div>
+                <hr>
+            <div class="body">
+                <h1 s>Diễn viên Hồng Ánh gặp vấn đề về sức khỏe, nhiều sao Việt lo lắng hỏi han</h1>
+                <div class="author" >
+                    <span style="color:#f34905; font-weight:bold ;font-size:14px;">Hân Như,</span>
+                    <span><i class="fa-regular fa-clock" style="color: #b8b8b8;font-size:14px;"></i></span>
+                    <span><time datetime="2024-10-16T19:39" style="color:#929292 ;font-size:14px;">19:39 16/10/2024</span>
+                    <span style="padding-left:480px;font-size:20px;"> 
+                            <audio controls src="https://tts.mediacdn.vn/2024/10/16/kenh14-nu-215241016184242228.m4a" aria-label="Audio Player"></audio>
+                        </span>
+                </div>
+                
+                <div class="share-link">
+                    <span class="box1">
+                        <button><a title="Thích" href="#"><i class="fa-solid fa-thumbs-up" style="color: #ffffff;padding-right:3px;" ></i> Thích 1</a></button>
+                    </span>
+                    <span class="box2">
+                        <button><a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;padding-right:3px;"></i> Chia sẻ 1</a></button>
+                    </span>
+                    <span class="box3">
+                        <button><a href="#"><i class="fa-solid fa-bookmark"></i> Lưu vào Facebook</a></button>
+                    </span>
+                    <span class="box4">
+                        <button><a title="Gửi email" href="#"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a></button>
+                    </span>
+                    <span class="box5">
+                        <button><a title="Theo dõi Kenh14.vn trên"href="https://news.google.com/publications/CAAiEOv7WnEdbGLlRlCRLqYYBxQqFAgKIhDr-1pxHWxi5UZQkS6mGAcU?hl=vi&gl=VN&ceid=VN%3Avi" target="_blank">
+                            <span>Theo dõi Kenh14.vn trên </span>
+                            <img style="margin-bottom:-6px;"src="../img/GoogleNews.png" alt="GoogleNews" width="80px">
+                        </a></button>
+                    </span>
+                </div>
+               
+                <hr>
+                <div class="five">
+                <section>
+                    <div class="box-circle">
+                        <p class="box-circle1"><a href="../demoBTL.html"><i class="fas fa-home" style="color:#ffffff"></i></a></p>
+                        <p class="box-circle2"><a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff"></i></a></p>
+                    </div>
+                 </section>
+                 <aside>
+                    <h3 >Trên trang cá nhân, diễn viên Hồng Ánh khiến nhiều người lo lắng khi chia sẻ về tình trạng sức khỏe hiện tại của cô.</h3>
+                    <ul type="disc" style="padding-left:-30px;">
+                        <li><a href="#">Hoài Linh đi hát đám cưới, được nữ đại gia tặng quà đắt tiền, sức khỏe vẫn ổn sau nhiều biến cố
+                             <i class="fa-regular fa-copy" style="color: #969696;"></i></a></li>
+
+                        <li><a href="#">Xuất hiện thông tin danh ca Tuấn Ngọc có vấn đề về sức khỏe, một nữ MC lên tiếng
+                             <i class="fa-regular fa-copy" style="color: #969696;"></i></a></li>
+
+                        <li><a href="#"> Hiện trạng đáng lo về sức khỏe và tài chính của Kasim Hoàng Vũ 
+                            <i class="fa-regular fa-copy" style="color: #969696;"></i></a></li>
+                    </ul>
+                </aside>
+            </div><br><br>
+
+             <div class="body-text">
+                    <div class="border-solid2"></div><br>
+                    <p>Theo nữ diễn viên, sau khi đi khám, cô được bác sĩ dặn dò phải nghiêm túc kiêng cữ nhiều điều trong 8 tuần.</p>
+                    <p><span style="color:rgb(255, 119, 0)">Hồng Ánh</span> viết: “Không được uống cà phê, rượu bia và tất cả các loại thức uống có gas, có cồn. Không được ăn các loại thực phẩm có vị chua, cay, chiên rán, không được uống nước đá.</p>
+                    <p>Không được nói lớn tiếng (nghĩa là không được nóng giận, nhìn ai cũng thấy thiện lành). Không được thức khuya. Không được stress. Cố lên bé ơi vì một cơ thể khoẻ mạnh cường tráng!”.</p>
+                    <figure>
+                        <img src="../img/Hồng Ánh khiến nhiều người lo lắng khi chia sẻ về tình hình sức khỏe.webp" width="600px"alt="Hồng Ánh khiến nhiều người lo lắng khi chia sẻ về tình hình sức khỏe">
+                            <figcaption>Hồng Ánh khiến nhiều người lo lắng khi chia sẻ về tình hình sức khỏe</figcaption>
+                    </figure>
+                    <p>Dưới bài đăng của Hồng Ánh, nhiều khán giả và đồng nghiệp như MC Đại Nghĩa, ca sĩ Quang Dũng, MC Nguyên Khang, NSƯT Minh Trang... vào hỏi han lo lắng.</p>
+                    <p>Khi Đại Nghĩa MC bày tỏ lo ngại bệnh tình sẽ ảnh hưởng đến công việc của Hồng Ánh, nữ diễn viên liền đáp lại rằng bác sĩ dặn hạn chế nói lớn ngoài đời, còn lên sân khấu cô vẫn nói to bình thường.</p>
+                    <p>Ngoài ra, chia sẻ thêm với một người bạn, Hồng Ánh tiết lộ cô gặp vấn đề về dây thanh quản do sử dụng "phá quá", nên bị "bác sĩ cảnh báo".</p>
+                    <figure>
+                        <img class="border" src="../img/Nhiều sao Việt hỏi thăm sức khỏe của Hồng Ánh.webp" width="600px"alt="Nhiều sao Việt hỏi thăm sức khỏe của Hồng Ánh">
+                            <figcaption>Nhiều sao Việt hỏi thăm sức khỏe của Hồng Ánh</figcaption>
+                    </figure>
+                    <p>Hồng Ánh là nữ diễn viên tài năng của màn ảnh Việt. Sau gần 30 năm hoạt động nghệ thuật, cô sở hữu gia tài vô cùng “đồ sộ” với hàng trăm vai diễn từ điện ảnh, truyền hình và sân khấu kịch. Một số bộ phim mà cô từng góp mặt phải kể đến như 
+                        <i>Những nẻo đường phù sa, Mùi ngò gai, Người đẹp Tây Đô, Thưa mẹ con đi, Trăng nơi đáy giếng, Mười, Đảo của dân ngụ cư...</i>
+                    </p>
+                    <figure>
+                        <img src="../img/Hồng Ánh là nữ diễn viên tài năng của màn ảnh Việt.webp" width="500px"alt="Hồng Ánh là nữ diễn viên tài năng của màn ảnh Việt">
+                            <figcaption>Hồng Ánh là nữ diễn viên tài năng của màn ảnh Việt</figcaption>
+                    </figure>
+                    <p>Ngoài ra, Hồng Ánh còn giành hàng loạt giải thưởng danh giá trong sự nghiệp diễn xuất như Cánh diều vàng, Bông sen vàng, Nữ diễn viên chính xuất sắc tại Liên hoan phim quốc tế Dubai...</p>
+                    <div class="share-link" style="padding-left:300px;">
+                        <p class="box6">
+                            <button><a title="Theo Thanh Niên Việt" href="#"><span style="color:#929292">Theo</span> Thanh niên Việt  
+                                <i class="fa-regular fa-clipboard" style="color: #0f0f0f;padding-left: 20px;"></i> <span style="font-weight: normal;">Copy</span></a></button>
+                        </p>
+                    </div>
+                    <div class="hover-text">
+                        <span>>></span>
+                        <a href="#"> Hoài Linh đi hát đám cưới, được nữ đại gia tặng quà đắt tiền, sức khỏe vẫn ổn sau nhiều biến cố</a>
+                    </div>
+             </div><br><br><br>
+             <div class="border-solid2"></div>
+             <div class="share-link">
+                <span class="box1">
+                    <button><a title="Thích" href="#"><i class="fa-solid fa-thumbs-up" style="color: #ffffff;padding-right:3px;" ></i> Thích 1</a></button>
+                </span>
+                <span class="box1">
+                    <button><a href="#">Chia sẻ </a></button>
+                </span>
+                <span class="box7">
+                    <button><a href="#"><i class="fa-solid fa-eye" style="color: #ffffff;"></i> Tăng view </a></button>
+                </span>
+             </div><br><br>
+             <div class="border-solid2"></div>
+             <div class="share-link" >
+                <span class="box8">
+                    <button><a title="hồng ánh" href="#">#hồng ánh</a></button>
+                </span>
+                <span class="box8">
+                    <button style="width:120px"><a title="tin tức sao việt"  href="../Star/WebSaoViet.html">#tin tức sao việc</a></button>
+                </span>
+                <span class="box8">
+                    <button><a title="giải trí" href="#">#giải trí</a></button>
+                </span>
+             </div>
+             <div class="space1">  </div>
+             <hr>
+             <h2 style=" border-left: 5px solid #f34905;padding-left: 10px;margin-top:0px;">TIN NỔI BẬNH KENH 14</h2>
+             <div class="one">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=460px >
+                        <source src="../img/HOT Quỳnh Nga - Việt Anh bị tóm dính cùng vềchung nhà sau khi hẹn hò trên sân pickleball (1).mp4 " type="video/mp4"></video></a>
+                    <p><b><a href="https://kenh14.vn/hot-quynh-nga-viet-anh-bi-tom-dinh-cung-ve-chung-nha-sau-khi-hen-ho-tren-san-pickleball-215241015151605524.chn">
+                        HOT: Quỳnh Nga - Việt Anh bị "tóm dính" cùng về chung nhà sau khi hẹn hò trên sân pickleball"</a></b></p>
+                    <p>Việt Anh và Quỳnh Nga nhập hội sao Vbiz hẹn hò trên sân pickleball. Sau khi cùng tập luyện, cả hai "dính như sam" về chung một chung cư tại Hà Nội.</a>
+                    </p>
+                </section>
+                <aside>
+                    <a href="https://kenh14.vn/xot-xa-chia-se-cua-bo-be-2-tuoi-tu-vong-sau-gio-ngu-trua-o-lop-mam-non-buoi-hoc-dau-tien-cua-con-nhung-cung-la-buoi-hoc-cuoi-cung-215241015155245394.chn">
+                        <img src="https://kenh14cdn.com/thumb_w/222/203336854389633024/2024/11/2/ava-17-1730518531121788809663-0-94-300-319-crop-17305185577321344744943.gif" class="img-aside">
+                    </a>
+                    <p><b><a class="text0" href="#">Hoàng Thùy Linh lộ vóc dáng mẹ bỉm, tái xuất sau thời gian vun vén tổ ấm bên Đen Vâu</a></b></p>
+                </aside>
+            </div>
+            <hr>
+            <h2 style=" border-left: 5px solid #f34905;padding-left: 10px;margin-top:0px;">ĐỌC THÊM</h2>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/gerdnang-keo-ten-tuoi-hieuthuhai-di-xuong-215241016142930035.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/GERDNANG kéo tên tuổi HIEUTHUHAI đi xuống.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">GERDNANG kéo tên tuổi HIEUTHUHAI đi xuống?</a></b></p>
+                        <p><time> 2 giờ trước</time></p>
+                        <p>Nội bộ fan HIEUTHUHAI lại tranh cãi nảy lửa.</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/khong-con-nhan-ra-hai-tu-sau-6-thang-mat-tich-215241016201959704.chn">
+                            <img class="img-normal" src="../img/Không còn nhận ra Hải Tú sau 6 tháng “mất tích”.jpg "></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Không còn nhận ra Hải Tú sau 6 tháng "mất tích"</a></b></p>
+                        <p><time> 2 giờ trước</time></p>
+                        <p>Cô nàng bất ngờ đăng tải hình ảnh mới, nhan sắc hiện tại ra sao?</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/misthy-dan-nguoi-yeu-dong-gioi-ra-mat-dan-chi-dep-215241016185652905.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/MisThy dẫn người yêu đồng giới ra mắt dàn Chị Đẹp.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">MisThy dẫn người yêu đồng giới ra mắt dàn Chị Đẹp</a></b></p>
+                        <p><time> 2 giờ trước</time></p>
+                        <p>Khoảnh khắc đáng yêu của Chị Đẹp MisThy và người yêu khiến nhiều người thích thú.</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/thanh-nu-tan-cuong-dong-nha-hoan-van-dep-lim-tim-o-phim-moi-nhan-sac-va-tao-hinh-deu-mien-che-215241016125930902.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Thánh nữ Tân Cương đóng nha hoàn vẫn đẹp lịm tim ở phim mới Nhan sắc và tạo hình đều miễn chê! (1).mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">"Thánh nữ Tân Cương" đóng nha hoàn vẫn đẹp lịm tim ở phim mới: Nhan sắc và tạo hình đều miễn chê! </a></b></p>
+                        <p><time> 3 giờ trước</time></p>
+                        <p>Mỹ nhân Hoa ngữ đình đám này lại có thêm một tạo hình đẹp ở bộ phim đang quay.</p>
+                    </aside>
+                </div>
+              
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="#"><video autoplay loop muted playsinline width=250px><source src="../img/14s tắt đèn biến mỹ nam thư sinh thành tổng tài thứ thiệt.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">14s tắt đèn biến mỹ nam thư sinh thành tổng tài thứ thiệt, nhìn bóng lưng như xé truyện bước ra </a></b></p>
+                        <p><time> 3 giờ trước</time></p>
+                        <p>Clip vỏn vẹn 14s nhưng đủ khiến hội chị em "đứng ngồi không yên" vì body cực phẩm của anh chàng.</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/hoa-minzy-dep-ngot-ngao-voi-bo-trang-suc-trau-cau-pnj-215241019112850943.chn">
+                            <img class="img-normal"src="../img/Hòa Minzy đẹp ngọt ngào với bộ trang sức Trầu Cau PNJ.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Hòa Minzy đẹp ngọt ngào với bộ trang sức Trầu Cau PNJ</a></b></p>
+                        <p><time> 3 giờ trước</time></p>
+                        <p>Trong buổi giao lưu tư vấn trang sức cưới mới đây, ca sĩ Hòa Minzy đã khiến công chúng không khỏi ngỡ ngàng trước vẻ đẹp ngọt ngào,...</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/mc-quynh-chi-cuoi-215241016190422852.chn"><img class="img-normal" src="../img/MC Quỳnh Chi cưới.jpg"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">MC Quỳnh Chi cưới</a></b></p>
+                        <p><time> 4 giờ trước</time></p>
+                        <p>MC Quỳnh Chi lên xe hoa ở tuổi 38. Cô được bạn trai cầu hôn hồi tháng 6 và tổ chức đám cưới vào 28/10.</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="#"><img src="../img/Bố Quang Linh Vlogs bỏ tiền túi.png"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Bố Quang Linh Vlogs bỏ tiền túi giúp con trai xây nhà tặng team châu Phi</a></b></p>
+                        <p><time> 4 giờ trước</time></p>
+                        <p>Khi được Quang Linh Vlogs nhờ phụ trách quá trình xây dựng, ông Quang Quý không những nhận lời mà còn sẵn sàng chi toàn bộ số tiền xây...</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/kay-tran-bao-lam-tha-thiet-xin-ngoc-son-1-dieu-ong-vua-nhac-sen-dap-lai-xung-mat-dan-anh-215241016134341123.chn">
+                            <img class="img-normal" src="../img/Lê Dương Bảo Lâm tha thiết xin Ngọc Sơn 1 điều.jpg "></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Lê Dương Bảo Lâm tha thiết xin Ngọc Sơn 1 điều, "ông vua nhạc sến" đáp lại xứng mặt đàn anh</a></b></p>
+                        <p><time> 9 giờ trước</time></p>
+                        <p>Trước sự tha thiết của Lê Dương Bảo Lâm, danh ca Ngọc Sơn cũng có màn đáp lại xứng mặt đàn anh.</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/hoa-hau-thuy-tien-gay-chu-y-voi-thai-do-la-danh-cho-dong-doi-sao-nhap-ngu-215241016104542784.chn">
+                            <img class="img-normal" src="../img/Hoa hậu Thùy Tiên gây chú ý.jpg"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Hoa hậu Thùy Tiên gây chú ý với "thái độ lạ" dành cho đồng đội Sao nhập ngũ</a></b></p>
+                        <p><time> 9 giờ trước</time></p>
+                        <p>Thùy Tiên tỏ ra vô cùng "xéo xắt" trong lúc trả lời MisThy khiến người xem không khỏi bật cười.</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/luu-huong-giang-o-tuoi-41-tre-trung-sanh-dieu-dang-dep-me-215241024220008359.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Lưu Hương Giang ở tuổi 41.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Lưu Hương Giang ở tuổi 41: Trẻ trung, sành điệu, dáng đẹp mê</a></b></p>
+                        <p><time> 9 giờ trước</time></p>
+                        <p>Lưu Hương Giang thăng hạng về cả nhan sắc lẫn phong cách ở độ tuổi ngoài 40.</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/cu-lat-keo-ngoan-muc-cua-que-anh-o-miss-grand-international-2024-truoc-lam-gi-cung-bi-cong-kich-gio-dan-dau-cuoc-dua-vao-top-10-215241024201933352.chn">
+                            <img class="img-normal" src="../img/Cú lật kèo ngoạn mục của Quế Anh ở Miss Grand International 2024.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="https://kenh14.vn/cu-lat-keo-ngoan-muc-cua-que-anh-o-miss-grand-international-2024-truoc-lam-gi-cung-bi-cong-kich-gio-dan-dau-cuoc-dua-vao-top-10-215241024201933352.chn">
+                            Cú "lật kèo" ngoạn mục của Quế Anh ở Miss Grand International 2024: Trước làm gì cũng bị công kích, giờ dẫn đầu cuộc đua vào Top 10</a></b></p>
+                        <p><time> 11 giờ trước</time></p>
+                        <p>Hành trình của Quế Anh tại Miss Grand International 2024 đang tiến triển tích cực, dù ban đầu cô không được lòng khán giả nước nhà.</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/bb-tran-toi-la-nguoi-thuc-te-va-dam-me-danh-vong-215241011092937722.chn">
+                            <img class="img-normal" src="../img/BB Trần.jpg"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">BB Trần: "Tôi là người thực tế và đam mê danh vọng"</a></b></p>
+                        <p><time> 17 giờ trước</time></p>
+                        <p>Từ Hai "anh tài" BB Trần và Bùi Công Nam là hai nghệ sĩ đầu tiên bước vào căn phòng bí ẩn của The Hidden Show.</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="#"><img class="img-normal" src="../img/Tính cách thật của bạn gái HIEUTHUHAI.jpg"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Clip: Tính cách thật của bạn gái HIEUTHUHAI</a></b></p>
+                        <p><time> 17 giờ trước</time></p>
+                       
+                        <p>Từ visual đến tính cách của bạn gái HIEUTHUHAI ngoài đời khác với trên mạng thế nào?</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/hot-2-nang-hau-vbiz-tung-chi-chi-em-em-nay-da-nghi-choi-215241018194017184.chn">
+                            <img class="img-normal"src="../img/2 nàng hậu Vbiz.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">HOT: 2 nàng hậu Vbiz từng "chị chị em em" nay đã nghỉ chơi!</a></b></p>
+                        <p><time> 17 giờ trước</time></p>
+                        <p>2 nàng hậu này từng dính như sam trong mọi hoạt động, cứ ngỡ là đôi bạn thân mới của Vbiz nhưng nay đã toang.</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/hoc-tro-dang-gom-cua-nsnd-le-dung-khien-tran-thanh-phai-bat-khoc-nuc-no-la-ai-215241018213254182.chn">
+                            <img class="img-normal"src="../img/Học trò đáng gờm của NSND Lê Dung khiến Trấn Thành phải bật khóc nức nở là ai.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Học trò đáng gờm của NSND Lê Dung khiến Trấn Thành phải bật khóc nức nở là ai?</a></b></p>
+                        <p><time> 18 giờ trước</time></p>
+                        <p>Tại chương trình Our Song Việt Nam 2024, Ngọc Anh được xếp chung hàng ngũ với các ca sĩ gạo cội như NSND Thanh Lam, Thu Minh…...</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/hoc-tro-dang-gom-cua-nsnd-le-dung-khien-tran-thanh-phai-bat-khoc-nuc-no-la-ai-215241018213254182.chn">
+                            <img class="img-normal"src="../img/1 sao nữ Vbiz đã nghỉ chơi hội bạn mỹ nhân đình đám.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">1 sao nữ Vbiz đã nghỉ chơi hội bạn mỹ nhân đình đám?</a></b></p>
+                        <p><time> 22 giờ trước</time></p>
+                        <p>Mối quan hệ giữa các mỹ nhân này đang được cư dân mạng xôn xao bàn tán.</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/ban-gai-misthy-so-huu-visual-nhu-nu-than-ai-nhan-sac-thang-hang-nho-2-tu-215241024070128223.chn">
+                            <img class="img-normal" src="../img/Bạn gái MisThy sở hữu visual như nữ thần AI, nhan sắc thăng hạng nhờ 2 từ.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Bạn gái MisThy sở hữu visual như "nữ thần AI", nhan sắc thăng hạng nhờ 2 từ</a></b></p>
+                        <p><time> 23 giờ trước</time></p>
+                        <p>Bạn gái của Chị Đẹp MisThy sở hữu giao diện cool ngầu, "đỉnh chóp" được ví như thần tượng Kpop.</p>
+                    </aside>
+                </div>
+                <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/lo-lem-lo-nhan-sac-that-khi-bi-team-qua-duong-bat-gap-qua-cam-thuong-215241018121941003.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Lọ Lem lộ nhan sắc thật.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Lọ Lem lộ nhan sắc thật khi bị "team qua đường" bắt gặp qua cam thường</a></b></p>
+                        <p><time> 1 ngày trước</time></p>
+                        <p>Lọ Lem - con gái MC Quyền Linh tiếp tục chứng minh nhan sắc "không phải dạng vừa" khi dễ dàng vượt ải bị "tóm dính".</p>
+                    </aside>
+                </div>
+          
+            <hr>
+            <div class="two">
+                <section>
+                    <a href="#"><img class="img-normal" src="../img/Thu nhập 2 vợ chồng 35 triệu đồng, sống với bố mẹ chồng ở quê mà tháng nào cũng sạch tiền CĐM chia thành 2 phe nêu quan điểm.jpg"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Thu nhập 2 vợ chồng 35 triệu đồng, sống với bố mẹ chồng ở quê mà tháng nào cũng sạch tiền: CĐM chia thành 2 phe nêu quan điểm!</a></b></p>
+                    <p><time> 2 ngày trước</time>c</p>
+                    <p>Trường hợp của chị A. là câu chuyện mà nhiều người từng gặp phải khi lập gia đình.</p>
+                </aside>
+            </div>
+            <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/misthy-dan-nguoi-yeu-dong-gioi-ra-mat-dan-chi-dep-215241016185652905.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/MC Khánh Vy bất ngờ hát trong tiết mục Chung kết Anh trai Chông gai (1).mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">MC Khánh Vy bất ngờ hát trong tiết mục Chung kết Anh trai Chông gai</a></b></p>
+                        <p><time> 3 ngày trước</time></p>
+                        <p>Nhiều khán giả bất ngờ khi thấy tên của MC Khánh Vy xuất hiện cùng với các anh tài trong tập 14 Anh trai vượt ngàn chông gai.</p>
+                    </aside>
+                </div>
+            <hr>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/mot-hoa-hau-len-tieng-khi-chong-vua-mat-da-bi-doi-chia-tai-san-tra-no-cung-toi-17-nam-nua-roi-chia-215241016105324013.chn">
+                            <img class="img-normal" src="../img/Một hoa hậu lên tiếng khi chồng vừa mất đã bị đòi chia tài sản “Trả nợ cùng tôi 17 năm nữa rồi chia”.jpg "></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Một hoa hậu lên tiếng khi chồng vừa mất đã bị đòi chia tài sản: "Trả nợ cùng tôi 17 năm nữa rồi chia"</a></b></p>
+                        <p><time> 6 ngày trước</time></p>
+                        <p>"Ai đó muốn tôi chia căn nhà này thì hãy cùng tôi trả nợ nốt 17 năm nữa rồi chia, tôi vui vẻ thôi" - hoa hậu Bình Phương chia sẻ.</p>
+                    </aside>
+                </div>
+                
+            </div>
+        </main>
+    <footer>
+     <div class="footer-menu">
+        <a href="../Star/WebStar.html">Star</a> | 
+                <a href="../Ciné/WebCine.html">Ciné</a> | 
+                <a href="../Musik/WebMusik.html">Musik</a> | 
+                <a href="../Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | 
+                <a href="#">Sport</a> | 
+                <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a> | 
+                <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a> | 
+                <a href="/BTL/AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | 
+                <a href="#">Xem Mua Luôn</a> | 
+                <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | 
+                <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | 
+                <a href="#">Tek-Life</a> | 
+                <a href="#">Học đường</a> | 
+                <a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a> | 
+                <a href="#">Video</a>
+    </div>
+    <div class="footer-max">
+        <div class="footer-table1">
+            <table>
+                <tr>
+                    <td>
+                        <section>
+                            <a href=""><img src="../img/logoFooter.jpg" ></img></a>
+                        </section>
+                        <aside>
+                            <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                            <div class="footer-table-mini">
+                                <div class="footer-mini1">
+                                    <a href="#"><img src="../img/emojiChamHoi.jpg" width="20px"></a>
+                                    <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                </div>
+                                <div class="footer-mini2">
+                                    <a href="#"><img src="../img/emojiMail1.jpg" width="25px"></a>
+                                    <p><a href="#">bandoc@kenh14</a></p>
+                                </div>
+                            </div>
+                            <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                        </aside>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-table2">
+            <a href="#"><img src="../img/backgroundFace.jpg" width="530px" height="130px"></img></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-mini-one">
+            <h4>TRỤ SỞ HÀ NỘI</h4>
+            <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+            <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+            <div class="logo-mini">
+                <a href="#"><img src="../img/emojiMap.jpg" width="17px"></a>
+                <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+            </div>
+
+            <div class="footer-mini-one-1">
+                <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                <span>Điện thoại: 028 7307 7979</span>
+                <div class="logo-mini">
+                    <a href="#"><img src="../img/emojiMap.jpg" width="15px"></a>
+                    <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                </div>
+            </div>    
+        </div>
+        <hr>
+        <div class="footer-mini-two">
+            <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+            <span>Bà Nguyễn Bích Minh</span><br>
+            <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+            <div class="logo-mini">
+                <img src="../img/emojiPhone.jpg" width="20px"></a>
+                <span>024.73095555 (máy lẻ 62.370)</span><br>
+            </div>
+            <div class="logo-mini-1">
+                <a href="#"><img src="../img/emojiMail2.jpg" width="30px"></a>
+                <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+            </div>
+            <h4>LIÊN HỆ QUẢNG CÁO</h4>
+            <div class="logo-mini">
+                <img src="../img/emojiPhone.jpg" width="20px"></a>
+                <span>02473007108</span>
+            </div>
+            <div class="logo-mini-1">
+                <a href="#"><img src="../img/emojiMail2.jpg" width="30px"></a>
+                <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+            </div>
+            <div class="chat-table-1">
+                <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+            </div>
+            <div class="chat-table-2">
+                <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+            </div>
+            <div class="chat-table-3">
+                <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+            </div>
+        </div>
+        <hr class="DK"/>
+        <div class="footer-mini-three">
+            <a href=""><img src="../img/logoVCCorp.jpg" width="120px" ></a>
+            <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+            <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+            <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+    
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+</body>
+
+</html>
+
+
+        
