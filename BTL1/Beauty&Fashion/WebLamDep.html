@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm Đẹp - Các cách, mẹo và xu hướng làm đẹp hiệu quả - Kenh14.vn  </title>
+    <link rel="stylesheet" href="../CSS/skin.css">
+    <link rel="import" href="component.html">
+    <script src="../JS/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+  
+</head>
+    
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search-bar">
+                        <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                        <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header1">
+                <div class="container">
+                    <div class="logo">
+                        <a href="../demoBTL.html"><img src="../img/logo.png" alt="Kenh14 Logo"></a>
+                        <div class="logo-text">
+                            <span class="logo-main">kenh14.vn</span>
+                            <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                        </div>
+                    </div>
+                    <div class="trending-topics">
+                        <span class="arrow-icon">&#x2197;</span>
+                        <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                        <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                        <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <nav class="main-nav1">
+                <div class="container">
+                    <ul class="mains-menu">
+                        <li><a href="../demoBTL.html"><i class="fas fa-home"></i></a></li>
+                        <li><a href="../Star/WebStar.html">Star</a></li>
+                        <li><a href="../Ciné/WebCine.html">Ciné</a></li>
+                        <li><a href="../Musik/WebMusik.html">Musik</a></li>
+                        <li><a href="../Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a></li>
+                        <li><a href="">Đời sống</a></li>
+                        <li><a href="#">Money-Z</a></li>
+                        <li><a href="#">Ăn - Quẩy - Đi</a></li>
+                        <li><a href="#">Xã hội</a></li>
+                        <li><a href="#">Sức khỏe</a></li>
+                        <li><a href="#">Tek-life</a></li>
+                        <li><a href="#">Học đường</a></li>
+                        <li><a href="#">Xem Mua Luôn</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li class="main-menu">
+                            <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+    
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="subs-menu">
+                <div class="container">
+                    <div class="menu-row">
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Đời sống</a>
+                            <div class="submenu">
+                                <a href="#">Nhân vật</a>
+                                <a href="#">Xem-Ăn-Chơi</a>
+                                <a href="#">House n Home</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Xem mua luôn</a>
+                            <div class="submenu">
+                                <a href="#">Thời trang</a>
+                                <a href="#">Đẹp</a>
+                                <a href="#">Mommy mua di</a>
+                            </div>
+                        </div>
+                        <div  class="menu-column">
+                            <a class="title-menu" href="#">Sport</a>
+                            <div class="submenu">
+                                <a href="#">Bóng đá</a>
+                                <a href="#">Bóng rổ</a>
+                                <a href="#">Bóng chuyền</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="../Musik/WebMusik.html">Musik</a>
+                            <div class="submenu">
+                                <a href="../Musik/WebAuMy.html">Âu-Mỹ</a>
+                                <a href="../Musik/WebChauA.html">Châu Á</a>
+                                <a href="../Musik/WebVietNam.html">Việt Nam</a>
+                                <a href="../demoBTL.html">Hip-hop neva die</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="../Ciné/WebCine.html">Ciné</a>
+                            <div class="submenu">
+                                <a href="../Ciné/WebPhimChieuRap.html">Phim chiếu rạp</a>
+                                <a href="../Ciné/WebPhimVietNam.html">Phim Việt Nam</a>
+                                <a href="../Ciné/WebSeriesTruyenHinh.html">Series truyền hình</a>
+                                <a href="../Ciné/WebHoaNguHanQuoc.html">Hoa ngữ - Hàn Quốc</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Tek-Life</a>
+                            <div class="submenu">
+                                <a href="#">Metaverse</a>
+                                <a href="#">How-To</a>
+                                <a href="#">Wow</a>
+                                <a href="#">2-Mall</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-row">
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Star</a>
+                            <div class="submenu">
+                                <a href="../Star/WebSaoViet.html">Sao Việt</a>
+                                <a href="../Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
+                                <a href="../Star/WebTVShow.html">TV Show</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Xã hội</a>
+                            <div class="submenu">
+                                <a href="#">Pháp luật</a>
+                                <a href="#">Nóng trên mạng</a>
+                                <a href="#">Sống xanh</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Học đường</a>
+                            <div class="submenu">
+                                <a href="#">Nhân vật</a>
+                                <a href="#">Du học</a>
+                                <a href="#">Bản tin 46'</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Thế giới đó đây</a>
+                            <div class="submenu">
+                                <a href="#">Chùm ảnh</a>
+                                <a href="#">Khám phá</a>
+                                <a href="#">Dị</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Sức khỏe</a>
+                            <div class="submenu">
+                                <a href="#">Sức khỏe</a>
+                                <a href="#">Tin tức</a>
+                                <a href="#">Dinh dưỡng</a>
+                                <a href="#">Khỏe đẹp</a>
+                                <a href="#">Giới tính</a>
+                                <a href="#">Các bệnh</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="border-solid"></div>
+                <div class="web-info">
+                    <span class="title-mini-web">Tải app</span>
+                    <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BB%A3/id670518264?ls=1" target="_blank">IOS</a>
+                    <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                    <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                    <a class="title-mini-web" href="#">Liên hệ</a>
+                    <a class="mini-web" href="https://kenh14.vn/adv.chn">Quảng cáo</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="space">  </div>
+    <main>
+    <div id="page">
+        <div id="page">
+            <div class="hi1">
+                <ul>
+                    <li><a href="./WebBeautyFashion.html"><b>BEAUTY & FASHION</b></a></li>
+                    <li><a href="./WebStarStyle.html"><b>STAR STYLE</b></a></li>
+                    <li><a href="./WebLamDep.html"><b>LÀM ĐẸP</b></a></li>
+                    <li><a href="./WebThoiTrang.html"><b>THỜI TRANG</b></a></li>
+                    <li><a href="./WebBFStudio.html" target="_blank"><img class="img-mini" src="../img/BFstudio.jpg"></a></li>
+                    <li><a href="#"><b>XEM MUA LUÔN</b></a></li>
+                </ul>
+            </div>
+            <hr/>
+        <div class="body">
+            <div class="three">
+                <section>
+                    <img  class="img-aside5" src="../img/Loại rau tanh là khắc tinh của mụn, xưa tôi nhăn mặt cố nuốt giờ toàn có trong mỹ phẩm Hàn.webp" ></a>
+                        <span><b><a href="https://kenh14.vn/loai-rau-tanh-la-khac-tinh-cua-mun-xua-toi-nhan-mat-co-nuot-gio-toan-co-trong-my-pham-han-215241027011154238.chn"class="text">
+                            Loại rau tanh là khắc tinh của mụn, xưa tôi nhăn mặt cố nuốt giờ toàn có trong mỹ phẩm Hàn</a></b></span>
+                    </section>
+                <aside>
+                    <a href="https://kenh14.vn/co-gai-an-ga-ran-bat-chap-gio-la-nu-than-mat-sang-dang-xinh-vong-2-phang-li-215241025222316712.chn" >
+                        <video autoplay loop muted playsinline width=250px><source src="../img/Cô gái ăn gà rán bất chấp, giờ là nữ thần.mp4" type="video/mp4"></video></a>
+                    </a>
+                    <p><b><a href="https://kenh14.vn/co-gai-an-ga-ran-bat-chap-gio-la-nu-than-mat-sang-dang-xinh-vong-2-phang-li-215241025222316712.chn">
+                        Cô gái ăn gà rán bất chấp, giờ là nữ thần "mặt sáng dáng xinh", vòng 2 phẳng lì</a></b></p>
+                    <span>Để có cơ bụng số 11 và làn da căng bóng ở tuổi 35, cô nàng này có những tuyệt chiêu đơn giản nhưng không thể xem thường.</span>
+                    <hr/>
+                      <span><b><a class="size-normal" href="https://kenh14.vn/my-nu-khien-dan-tinh-ta-hoa-vi-xit-chong-nang-ma-nhu-xit-chua-chay-215241024213707755.chn">
+                        Mỹ nữ khiến dân tình tá hỏa vì xịt chống nắng mà như... xịt chữa cháy</a></b></span>
+                    <hr/>
+                      <span><b><a  class="size-normal" href="https://kenh14.vn/4-nam-2-kieu-toc-1-hieuthuhai-thang-hang-nhan-sac-boi-phan-215241022223605821.chn">
+                        4 năm, 2 kiểu tóc, 1 HIEUTHUHAI thăng hạng nhan sắc bội phần</a></b></span>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/trieu-le-dinh-tiet-lo-moi-ban-tam-hang-ngay-nghe-xong-chi-em-phu-nu-nao-cung-dong-tinh-215241024160418623.chn">
+                        <img class="img-normal" src="../img/Triệu Lệ Dĩnh tiết lộ mối bận tâm hàng ngày, nghe xong chị em phụ nữ nào cũng đồng tình.webp"></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/trieu-le-dinh-tiet-lo-moi-ban-tam-hang-ngay-nghe-xong-chi-em-phu-nu-nao-cung-dong-tinh-215241024160418623.chn">
+                        Triệu Lệ Dĩnh tiết lộ mối bận tâm hàng ngày, nghe xong chị em phụ nữ nào cũng đồng tình</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 1 ngày trước</time></p>
+                    <p>Chia sẻ của Triệu Lệ Dĩnh lập tức leo Top từ khóa được tìm kiếm nhiều nhất trên Weibo.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/thuc-hien-dong-tac-nay-100-lan-moi-sang-sau-2-tuan-bung-nho-thay-ro-215241024172727766.chn">
+                        <img class="img-normal" src="../img/Thực hiện động tác này 100 lần mỗi sáng, sau 2 tuần bụng nhỏ thấy rõ.webp "></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/thuc-hien-dong-tac-nay-100-lan-moi-sang-sau-2-tuan-bung-nho-thay-ro-215241024172727766.chn">Thực hiện động tác này 100 lần mỗi sáng, sau 2 tuần bụng nhỏ thấy rõ</a></b></p>
+                    <p><b>Beauty&Fashion -</b> <time> 7 giờ trước</time></p>
+                    <p>Mỗi ngày, bạn chọn một động tác, tập trong 5 - 10 phút là đảm bảo vóc dáng và vòng bụng sẽ được cải thiện đáng kể.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/sao-phim-sex-and-the-city-co-than-hinh-san-chac-khoe-khoan-o-tuoi-50-he-lo-bai-tap-chuan-chuyen-gia-215241023234006738.chn">
+                        <img class="img-normal" src="../img/Sao phim Sex and the city có thân hình săn chắc, khỏe khoắn ở tuổi 50,.webp "></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/sao-phim-sex-and-the-city-co-than-hinh-san-chac-khoe-khoan-o-tuoi-50-he-lo-bai-tap-chuan-chuyen-gia-215241023234006738.chn">
+                        Sao phim "Sex and the city" có thân hình săn chắc, khỏe khoắn ở tuổi 50, hé lộ bài tập chuẩn chuyên gia</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 3 ngày trước</time></p>
+                    <p>Sao phim "Sex and the city" vẫn duy trì được vóc dáng săn chắc, thon thả ở tuổi 50. Bí quyết nằm ở các bài tập do huấn luyện viên cá nhân của...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/sao-phim-sex-and-the-city-so-huu-lan-da-khong-ti-vet-o-tuoi-50-nho-bi-quyet-cuc-don-gian-215241022204341112.chn">
+                        <img class="img-normal" src="../img/Sao phim Sex and the city sở hữu làn da không tì vết ở tuổi 50 nhờ bí quyết cực đơn giản.webp"></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/sao-phim-sex-and-the-city-so-huu-lan-da-khong-ti-vet-o-tuoi-50-nho-bi-quyet-cuc-don-gian-215241022204341112.chn">
+                        Sao phim "Sex and the city" sở hữu làn da không tì vết ở tuổi 50 nhờ bí quyết cực đơn giản</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 4 ngày trước</time></p>
+                    <p>Tại sự kiện diễn ra vào tháng 8/2024, sao phim “Sex and the city” vẫn gây ấn tượng với khán giả nhờ làn da căng bóng, ít nếp nhăn dù đã 50 tuổi.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/1-nang-hau-di-thi-khong-lo-drama-vi-tu-makeup-ma-van-khien-dan-tinh-do-guc-215241022114351614.chn">
+                        <video autoplay loop muted playsinline width=250px><source src="../img/1 nàng hậu đi thi không lo drama vì tự makeup mà vẫn khiến dân tình đổ gục.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/1-nang-hau-di-thi-khong-lo-drama-vi-tu-makeup-ma-van-khien-dan-tinh-do-guc-215241022114351614.chn">
+                        1 nàng hậu đi thi không lo drama vì tự makeup mà vẫn khiến dân tình đổ gục</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 4 ngày trước</time></p>
+                    <p>Khả năng tự trang điểm của nàng hậu này không thua kém gì makeup artist chuyên nghiệp.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/ban-gai-hieuthuhai-tang-10kg-trong-3-thang-lai-xinh-hon-dong-luc-di-tap-lien-quan-den-thai-tu-215241021223032627.chn">
+                        <video autoplay loop muted playsinline width=250px><source src="../img/Bạn gái HIEUTHUHAI tăng 10kg trong 3 tháng lại xinh hơn, động lực đi tập liên quan đến thái tử.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/ban-gai-hieuthuhai-tang-10kg-trong-3-thang-lai-xinh-hon-dong-luc-di-tap-lien-quan-den-thai-tu-215241021223032627.chn">
+                        Bạn gái HIEUTHUHAI tăng 10kg trong 3 tháng lại xinh hơn, động lực đi tập liên quan đến “thái tử”</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 4 ngày trước</time></p>
+                    <p>LBabyboo ngày càng đầy đặn, quyến rũ hóa ra là vì người ấy!</p>
+                </aside>
+            </div>
+             
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/hoc-ngay-chieu-siet-mo-giup-eo-thon-bung-phang-tu-cac-phap-su-trung-hoa-215241021180655325.chn">
+                        <video autoplay loop muted playsinline width=250px><source src="../img/Học ngay chiêu siết mỡ giúp eo thon, bụng phẳng từ các pháp sư Trung Hoa.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/hoc-ngay-chieu-siet-mo-giup-eo-thon-bung-phang-tu-cac-phap-su-trung-hoa-215241021180655325.chn">
+                        Học ngay chiêu siết mỡ giúp eo thon, bụng phẳng từ các "pháp sư Trung Hoa"</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 4 ngày trước</time></p>
+                    <p>5 động tác dưới đây sẽ tác động sâu vào cơ bụng, bắp đùi, bắp tay, thắt lưng, giúp chị em loại bỏ phần mỡ thừa tích tụ.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/my-nu-cosplay-nhu-xe-truyen-buoc-ra-tuong-dau-ran-mori-doi-thuc-215241019182922504.chn">
+                        <img class="img-normal" src="../img/Mỹ nữ cosplay như xé truyện bước ra, tưởng đâu Ran Mori đời thực.webp "></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/my-nu-cosplay-nhu-xe-truyen-buoc-ra-tuong-dau-ran-mori-doi-thuc-215241019182922504.chn">
+                        Mỹ nữ cosplay như xé truyện bước ra, tưởng đâu Ran Mori đời thực</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 7 ngày trước</time></p>
+                    <p>Cô gái này nổi tiếng với những màn cosplay Ran Mori như sao y bản gốc.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/kim-tae-ri-co-1-thoi-quen-giup-giam-can-rat-tot-ai-nghe-cung-cuoi-ngai-vi-hoa-ra-deu-biet-nhung-khong-lam-215241019151228552.chn">
+                        <img class="img-normal" src="../img/Kim Tae Ri có 1 thói quen giúp giảm cân rất tốt,.webp "></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/kim-tae-ri-co-1-thoi-quen-giup-giam-can-rat-tot-ai-nghe-cung-cuoi-ngai-vi-hoa-ra-deu-biet-nhung-khong-lam-215241019151228552.chn">
+                        Kim Tae Ri có 1 thói quen giúp giảm cân rất tốt, ai nghe cũng “cười ngại” vì hóa ra đều biết nhưng không làm</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 7 ngày trước</time></p>
+                    <p>5Thói quen này nghe qua tưởng dễ làm nhưng hóa ra rất nhiều người thất bại, nếu duy trì được thì chắc chắn cơ thể sẽ thon gọn hơn..</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/mat-moc-gay-tranh-cai-cua-doi-thu-que-anh-215241019150103086.chn">
+                        <video autoplay loop muted playsinline width=250px><source src="../img/Mặt mộc gây tranh cãi của đối thủ Quế Anh.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/mat-moc-gay-tranh-cai-cua-doi-thu-que-anh-215241019150103086.chn">
+                        Mặt mộc gây tranh cãi của đối thủ Quế Anh</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 7 ngày trước</time></p>
+                    <p>Khi không son phấn, nhan sắc của đối thủ Quế Anh bị đánh giá kém cuốn hút hẳn đi.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/5-kieu-toc-den-danh-cho-guong-mat-tron-cat-xong-nhan-sac-se-thang-hoa-215241018143831811.chn">
+                        <img class="img-normal" src="../img/5 kiểu tóc đen dành cho gương mặt tròn, cắt xong nhan sắc sẽ thăng hoa.webp"></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/5-kieu-toc-den-danh-cho-guong-mat-tron-cat-xong-nhan-sac-se-thang-hoa-215241018143831811.chn">
+                        5 kiểu tóc đen dành cho gương mặt tròn, cắt xong nhan sắc sẽ thăng hoa</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 8 ngày trước</time></p>
+                    <p>Nếu không thích nhuộm tóc, nàng sở hữu gương mặt tròn nên tham khảo 5 kiểu tóc đen sau đây.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/hai-tu-dung-tu-phong-an-nhan-sac-nua-215241018063335127.chn">
+                        <img class="img-normal" src="../img/Hải Tú đừng tự phong ấn nhan sắc nữa.webp"></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/hai-tu-dung-tu-phong-an-nhan-sac-nua-215241018063335127.chn">
+                        Hải Tú đừng tự phong ấn nhan sắc nữa</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 8 ngày trước</time></p>
+                    <p>Cư dân mạng chỉ rõ thứ phong ấn visual của Hải Tú qua loạt ảnh mới.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/chi-dep-kpop-coi-1-phuong-phap-la-chia-khoa-hack-tuoi-an-ngon-nhung-van-co-eo-thon-21524101616423487.chn">
+                        <img class="img-normal" src="../img/Chị đẹp Kpop coi 1 phương pháp là chìa khoá hack tuổi, ăn ngon nhưng vẫn có eo thon.webp "></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/chi-dep-kpop-coi-1-phuong-phap-la-chia-khoa-hack-tuoi-an-ngon-nhung-van-co-eo-thon-21524101616423487.chn">
+                        Chị đẹp Kpop coi 1 phương pháp là chìa khoá "hack tuổi", ăn ngon nhưng vẫn có eo thon</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 9 ngày trước</time></p>
+                    <p>Sắc vóc ở tuổi U45 của Dara khiến người hâm mộ không khỏi trầm trồ và ghen tỵ.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/thu-thach-5-ngay-dap-mat-na-tu-nhien-va-cai-ket-khien-chi-em-xuyt-xoa-215241016163846739.chn">
+                        <video autoplay loop muted playsinline width=250px><source src="../img/Thử thách 5 ngày đắp mặt nạ tự nhiên, và cái kết khiến chị em xuýt xoa.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/thu-thach-5-ngay-dap-mat-na-tu-nhien-va-cai-ket-khien-chi-em-xuyt-xoa-215241016163846739.chn">
+                        Thử thách 5 ngày đắp mặt nạ tự nhiên, và cái kết khiến chị em xuýt xoa</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 9 ngày trước</time></p>
+                    <p>Làn da sẽ được hưởng lợi rất nhiều từ những loại mặt nạ tự nhiên, lành tính này.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/vong-1-gay-hoang-mang-cua-lisa-215241016125325126.chn">
+                        <video autoplay loop muted playsinline width=250px><source src="../img/Vòng 1 gây hoang mang của Lisa.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/vong-1-gay-hoang-mang-cua-lisa-215241016125325126.chn">Vòng 1 gây hoang mang của Lisa</a></b></p>
+                    <p><b>Beauty&Fashion -</b> <time> 10 ngày trước</time></p>
+                    <p>Lisa đã đập tan 1 tin đồn tại Victoria's Secret Fashion Show 2024.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/5-kieu-toc-ngan-mua-thu-danh-cho-nang-khong-thich-nhuom-toc-215241015215905102.chn">
+                        <img class="img-normal" src="../img/5 kiểu tóc ngắn mùa thu dành cho nàng không thích nhuộm tóc.webp"></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/5-kieu-toc-ngan-mua-thu-danh-cho-nang-khong-thich-nhuom-toc-215241015215905102.chn">
+                        5 kiểu tóc ngắn mùa thu dành cho nàng không thích nhuộm tóc</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 10 ngày trước</time></p>
+                    <p>Nếu muốn cắt tóc ngắn, chị em hãy tham khảo 5 kiểu không cần nhuộm màu mà vẫn trẻ trung sau đây.</p>
+                </aside>
+            </div>
+        </div>
+        
+    </div>
+</main>
+<footer>
+    <div class="footer-menu">
+        <a href="../Star/WebStar.html">Star</a> | 
+                <a href="../Ciné/WebCine.html">Ciné</a> | 
+                <a href="../Musik/WebMusik.html">Musik</a> | 
+                <a href="../Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | 
+                <a href="#">Sport</a> | 
+                <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a> | 
+                <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a> | 
+                <a href="/BTL/AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | 
+                <a href="#">Xem Mua Luôn</a> | 
+                <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | 
+                <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | 
+                <a href="#">Tek-Life</a> | 
+                <a href="#">Học đường</a> | 
+                <a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a> | 
+                <a href="#">Video</a>
+    </div>
+    <div class="footer-max">
+        <div class="footer-table1">
+            <table>
+                <tr>
+                    <td>
+                        <section>
+                            <a href=""><img src="../img/logoFooter.jpg" ></img></a>
+                        </section>
+                        <aside>
+                            <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                            <div class="footer-table-mini">
+                                <div class="footer-mini1">
+                                    <a href="#"><img src="../img/emojiChamHoi.jpg" width="20px"></a>
+                                    <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                </div>
+                                <div class="footer-mini2">
+                                    <a href="#"><img src="../img/emojiMail1.jpg" width="25px"></a>
+                                    <p><a href="#">bandoc@kenh14</a></p>
+                                </div>
+                            </div>
+                            <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                        </aside>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-table2">
+            <a href="#"><img src="../img/backgroundFace.jpg" width="530px" height="130px"></img></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-mini-one">
+            <h4>TRỤ SỞ HÀ NỘI</h4>
+            <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+            <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+            <div class="logo-mini">
+                <a href="#"><img src="../img/emojiMap.jpg" width="17px"></a>
+                <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+            </div>
+
+            <div class="footer-mini-one-1">
+                <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                <span>Điện thoại: 028 7307 7979</span>
+                <div class="logo-mini">
+                    <a href="#"><img src="../img/emojiMap.jpg" width="15px"></a>
+                    <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                </div>
+            </div>    
+        </div>
+        <hr/>
+        <div class="footer-mini-two">
+            <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+            <span>Bà Nguyễn Bích Minh</span><br>
+            <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+            <div class="logo-mini">
+                <img src="../img/emojiPhone.jpg" width="20px"></a>
+                <span>024.73095555 (máy lẻ 62.370)</span><br>
+            </div>
+            <div class="logo-mini-1">
+                <a href="#"><img src="../img/emojiMail2.jpg" width="30px"></a>
+                <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+            </div>
+            <h4>LIÊN HỆ QUẢNG CÁO</h4>
+            <div class="logo-mini">
+                <img src="../img/emojiPhone.jpg" width="20px"></a>
+                <span>02473007108</span>
+            </div>
+            <div class="logo-mini-1">
+                <a href="#"><img src="../img/emojiMail2.jpg" width="30px"></a>
+                <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+            </div>
+            <div class="chat-table-1">
+                <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+            </div>
+            <div class="chat-table-2">
+                <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+            </div>
+            <div class="chat-table-3">
+                <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+            </div>
+        </div>
+        <hr class="DK"/>
+        <div class="footer-mini-three">
+            <a href=""><img src="../img/logoVCCorp.jpg" width="120px" ></a>
+            <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+            <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+            <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+    
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+</body>
+
+</html>
+
+
+        
+
+
+        
+        

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty & Fashion - Tin tức làm đẹp - Thời trang - Star Style - Kenh14.vn </title>
+    <link rel="stylesheet" href="../CSS/skin.css">
+    <link rel="stylesheet" href="../CSS/skin1.css">
+    <link rel="import" href="component.html">
+    <script src="../JS/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+     <!-- Linking SwiperJS CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+     <!-- Linking SwiperJS script -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
+    
+</head>
+    
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search-bar">
+                        <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                        <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="container">
+                    <div class="logo">
+                        <a href="../demoBTL.html"><img src="../img/logo.png" alt="Kenh14 Logo"></a>
+                        <div class="logo-text">
+                            <span class="logo-main">kenh14.vn</span>
+                            <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                        </div>
+                    </div>
+                    <div class="trending-topics">
+                        <span class="arrow-icon">&#x2197;</span>
+                        <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                        <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                        <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <nav class="main-nav">
+                <div class="container">
+                    <ul class="mains-menu">
+                        <li><a href="../demoBTL.html"><i class="fas fa-home"></i></a></li>
+                        <li><a href="../Star/WebStar.html">Star</a></li>
+                        <li><a href="../Ciné/WebCine.html">Ciné</a></li>
+                        <li><a href="../Musik/WebMusik.html">Musik</a></li>
+                        <li><a href="../Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a></li>
+                        <li><a href="DoiSong.html">Đời sống</a></li>
+                        <li><a href="#">Money-Z</a></li>
+                        <li><a href="#">Ăn - Quẩy - Đi</a></li>
+                        <li><a href="#">Xã hội</a></li>
+                        <li><a href="#">Sức khỏe</a></li>
+                        <li><a href="#">Tek-life</a></li>
+                        <li><a href="#">Học đường</a></li>
+                        <li><a href="#">Xem Mua Luôn</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li class="main-menu">
+                            <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+    
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="subs-menu">
+                <div class="container">
+                    <div class="menu-row">
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Đời sống</a>
+                            <div class="submenu">
+                                <a href="#">Nhân vật</a>
+                                <a href="#">Xem-Ăn-Chơi</a>
+                                <a href="#">House n Home</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Xem mua luôn</a>
+                            <div class="submenu">
+                                <a href="#">Thời trang</a>
+                                <a href="#">Đẹp</a>
+                                <a href="#">Mommy mua di</a>
+                            </div>
+                        </div>
+                        <div  class="menu-column">
+                            <a class="title-menu" href="#">Sport</a>
+                            <div class="submenu">
+                                <a href="#">Bóng đá</a>
+                                <a href="#">Bóng rổ</a>
+                                <a href="#">Bóng chuyền</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="../Musik/WebMusik.html">Musik</a>
+                            <div class="submenu">
+                                <a href="../Musik/WebAuMy.html">Âu-Mỹ</a>
+                                <a href="../Musik/WebChauA.html">Châu Á</a>
+                                <a href="../Musik/WebVietNam.html">Việt Nam</a>
+                                <a href="../demoBTL.html">Hip-hop neva die</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="../Ciné/WebCine.html">Ciné</a>
+                            <div class="submenu">
+                                <a href="../Ciné/WebPhimChieuRap.html">Phim chiếu rạp</a>
+                                <a href="../Ciné/WebPhimVietNam.html">Phim Việt Nam</a>
+                                <a href="../Ciné/WebSeriesTruyenHinh.html">Series truyền hình</a>
+                                <a href="../Ciné/WebHoaNguHanQuoc.html">Hoa ngữ - Hàn Quốc</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Tek-Life</a>
+                            <div class="submenu">
+                                <a href="#">Metaverse</a>
+                                <a href="#">How-To</a>
+                                <a href="#">Wow</a>
+                                <a href="#">2-Mall</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-row">
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Star</a>
+                            <div class="submenu">
+                                <a href="../Star/WebSaoViet.html">Sao Việt</a>
+                                <a href="../Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
+                                <a href="../Star/WebTVShow.html">TV Show</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Xã hội</a>
+                            <div class="submenu">
+                                <a href="#">Pháp luật</a>
+                                <a href="#">Nóng trên mạng</a>
+                                <a href="#">Sống xanh</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Học đường</a>
+                            <div class="submenu">
+                                <a href="#">Nhân vật</a>
+                                <a href="#">Du học</a>
+                                <a href="#">Bản tin 46'</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Thế giới đó đây</a>
+                            <div class="submenu">
+                                <a href="#">Chùm ảnh</a>
+                                <a href="#">Khám phá</a>
+                                <a href="#">Dị</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Sức khỏe</a>
+                            <div class="submenu">
+                                <a href="#">Sức khỏe</a>
+                                <a href="#">Tin tức</a>
+                                <a href="#">Dinh dưỡng</a>
+                                <a href="#">Khỏe đẹp</a>
+                                <a href="#">Giới tính</a>
+                                <a href="#">Các bệnh</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="border-solid"></div>
+                <div class="web-info">
+                    <span class="title-mini-web">Tải app</span>
+                    <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BB%A3/id670518264?ls=1" target="_blank">IOS</a>
+                    <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                    <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                    <a class="title-mini-web" href="#">Liên hệ</a>
+                    <a class="mini-web" href="https://kenh14.vn/adv.chn">Quảng cáo</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="space">  </div>
+    <main>
+    <div id="page">
+        <div id="page">
+            
+        <div class="body">
+            <div class="text-tittle">
+                <p style="color:#c8c8c8; font-size:12px; margin-bottom:-15px;">TIN TỨC VỀ B&F Studio - B&F Studio</p>
+                <h2 style=" color: #ff7505; font-size:32px;margin-bottom:6px;">B&F Studio</h2>
+                <p style="font-size:13px">B&F Studio</p>
+                <a href="http://www.facebook.com/sharer.php?u=https://kenh14.vn/bf-studio.html">
+                    <img style="height:35px; margin-left:-6px;" src="../img/iconShareFacebook.jpg" alt="ShareFacebook"></a>
+            </div>
+            <hr/>
+            <div class="zero">
+                <section>
+                    <a href="https://kenh14.vn/cat-canh-khong-cat-minh-lan-toa-manh-me-sau-casting-call-cung-dove-hang-ngan-co-gai-truyen-cam-hung-qua-cuoc-thi-215241028110337921.chn">
+                        <img style="width:400px;"  src="../img/Cất cánh không cất mình lan tỏa mạnh mẽ sau Casting Call cùng Dove.webp"></a>
+                </section>
+                <aside>
+                    <p><a href="./WebBFStudio.html" ><img class="img-mini1" src="../img/BFstudio.jpg"></a></p>
+                    <p><b><a href="https://kenh14.vn/cat-canh-khong-cat-minh-lan-toa-manh-me-sau-casting-call-cung-dove-hang-ngan-co-gai-truyen-cam-hung-qua-cuoc-thi-215241028110337921.chn">
+                        “Cất cánh không cất mình” lan tỏa mạnh mẽ sau Casting Call cùng Dove: Hàng ngàn cô gái truyền cảm hứng qua cuộc thi</a></b></p>
+                    <p><b>Beauty&Fashion -</b> <time>  3 ngày trước</time></p>
+                    <p>Khám phá cách Dove Ngăn mùi giúp hàng trăm cô gái vượt qua rào cản tự ti, tỏa sáng với bản thân qua chiến dịch "Cất cánh...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/dove-ngan-mui-khang-dinh-su-menh-dong-hanh-cung-su-tu-tin-cua-phai-dep-qua-chien-dich-moi-215241025142015027.chn">
+                        <img class="img-normal" src="../img/Dove Ngăn mùi khẳng định sứ mệnh đồng hành cùng sự tự tin của phái đẹp qua chiến dịch mới.webp"></a>
+                </section>
+                <aside>
+                    <p><a href="./WebBFStudio.html" ><img class="img-mini1" src="../img/BFstudio.jpg"></a></p>
+                    <p><b><a href="https://kenh14.vn/dove-ngan-mui-khang-dinh-su-menh-dong-hanh-cung-su-tu-tin-cua-phai-dep-qua-chien-dich-moi-215241025142015027.chn">
+                        Dove Ngăn mùi khẳng định sứ mệnh đồng hành cùng sự tự tin của phái đẹp qua chiến dịch mới</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 6 ngày trước</time></p>
+                    <p>Chiến dịch "Cất cánh không cất mình" của Dove Ngăn mùi khuyến khích phụ nữ tự tin về ngoại hình và tin vào bản lĩnh của mình. 
+                        Dove Ngăn mùi mong muốn đồng hành, giúp phụ nữ tỏa sáng trong mọi khoảnh khắc...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/su-kien-casting-call-tu-dove-ngan-mui-noi-nhung-net-dep-ca-nhan-tu-tin-toa-sang-215240829190347182.chn">
+                        <img class="img-normal" src="../img/Sự kiện Casting Call từ Dove Ngăn mùi.webp"></a>
+                </section>
+                <aside>
+                    <p><a href="./WebBFStudio.html" ><img class="img-mini1" src="../img/BFstudio.jpg"></a></p>
+                    <p><b><a href="https://kenh14.vn/su-kien-casting-call-tu-dove-ngan-mui-noi-nhung-net-dep-ca-nhan-tu-tin-toa-sang-215240829190347182.chn">
+                        Sự kiện Casting Call từ Dove Ngăn mùi: Nơi những nét đẹp cá nhân tự tin tỏa sáng</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 2 tháng trước</time></p>
+                    <p>Khám phá hành trình đầy cảm hứng của các bạn gái tự tin "cất cánh" với Dove Ngăn mùi trong sự kiện Casting Call, 
+                        nơi mỗi khoảnh khắc là minh chứng cho vẻ đẹp và sự tự tin không giới hạn.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/hoang-ku-stylist-can-hoc-cach-can-bang-giua-tham-my-cua-minh-cua-nghe-si-cua-fan-va-ca-anti-fan-20240210091036468.chn">
+                        <img  class="img-normal" src="../img/Hoàng Ku.webp"></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/hoang-ku-stylist-can-hoc-cach-can-bang-giua-tham-my-cua-minh-cua-nghe-si-cua-fan-va-ca-anti-fan-20240210091036468.chn">
+                        Hoàng Ku: "Stylist cần học cách cân bằng giữa thẩm mỹ của mình, của nghệ sĩ, của fan và cả anti-fan"</a></b></p>
+                    <p><b>Beauty&Fashion -</b> <time>  9 tháng trước</time></p>
+                    <p>Với hành trình rực rỡ khi liên tục hợp tác cùng hàng loạt sao lớn như Thanh Hằng, Chi Pu, Huyền Baby, Hoàng Thuỳ Linh... 
+                        stylist Hoàng Ku ngày càng khẳng định vị thế vững chắc trong làng thời trang Việt Nam.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/3-nana-xu-nhat-han-trung-nguoi-la-nang-tho-chanel-nguoi-la-my-nhan-dep-nhat-the-gioi-co-con-lai-thi-sao-20240106192821598.chn">
+                        <img class="img-normal" src="../img/1 kiểu áo khoác luôn hot khi trời sang thu.webp"></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/3-nana-xu-nhat-han-trung-nguoi-la-nang-tho-chanel-nguoi-la-my-nhan-dep-nhat-the-gioi-co-con-lai-thi-sao-20240106192821598.chn">
+                        Nail artist ruột của BLACKPINK: Chiến thắng sự cấm cản của gia đình bằng ngôi vị "nữ hoàng làng nail" xứ Hàn</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 10 tháng trước</time></p>
+                    <p>Cư dân mạng đang rần rần với những bức ảnh so kè nhan sắc 3 nàng Nana cực phẩm xứ Nhật - Hàn - Trung, phải chăng cứ ai tên là Nana sẽ xuất chúng?</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="four">
+                <aside>
+                    <p><b><a href="https://kenh14.vn/best-of-beauty-fashion-2023-nhung-cai-nhat-dinh-hinh-xu-huong-thoi-trang-va-lam-dep-20240209152633269.chn">
+                        Best of Beauty & Fashion 2023 - Những cái “NHẤT” định hình xu hướng thời trang và làm đẹp</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 9 tháng trước</time></p>
+                    <br><a href="https://kenh14.vn/best-of-beauty-fashion-2023-nhung-cai-nhat-dinh-hinh-xu-huong-thoi-trang-va-lam-dep-20240209152633269.chn">
+                        <img class="img-big" src="../img/Best of Beauty & Fashion 2023.webp " width="400px"></a>
+                </aside>
+
+            </div>
+            <hr/>
+            <h2 style=" border-left: 5px solid #f34905;padding-left: 10px;margin-top:0px;">Tiêu điểm tuần</h2>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="https://kenh14.vn/boc-nhan-sac-hot-girl-le-khanh-ba-xa-yeu-tu-nam-lop-9-cua-quan-ap-215241026164604908.chn" class="card-link">
+                                    <img src="../img/Bóc nhan sắc hot girl Lê Khanh - bà xã yêu từ năm lớp 9 của Quân A.P.webp" alt="''Bóc'' nhan sắc hot girl Lê Khanh - bà xã yêu từ năm lớp 9 của Quân A.P" class="card-image">
+                                    <h3 class="card-title">"Bóc" nhan sắc hot girl Lê Khanh - bà xã yêu từ năm lớp 9 của Quân A.P</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="https://kenh14.vn/boc-nhan-sac-hot-girl-le-khanh-ba-xa-yeu-tu-nam-lop-9-cua-quan-ap-215241026164604908.chn" class="card-link">
+                                    <img src="../img/Hoa hậu Bảo Ngọc, Á hậu Ngọc Hằng sải bước.webp " alt="Hoa hậu Bảo Ngọc, Á hậu Ngọc Hằng sải bước trong BST “Glamour” đến từ thương hiệu By JENNY" class="card-image">
+                                    <h3 class="card-title">Hoa hậu Bảo Ngọc, Á hậu Ngọc Hằng sải bước trong BST “Glamour” đến từ thương hiệu By JENNY</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="https://kenh14.vn/boc-nhan-sac-hot-girl-le-khanh-ba-xa-yeu-tu-nam-lop-9-cua-quan-ap-215241026164604908.chn" class="card-link">
+                                    <img src="../img/Lễ vinh danh tại Đại sảnh Danh vọng Rock and Roll và những chia sẻ bất ngờ của các sao.webp" 
+                                        alt="Lễ vinh danh tại Đại sảnh Danh vọng Rock and Roll và những chia sẻ bất ngờ của các sao" class="card-image">
+                                    <h3 class="card-title">Lễ vinh danh tại Đại sảnh Danh vọng Rock and Roll và những chia sẻ bất ngờ của các sao</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="https://https://kenh14.vn/phim-tai-lieu-ve-jung-kook-bts-pha-ky-luc-doanh-thu-21524101817404153.chn.vn/phim-viet-tung-canh-giuong-chieu-gay-hoang-mang-215241017204119774.chn" class="card-link">
+                                    <img src="../img/Phim tài liệu về Jung Kook (BTS) phá kỷ lục doanh thu.webp" alt="Phim tài liệu về Jung Kook (BTS) phá kỷ lục doanh thu" class="card-image">
+                                    <h3 class="card-title">Phim tài liệu về Jung Kook (BTS) phá kỷ lục doanh thu</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="https://kenh14.vn/my-nu-cosplay-nhu-xe-truyen-buoc-ra-tuong-dau-ran-mori-doi-thuc-215241019182922504.chn" class="card-link">
+                                    <img src="../img/Mỹ nữ cosplay như xé truyện bước ra, tưởng đâu Ran Mori đời thực.webp " alt="Mỹ nữ cosplay như xé truyện bước ra, tưởng đâu Ran Mori đời thực" class="card-image">
+                                    <h3 class="card-title">   Mỹ nữ cosplay như xé truyện bước ra, tưởng đâu Ran Mori đời thực</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="https://kenh14.vn/vu-dieu-tiec-nuoi-nhat-cua-toi-la-khong-dam-noi-loi-yeu-ca-tuoi-tre-chua-to-tinh-ai-215241010135353842.chn" class="card-link">
+                                    <img src="../img/VŨ.webp" alt="VŨ.: ''Điều tiếc nuối nhất của tôi là không dám nói lời yêu, cả tuổi trẻ chưa tỏ tình ai''" class="card-image">
+                                    <h3 class="card-title">VŨ.: "Điều tiếc nuối nhất của tôi là không dám nói lời yêu, cả tuổi trẻ chưa tỏ tình ai"</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="https://kenh14.vn/noi-lo-cua-rose-blackpink-215241019144756513.chn" class="card-link">
+                                    <img src="../img/Nỗi lo của Rosé (BLACKPINK).webp" alt="Nỗi lo của Rosé (BLACKPINK)" class="card-image">
+                                    <h3 class="card-title">Nỗi lo của Rosé (BLACKPINK)</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/3-nana-xu-nhat-han-trung-nguoi-la-nang-tho-chanel-nguoi-la-my-nhan-dep-nhat-the-gioi-co-con-lai-thi-sao-20240106192821598.chn">
+                        <img class="img-normal" src="../img/3 Nana xứ Nhật - Hàn - Trung.webp"></a>
+                </section>
+                <aside>
+                    <p><a href="./WebBFStudio.html" ><img class="img-mini1" src="../img/BFstudio.jpg"></a></p>
+                    <p><b><a href="https://kenh14.vn/3-nana-xu-nhat-han-trung-nguoi-la-nang-tho-chanel-nguoi-la-my-nhan-dep-nhat-the-gioi-co-con-lai-thi-sao-20240106192821598.chn">
+                        3 Nana xứ Nhật - Hàn - Trung: Người là nàng thơ Chanel, người là mỹ nhân đẹp nhất thế giới, cô còn lại thì sao?</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 10 tháng trước</time></p>
+                    <p>Cư dân mạng đang rần rần với những bức ảnh so kè nhan sắc 3 nàng Nana cực phẩm xứ Nhật - Hàn - Trung, phải chăng cứ ai tên là Nana sẽ xuất chúng?</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/nhiet-huyet-du-trend-dan-han-xep-hang-giua-troi-9c-de-mua-nhan-80-trieu-giong-jennie-20240108075531224.chn">
+                        <video autoplay loop muted playsinline width=250px><source src="../img/Dân Hàn xếp hàng giữa trời -9°C để mua nhẫn 80 triệu giống Jennie.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/nhiet-huyet-du-trend-dan-han-xep-hang-giua-troi-9c-de-mua-nhan-80-trieu-giong-jennie-20240108075531224.chn">
+                        Nhiệt huyết "đu trend": Dân Hàn xếp hàng giữa trời -9°C để mua nhẫn 80 triệu giống Jennie</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 10 tháng trước</time></p>
+                    <p>Dù có mức giá tương đối cao, "nhẫn Jennie" vẫn tạo nên cơn sốt mua sắm tại Hàn Quốc.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/ao-dai-tet-cho-nam-cua-cac-local-brand-nam-nay-mau-ma-da-dang-phom-dang-va-hoa-tiet-cung-dep-ra-phet-20240106181455661.chn">
+                        <img class="img-normal" src="../img/Áo dài Tết cho nam của các local brand năm nay.webp"></a>
+                </section>
+                <aside>
+                    <p><a href="./WebBFStudio.html" ><img class="img-mini1" src="../img/BFstudio.jpg"></a></p>
+                    <p><b><a href="https://kenh14.vn/ao-dai-tet-cho-nam-cua-cac-local-brand-nam-nay-mau-ma-da-dang-phom-dang-va-hoa-tiet-cung-dep-ra-phet-20240106181455661.chn">
+                        Áo dài Tết cho nam của các local brand năm nay: Mẫu mã đa dạng, phom dáng và hoạ tiết cũng đẹp ra phết!</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 10 tháng trước</time></p>
+                    <p>Xem ra thị trường áo dài Tết cho nam cũng sôi động và thú vị lắm đấy!</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/nail-artist-ruot-cua-blackpink-chien-thang-su-cam-can-cua-gia-dinh-bang-ngoi-vi-nu-hoang-lang-nail-xu-han-2024010520242626.chn">
+                        <img class="img-normal" src="../img/Nail artist ruột của BLACKPINK.webp"></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/nail-artist-ruot-cua-blackpink-chien-thang-su-cam-can-cua-gia-dinh-bang-ngoi-vi-nu-hoang-lang-nail-xu-han-2024010520242626.chn">
+                        Nail artist ruột của BLACKPINK: Chiến thắng sự cấm cản của gia đình bằng ngôi vị "nữ hoàng làng nail" xứ Hàn</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 10 tháng trước</time></p>
+                    <p>Có thể bạn không biết Park Eun Kyung nhưng chắc chắn bạn đã từng một lần chiêm ngưỡng những tác phẩm của cô trên bàn tay của dàn sao Hàn Quốc.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/phong-van-founder-ding-dang-gia-tri-truyen-thong-la-diem-tua-vung-chac-cho-con-dieu-sang-tao-but-pha-moi-ngay-20240104095424319.chn">
+                        <video autoplay loop muted playsinline width=250px><source src="../img/Phỏng vấn founder ĐING ĐANG.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><a href="./WebBFStudio.html" ><img class="img-mini1" src="../img/BFstudio.jpg"></a></p>
+                    <p><b><a href="https://kenh14.vn/phong-van-founder-ding-dang-gia-tri-truyen-thong-la-diem-tua-vung-chac-cho-con-dieu-sang-tao-but-pha-moi-ngay-20240104095424319.chn">
+                        Phỏng vấn founder ĐING ĐANG: Giá trị truyền thống là điểm tựa vững chắc cho "con diều" sáng tạo bứt phá mỗi ngày</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 10 tháng trước</time></p>
+                    <p>Không chỉ đơn thuần là thương hiệu may đo áo dài và trang phục truyền thống, ĐING ĐANG còn nỗ lực cất giữ, 
+                        nâng niu để những giá trị truyền thống đẹp đẽ không phai nhoà.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/hoi-stylist-sieu-sao-dung-sau-nhung-tao-hinh-dinh-cao-cua-bts-blackpink-va-nct-127-la-ai-20240101220656879.chn">
+                        <img class="img-normal" src="../img/Hội stylist siêu sao đứng sau những tạo hình đỉnh cao của BTS, BLACKPINK và NCT 127 là ai.webp"></a>
+                </section>
+                <aside>
+                    <p><a href="./WebBFStudio.html" ><img class="img-mini1" src="../img/BFstudio.jpg"></a></p>
+                    <p><b><a href="https://kenh14.vn/hoi-stylist-sieu-sao-dung-sau-nhung-tao-hinh-dinh-cao-cua-bts-blackpink-va-nct-127-la-ai-20240101220656879.chn">
+                        Hội stylist siêu sao đứng sau những tạo hình đỉnh cao của BTS, BLACKPINK và NCT 127 là ai?</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time>10 tháng trước</time></p>
+                    <p>Họ là những người đã góp phần tạo nên những tạo hình vô cùng iconic của các sao Hàn được yêu thích toàn cầu.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/apres-ski-style-khong-don-gian-la-do-truot-tuyet-day-la-phong-cach-it-girl-nao-cung-dang-me-cuc-ky-20231231192345425.chn">
+                        <img class="img-normal" src="../img/Après-ski style.webp"></a>
+                </section>
+                <aside>
+                    <p><a href="./WebBFStudio.html" ><img class="img-mini1" src="../img/BFstudio.jpg"></a></p>
+                    <p><b><a href="https://kenh14.vn/apres-ski-style-khong-don-gian-la-do-truot-tuyet-day-la-phong-cach-it-girl-nao-cung-dang-me-cuc-ky-20231231192345425.chn">
+                        Après-ski style: Không đơn giản là đồ trượt tuyết, đây là phong cách IT-Girl nào cũng đang mê cực kỳ</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time>10 tháng trước</time></p>
+                    <p>Après-ski style có gì mà từ các IT-Girl đình đám như Kendall Jenner, Bella Hadid tới giới trẻ toàn cầu đều mê mẩn?</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/moon-ga-young-lai-thanh-tam-diem-coi-mang-voi-body-sieu-chay-tai-su-kien-dolce-gabbana-2023122012035864.chn">
+                        <video autoplay loop muted playsinline width=250px>
+                            <source src="../img/Moon Ga Young lại thành tâm điểm cõi mạng với body siêu cháy tại sự kiện Dolce & Gabbana.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                  
+                    <p><b><a href="https://kenh14.vn/moon-ga-young-lai-thanh-tam-diem-coi-mang-voi-body-sieu-chay-tai-su-kien-dolce-gabbana-2023122012035864.chn">
+                        Moon Ga Young lại thành tâm điểm cõi mạng với body siêu "cháy" tại sự kiện Dolce & Gabbana</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 11 tháng trước</time></p>
+                    <p>Quả nhiên danh xưng "True Beauty" của Moon Ga Young không phải tự dưng mà có!</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/bottega-veneta-va-hanh-trinh-lam-van-mau-cho-dinh-nghia-quiet-luxury-20231219165550472.chn">
+                        <img class="img-normal" src="../img/Bottega Veneta và hành trình làm văn mẫu cho định nghĩa quiet luxury.webp"></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/bottega-veneta-va-hanh-trinh-lam-van-mau-cho-dinh-nghia-quiet-luxury-20231219165550472.chn">
+                        Bottega Veneta và hành trình làm văn mẫu cho định nghĩa "quiet luxury"</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time>11 tháng trước</time></p>
+                    <p>Kể từ năm 2018 khi Daniel Lee nắm quyền sáng tạo tại Bottega Veneta, 
+                        nhà mốt di sản này không chỉ lột xác trở thành một trong những thương hiệu xa xỉ được yêu thích nhất mà còn là sách văn mẫu cho định...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/jeon-ji-hyun-tuoi-doi-muoi-xung-danh-nu-vuong-y2k-body-than-thai-hay-style-deu-dinh-mien-ban-20231216191219445.chn">
+                        <img class="img-normal" src="../img/Jeon Ji Hyun tuổi đôi mươi.webp "></a>
+                </section>
+                <aside>
+                    <p><a href="./WebBFStudio.html" ><img class="img-mini1" src="../img/BFstudio.jpg"></a></p>
+                    <p><b><a href="https://kenh14.vn/jeon-ji-hyun-tuoi-doi-muoi-xung-danh-nu-vuong-y2k-body-than-thai-hay-style-deu-dinh-mien-ban-20231216191219445.chn">
+                        Jeon Ji Hyun tuổi đôi mươi: Xứng danh "nữ vương Y2K", body, thần thái hay style đều đỉnh miễn bàn</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time>  11 tháng trước</time></p>
+                    <p>Chỉ với những bức hình chất lượng thấp từ nhiều năm trước, Jeon Ji Hyun tiếp tục gây bão cộng đồng mạng với dung nhan và sắc vóc tươi trẻ, quyến rũ.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="https://kenh14.vn/victoria-beckham-hon-24-nam-ben-nhau-david-chua-bao-gio-nhin-thay-toi-khong-co-long-may-20231215235216979.chn">
+                        <video autoplay loop muted playsinline width=250px><source src="../img/Victoria Beckham.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="https://kenh14.vn/victoria-beckham-hon-24-nam-ben-nhau-david-chua-bao-gio-nhin-thay-toi-khong-co-long-may-20231215235216979.chn">
+                        Victoria Beckham: "Hơn 24 năm bên nhau, David chưa bao giờ nhìn thấy tôi không có lông mày"</a></b></p>
+                        <p><b>Beauty&Fashion -</b> <time> 11 tháng trước</time></p>
+                    <p>Hoá ra, bà Becks cũng giống như nhiều chị em, đi theo tôn chỉ: "Lông mày là thứ tồn tại duy nhất, còn những thứ khác có hay không, không quan trọng".</p>
+                </aside>
+            </div>
+        </div>
+        
+    </div>
+    </main>
+    <footer>
+    <div class="footer-menu">
+        <a href="../Star/WebStar.html">Star</a> | 
+                <a href="../Ciné/WebCine.html">Ciné</a> | 
+                <a href="../Musik/WebMusik.html">Musik</a> | 
+                <a href="./Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | 
+                <a href="#">Sport</a> | 
+                <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a> | 
+                <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a> | 
+                <a href="/BTL/AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | 
+                <a href="#">Xem Mua Luôn</a> | 
+                <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | 
+                <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | 
+                <a href="#">Tek-Life</a> | 
+                <a href="#">Học đường</a> | 
+                <a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a> | 
+                <a href="#">Video</a>
+    </div>
+    <div class="footer-max">
+        <div class="footer-table1">
+            <table>
+                <tr>
+                    <td>
+                        <section>
+                            <a href=""><img src="../img/logoFooter.jpg" ></img></a>
+                        </section>
+                        <aside>
+                            <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                            <div class="footer-table-mini">
+                                <div class="footer-mini1">
+                                    <a href="#"><img src="../img/emojiChamHoi.jpg" width="20px"></a>
+                                    <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                </div>
+                                <div class="footer-mini2">
+                                    <a href="#"><img src="../img/emojiMail1.jpg" width="25px"></a>
+                                    <p><a href="#">bandoc@kenh14</a></p>
+                                </div>
+                            </div>
+                            <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                        </aside>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-table2">
+            <a href="#"><img src="../img/backgroundFace.jpg" width="530px" height="130px"></img></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-mini-one">
+            <h4>TRỤ SỞ HÀ NỘI</h4>
+            <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+            <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+            <div class="logo-mini">
+                <a href="#"><img src="../img/emojiMap.jpg" width="17px"></a>
+                <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+            </div>
+
+            <div class="footer-mini-one-1">
+                <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                <span>Điện thoại: 028 7307 7979</span>
+                <div class="logo-mini">
+                    <a href="#"><img src="../img/emojiMap.jpg" width="15px"></a>
+                    <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                </div>
+            </div>    
+        </div>
+        <hr/>
+        <div class="footer-mini-two">
+            <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+            <span>Bà Nguyễn Bích Minh</span><br>
+            <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+            <div class="logo-mini">
+                <img src="../img/emojiPhone.jpg" width="20px"></a>
+                <span>024.73095555 (máy lẻ 62.370)</span><br>
+            </div>
+            <div class="logo-mini-1">
+                <a href="#"><img src="../img/emojiMail2.jpg" width="30px"></a>
+                <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+            </div>
+            <h4>LIÊN HỆ QUẢNG CÁO</h4>
+            <div class="logo-mini">
+                <img src="../img/emojiPhone.jpg" width="20px"></a>
+                <span>02473007108</span>
+            </div>
+            <div class="logo-mini-1">
+                <a href="#"><img src="../img/emojiMail2.jpg" width="30px"></a>
+                <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+            </div>
+            <div class="chat-table-1">
+                <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+            </div>
+            <div class="chat-table-2">
+                <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+            </div>
+            <div class="chat-table-3">
+                <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+            </div>
+        </div>
+        <hr class="DK"/>
+        <div class="footer-mini-three">
+            <a href=""><img src="../img/logoVCCorp.jpg" width="120px" ></a>
+            <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+            <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+            <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+    
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+</body>
+
+</html>
+
+
+        

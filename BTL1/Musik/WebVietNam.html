@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức âm nhạc Việt Nam - Vòng quanh Vpop, music viet - Kenh14.vn  </title>
+    <link rel="stylesheet" href="../CSS/skin.css">
+    <link rel="import" href="../component.html">
+    <script src="../JS/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+  
+</head>
+    
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search-bar">
+                        <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                        <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="container">
+                    <div class="logo">
+                        <a href="../demoBTL.html"><img src="../img/logo.png" alt="Kenh14 Logo"></a>
+                        <div class="logo-text">
+                            <span class="logo-main">kenh14.vn</span>
+                            <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                        </div>
+                    </div>
+                    <div class="trending-topics">
+                        <span class="arrow-icon">&#x2197;</span>
+                        <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                        <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                        <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <nav class="main-nav">
+                <div class="container">
+                    <ul class="mains-menu">
+                        <li><a href="../demoBTL.html"><i class="fas fa-home"></i></a></li>
+                        <li><a href="../Star/WebStar.html">Star</a></li>
+                        <li><a href="../Ciné/WebCine.html">Ciné</a></li>
+                        <li><a href="../Musik/WebMusik.html">Musik</a></li>
+                        <li><a href="../Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a></li>
+                        <li><a href="../DoiSong/WebDoiSong.html">Đời sống</a></li>
+                        <li><a href="#">Money-Z</a></li>
+                        <li><a href="#">Ăn - Quẩy - Đi</a></li>
+                        <li><a href="#">Xã hội</a></li>
+                        <li><a href="#">Sức khỏe</a></li>
+                        <li><a href="#">Tek-life</a></li>
+                        <li><a href="#">Học đường</a></li>
+                        <li><a href="#">Xem Mua Luôn</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li class="main-menu">
+                            <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+    
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="subs-menu">
+                <div class="container">
+                    <div class="menu-row">
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Đời sống</a>
+                            <div class="submenu">
+                                <a href="#">Nhân vật</a>
+                                <a href="#">Xem-Ăn-Chơi</a>
+                                <a href="#">House n Home</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Xem mua luôn</a>
+                            <div class="submenu">
+                                <a href="#">Thời trang</a>
+                                <a href="#">Đẹp</a>
+                                <a href="#">Mommy mua di</a>
+                            </div>
+                        </div>
+                        <div  class="menu-column">
+                            <a class="title-menu" href="#">Sport</a>
+                            <div class="submenu">
+                                <a href="#">Bóng đá</a>
+                                <a href="#">Bóng rổ</a>
+                                <a href="#">Bóng chuyền</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="../Musik/WebMusik.html">Musik</a>
+                            <div class="submenu">
+                                <a href="../Musik/WebAuMy.html">Âu-Mỹ</a>
+                                <a href="../Musik/WebChauA.html">Châu Á</a>
+                                <a href="../Musik/WebVietNam.html">Việt Nam</a>
+                                <a href="../demoBTL.html">Hip-hop neva die</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="../Ciné/WebCine.html">Ciné</a>
+                            <div class="submenu">
+                                <a href="../Ciné/WebPhimChieuRap.html">Phim chiếu rạp</a>
+                                <a href="../Ciné/WebPhimVietNam.html">Phim Việt Nam</a>
+                                <a href="../Ciné/WebSeriesTruyenHinh.html">Series truyền hình</a>
+                                <a href="../Ciné/WebHoaNguHanQuoc.html">Hoa ngữ - Hàn Quốc</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Tek-Life</a>
+                            <div class="submenu">
+                                <a href="#">Metaverse</a>
+                                <a href="#">How-To</a>
+                                <a href="#">Wow</a>
+                                <a href="#">2-Mall</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-row">
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Star</a>
+                            <div class="submenu">
+                                <a href="../Star/WebSaoViet.html">Sao Việt</a>
+                                <a href="../Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
+                                <a href="../Star/WebTVShow.html">TV Show</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Xã hội</a>
+                            <div class="submenu">
+                                <a href="#">Pháp luật</a>
+                                <a href="#">Nóng trên mạng</a>
+                                <a href="#">Sống xanh</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Học đường</a>
+                            <div class="submenu">
+                                <a href="#">Nhân vật</a>
+                                <a href="#">Du học</a>
+                                <a href="#">Bản tin 46'</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Thế giới đó đây</a>
+                            <div class="submenu">
+                                <a href="#">Chùm ảnh</a>
+                                <a href="#">Khám phá</a>
+                                <a href="#">Dị</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Sức khỏe</a>
+                            <div class="submenu">
+                                <a href="#">Sức khỏe</a>
+                                <a href="#">Tin tức</a>
+                                <a href="#">Dinh dưỡng</a>
+                                <a href="#">Khỏe đẹp</a>
+                                <a href="#">Giới tính</a>
+                                <a href="#">Các bệnh</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="border-solid"></div>
+                <div class="web-info">
+                    <span class="title-mini-web">Tải app</span>
+                    <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BB%A3/id670518264?ls=1" target="_blank">IOS</a>
+                    <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                    <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                    <a class="title-mini-web" href="#">Liên hệ</a>
+                    <a class="mini-web" href="https://kenh14.vn/adv.chn">Quảng cáo</a>
+                </div>
+            </div>
+        </header>
+        </div>
+        <div class="space">  </div>
+        <main>
+        <div id="page">
+            <div id="page">
+                <div class="hi">
+                    <ul>
+                        <li><a href="./WebMusik.html"><b>MUSIK</b></a></li>
+                        <li><a href="./WebAuMy.html"><b>ÂU MỸ</b></a></li>
+                        <li><a href="./WebChauA.html"><b>CHÂU Á</b></a></li>
+                        <li><a href="./WebVietNam.html"><b>VIỆT NAM</b></a></li>
+                        <li><a href="../Star/WebStar.html"><b>STAR</b></a></li>
+                    
+                    </ul>
+                </div>
+                <hr/>
+            <div class="body">
+                <div class="one">
+                    <section>
+                        <a href="https://kenh14.vn/bo-anh-nha-hang-mv-chi-dep-cang-nhin-cang-thay-kpop-215241022160536939.chn">
+                            <img src="../img/Bộ ảnh nhá hàng MV Chị Đẹp.webp"></a>
+                        <p><b><a href="#">Bộ ảnh nhá hàng MV Chị Đẹp: Càng nhìn càng thấy... Kpop</a></b></p>
+                        <p>MV chủ đề cho Chị Đẹp Đạp Gió 2024 gây ấn tượng với phần visual sang xịn mịn.</a>
+                        </p>
+                    </section>
+                    <aside>
+                        <a href="https://kenh14.vn/liz-kim-cuong-lot-xac-thanh-nguoi-khac-215241022161710983.chn" >
+                            <img src="../img/Liz Kim Cương lột xác thành người khác.webp" class="img-aside3">
+                        </a>
+                        <p><b><a href="#">Liz Kim Cương lột xác thành người khác</a></b></p>
+                        <a href="https://kenh14.vn/can-canh-man-thay-do-nhanh-nhu-chop-cua-duc-phuc-bieu-dien-tren-san-khau-ma-tuong-thi-chay-marathon-215241022180200345.chn" >
+                            <video autoplay loop muted playsinline width=200px><source src="../img/Cận cảnh màn thay đồ nhanh như chớp của Đức Phúc, biểu diễn trên....mp4" type="video/mp4"></video></a>
+                        </a>
+                        <p><b><a href="#">Cận cảnh màn thay đồ nhanh như chớp của Đức Phúc, biểu diễn trên...</a></b></p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/tuan-hung-hanh-phuc-voi-hanh-trinh-tai-anh-trai-vuot-ngan-chong-gai-215241021102424049.chn">
+                            <img class="img-normal" src="../img/Tuấn Hưng hạnh phúc với hành trình tại.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Tuấn Hưng hạnh phúc với hành trình tại "Anh trai vượt ngàn chông gai"</a></b></p>
+                       <p><b>Musik -</b> <time> 10 giờ trước</time></p>
+                        <p>Sau khi "Anh trai vượt ngàn chông gai" khép lại, Tuấn Hưng nói anh sẽ tiếp tục bền bỉ trên con đường âm nhạc.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/cach-hieuthuhai-danh-cap-trai-tim-thieu-nu-215241021113759633.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/HIEUTHUHAI không chỉ đẹp trai, tài năng mà còn biết cách chiều fan.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">HIEUTHUHAI không chỉ đẹp trai, tài năng mà còn biết cách chiều fan.</a></b></p>
+                        <p><b>Musik -</b> <time> 9 giờ trước</time></p>
+                        <p>Cách HIEUTHUHAI “đánh cắp" trái tim thiếu nữ</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/tuan-hung-noi-ve-ket-qua-show-anh-trai-215241022154312657.chn">
+                            <img class="img-normal" src="../img/Tuấn Hưng nói về kết quả show Anh Trai.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Tuấn Hưng nói về kết quả show Anh Trai</a></b></p>
+                        <p><b>Musik -</b> <time> 7 giờ trước</time></p>
+                        <p>Tuấn Hưng chia sẻ về kết quả đêm chung kết "Anh trai vượt ngàn chông gai". Đồng thời, ca sĩ tiết lộ về người anh muốn cùng hợp tác nhất...</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/anh-trai-say-hi-vua-cong-bo-so-luong-khan-gia-2-dem-concert-lap-tuc-bi-netizen-goi-la-concert-phong-bat-215241022143508146.chn">
+                            <img class="img-normal" src="../img/Anh Trai Say Hi vừa công bố số lượng khán giả 2 đêm concert.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Anh Trai Say Hi vừa công bố số lượng khán giả 2 đêm concert, lập tức bị netizen đặt dấu hỏi to đùng!</a></b></p>
+                        <p><b>Musik -</b> <time> 8 giờ trước</time></p>
+                        <p>Anh Trai Say Hi lại gây tranh cãi, lần này là việc tự thông báo quy mô 2 đêm concert.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/dem-chung-ket-2-show-chong-gai-ket-thuc-dam-le-san-khau-ve-me-len-song-dung-dip-20-10-khien-ai-cung-xuc-dong-215241020094851476.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Đêm Chung kết 2 show Chông Gai kết thúc đẫm lệ.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Đêm Chung kết 2 show Chông Gai kết thúc đẫm lệ, sân khấu về mẹ lên sóng đúng dịp 20/10 khiến ai cũng xúc động!</a></b></p>
+                        <p><b>Musik -</b> <time> 1 ngày trước</time></p>
+                        <p>Đêm Chung kết Anh Trai Vượt Ngàn Chông Gai đã để lại rất nhiều cảm xúc cho khán giả.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/sau-show-anh-trai-st-son-thach-noi-khong-thich-ai-nua-215241020102555013.chn">
+                            <img class="img-normal" src="../img/Sau show Anh Trai, S.T Sơn Thạch nói không thích ai nữa.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Sau show Anh Trai, S.T Sơn Thạch nói không thích ai nữa</a></b></p>
+                        <p><b>Musik -</b> <time> 1 ngày trước</time></p>
+                        <p>"Trước Anh Trai Vượt Ngàn Chông Gai, S.T thân với vài người và cũng thích vài người. Nhưng sau chương trình, nói thật là S.T không thích...</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/thong-tin-xu-ly-vu-ca-si-show-anh-trai-bi-to-vo-on-215241019150106076.chn">
+                            <img class="img-normal"src="../img/Thông tin xử lý vụ ca sĩ show Anh trai bị tố vô ơn.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Thông tin xử lý vụ ca sĩ show Anh trai bị tố vô ơn</a></b></p>
+                        <p><b>Musik -</b> <time> 2 ngày trước</time></p>
+                        <p>Đại diện ca sĩ Quang Hùng MasterD và Xuân Định K.Y cùng thông báo hai ca sĩ ngồi lại giải quyết ổn thỏa vấn đề xoay quanh tác quyền hai ca...</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/bi-che-so-voi-show-doi-thu-anh-tai-mo-hon-show-chong-gai-co-man-dap-tra-khien-dan-tinh-ha-he-215241021231345392.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Bị chê so với show đối thủ, anh tài mỏ hỗn show Chông Gai có màn đáp trả khiến dân tình hả hê.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Bị chê so với show “đối thủ”, anh tài “mỏ hỗn” show Chông Gai có màn đáp trả khiến dân tình hả hê</a></b></p>
+                        <p><b>Musik -</b> <time> 12 giờ trước</time></p>
+                        <p>Anh tài được mệnh danh là “mỏ hỗn” của Anh Trai Vượt Ngàn Chông Gai không ngại “va” với anti-fan.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/say-dam-voi-liveshow-nhac-si-215241019151700727.chn">
+                            <img class="img-normal"src="../img/Say đắm với liveshow nhạc sĩ.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Say đắm với liveshow nhạc sĩ</a></b></p>
+                        <p><b>Musik -</b> <time> 2 ngày trước</time></p>
+                        <p>Thời gian gần đây, những đêm nhạc của các nhạc sĩ ngày càng gia tăng bởi sự yêu mến của khán giả.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/phan-ung-cua-cac-anh-trai-khi-khan-gia-ho-ten-negav-215241020073110924.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Phản ứng của các Anh Trai khi khán giả hô tên Negav.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Phản ứng của các Anh Trai khi khán giả hô tên Negav</a></b></p>
+                        <p><b>Musik -</b> <time> 3 ngày trước</time></p>
+                        <p>Khán giả liên tục hô tên Negav ở concert 2 của Anh Trai Say Hi.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/tran-thanh-lai-khoc-215241018230740713.chn">
+                            <img class="img-normal"src="../img/Trấn Thành lại khóc.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Trấn Thành lại khóc</a></b></p>
+                         <p><b>Musik -</b> <time> 2 ngày trước</time></p>
+                        <p>Màn trình diễn của Ngọc Anh 3A khiến MC Trấn Thành bật khóc. Nam MC luôn đặt nhiều cảm xúc khi dẫn các show âm nhạc.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/hot-xac-nhan-concert-anh-trai-vuot-ngan-chong-gai-va-anh-trai-say-hi-tai-ha-noi-215241020012720827.chn">
+                            <img class="img-normal" src="../img/Xác nhận concert Anh Trai Vượt Ngàn Chông Gai và Anh Trai Say Hi tại Hà Nội.webp"></a>
+                        </section>
+                    <aside>
+                        <p><b><a href="#">HOT: Xác nhận concert Anh Trai Vượt Ngàn Chông Gai và Anh Trai Say Hi tại Hà Nội</a></b></p>
+                        <p><b>Musik -</b> <time> 3 ngày trước</time></p>
+                        <p>Concert Anh Trai Chông Gai và Anh Trai Say Hi chính thức đổ bộ thủ đô.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/tap-cuoi-ngap-tran-nuoc-mat-cua-anh-trai-vuot-ngan-chong-gai-soobin-nuc-no-van-qua-dep-trai-215241018173202144.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Tập cuối ngập tràn nước mắt của Anh Trai Vượt Ngàn Chông Gai.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Tập cuối ngập tràn nước mắt của Anh Trai Vượt Ngàn Chông Gai: SOOBIN nức nở vẫn quá đẹp trai!</a></b></p>
+                        <p><b>Musik -</b> <time> 3 ngày trước</time></p>
+                        <p>Các anh tài đồng loạt bật khóc nức nở trong trailer Chung kết 2 của show Chông Gai.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/rhyder-bi-doi-vi-tri-day-ra-ria-poster-du-la-a-quan-anh-trai-say-hi-khien-fan-buc-xuc-215241019151156562.chn">
+                            <img class="img-normal" src="../img/Rhyder bị đổi vị trí, đẩy ra rìa poster dù là Á quân Anh Trai Say Hi khiến fan bức xúc.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Rhyder bị đổi vị trí, đẩy ra rìa poster dù là Á quân Anh Trai Say Hi khiến fan bức xúc</a></b></p>
+                        <p><b>Musik -</b> <time> 3 ngày trước</time></p>
+                        <p>Tranh cãi poster lại nổ ra ngay trước thềm concert Anh trai Say Hi.</p>
+                    </aside>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <div class="footer-menu">
+                <a href="../Star/WebStar.html">Star</a> | 
+                        <a href="../Ciné/WebCine.html">Ciné</a> | 
+                        <a href="../Musik/WebMusik.html">Musik</a> | 
+                        <a href="../Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | 
+                        <a href="#">Sport</a> | 
+                        <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a> | 
+                        <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a> | 
+                        <a href="/BTL/AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | 
+                        <a href="#">Xem Mua Luôn</a> | 
+                        <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | 
+                        <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | 
+                        <a href="#">Tek-Life</a> | 
+                        <a href="#">Học đường</a> | 
+                        <a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a> | 
+                        <a href="#">Video</a>
+            </div>
+            <div class="footer-max">
+                <div class="footer-table1">
+                    <table>
+                        <tr>
+                            <td>
+                                <section>
+                                    <a href=""><img src="../img/logoFooter.jpg" ></img></a>
+                                </section>
+                                <aside>
+                                    <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                                    <div class="footer-table-mini">
+                                        <div class="footer-mini1">
+                                            <a href="#"><img src="../img/emojiChamHoi.jpg" width="20px"></a>
+                                            <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                        </div>
+                                        <div class="footer-mini2">
+                                            <a href="#"><img src="../img/emojiMail1.jpg" width="25px"></a>
+                                            <p><a href="#">bandoc@kenh14</a></p>
+                                        </div>
+                                    </div>
+                                    <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                                </aside>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footer-table2">
+                    <a href="#"><img src="../img/backgroundFace.jpg" width="530px" height="130px"></img></a>
+                </div>
+            </div>
+        
+            <div class="footer">
+                <div class="footer-mini-one">
+                    <h4>TRỤ SỞ HÀ NỘI</h4>
+                    <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+                    <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+                    <div class="logo-mini">
+                        <a href="#"><img src="../img/emojiMap.jpg" width="17px"></a>
+                        <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                    </div>
+        
+                    <div class="footer-mini-one-1">
+                        <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                        <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                        <span>Điện thoại: 028 7307 7979</span>
+                        <div class="logo-mini">
+                            <a href="#"><img src="../img/emojiMap.jpg" width="15px"></a>
+                            <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                        </div>
+                    </div>    
+                </div>
+                <hr/>
+                <div class="footer-mini-two">
+                    <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+                    <span>Bà Nguyễn Bích Minh</span><br>
+                    <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+                    <div class="logo-mini">
+                        <img src="../img/emojiPhone.jpg" width="20px"></a>
+                        <span>024.73095555 (máy lẻ 62.370)</span><br>
+                    </div>
+                    <div class="logo-mini-1">
+                        <a href="#"><img src="../img/emojiMail2.jpg" width="30px"></a>
+                        <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                    </div>
+                    <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                    <div class="logo-mini">
+                        <img src="../img/emojiPhone.jpg" width="20px"></a>
+                        <span>02473007108</span>
+                    </div>
+                    <div class="logo-mini-1">
+                        <a href="#"><img src="../img/emojiMail2.jpg" width="30px"></a>
+                        <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                    </div>
+                    <div class="chat-table-1">
+                        <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+                    </div>
+                    <div class="chat-table-2">
+                        <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+                    </div>
+                    <div class="chat-table-3">
+                        <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+                    </div>
+                </div>
+                <hr class="DK"/>
+                <div class="footer-mini-three">
+                    <a href=""><img src="../img/logoVCCorp.jpg" width="120px" ></a>
+                    <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+                    <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+                    <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+            
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+        </body>
+        
+        </html>
+        
+        
+                

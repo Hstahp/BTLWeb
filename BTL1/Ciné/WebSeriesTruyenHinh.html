@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine - Tin phim ảnh, lịch chiếu phim, review phim mới nhất - Kenh14.vn  </title>
+    <link rel="stylesheet" href="../CSS/skin.css">
+    <link rel="import" href="../component.html">
+    <script src="../JS/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+  
+</head>
+    
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search-bar">
+                        <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                        <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="container">
+                    <div class="logo">
+                        <a href="../demoBTL.html"><img src="../img/logo.png" alt="Kenh14 Logo"></a>
+                        <div class="logo-text">
+                            <span class="logo-main">kenh14.vn</span>
+                            <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                        </div>
+                    </div>
+                    <div class="trending-topics">
+                        <span class="arrow-icon">&#x2197;</span>
+                        <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                        <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                        <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <nav class="main-nav">
+                <div class="container">
+                    <ul class="mains-menu">
+                        <li><a href="../demoBTL.html"><i class="fas fa-home"></i></a></li>
+                        <li><a href="../Star/WebStar.html">Star</a></li>
+                        <li><a href="./WebCine.html">Ciné</a></li>
+                        <li><a href="../Musik/WebMusik.html">Musik</a></li>
+                        <li><a href="../Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a></li>
+                        <li><a href="../DoiSong/WebDoiSong.html">Đời sống</a></li>
+                        <li><a href="#">Money-Z</a></li>
+                        <li><a href="#">Ăn - Quẩy - Đi</a></li>
+                        <li><a href="#">Xã hội</a></li>
+                        <li><a href="#">Sức khỏe</a></li>
+                        <li><a href="#">Tek-life</a></li>
+                        <li><a href="#">Học đường</a></li>
+                        <li><a href="#">Xem Mua Luôn</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li class="main-menu">
+                            <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+    
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="subs-menu">
+                <div class="container">
+                    <div class="menu-row">
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Đời sống</a>
+                            <div class="submenu">
+                                <a href="#">Nhân vật</a>
+                                <a href="#">Xem-Ăn-Chơi</a>
+                                <a href="#">House n Home</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Xem mua luôn</a>
+                            <div class="submenu">
+                                <a href="#">Thời trang</a>
+                                <a href="#">Đẹp</a>
+                                <a href="#">Mommy mua di</a>
+                            </div>
+                        </div>
+                        <div  class="menu-column">
+                            <a class="title-menu" href="#">Sport</a>
+                            <div class="submenu">
+                                <a href="#">Bóng đá</a>
+                                <a href="#">Bóng rổ</a>
+                                <a href="#">Bóng chuyền</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="../Musik/WebMusik.html">Musik</a>
+                            <div class="submenu">
+                                <a href="../Musik/WebAuMy.html">Âu-Mỹ</a>
+                                <a href="../Musik/WebChauA.html">Châu Á</a>
+                                <a href="../Musik/WebVietNam.html">Việt Nam</a>
+                                <a href="../demoBTL.html">Hip-hop neva die</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="../Ciné/WebCine.html">Ciné</a>
+                            <div class="submenu">
+                                <a href="../Ciné/WebPhimChieuRap.html">Phim chiếu rạp</a>
+                                <a href="../Ciné/WebPhimVietNam.html">Phim Việt Nam</a>
+                                <a href="../Ciné/WebSeriesTruyenHinh.html">Series truyền hình</a>
+                                <a href="../Ciné/WebHoaNguHanQuoc.html">Hoa ngữ - Hàn Quốc</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Tek-Life</a>
+                            <div class="submenu">
+                                <a href="#">Metaverse</a>
+                                <a href="#">How-To</a>
+                                <a href="#">Wow</a>
+                                <a href="#">2-Mall</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-row">
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Star</a>
+                            <div class="submenu">
+                                <a href="../Star/WebSaoViet.html">Sao Việt</a>
+                                <a href="../Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
+                                <a href="../Star/WebTVShow.html">TV Show</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Xã hội</a>
+                            <div class="submenu">
+                                <a href="#">Pháp luật</a>
+                                <a href="#">Nóng trên mạng</a>
+                                <a href="#">Sống xanh</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Học đường</a>
+                            <div class="submenu">
+                                <a href="#">Nhân vật</a>
+                                <a href="#">Du học</a>
+                                <a href="#">Bản tin 46'</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Thế giới đó đây</a>
+                            <div class="submenu">
+                                <a href="#">Chùm ảnh</a>
+                                <a href="#">Khám phá</a>
+                                <a href="#">Dị</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Sức khỏe</a>
+                            <div class="submenu">
+                                <a href="#">Sức khỏe</a>
+                                <a href="#">Tin tức</a>
+                                <a href="#">Dinh dưỡng</a>
+                                <a href="#">Khỏe đẹp</a>
+                                <a href="#">Giới tính</a>
+                                <a href="#">Các bệnh</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="border-solid"></div>
+                <div class="web-info">
+                    <span class="title-mini-web">Tải app</span>
+                    <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BB%A3/id670518264?ls=1" target="_blank">IOS</a>
+                    <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                    <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                    <a class="title-mini-web" href="#">Liên hệ</a>
+                    <a class="mini-web" href="https://kenh14.vn/adv.chn">Quảng cáo</a>
+                </div>
+            </div>
+        </header>
+        </div>
+        <div class="space">  </div>
+        <main>
+        <div id="page">
+            <div id="page">
+                <div class="hi1">
+                    <ul>
+                        <li><a href="./WebCine.html"><b>CINE</b></a></li>
+                        <li><a href="./WebPhimChieuRap.html"><b>PHIM CHIẾU RẠP</b></a></li>
+                        <li><a href="./WebPhimVietNam.html"><b>PHIM VIỆT NAM</b></a></li>
+                        <li><a href="./WebSeriesTruyenHinh.html"><b>SERIES TRUYỀN HÌNH</b></a></li>
+                        <li><a href="./WebHoaNguHanQuoc.html"><b>HOA NGỮ - HÀN QUỐC</b></a></li>
+                        <li><a href="../Star/WebStar.html"><b>STAR</b></a></li>
+                        <li><a href="../Musik/WebMusik.html"><b>MUSIK</b></a></li>
+                    </ul>
+                </div>
+                <hr/>
+            <div class="body">
+                <div class="one">
+                    <section>
+                        <a href="https://kenh14.vn/angelina-jolie-duoc-ban-trai-tin-don-ung-ho-tai-buoi-ra-mat-phim-o-london-215241019155403839.chn://kenh14.vn/vu-dieu-tiec-nuoi-nhat-cua-toi-la-khong-dam-noi-loi-yeu-ca-tuoi-tre-chua-to-tinh-ai-215241010135353842.chn">
+                            <img src="../img/Angelina Jolie được bạn trai tin đồn ủng hộ tại buổi ra mắt phim ở London.webp"></a>
+                        <p><b><a href="#">Angelina Jolie được bạn trai tin đồn ủng hộ tại buổi ra mắt phim ở London</a></b></p>
+                        <p>Angelina Jolie được bạn trai tin đồn Akala ủng hộ trong buổi ra mắt phim Maria tại Liên hoan phim London BFI lần thứ 68 ở London, vào...</a>
+                        </p>
+                    </section>
+                    <aside>
+                        <a href="https://kenh14.vn/ket-phim-di-giua-troi-ruc-ro-nhu-tat-nuoc-vao-khan-gia-215241019084712094.chn" >
+                            <img src="../img/Kết phim Đi Giữa Trời Rực Rỡ như tạt nước vào khán giả.webp" class="img-aside3">
+                        </a>
+                        <p><b><a href="#">Kết phim Đi Giữa Trời Rực Rỡ như tạt nước vào khán giả</a></b></p>
+                        <a href="https://kenh14.vn/cap-doi-tram-anh-the-phiet-dung-chuan-xe-truyen-buoc-ra-nu-chinh-la-my-nhan-dep-nhat-phim-han-2024-215241019135028599.chn">
+                            <img src="../img/Cặp đôi trâm anh thế phiệt đúng chuẩ.webp" class="img-aside3">
+                        </a>
+                        <p><b><a href="#">Cặp đôi trâm anh thế phiệt đúng chuẩn “xé truyện bước ra”, nữ chính là mỹ nhân đẹp nhất phim Hàn 2024</a></b></p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/dien-vien-hong-anh-gap-van-de-ve-suc-khoe-nhieu-sao-viet-lo-lang-hoi-han-215241016184242228.chn">
+                            <img class="img-normal" src="../img/Phim Hàn lãng mạn siêu chữa lành có cặp chính hợp nhau tuyệt đối, đến thở thôi cũng đẹp đôi.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Phim Hàn lãng mạn siêu chữa lành có cặp chính hợp nhau tuyệt đối, đến thở thôi cũng đẹp đôi</a></b></p>
+                        <p><b>Cine -</b> <time> 11 giờ trước</time></p>
+                        <p>Bộ phim lãng mạn Hàn này là một tác phẩm đáng chờ đợi trong giai đoạn cuối năm 2024.</p>
+                    </aside>
+                </div>
+               Fquas
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/luu-diec-phi-bi-ke-thu-co-lap-215241018212917401.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Lưu Diệc Phi bị kẻ thù cô lập.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Lưu Diệc Phi bị "kẻ thù" cô lập</a></b></p>
+                        <p><b>Cine -</b> <time> 1 ngày trước</time></p>
+                        <p>Trong làng giải trí có nhiều người không ưa Lưu Diệc Phi.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/my-nhan-hoa-ngu-dep-nhu-tien-nu-xe-tranh-buoc-ra-nhan-sac-hoan-hao-troi-sinh-de-dong-co-trang-215241016233720908.chn">
+                            <img class="img-normal" src="../img/Mỹ nhân Hoa ngữ đẹp như tiên nữ.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Mỹ nhân Hoa ngữ đẹp như tiên nữ “xé tranh bước ra”, nhan sắc hoàn hảo trời sinh để đóng cổ trang</a></b></p>
+                        <p><b>Cine -</b> <time> 1 ngày trước</time></p>
+                        <p>Mỹ nhân có vẻ đẹp trong trẻo tựa tình đầu cùng đôi mắt ướt át khiến ai cũng muốn che chở.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/phim-moi-cua-thanh-long-bi-che-si-nhuc-nguoi-xem-215241018152404989.chn">
+                            <img class="img-normal" src="../img/Phim mới của Thành Long bị chê sỉ nhục người xem.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Phim mới của Thành Long bị chê sỉ nhục người xem</a></b></p>
+                        <p><b>Cine -</b> <time> 1 ngày trước</time></p>
+                        <p>TPanda Plan, bộ phim hành động gia đình mới nhất của Thành Long, nhận đánh giá tiêu cực từ truyền thông. Theo SCMP, người xem bị sỉ nhục...</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/nu-chinh-phim-viet-gio-vang-dien-canh-khoc-qua-do-netizen-ngan-ngam-cha-biet-dang-khoc-hay-dang-cuoi-215241018225527224.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Phim Việt giờ vàng bị mắng oan.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Phim Việt giờ vàng bị mắng oan</a></b></p>
+                        <p><b>Cine -</b> <time> 2 ngày trước</time></p>
+                        <p>Giữa muôn vàn tình tiết gây tranh cãi, bộ phim bất ngờ được người xem bênh vực.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/do-thanh-son-dao-dien-di-giua-troi-ruc-ro-khan-gia-viet-chua-bao-gio-quay-lung-voi-phim-viet-215241018101114167.chn">
+                            <img class="img-normal" src="../img/Đỗ Thanh Sơn - Đạo diễn Đi Giữa Trời Rực Rỡ.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Đỗ Thanh Sơn - Đạo diễn Đi Giữa Trời Rực Rỡ: “Khán giả Việt chưa bao giờ quay lưng với phim Việt”</a></b></p>
+                        <p><b>Cine -</b> <time> 2 ngày trước</time></p>
+                        <p>Ngay trước khi bộ phim hiện tượng của truyền hình Việt Nam kết thúc, đạo diễn Đỗ Thanh Sơn đã có một cuộc trò chuyện với chúng tôi về...</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/my-nhan-hoa-ngu-bi-mang-toi-ta-khap-mxh-dep-nguoi-xau-net-hoi-tu-du-moi-khuyet-diem-215241018121534545.chn">
+                            <img class="img-normal"src="../img/Mỹ nhân Hoa ngữ bị mắng tơi tả khắp MXH.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Mỹ nhân Hoa ngữ bị mắng tơi tả khắp MXH: Đẹp người xấu nết, hội tụ đủ mọi khuyết điểm</a></b></p>
+                        <p><b>Cine -</b> <time> 2 ngày trước</time></p>
+                        <p>Mỹ nhân Hoa ngữ này đang phải nhận nhiều ý kiến trái chiều từ khán giả.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/phim-viet-moi-chieu-da-dung-top-1-doanh-thu-phong-ve-dan-cast-tau-hai-cuc-manh-khien-khan-gia-cuoi-nghieng-nga-215241018113448244.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Phim Việt mới chiếu đã đứng top 1 doanh thu phòng vé.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Phim Việt mới chiếu đã đứng top 1 doanh thu phòng vé, dàn cast tấu hài cực mạnh khiến khán giả cười nghiêng ngả</a></b></p>
+                        <p><b>Cine -</b> <time> 2 ngày trước</time></p>
+                        <p>Bộ phim mới toanh của màn ảnh Việt đang nhận về sự quan tâm lớn từ khán giả.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/nhan-sac-gay-soc-cua-chuc-anh-dai-dep-nhat-man-anh-215241017194907428.chn">
+                            <img class="img-normal"src="../img/Nhan sắc gây sốc của Chúc Anh Đài đẹp nhất màn ảnh.webp "></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Nhan sắc gây sốc của Chúc Anh Đài đẹp nhất màn ảnh</a></b></p>
+                        <p><b>Cine -</b> <time> 2 ngày trước</time></p>
+                        <p>Hình ảnh mới của mỹ nhân đình đám một thời khiến khán giả bàn tán xôn xao.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/my-nhan-hoa-ngu-vac-bung-bau-len-san-khau-nhan-sac-thang-hang-du-doi-duoc-netizen-ca-ngoi-het-loi-215241017231733991.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Mỹ nhân Hoa ngữ vác bụng bầu lên sân khấu.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Mỹ nhân Hoa ngữ vác bụng bầu lên sân khấu, nhan sắc thăng hạng dữ dội được netizen ca ngợi hết lời</a></b></p>
+                        <p><b>Cine -</b> <time> 2 ngày trước</time></p>
+                        <p>Nữ diễn viên Hoa ngữ này gây chú ý khi mang bụng bầu đi sự kiện quảng bá phim mới.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/domino-loi-thoat-cuoi-cung-phim-hanh-dong-viet-cang-xem-cang-cuon-nhung-sao-giong-bo-gia-the-nay-215241012190334567.chn">
+                            <img class="img-normal"src="../img/Phim hành động Việt càng xem càng cuốn nhưng sao giống Bố Già thế này.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Domino: Lối Thoát Cuối Cùng - Phim hành động Việt càng xem càng cuốn nhưng sao giống Bố Già thế này?</a></b></p>
+                        <p><b>Cine -</b> <time> 8 ngày trước</time></p>
+                        <p>Tựa phim hành động mới ra rạp của Thuận Nguyễn có chất lượng khá tốt nhưng kịch bản lại na ná Bố Già.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/phim-viet-tung-canh-giuong-chieu-gay-hoang-mang-215241017204119774.chn">
+                            <img class="img-normal"src="../img/Phim Việt tung cảnh giường chiếu gây hoang mang.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Phim Việt tung cảnh giường chiếu gây hoang mang</a></b></p>
+                        <p><b>Cine -</b> <time> 3 ngày trước</time></p>
+                        <p>Nữ diễn viên xinh đẹp này sẽ vào vai người thứ ba, chen vào phá hoại gia đình người khác.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/phim-19-qua-hai-chiem-top-1-viet-nam-nu-chinh-lot-xac-dinh-cao-voi-vai-dien-doc-la-nhat-su-nghiep-215241017185048027.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Phim 19+ quá hài chiếm top 1 Việt Nam.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Phim 19+ quá hài chiếm top 1 Việt Nam, nữ chính lột xác đỉnh cao với vai diễn độc lạ nhất sự nghiệp</a></b></p>
+                        <p><b>Cine -</b> <time> 3 ngày trước</time></p>
+                        <p>Bộ phim này đang nhận về rất nhiều lời tán dương từ khán giả.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="hhttps://kenh14.vn/bo-phim-cuoi-cung-cua-nghe-si-nhan-dan-hoang-dung-ra-rap-215241017171632394.chn">
+                            <img class="img-normal" src="../img/Bộ phim cuối cùng của Nghệ sĩ Nhân dân Hoàng Dũng ra rạp.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Bộ phim cuối cùng của Nghệ sĩ Nhân dân Hoàng Dũng ra rạp</a></b></p>
+                        <p><b>Cine -</b> <time> 3 ngày trước</time></p>
+                        <p>Cố Nghệ sĩ Nhân dân Hoàng Dũng là một trong những tên tuổi lớn của nền điện ảnh Việt Nam đương đại.</p>
+                    </aside>
+                </div>
+                
+            </div>
+           
+    </div>
+</main>
+<footer>
+    <div class="footer-menu">
+        <a href="../Star/WebStar.html">Star</a> | 
+        <a href="../Ciné/WebCine.html">Ciné</a> | 
+        <a href="../Musik/WebMusik.html">Musik</a> | 
+        <a href="../Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | 
+        <a href="#">Sport</a> | 
+        <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a> | 
+        <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a> | 
+        <a href="/BTL/AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | 
+        <a href="#">Xem Mua Luôn</a> | 
+        <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | 
+        <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | 
+        <a href="#">Tek-Life</a> | 
+        <a href="#">Học đường</a> | 
+        <a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a> | 
+        <a href="#">Video</a>
+    </div>
+    <div class="footer-max">
+        <div class="footer-table1">
+            <table>
+                <tr>
+                    <td>
+                        <section>
+                            <a href=""><img src="../img/logoFooter.jpg" ></img></a>
+                        </section>
+                        <aside>
+                            <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                            <div class="footer-table-mini">
+                                <div class="footer-mini1">
+                                    <a href="#"><img src="../img/emojiChamHoi.jpg" width="20px"></a>
+                                    <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                </div>
+                                <div class="footer-mini2">
+                                    <a href="#"><img src="../img/emojiMail1.jpg" width="25px"></a>
+                                    <p><a href="#">bandoc@kenh14</a></p>
+                                </div>
+                            </div>
+                            <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                        </aside>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-table2">
+            <a href="#"><img src="../img/backgroundFace.jpg" width="530px" height="130px"></img></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-mini-one">
+            <h4>TRỤ SỞ HÀ NỘI</h4>
+            <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+            <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+            <div class="logo-mini">
+                <a href="#"><img src="../img/emojiMap.jpg" width="17px"></a>
+                <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+            </div>
+
+            <div class="footer-mini-one-1">
+                <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                <span>Điện thoại: 028 7307 7979</span>
+                <div class="logo-mini">
+                    <a href="#"><img src="../img/emojiMap.jpg" width="15px"></a>
+                    <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                </div>
+            </div>    
+        </div>
+        <hr/>
+        <div class="footer-mini-two">
+            <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+            <span>Bà Nguyễn Bích Minh</span><br>
+            <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+            <div class="logo-mini">
+                <img src="../img/emojiPhone.jpg" width="20px"></a>
+                <span>024.73095555 (máy lẻ 62.370)</span><br>
+            </div>
+            <div class="logo-mini-1">
+                <a href="#"><img src="../img/emojiMail2.jpg" width="30px"></a>
+                <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+            </div>
+            <h4>LIÊN HỆ QUẢNG CÁO</h4>
+            <div class="logo-mini">
+                <img src="../img/emojiPhone.jpg" width="20px"></a>
+                <span>02473007108</span>
+            </div>
+            <div class="logo-mini-1">
+                <a href="#"><img src="../img/emojiMail2.jpg" width="30px"></a>
+                <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+            </div>
+            <div class="chat-table-1">
+                <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+            </div>
+            <div class="chat-table-2">
+                <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+            </div>
+            <div class="chat-table-3">
+                <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+            </div>
+        </div>
+        <hr class="DK"/>
+        <div class="footer-mini-three">
+            <a href=""><img src="../img/logoVCCorp.jpg" width="120px" ></a>
+            <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+            <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+            <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+    
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</footer>
+</body>
+
+</html>

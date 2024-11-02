@@ -1,0 +1,93 @@
+.container-margin{
+    margin-top:-120px;
+}
+.card-list .card-item{
+    list-style:none;
+}
+.card-list .card-item .card-link{
+    width: 250px; 
+    height: 155px;
+    display: block;
+    background: #fff;
+    border-radius:12px;
+    text-decoration: none;
+    padding:18px;
+}
+.card-list .card-link .card-image{
+    width:250px;
+    aspect-ratio: 16/9;
+    object-fit:cover;
+}
+.card-list .card-link .card-title{
+    font-size:14px;
+    color:#000;
+    font-weight: 10px;
+    word-wrap: break-word; 
+}
+.card-wrapper{
+    max-width:1100px;
+    margin: 60px 3px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+.card-wrapper .swiper-pagination-bullet{
+    height:8px;
+    width: 8px;
+    opacity: 0.5;
+    background: #ff7505;
+}
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity:1;
+}
+.card-wrapper .swiper-slide-button{
+    color: #ff7505;
+    margin-top: -35px;
+}
+.EditorsPick .mini-icon{
+    width:25px;
+}
+.EditorsPick .weight-size{
+    font-size:25px;
+    font-weight:bold;
+}
+.EditorsPick .img-section{
+    padding-left: 0; /* Giảm padding bên trái */
+    margin-left: 0px; /* Thêm margin âm để đưa ảnh sang trái */
+    width: 370px; 
+    height: 230px;
+    display: block; /* Loại bỏ khoảng trống dưới ảnh */
+    margin-bottom: 10px; /* Thêm khoảng cách giữa ảnh và văn bản */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+.EditorsPick .img-aside6{
+    padding-left: 1px; /* Giảm padding bên trái */
+    margin-left: 0px; /* Thêm margin âm để đưa ảnh sang trái */
+    width: 270px; 
+    height: 150px;
+    display: block; /* Loại bỏ khoảng trống dưới ảnh */
+    margin-bottom: 10px; /* Thêm khoảng cách giữa ảnh và văn bản */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+.EditorsPick .text-normal {
+    font-size:16px;
+}
+.EditorsPick  .paddingLeft{
+    padding-left: 20px;
+}
+.EditorsPick .text-highlight {
+    font-size: 18px;
+}
+.EditorsPick .text-mini {
+    font-size:13px;
+    color:#585656;
+    
+}
+.EditorsPick .border-right{
+    border-right: 1px solid rgba(233, 227, 227, 0.733);
+    margin-bottom:90px;
+}
+.text-change{
+    width:2000px;
+    height:400px;
+    
+}

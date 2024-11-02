@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin âm nhạc Châu Á - Kenh14.vn </title>
+    <link rel="stylesheet" href="../CSS/skin.css">
+    <link rel="import" href="../component.html">
+    <script src="../JS/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+  
+</head>
+    
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search-bar">
+                        <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                        <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="container">
+                    <div class="logo">
+                        <a href="../demoBTL.html"><img src="../img/logo.png" alt="Kenh14 Logo"></a>
+                        <div class="logo-text">
+                            <span class="logo-main">kenh14.vn</span>
+                            <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                        </div>
+                    </div>
+                    <div class="trending-topics">
+                        <span class="arrow-icon">&#x2197;</span>
+                        <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                        <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                        <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <nav class="main-nav">
+                <div class="container">
+                    <ul class="mains-menu">
+                        <li><a href="../demoBTL.html"><i class="fas fa-home"></i></a></li>
+                        <li><a href="../Star/WebStar.html">Star</a></li>
+                        <li><a href="../Ciné/WebCine.html">Ciné</a></li>
+                        <li><a href="./WebMusik.html">Musik</a></li>
+                        <li><a href="../Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a></li>
+                        <li><a href="../DoiSong/WebDoiSong.html">Đời sống</a></li>
+                        <li><a href="#">Money-Z</a></li>
+                        <li><a href="#">Ăn - Quẩy - Đi</a></li>
+                        <li><a href="#">Xã hội</a></li>
+                        <li><a href="#">Sức khỏe</a></li>
+                        <li><a href="#">Tek-life</a></li>
+                        <li><a href="#">Học đường</a></li>
+                        <li><a href="#">Xem Mua Luôn</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li class="main-menu">
+                            <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+    
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="subs-menu">
+                <div class="container">
+                    <div class="menu-row">
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Đời sống</a>
+                            <div class="submenu">
+                                <a href="#">Nhân vật</a>
+                                <a href="#">Xem-Ăn-Chơi</a>
+                                <a href="#">House n Home</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Xem mua luôn</a>
+                            <div class="submenu">
+                                <a href="#">Thời trang</a>
+                                <a href="#">Đẹp</a>
+                                <a href="#">Mommy mua di</a>
+                            </div>
+                        </div>
+                        <div  class="menu-column">
+                            <a class="title-menu" href="#">Sport</a>
+                            <div class="submenu">
+                                <a href="#">Bóng đá</a>
+                                <a href="#">Bóng rổ</a>
+                                <a href="#">Bóng chuyền</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="../Musik/WebMusik.html">Musik</a>
+                            <div class="submenu">
+                                <a href="../Musik/WebAuMy.html">Âu-Mỹ</a>
+                                <a href="../Musik/WebChauA.html">Châu Á</a>
+                                <a href="../Musik/WebVietNam.html">Việt Nam</a>
+                                <a href="../demoBTL.html">Hip-hop neva die</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu" href="../Ciné/WebCine.html">Ciné</a>
+                            <div class="submenu">
+                                <a href="../Ciné/WebPhimChieuRap.html">Phim chiếu rạp</a>
+                                <a href="../Ciné/WebPhimVietNam.html">Phim Việt Nam</a>
+                                <a href="../Ciné/WebSeriesTruyenHinh.html">Series truyền hình</a>
+                                <a href="../Ciné/WebHoaNguHanQuoc.html">Hoa ngữ - Hàn Quốc</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Tek-Life</a>
+                            <div class="submenu">
+                                <a href="#">Metaverse</a>
+                                <a href="#">How-To</a>
+                                <a href="#">Wow</a>
+                                <a href="#">2-Mall</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-row">
+                        <div class="menu-column">
+                            <a class="title-menu" href="#">Star</a>
+                            <div class="submenu">
+                                <a href="../Star/WebSaoViet.html">Sao Việt</a>
+                                <a href="../Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
+                                <a href="../Star/WebTVShow.html">TV Show</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Xã hội</a>
+                            <div class="submenu">
+                                <a href="#">Pháp luật</a>
+                                <a href="#">Nóng trên mạng</a>
+                                <a href="#">Sống xanh</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Học đường</a>
+                            <div class="submenu">
+                                <a href="#">Nhân vật</a>
+                                <a href="#">Du học</a>
+                                <a href="#">Bản tin 46'</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Thế giới đó đây</a>
+                            <div class="submenu">
+                                <a href="#">Chùm ảnh</a>
+                                <a href="#">Khám phá</a>
+                                <a href="#">Dị</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <a class="title-menu"href="#">Sức khỏe</a>
+                            <div class="submenu">
+                                <a href="#">Sức khỏe</a>
+                                <a href="#">Tin tức</a>
+                                <a href="#">Dinh dưỡng</a>
+                                <a href="#">Khỏe đẹp</a>
+                                <a href="#">Giới tính</a>
+                                <a href="#">Các bệnh</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="border-solid"></div>
+                <div class="web-info">
+                    <span class="title-mini-web">Tải app</span>
+                    <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BB%A3/id670518264?ls=1" target="_blank">IOS</a>
+                    <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                    <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                    <a class="title-mini-web" href="#">Liên hệ</a>
+                    <a class="mini-web" href="https://kenh14.vn/adv.chn">Quảng cáo</a>
+                </div>
+            </div>
+        </header>
+        </div>
+        <div class="space">  </div>
+        <main>
+        <div id="page">
+            <div id="page">
+                <div class="hi">
+                    <ul>
+                        <li><a href="./WebMusik.html"><b>MUSIK</b></a></li>
+                        <li><a href="./WebAuMy.html"><b>ÂU MỸ</b></a></li>
+                        <li><a href="./WebChauA.html"><b>CHÂU Á</b></a></li>
+                        <li><a href="./WebVietNam.html"><b>VIỆT NAM</b></a></li>
+                        <li><a href="../Star/WebStar.html"><b>STAR</b></a></li>
+                    
+                    </ul>
+                </div>
+                <hr/>
+            <div class="body">
+                <div class="one">
+                    <section>
+                        <a href="https://kenh14.vn/jennie-blackpink-lot-top-bxh-billboard-hot-100-21524102212430162.chn">
+                            <img src="../img/Jennie (BLACKPINK) lọt top BXH Billboard Hot 100.webp"></a>
+                        <p><b><a href="#">Jennie (BLACKPINK) lọt top BXH Billboard Hot 100</a></b></p>
+                        <p>Mantra là ca khúc solo đầu tiên của Jennie có mặt trên BXH Billboard Hot 100.</a>
+                        </p>
+                    </section>
+                    <aside>
+                        <a href="https://kenh14.vn/nhom-nu-dai-my-nhan-ra-mv-chien-det-doi-dau-nhom-nhac-dao-nhai-lieu-co-the-truat-ngoi-giong-ca-chinh-blackpink-215241021184521302.chn" >
+                            <video autoplay loop muted playsinline width=200px><source src="../img/Nhóm nữ đại mỹ nhân ra MV.mp4" type="video/mp4"></video></a>
+                        </a>
+                        <p><b><a href="#">Nhóm nữ đại mỹ nhân ra MV "chiến đét" đối đầu nhóm nhạc đạo nhái,...</a></b></p>
+                        <a href="https://kenh14.vn/rose-blackpink-lam-nen-lich-su-215241022124037159.chn" >
+                            <img src="../img/Rosé (BLACKPINK) làm nên lịch sử.webp" class="img-aside3">
+                        </a>
+                        <p><b><a href="#">Rosé (BLACKPINK) làm nên lịch sử</a></b></p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/rose-blackpink-gay-sot-duoc-khen-an-dut-lisa-va-jennie-215241018231417003.chn">
+                            <img class="img-normal" src="../img/Rosé (BLACKPINK) gây sốt, được khen ăn đứt Lisa và Jennie.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Rosé (BLACKPINK) gây sốt, được khen ăn đứt Lisa và Jennie</a></b></p>
+                        <p><b>Musik -</b> <time> 3 ngày trước</time></p>
+                        <p>Cư dân mạng đánh giá cao sản phẩm âm nhạc mới của Rosé kết hợp Bruno Mars. Nhiều ý kiến cho rằng xét về khía cạnh âm nhạc, giọng...</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/thanh-vien-dep-nhat-nhom-nhac-dai-my-nhan-dang-thu-thach-jennie-215241016195029979.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Thành viên đẹp nhất nhóm nhạc đại mỹ nhân đang thử thách Jennie.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Thành viên đẹp nhất nhóm nhạc "đại mỹ nhân" đang thử thách Jennie</a></b></p>
+                        <p><b>Musik -</b> <time> 5 ngày trước</time></p>
+                        <p>Đây là gương mặt đáng gờm cản đường No.1 của Jennie.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/noi-lo-cua-rose-blackpink-215241019144756513.chn">
+                            <img class="img-normal" src="../img/Nỗi lo của Rosé (BLACKPINK).webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Nỗi lo của Rosé (BLACKPINK)</a></b></p>
+                        <p><b>Musik -</b> <time> 2 ngày trước</time></p>
+                        <p>Rosé từng có ý định xóa đĩa đơn solo đầu tiên sau khi rời YG Entertainment đang gây bão mạng xã hội. Người đẹp tóc vàng lo sợ...</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://https://kenh14.vn/phim-tai-lieu-ve-jung-kook-bts-pha-ky-luc-doanh-thu-21524101817404153.chn.vn/phim-viet-tung-canh-giuong-chieu-gay-hoang-mang-215241017204119774.chn">
+                            <img class="img-normal"src="../img/Phim tài liệu về Jung Kook (BTS) phá kỷ lục doanh thu.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Phim tài liệu về Jung Kook (BTS) phá kỷ lục doanh thu</a></b></p>
+                        <p><b>Musik -</b> <time> 3 ngày trước</time></p>
+                        <p>"Jung Kook: I Am Still" đã thu về hơn 15,7 triệu USD trên toàn thế giới, trở thành bộ phim ca nhạc có doanh thu cao nhất năm 2024 tính đến...</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/jennie-bat-che-do-mo-hon-lisa-lo-khoanh-khac-nhu-so-me-mang-tai-show-dien-noi-y-215241017081621793.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Jennie bật chế độ mỏ hỗn Lisa.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Jennie bật chế độ "mỏ hỗn", Lisa lộ khoảnh khắc như “sợ mẹ mắng” tại show diễn nội y</a></b></p>
+                        <p><b>Musik -</b> <time> 5 ngày trước</time></p>
+                        <p>Jennie cũng phải “mỏ hỗn” vì màn trình diễn của Lisa tại Victoria’s Secret Fashion Show.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/olivia-rodrigo-quyen-gop-cho-to-chuc-tu-thien-vi-suc-khoe-phu-nu-cua-philippines-215241013113557877.chn">
+                            <img class="img-normal" src="../img/Olivia Rodrigo quyên góp cho tổ chức từ thiện vì sức khỏe phụ nữ của Philippines.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Olivia Rodrigo quyên góp cho tổ chức từ thiện vì sức khỏe phụ nữ của Philippines</a></b></p>
+                        <p><b>Musik -</b> <time> 8 ngày trước</time></p>
+                        <p>Nữ ca sĩ đã dành toàn bộ lợi nhuận từ buổi biểu diễn đầu tiên của cô tại Philippines cho hoạt động từ thiện.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/hon-1-trieu-nguoi-san-don-concert-tai-que-nha-thanh-vien-2ne1-yg-bo-sung-them-1-show-van-chua-da-215241015134552344.chn">
+                          <img class="img-normal" src="../img/Hơn 1 triệu người săn đón concert tại quê nhà thành viên 2NE1.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Hơn 1 triệu người săn đón concert tại quê nhà thành viên 2NE1, YG bổ sung thêm 1 show vẫn chưa "đã"</a></b></p>
+                        <p><b>Musik -</b> <time> 7 ngày trước</time></p>
+                        <p>Quả nhiên là quê nhà của thành viên 2NE1.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/giai-ma-apt-trong-man-collab-cuc-hot-cua-rose-va-bruno-mars-cach-thanh-vien-blackpink-quang-ba-van-hoa-han-quoc-qua-hay-21524101910415346.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Cách thành viên BLACKPINK quảng bá văn hóa Hàn Quốc quá hay.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Giải mã “APT” trong màn collab cực hot của Rosé và Bruno Mars: Cách thành viên BLACKPINK quảng bá văn hóa Hàn Quốc quá hay!</a></b></p>
+                        <p><b>Musik -</b> <time> 2 ngày trước</time></p>
+                        <p>Ca khúc của Rosé và Bruno Mars có nguồn cảm hứng vô cùng đặc biệt.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/jin-bts-se-phat-hanh-san-pham-am-nhac-moi-vao-thang-11-215241015102033995.chn">
+                            <img class="img-normal" src="../img/Jin (BTS) sẽ phát hành sản phẩm âm nhạc mới vào tháng 11.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Jin (BTS) sẽ phát hành sản phẩm âm nhạc mới vào tháng 11</a></b></p>
+                        <p><b>Musik -</b> <time> 7 ngày trước</time></p>
+                        <p>Tin vui này đã được anh cả của BTS thông báo vào rạng sáng nay (15/10). Với sản phẩm âm nhạc sắp phát hành, Jin sẽ chính thức trở...</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/khi-chat-than-sau-khong-doi-sau-nua-thap-ky-cua-jennie-mot-anh-mat-gat-phang-hinh-tuong-cong-chua-yg-215241018214843124.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Jennie chính thức quay lại show âm nhạc với tư cách nghệ sĩ solo sau 6 năm.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Jennie chính thức quay lại show âm nhạc với tư cách nghệ sĩ solo sau 6 năm.</a></b></p>
+                        <p><b>Musik -</b> <time> 3 ngày trước</time></p>
+                        <p>Khí chất "thần sầu" không đổi sau nửa thập kỷ của Jennie: Một ánh mắt gạt phăng hình tượng "công chúa YG"</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/nhieu-ngoi-sao-kpop-duoc-de-cu-tai-mtv-emas-2024-215241009123106277.chn">
+                            <img class="img-normal"src="../img/Nhiều ngôi sao Kpop được đề cử tại MTV EMAs 2024.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Nhiều ngôi sao Kpop được đề cử tại MTV EMAs 2024</a></b></p>
+                        <p><b>Musik -</b> <time> 12 ngày trước</time></p>
+                        <p>Sức ảnh hưởng của Kpop tới thị trường âm nhạc thế giới đang ngày càng tăng cao khi hàng loạt nghệ sĩ được công nhận tại lễ trao giải MTV...</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/cung-ra-san-pham-moi-jennie-va-lisa-nhan-phan-hoi-trai-nguoc-215241014152453908.chn">
+                            <img class="img-normal" src="../img/Cùng ra sản phẩm mới, Jennie và Lisa nhận phản hồi trái ngược.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Cùng ra sản phẩm mới, Jennie và Lisa nhận phản hồi trái ngược</a></b></p>
+                        <p><b>Musik -</b> <time> 8 ngày trước</time></p>
+                        <p>Trong khi Mantra của Jennie đứng đầu bảng xếp hạng thì Rockstar của Lisa đối mặt với tranh cãi.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/su-nghiep-chet-yeu-cua-nam-ca-si-bi-fan-gui-1000-vong-hoa-tang-bieu-tinh-duoi-khoi-nhom-215241014083212682.chn">
+                            <video autoplay loop muted playsinline width=250px><source src="../img/Sự nghiệp chết yểu của nam ca sĩ bị fan gửi 1000 vòng hoa tang, biểu tình đuổi khỏi nhóm.mp4" type="video/mp4"></video></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">Sự nghiệp "chết yểu" của nam ca sĩ bị fan gửi 1000 vòng hoa tang, biểu tình đuổi khỏi nhóm</a></b></p>
+                        <p><b>Musik -</b> <time> 9 ngày trước</time></p>
+                        <p>Seunghan chính thức rút khỏi đội hình RIIZE sau 2 ngày bị fan tẩy chay gay gắt.</p>
+                    </aside>
+                </div>
+                <hr/>
+                <div class="two">
+                    <section>
+                        <a href="https://kenh14.vn/mantra-cua-jennie-blackpink-bi-chi-trich-vi-loi-bai-hat-vo-nghia-215241014072751478.chn">
+                            <img class="img-normal" src="../img/Mantra của Jennie (BLACKPINK) bị chỉ trích vì lời bài hát vô nghĩa.webp"></a>
+                    </section>
+                    <aside>
+                        <p><b><a href="#">"Mantra" của Jennie (BLACKPINK) bị chỉ trích vì lời bài hát vô nghĩa</a></b></p>
+                        <p><b>Musik -</b> <time> 9 ngày trước</time></p>
+                        <p>Tương tự như "Rockstar" của Lisa, bài hát mới của Jennie cũng bị chỉ trích vì lời bài hát vô nghĩa.</p>
+                    </aside>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <div class="footer-menu">
+                <a href="../Star/WebStar.html">Star</a> | 
+                        <a href="../Ciné/WebCine.html">Ciné</a> | 
+                        <a href="../Musik/WebMusik.html">Musik</a> | 
+                        <a href="../Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | 
+                        <a href="#">Sport</a> | 
+                        <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a> | 
+                        <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a> | 
+                        <a href="/BTL/AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | 
+                        <a href="#">Xem Mua Luôn</a> | 
+                        <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | 
+                        <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | 
+                        <a href="#">Tek-Life</a> | 
+                        <a href="#">Học đường</a> | 
+                        <a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a> | 
+                        <a href="#">Video</a>
+            </div>
+            <div class="footer-max">
+                <div class="footer-table1">
+                    <table>
+                        <tr>
+                            <td>
+                                <section>
+                                    <a href=""><img src="../img/logoFooter.jpg" ></img></a>
+                                </section>
+                                <aside>
+                                    <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                                    <div class="footer-table-mini">
+                                        <div class="footer-mini1">
+                                            <a href="#"><img src="../img/emojiChamHoi.jpg" width="20px"></a>
+                                            <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                        </div>
+                                        <div class="footer-mini2">
+                                            <a href="#"><img src="../img/emojiMail1.jpg" width="25px"></a>
+                                            <p><a href="#">bandoc@kenh14</a></p>
+                                        </div>
+                                    </div>
+                                    <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                                </aside>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footer-table2">
+                    <a href="#"><img src="../img/backgroundFace.jpg" width="530px" height="130px"></img></a>
+                </div>
+            </div>
+        
+            <div class="footer">
+                <div class="footer-mini-one">
+                    <h4>TRỤ SỞ HÀ NỘI</h4>
+                    <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+                    <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+                    <div class="logo-mini">
+                        <a href="#"><img src="../img/emojiMap.jpg" width="17px"></a>
+                        <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                    </div>
+        
+                    <div class="footer-mini-one-1">
+                        <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                        <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                        <span>Điện thoại: 028 7307 7979</span>
+                        <div class="logo-mini">
+                            <a href="#"><img src="../img/emojiMap.jpg" width="15px"></a>
+                            <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                        </div>
+                    </div>    
+                </div>
+                <hr/>
+                <div class="footer-mini-two">
+                    <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+                    <span>Bà Nguyễn Bích Minh</span><br>
+                    <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+                    <div class="logo-mini">
+                        <img src="../img/emojiPhone.jpg" width="20px"></a>
+                        <span>024.73095555 (máy lẻ 62.370)</span><br>
+                    </div>
+                    <div class="logo-mini-1">
+                        <a href="#"><img src="../img/emojiMail2.jpg" width="30px"></a>
+                        <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                    </div>
+                    <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                    <div class="logo-mini">
+                        <img src="../img/emojiPhone.jpg" width="20px"></a>
+                        <span>02473007108</span>
+                    </div>
+                    <div class="logo-mini-1">
+                        <a href="#"><img src="../img/emojiMail2.jpg" width="30px"></a>
+                        <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                    </div>
+                    <div class="chat-table-1">
+                        <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+                    </div>
+                    <div class="chat-table-2">
+                        <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+                    </div>
+                    <div class="chat-table-3">
+                        <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+                    </div>
+                </div>
+                <hr class="DK"/>
+                <div class="footer-mini-three">
+                    <a href=""><img src="../img/logoVCCorp.jpg" width="120px" ></a>
+                    <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+                    <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+                    <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+            
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+        </body>
+        
+        </html>
+        
+        
+                
