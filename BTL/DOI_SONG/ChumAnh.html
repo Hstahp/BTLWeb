@@ -1,16 +1,21 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenh14 </title>
-    <link rel="stylesheet" href="/BTL/styles.css">
+    <link rel="stylesheet" href="/BTL/CSS_1/styles.css">
     <link rel="import" href="component.html">
-    <script src="script.js"></script>
+    <script src="/BTL/Scrip.js/script.js"></script>
     <!-- Thêm liên kết Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+        <!-- Linking SwiperJS CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Linking SwiperJS script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -26,8 +31,9 @@
                     </ul>
                 </nav>
                 <div class="search-bar">
-                    <input type="text" placeholder="Tìm kiếm...">
-                    <button type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
                 </div>
             </div>
         </div>
@@ -57,11 +63,11 @@
                     <li><a href="#">Ciné</a></li>
                     <li><a href="#">Musik</a></li>
                     <li><a href="#">Beauty & Fashion</a></li>
-                    <li><a href="../DOI_SONG/DoiSong.html">Đời sống</a></li>
-                    <li><a href="../MONEY-Z/Money-Z.html">Money-Z</a></li>
-                    <li><a href="../AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a></li>
-                    <li><a href="../XA_HOI/XaHoi.html">Xã hội</a></li>
-                    <li><a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a></li>
+                    <li><a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a></li>
+                    <li><a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a></li>
+                    <li><a href="/BTL/AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a></li>
+                    <li><a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a></li>
+                    <li><a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a></li>
                     <li><a href="#">Tek-life</a></li>
                     <li><a href="#">Học đường</a></li>
                     <li><a href="#">Xem Mua Luôn</a></li>
@@ -77,11 +83,11 @@
             <div class="container">
                 <div class="menu-row">
                     <div class="menu-column">
-                        <a href="#">Đời sống</a>
+                        <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a>
                         <div class="submenu">
-                            <a href="../DOI_SONG/NhanVat.html">Nhân vật</a>
-                            <a href="../DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
-                            <a href="../DOI_SONG/House_n_Home.html">House n Home</a>
+                            <a href="/BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="/BTL/DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
+                            <a href="/BTL/DOI_SONG/House_n_Home.html">House n Home</a>
                         </div>
                     </div>
                     <div class="menu-column">
@@ -138,38 +144,38 @@
                         </div>
                     </div>
                     <div class="menu-column">
-                        <a href="../XA_HOI/XaHoi.html">Xã hội</a>
+                        <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a>
                         <div class="submenu">
-                            <a href="../XA_HOI/PhapLuat.html">Pháp luật</a>
-                            <a href="../XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
-                            <a href="../XA_HOI/SongXanh.html">Sống xanh</a>
+                            <a href="/BTL/XA_HOI/PhapLuat.html">Pháp luật</a>
+                            <a href="/BTL/XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
+                            <a href="/BTL/XA_HOI/SongXanh.html">Sống xanh</a>
                         </div>
                     </div>
                     <div class="menu-column">
                         <a href="#">Học đường</a>
                         <div class="submenu">
-                            <a href="../DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="/BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
                             <a href="">Du học</a>
                             <a href="#">Bản tin 46'</a>
                         </div>
                     </div>
                     <div class="menu-column">
-                        <a href="../DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
+                        <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
                         <div class="submenu">
-                            <a href="../DOI_SONG/ChumAnh.html">Chùm ảnh</a>
-                            <a href="../DOI_SONG/KhamPha.html">Khám phá</a>
-                            <a href="../DOI_SONG/Di.html">Dị</a>
+                            <a href="/BTL/DOI_SONG/ChumAnh.html">Chùm ảnh</a>
+                            <a href="/BTL/DOI_SONG/KhamPha.html">Khám phá</a>
+                            <a href="/BTL/DOI_SONG/Di.html">Dị</a>
                         </div>
                     </div>
                     <div class="menu-column">
-                        <a href="../SUC_KHOE/KhoeDep.html">Sức khỏe</a>
+                        <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
                         <div class="submenu">
-                            <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a>
-                            <a href="../SUC_KHOE/TinTuc.html">Tin tức</a>
-                            <a href="../SUC_KHOE/DinhDuong.html">Dinh dưỡng</a>
-                            <a href="../SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
-                            <a href="../SUC_KHOE/GioiTinh.html">Giới tính</a>
-                            <a href="../SUC_KHOE/CacBenh.html">Các bệnh</a>
+                            <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                            <a href="/BTL/SUC_KHOE/TinTuc.html">Tin tức</a>
+                            <a href="/BTL/SUC_KHOE/DinhDuong.html">Dinh dưỡng</a>
+                            <a href="/BTL/SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
+                            <a href="/BTL/SUC_KHOE/GioiTinh.html">Giới tính</a>
+                            <a href="/BTL/SUC_KHOE/CacBenh.html">Các bệnh</a>
                         </div>
                     </div>
                 </div>
@@ -196,7 +202,7 @@
                 <li><a href="ChumAnh.html"><b>CHÙM ẢNH</b></a></li>
                 <li><a href="KhamPha.html"><b>KHÁM PHÁ</b></a></li>
                 <li><a href="Di.html"><b>DỊ</b></a></li>
-                <li><a href="../XA_HOI/XaHoi.html"><b>XÃ HỘI</b></a></li>
+                <li><a href="/BTL/XA_HOI/XaHoi.html"><b>XÃ HỘI</b></a></li>
                 <li><a href="DoiSong.html"><b>ĐỜI SỐNG</b></a></li>
             </ul>
         </div><br>
@@ -204,16 +210,67 @@
         <div class="body">
             <div class="one">
                 <section>
-                    <a href="#"><img src="../images/anh168.png" width=570px></a>
+                    <a href="#"><img src="/BTL/images/anh168.png" width=570px></a>
                     <p><b><a href="#">Chùm ảnh hiếm bên trong Cửu Long Thành Trại: Nơi 50.000 người sinh sống, đông đúc hỗn loạn nhưng chẳng thiếu thứ gì</a></b></p>
                     <p>Nổi tiếng là nơi có mật độ dân lớn hơn cả New York, những gì diễn ra bên trong Cửu Long Thành Trại cho đến thời điểm hiện tại vẫn được nhiều người nhắc đến.</a></p>
                 </section>
                 <aside>
-                    <a href="#"><img src="../images/anh169.png"></a>
+                    <a href="#"><img src="/BTL/images/anh169.png"></a>
                     <p><b><a href="#">Bộ ảnh độc lạ tái hiện gu thời trang xa xỉ nhái hàng hiệu ở Đông Nam Á,...</a></b></p>
-                    <a href="#"><img src="../images/anh170.png"></a>
+                    <a href="#"><img src="/BTL/images/anh170.png"></a>
                     <p><b><a href="#">Những bức ảnh hiếm hoi hé lộ cuộc sống thường nhật tại Triều Tiên</a></b></p>
                 </aside>
+            </div>
+            <hr/><br>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh545.png" class="card-image">
+                                    <h3 class="card-title">Loạt ảnh hiếm phơi bày sự thật về hành tinh Trái Đất: Khiến nhiều người nghẹn lòng vì quá kinh khủng!</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh546.png"class="card-image">
+                                    <h3 class="card-title">Chùm ảnh: Lũ lụt càn quét gây chết người, tạo cảnh tượng kinh hoàng tại Indonesia</h3>          
+                                </a>   
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh547.png"class="card-image">
+                                    <h3 class="card-title">Chùm ảnh: Nắng nóng lịch sử tại hàng loạt quốc gia Đông Nam Á khiến người dân "không thể thở", vật vã chống chọi với sóng nhiệt chết người</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">   
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh548.png"  class="card-image">
+                                    <h3 class="card-title">Chuyến bay lịch sử của Delta Airlines: Hàng trăm hành khách nín thở xem nhật thực trăm năm có một ở độ cao 9000 mét</h3>
+                                </a>                       
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh549.png "  class="card-image">
+                                    <h3 class="card-title">Chùm ảnh: Người dân Nga tưởng niệm hơn 130 nạn nhân vụ khủng bố và lời kể ám ảnh của người sống sót</h3>
+                                </a>         
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh550.png"class="card-image">
+                                    <h3 class="card-title">Chiêm ngưỡng loạt ảnh xưa thời nhà Thanh: Hé lộ một góc đường phố Bắc Kinh, người phụ nữ Tô Châu gây chú ý</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
             </div>
             <hr/>
             <div class="two">
@@ -221,7 +278,7 @@
                     <a href="#"><img src="/BTL/images/anh171.png"></a>
                 </section>
                 <aside>
-                    <a href="#"><img src="../images/anh155.1.png" width="200px"></a>
+                    <a href="#"><img src="/BTL/images/anh155.1.png" width="200px"></a>
                     <p><b><a href="#">Loạt ảnh hiếm phơi bày sự thật về hành tinh Trái Đất: Khiến nhiều người nghẹn lòng vì quá kinh khủng!</a></b></p>
                     <p><b>Thế Giới Đó Đây -</b><time> 2 tháng trước</time></p>
                     <p>Bạn có biết điều gì thực sự đang xảy ra trên hành tinh của chúng ta lúc này không?</p>
@@ -230,7 +287,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh172.png"></a>
+                    <a href="#"><img src="/BTL/images/anh172.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Chùm ảnh: Lũ lụt càn quét gây chết người, tạo cảnh tượng kinh hoàng tại Indonesia</a></b></p>
@@ -241,7 +298,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh173.png"></a>
+                    <a href="#"><img src="/BTL/images/anh173.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Chùm ảnh: Bão Mặt Trời sắp dội xuống Trái Đất, hiện tượng cực quang thắp sáng bầu trời châu Âu tạo nên cảnh tượng đẹp nức nở</a></b></p>
@@ -252,7 +309,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh174.png"></a>
+                    <a href="#"><img src="/BTL/images/anh174.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Chùm ảnh: Nắng nóng kinh hoàng, AI "gợi ý" về mùa hè ở vũ trụ khác, xem đến đâu bất ngờ đến đấy</a></b></p>
@@ -263,7 +320,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh175.png"></a>
+                    <a href="#"><img src="/BTL/images/anh175.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Chùm ảnh: Nắng nóng lịch sử tại hàng loạt quốc gia Đông Nam Á khiến người dân "không thể thở", vật vã chống chọi với sóng nhiệt chết người</a></b></p>
@@ -274,7 +331,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh176.png"></a>
+                    <a href="#"><img src="/BTL/images/anh176.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Thủ đô một quốc gia bất ngờ chuyển sang màu đỏ cam như trong phim viễn tưởng: Điều gì phía sau hiện tượng kỳ thú này?</a></b></p>
@@ -285,7 +342,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh177.png"></a>
+                    <a href="#"><img src="/BTL/images/anh177.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Chuyến bay lịch sử của Delta Airlines: Hàng trăm hành khách nín thở xem nhật thực trăm năm có một ở độ cao 9000 mét</a></b></p>
@@ -296,7 +353,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh178.png"></a>
+                    <a href="#"><img src="/BTL/images/anh178.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Sinh vật Bộ ảnh Phương Tây và Phương Đông cực kỳ thú vị: Sự khác biệt văn hóa thể hiện trong từng chi tiết nhỏ nhất</a></b></p>
@@ -307,7 +364,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh179.png"></a>
+                    <a href="#"><img src="/BTL/images/anh179.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Chùm ảnh: Người dân Nga tưởng niệm hơn 130 nạn nhân vụ khủng bố và lời kể ám ảnh của người sống sót</a></b></p>
@@ -318,7 +375,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh180.png"></a>
+                    <a href="#"><img src="/BTL/images/anh180.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Choáng ngợp nơi vui chơi, mua sắm sầm uất nhất thế giới</a></b></p>
@@ -329,7 +386,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh181.png"></a>
+                    <a href="#"><img src="/BTL/images/anh181.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Chiêm ngưỡng loạt ảnh xưa thời nhà Thanh: Hé lộ một góc đường phố Bắc Kinh, người phụ nữ Tô Châu gây chú ý</a></b></p>
@@ -340,7 +397,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh182.png"></a>                
+                    <a href="#"><img src="/BTL/images/anh182.png"></a>                
                 </section>
                 <aside>
                     <p><b><a href="#">Loạt ảnh trước - nay cho thấy chỉ trong vài năm qua thế giới đã thay đổi “trong một cái chớp mắt” như thế nào</a></b></p>
@@ -351,7 +408,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh183.png"></a>
+                    <a href="#"><img src="/BTL/images/anh183.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Chùm ảnh: Hàng triệu người khắp châu Á cùng nhau đón năm mới Giáp Thìn, mọi nẻo đường trang hoàng rực rỡ đầy ấn tượng</a></b></p>
@@ -362,7 +419,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh185.png"></a>
+                    <a href="#"><img src="/BTL/images/anh185.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Đèn lồng hình rồng tỏa sáng rực rỡ khắp Trung Quốc chào đón Tết nguyên đán</a></b></p>
@@ -373,7 +430,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh186.png"></a>
+                    <a href="#"><img src="/BTL/images/anh186.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Chùm ảnh: Khu phố Tàu lâu đời nhất thế giới ngập sắc đỏ, rộn ràng không khí đón Tết Giáp Thìn 2024</a></b></p>
@@ -384,7 +441,7 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><img src="../images/anh184.png"></a>
+                    <a href="#"><img src="/BTL/images/anh184.png"></a>
                 </section>
                 <aside>
                     <p><b><a href="#">Nhìn lại những bức ảnh thiên nhiên đẹp choáng ngợp đã đoạt giải trong 2023</a></b></p>
@@ -395,7 +452,7 @@
             <hr/>
         </div>
         <div class="footer-menu">
-            <a href="#">Star</a> | <a href="#">Ciné</a> | <a href="#">Musik</a> | <a href="#">Beauty & Fashion</a> | <a href="#">Sport</a> | <a href="../DOI_SONG/DoiSong.html">Đời sống</a> | <a href="../XA_HOI/XaHoi.html">Xã hội</a> | <a href="../AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | <a href="#">Xem Mua Luôn</a> | <a href="../DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a> | <a href="#">Tek-Life</a> | <a href="#">Học đường</a> | <a href="../MONEY-Z/Money-Z.html">Money-Z</a> | <a href="#">Video</a>
+            <a href="#">Star</a> | <a href="#">Ciné</a> | <a href="#">Musik</a> | <a href="#">Beauty & Fashion</a> | <a href="#">Sport</a> | <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a> | <a href="/BTL/XA_HOI/XaHoi.html">Xã hội</a> | <a href="/BTL/AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | <a href="#">Xem Mua Luôn</a> | <a href="/BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | <a href="#">Tek-Life</a> | <a href="#">Học đường</a> | <a href="/BTL/MONEY-Z/Money-Z.html">Money-Z</a> | <a href="#">Video</a>
         </div>
         <div class="footer-max">
             <div class="footer-table1">
@@ -403,17 +460,17 @@
                     <tr>
                         <td>
                             <section>
-                                <a href=""><img src="../images/logo1.png" ></img></a>
+                                <a href=""><img src="/BTL/images/logo1.png" ></img></a>
                             </section>
                             <aside>
                                 <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
                                 <div class="footer-table-mini">
                                     <div class="footer-mini1">
-                                        <a href="#"><img src="../images/logodauHoi.png" width="20px"></a>
+                                        <a href="#"><img src="/BTL/images/logodauHoi.png" width="20px"></a>
                                         <input type="button" value="CÂU HỎI THƯỜNG GẶP">
                                     </div>
                                     <div class="footer-mini2">
-                                        <a href="#"><img src="../images/logoEmaildo.png" width="25px"></a>
+                                        <a href="#"><img src="/BTL/images/logoEmaildo.png" width="25px"></a>
                                         <p><a href="#">bandoc@kenh14</a></p>
                                     </div>
                                 </div>
@@ -424,7 +481,7 @@
                 </table>
             </div>
             <div class="footer-table2">
-                <a href="#"><img src="../images/logo2.png" width="530px" height="130px"></img></a>
+                <a href="#"><img src="/BTL/images/logo2.png" width="530px" height="130px"></img></a>
             </div>
         </div>
     
@@ -434,7 +491,7 @@
                 <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
                 <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
                 <div class="logo-mini">
-                    <a href="#"><img src="../images/logoDC.png" width="17px"></a>
+                    <a href="#"><img src="/BTL/images/logoDC.png" width="17px"></a>
                     <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
                 </div>
     
@@ -443,7 +500,7 @@
                     <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
                     <span>Điện thoại: 028 7307 7979</span>
                     <div class="logo-mini">
-                        <a href="#"><img src="../images/logoDC.png" width="15px"></a>
+                        <a href="#"><img src="/BTL/images/logoDC.png" width="15px"></a>
                         <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
                     </div>
                 </div>    
@@ -458,16 +515,16 @@
                     <span>024.73095555 (máy lẻ 62.370)</span><br>
                 </div>
                 <div class="logo-mini-1">
-                    <a href="#"><img src="../images/logoThu.png" width="30px"></a>
+                    <a href="#"><img src="/BTL/images/logoThu.png" width="30px"></a>
                     <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
                 </div>
                 <h4>LIÊN HỆ QUẢNG CÁO</h4>
                 <div class="logo-mini">
-                    <img src="../images/logoDT.png" width="20px"></a>
+                    <img src="/BTL/images/logoDT.png" width="20px"></a>
                     <span>02473007108</span>
                 </div>
                 <div class="logo-mini-1">
-                    <a href="#"><img src="../images/logoThu.png" width="30px"></a>
+                    <a href="#"><img src="/BTL/images/logoThu.png" width="30px"></a>
                     <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
                 </div>
                 <div class="chat-table-1">
@@ -482,7 +539,7 @@
             </div>
             <hr class="DK"/>
             <div class="footer-mini-three">
-                <a href=""><img src="../images/logoVCCorp.png" width="120px" ></a>
+                <a href=""><img src="/BTL/images/logoVCCorp.png" width="120px" ></a>
                 <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
                 <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
                 <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>

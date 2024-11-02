@@ -1,16 +1,21 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenh14 </title>
-    <link rel="stylesheet" href="/BTL/styles.css">
+    <link rel="stylesheet" href="/BTL/CSS_1/styles.css">
     <link rel="import" href="component.html">
-    <script src="script.js"></script>
+    <script src="/BTL/Scrip.js/script.js"></script>
     <!-- Thêm liên kết Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+        <!-- Linking SwiperJS CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Linking SwiperJS script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -26,8 +31,9 @@
                     </ul>
                 </nav>
                 <div class="search-bar">
-                    <input type="text" placeholder="Tìm kiếm...">
-                    <button type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
                 </div>
             </div>
         </div>
@@ -77,7 +83,7 @@
             <div class="container">
                 <div class="menu-row">
                     <div class="menu-column">
-                        <a href="#">Đời sống</a>
+                        <a href="/BTL/DOI_SONG/DoiSong.html">Đời sống</a>
                         <div class="submenu">
                             <a href="/BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
                             <a href="/BTL/DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
@@ -162,7 +168,7 @@
                         </div>
                     </div>
                     <div class="menu-column">
-                        <a href="/BTL/SUC_KHOE/KhoeDep.html">Sức khỏe</a>
+                        <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
                         <div class="submenu">
                             <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
                             <a href="/BTL/SUC_KHOE/TinTuc.html">Tin tức</a>
@@ -214,6 +220,63 @@
                     <a href="#"><img src="/BTL/images/anh206.png"></a>
                     <p><b><a href="#">Choáng với người phụ nữ nằm gọn trong ngăn hành lý máy bay Mỹ</a></b></p>
                 </aside>
+            </div>
+            <hr/><br>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh551.png" class="card-image">
+                                    <h3 class="card-title">6 bí ẩn của thế giới mà đến nay khoa học vẫn không tài nào giải đáp nổi, dù đã rất nỗ lực tìm kiếm</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh552.png"class="card-image">
+                                    <h3 class="card-title">Chiếc khay mứt đẹp nhưng đánh đố này sẽ khiến khách đến chơi vận hết IQ để được ăn bánh kẹo</h3>          
+                                </a>   
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh553.png"class="card-image">
+                                    <h3 class="card-title">Áo phao người ngoài hành tinh và những món đồ chống đại hàn đảm bảo nổi nhất phố phường</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">   
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh554.png"  class="card-image">
+                                    <h3 class="card-title">Chú cá rô bỗng nổi tiếng MXH vì gương mặt đầy biểu cảm, quyết tâm xa lánh thanh niên chủ định ăn thịt mình</h3>
+                                </a>                       
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh555.png "  class="card-image">
+                                    <h3 class="card-title">Đặt mua heo hồng cute qua mạng, thanh niên nhận về con lợn nhựa mặt mũi không thể gian manh hơn</h3>
+                                </a>         
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh556.png"class="card-image">
+                                    <h3 class="card-title">Bạn tưởng chú cá sấu là nhân vật bất hạnh nhất? Chào mừng đến vời cuộc đời hươu cao cổ</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh557.png"  class="card-image">
+                                    <h3 class="card-title">Chùm ảnh: Diên Hi Công Lược phiên bản chó mèo cho các sen xem tạm trong lúc đang hoang mang chuyện dừng phát sóng</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
             </div>
             <hr/>
             <div class="two">

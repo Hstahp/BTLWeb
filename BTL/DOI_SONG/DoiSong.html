@@ -6,12 +6,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenh14 </title>
-    <link rel="stylesheet" href="/BTL/styles.css">
+    <link rel="stylesheet" href="/BTL/CSS_1/styles.css">
     <link rel="import" href="component.html">
-    <script src="script.js"></script>
+    <script src="/BTL/Scrip.js/script.js"></script>
     <!-- Thêm liên kết Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+       <!-- Linking SwiperJS CSS -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+       <!-- Linking SwiperJS script -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -27,8 +31,9 @@
                     </ul>
                 </nav>
                 <div class="search-bar">
-                    <input type="text" placeholder="Tìm kiếm...">
-                    <button type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
                 </div>
             </div>
         </div>
@@ -215,7 +220,64 @@
                     <p><b><a href="#">Đi họp lớp, 24 người ăn tiệc hết 18 triệu đồng, tôi thanh toán toàn bộ:...</a></b></p>
                 </aside>
             </div>
-            <hr/>
+            <hr/><br>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh531.png" class="card-image">
+                                    <h3 class="card-title">Giám đốc bức xúc khi nói 1 mình trong nhóm chat, Gen Z thản nhiên: “Em bị trôi tin nhắn”</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh532.png"class="card-image">
+                                    <h3 class="card-title">Bất ngờ với diện mạo hiện tại của cô bé Vô Diện từng khuynh đảo MXH 8 năm trước</h3>          
+                                </a>   
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh534.png"class="card-image">
+                                    <h3 class="card-title">Bùng nổ tranh cãi về bàn ăn Halloween gây khiếp sợ của “phú bà" nổi tiếng Hà thành: Các con tuyên bố 1 điều</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">   
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh533.png"  class="card-image">
+                                    <h3 class="card-title">Cặp rich kid nhà shark Bình - Phương Oanh hoá bí ngô và người dơi "quậy" Halloween: 10 điểm đáng yêu!</h3>
+                                </a>                       
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh535.png "  class="card-image">
+                                    <h3 class="card-title">Michael Trương xin lỗi: Tưởng mình nam chính ngôn tình, thấy xấu hổ khi trở thành "tra nam"</h3>
+                                </a>         
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh536.png"class="card-image">
+                                    <h3 class="card-title">Profile cực sốc của chú rể cưới cô dâu Đồng Tháp được tặng 1.000 lượng vàng, 9,9 tỷ tiền mặt hồi môn</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh537.png"  class="card-image">
+                                    <h3 class="card-title">Nỗi lo của Rosé (BLACKPINK)</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
             <div class="two">
                 <section>
                     <a href="#"><img src="/BTL/images/anh3.png"></a>
@@ -291,6 +353,57 @@
                     <p><b>Đời sống -</b><time> 6 giờ trước</time></p>
                     <p> Nhiều người cho rằng Châu Bùi lại đang có ý muốn nhắc khéo “anh người yêu” đây mà!</p>
                 </aside>
+            </div><br>
+            <div class="double">
+                <div class="double_1">
+                    <div class="double_2_1">
+                        <h2><a href="KhamPha.html">KHÁM PHÁ</a></h2>
+                        <a href="#"><img src="/BTL/images/anh516.png" width="360px"></a>
+                        <p><a href="#"><b>Toàn cảnh sự cố màn hình xanh gây náo loạn cả thế giới: Hàng ngàn chuyến bay bị huỷ, bệnh viện, công ty, dịch vụ khắp nơi tê liệt</b></a></p>
+                    </div>
+                    <hr><br>
+                    <div class="double_1_2">
+                        <section>
+                            <a href="#"><img src="/BTL/images/anh518.png" width="100px" height="80px"></a>
+                        </section>
+                        <aside>
+                            <span><a href="#"><b>Loài cá kỳ lạ nhất châu Phi: Ẩn mình dưới lòng đất nhiều năm không cần ăn uống nhưng vẫn không thể thoát khỏi bàn tay của con người</b></a></span>
+                        </aside>
+                    </div><br>
+                    <div class="double_1_2">
+                        <section>
+                            <a href="#"><img src="/BTL/images/anh519.png" width="100px" height="80px" ></a>
+                        </section>
+                        <aside>
+                            <span><a href="#"><b>Vừa vào nhà tắm, người đàn ông bỗng hét lớn rồi ngã quỵ, đồng nghiệp chạy vào chứng kiến cảnh tượng hãi hùng</b></a></span>
+                        </aside>
+                    </div>
+                </div>
+                <div class="double_2">
+                    <div class="double_2_1">
+                        <h2><a href="Di.html">DỊ</a></h2>
+                        <a href="#"><img src="/BTL/images/anh517.png" width="360px"></a>
+                        <p><a href="#"><b>Quán cafe đầu tiên CẤM khách dùng laptop ngồi làm việc: ''Khách yêu cầu quán tắt nhạc để họp trực tuyến trong khi chỉ gọi 1 ly nước!''</b></a></p>
+                    </div>
+                    <hr><br>
+                    <div class="double_1_2">
+                        <section>
+                            <a href="#"><img src="/BTL/images/anh520.png" width="100px" height="80px"></a>
+                        </section>
+                        <aside>
+                            <span><a href="#"><b>Chùm ảnh: Nắng nóng kinh hoàng, AI "gợi ý" về mùa hè ở vũ trụ khác, xem đến đâu bất ngờ đến đấy</b></a></span>
+                        </aside>
+                    </div><br>
+                    <div class="double_1_2">
+                        <section>
+                            <a href="#"><img src="/BTL/images/anh521.png" width="100px" height="80px"></a>
+                        </section>
+                        <aside>
+                            <span><a href="#"><b>Anh chàng khiến 5 phụ nữ mang thai cùng lúc, không đánh ghen mà còn cùng tổ chức tiệc mừng em bé gây sốc</b></a></span>
+                        </aside>
+                    </div>
+                </div>
+              
             </div>
             <hr/>
             <div class="two">

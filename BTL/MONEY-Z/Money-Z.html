@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenh14 </title>
-    <link rel="stylesheet" href="/BTL/styles.css">
+    <link rel="stylesheet" href="/BTL/CSS_1/styles.css">
     <link rel="import" href="component.html">
-    <script src="script.js"></script>
+    <script src="/BTL/Scrip.js/script.js"></script>
     <!-- Thêm liên kết Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+       <!-- Linking SwiperJS CSS -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+       <!-- Linking SwiperJS script -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
-
 <body>
     <header>
         <div class="top-bar">
@@ -26,8 +29,9 @@
                     </ul>
                 </nav>
                 <div class="search-bar">
-                    <input type="text" placeholder="Tìm kiếm...">
-                    <button type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
                 </div>
             </div>
         </div>
@@ -210,6 +214,63 @@
                     <a href="#"><img src="/BTL/images/anh225.png"></a>
                     <p><b><a href="#">Sổ tiết kiệm 7 tỷ của cụ bà U80 bỗng biến thành hợp đồng bảo hiểm, nhân...</a></b></p>
                 </aside>
+            </div>
+            <hr/><br>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh538.png" class="card-image">
+                                    <h3 class="card-title">Nghiện sống tối giản, cô gái lương 13 triệu nhưng tháng nào cũng mua được vàng: Tất cả nhờ 3 nguyên tắc đơn giản</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh539.png"class="card-image">
+                                    <h3 class="card-title">Mua 3 chỉ vàng để dành đến Tết tặng mẹ, mỗi tháng tiết kiệm 1 triệu để có 10 triệu biếu bố mẹ tiêu Tết!</h3>             
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh540.png"class="card-image">
+                                    <h3 class="card-title">Chưa tốt nghiệp Đại học đã kiếm 15-22 triệu/tháng, tháng nào cũng mua vàng đều như vắt tranh</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh541.png"  class="card-image">
+                                <h3 class="card-title">Dân văn phòng nói về khoản tiền “không đáng là bao” nhưng lại là thủ phạm khiến mình nghèo đi, ai cũng dễ mắc</h3>
+                                </a>                                   
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh542.png "  class="card-image">
+                                    <h3 class="card-title">Giá vàng chạm đỉnh, dân văn phòng than thở: Lương giảm nhưng vàng tăng bốc đầu</h3>
+                                </a>     
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh543.png"class="card-image">
+                                    <h3 class="card-title">Chàng trai kiếm hơn 20 triệu/ tháng nhưng không tiết kiệm được đồng nào: Nhìn bảng chi tiêu ai cũng lắc đầu</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh544.png"  class="card-image">
+                                    <h3 class="card-title">Từ giờ tới cuối năm không đi ăn ngoài để dành tiền tiêu Tết</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
             </div>
             <hr/>
             <div class="two">

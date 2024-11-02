@@ -1,16 +1,21 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenh14 </title>
-    <link rel="stylesheet" href="/BTL/styles.css">
+    <link rel="stylesheet" href="/BTL/CSS_1/styles.css">
     <link rel="import" href="component.html">
-    <script src="script.js"></script>
+    <script src="/BTL/Scrip.js/script.js"></script>
     <!-- Thêm liên kết Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+       <!-- Linking SwiperJS CSS -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+       <!-- Linking SwiperJS script -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -26,8 +31,9 @@
                     </ul>
                 </nav>
                 <div class="search-bar">
-                    <input type="text" placeholder="Tìm kiếm...">
-                    <button type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
                 </div>
             </div>
         </div>
@@ -162,7 +168,7 @@
                         </div>
                     </div>
                     <div class="menu-column">
-                        <a href="/BTL/SUC_KHOE/KhoeDep.html">Sức khỏe</a>
+                        <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
                         <div class="submenu">
                             <a href="/BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
                             <a href="/BTL/SUC_KHOE/TinTuc.html">Tin tức</a>
@@ -215,6 +221,63 @@
                     <a href="#"><img src="/BTL/images/anh101.png"></a>
                     <p><b><a href="#">Cơ ngơi nằm giữa quận Đống Đa, Hà Nội của mỹ nhân VFC vừa lấy...</a></b></p>
                 </aside>
+            </div>
+            <hr/><br>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh558.png" class="card-image">
+                                    <h3 class="card-title">1 rapper âm thầm làm nhà mới vẫn bị phát hiện: Không gian sống "huyền bí" như chủ nhân</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <video autoplay loop muted playsinline  class="card-image"><source src="/BTL/images/vd13.mp4"  type="video/mp4"></video>
+                                    <h3 class="card-title">2 không gian sống "bóc trần" con người thật của HIEUTHUHAI</h3>          
+                                </a>   
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh559.png"class="card-image">
+                                    <h3 class="card-title">Cơ ngơi nằm giữa quận Đống Đa, Hà Nội của mỹ nhân VFC vừa lấy chồng doanh nhân</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">   
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh560.png"  class="card-image">
+                                    <h3 class="card-title">Cải tạo ban công thành phòng tắm trong nhà 6m2, sau 3 tháng sử dụng, cô gái lên tiếng cảnh báo ai định làm theo</h3>
+                                </a>                       
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <video autoplay loop muted playsinline  class="card-image"><source src="/BTL/images/vd41.mp4"  type="video/mp4"></video>
+                                    <h3 class="card-title">Hiếm lắm mới thấy Midu tiết lộ cuộc sống bên trong căn hộ cao cấp với thiếu gia Minh Đạt</h3>
+                                </a>         
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh561.png"class="card-image">
+                                    <h3 class="card-title">Cô gái tiết kiệm tiền 10 năm để mua bằng được căn nhà tồi tàn rộng 48m2, lý do gây kinh ngạc</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh562.png"  class="card-image">
+                                    <h3 class="card-title">Ngỡ ngàng bên trong ngôi nhà “ống khói” chỉ hơn 30m2 của một cặp vợ chồng Nhật</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
             </div>
             <hr/>
             <div class="two">

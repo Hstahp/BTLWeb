@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenh14 </title>
-    <link rel="stylesheet" href="/BTL/styles.css">
+    <link rel="stylesheet" href="/BTL/CSS_1/styles.css">
     <link rel="import" href="component.html">
-    <script src="script.js"></script>
+    <script src="/BTL/Scrip.js/script.js"></script>
     <!-- Thêm liên kết Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+        <!-- Linking SwiperJS CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Linking SwiperJS script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -26,8 +30,9 @@
                     </ul>
                 </nav>
                 <div class="search-bar">
-                    <input type="text" placeholder="Tìm kiếm...">
-                    <button type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
                 </div>
             </div>
         </div>
@@ -215,6 +220,63 @@
                     <p><b><a href="#">"Mẹ bỉm sữa" khoe lương 2 vợ chồng 17 triệu/tháng vẫn mua được 1 chỉ...</a></b></p>
                 </aside>
             </div>
+            <hr/><br>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh580.png" class="card-image">
+                                    <h3 class="card-title">Chuyện người mẹ ở Hà Nội nuốt nước mắt ký giấy hiến tạng con trai, 8 năm sau, bà có 5 người con nuôi</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh581.png"class="card-image">
+                                    <h3 class="card-title">Cựu nữ cán bộ công an vụ cháy karaoke An Phú khóc kêu oan nhưng vẫn nhận mức án cao</h3>          
+                                </a>   
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh582.png"class="card-image">
+                                    <h3 class="card-title">Thông tin mới vụ người phụ nữ bị chồng sắp cưới bạo hành suốt 13 tiếng khiến nạn nhân tổn thương sọ não</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">   
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh583.png"  class="card-image">
+                                    <h3 class="card-title">Cận cảnh đường hầm bí mật dài 300m bị công an đồng loạt bao vây, bắt toàn bộ 32 người bên trong</h3>
+                                </a>                       
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh584.png "  class="card-image">
+                                    <h3 class="card-title">Thích mê khi dạo những "con hẻm xanh" ở Sài Gòn, ước sao người dân nơi nào cũng đồng lòng như thế!</h3>
+                                </a>         
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh585.png"class="card-image">
+                                    <h3 class="card-title">Bắt tạm giam nam thanh niên hiếp dâm bé gái 3 tuổi</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh586.png"  class="card-image">
+                                    <h3 class="card-title">Bộ Công Thương lý giải việc chưa thể cấm ngay Temu</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
             <hr/>
             <div class="two">
                 <section>
@@ -258,6 +320,57 @@
                     <p><b>Xã hội -</b><time> 4 giờ trước</time></p>
                     <p>Công ty Cổ phần Giao Hàng Tiết Kiệm đã làm việc với Apple, cho biết khách hàng sẽ nhận được đơn hàng thay thế</p>
                 </aside>
+            </div><br>
+            <div class="double">
+                <div class="double_1">
+                    <div class="double_2_1">
+                        <h2><a href="/BTL/DOI_SONG/DoiSong.html">ĐỜI SỐNG</a></h2>
+                        <a href="#"><img src="/BTL/images/anh522.png" width="360px"></a>
+                        <p><a href="#"><b>Danh tính cô dâu chú rể trong đám hỏi có dàn siêu xe triệu đô ở Hà Nội, visual như "xé truyện" bước ra</b></a></p>
+                    </div>
+                    <hr><br>
+                    <div class="double_1_2">
+                        <section>
+                            <a href="#"><img src="/BTL/images/anh524.png" width="100px" height="80px"></a>
+                        </section>
+                        <aside>
+                            <span><a href="#"><b>Vì sao bài rao cho thuê phòng trong chung cư Phong Xích Lan gây ám ảnh toàn cõi mạng lúc này?</b></a></span>
+                        </aside>
+                    </div><br>
+                    <div class="double_1_2">
+                        <section>
+                            <a href="#"><img src="/BTL/images/anh525.png" width="100px" height="80px" ></a>
+                        </section>
+                        <aside>
+                            <span><a href="#"><b>Bức ảnh cô gái nằm co ro trên cầu, chân không đi dép gây xôn xao: Lộ ra danh tính nhiều người bị sốc!</b></a></span>
+                        </aside>
+                    </div>
+                </div>
+                <div class="double_2">
+                    <div class="double_2_1">
+                        <h2><a href="/BTL/DOI_SONG/TheGioiDoDay.html">THẾ GIỚI ĐÓ ĐÂY</a></h2>
+                        <a href="#"><img src="/BTL/images/anh523.png" width="360px"></a>
+                        <p><a href="#"><b>Con trai lớp 7 nhảy lầu từ tầng 17, ông bố giở cặp sách của con ra xem thì ngã quỵ trước 1 xấp giấy</b></a></p>
+                    </div>
+                    <hr><br>
+                    <div class="double_1_2">
+                        <section>
+                            <a href="#"><img src="/BTL/images/anh527.png" width="100px" height="80px"></a>
+                        </section>
+                        <aside>
+                            <span><a href="#"><b>Người phụ nữ 65 tuổi mắc căn bệnh đau đớn nhất thế giới vì khui đồ mua online quá nhiều</b></a></span>
+                        </aside>
+                    </div><br>
+                    <div class="double_1_2">
+                        <section>
+                            <a href="#"><img src="/BTL/images/anh526.png" width="100px" height="80px"></a>
+                        </section>
+                        <aside>
+                            <span><a href="#"><b>Vừa nhận tin nhắn lạ, 60 giây sau tài khoản "bay" ngay 175 triệu, người phụ nữ sững sờ: Tôi chưa bấm gì cả</b></a></span>
+                        </aside>
+                    </div>
+                </div>
+              
             </div>
             <hr/>
             <div class="two">

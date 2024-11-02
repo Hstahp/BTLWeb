@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenh14 </title>
-    <link rel="stylesheet" href="/BTL/styles.css">
+    <link rel="stylesheet" href="/BTL/CSS_1/styles.css">
     <link rel="import" href="component.html">
-    <script src="script.js"></script>
+    <script src="/BTL/Scrip.js/script.js"></script>
     <!-- Thêm liên kết Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+       <!-- Linking SwiperJS CSS -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+       <!-- Linking SwiperJS script -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
+
 
 <body>
     <header>
@@ -26,8 +31,9 @@
                     </ul>
                 </nav>
                 <div class="search-bar">
-                    <input type="text" placeholder="Tìm kiếm...">
-                    <button type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
                 </div>
             </div>
         </div>
@@ -214,6 +220,63 @@
                     <a href="#"><img src="/BTL/images/anh188.png"></a>
                     <p><b><a href="#">Vừa vào nhà tắm, người đàn ông bỗng hét lớn rồi ngã quỵ, đồng...</a></b></p>
                 </aside>
+            </div>
+            <hr/><br>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <video autoplay loop muted playsinline  class="card-image"><source src="/BTL/images/vd42.mp4"  type="video/mp4"></video>
+                                    <h3 class="card-title">Vụ hàng chục người thương vong trên chuyến bay của Singapore Airlines: Chuyện gì đã xảy ra?</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh563.png"class="card-image">
+                                    <h3 class="card-title">Hãi hùng trước vật "nguy hiểm" nhất thế giới: Chỉ nhìn 5 phút đã mất mạng, hàng trăm năm nữa cũng không thể đến gần</h3>          
+                                </a>   
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh564.png"class="card-image">
+                                    <h3 class="card-title">Sự thật đằng sau hình ảnh rước "mèo Doraemon" cầu mưa viral khắp cõi mạng mấy ngày qua</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">   
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh565.png"  class="card-image">
+                                    <h3 class="card-title">Kho báu của cướp biển khét tiếng nhất mọi thời đại: Cất giấu 4.000 tỷ dọc bờ biển, mở ra cuộc săn tìm suốt 300 năm trên khắp thế giới</h3>
+                                </a>                       
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh566.png"  class="card-image">
+                                    <h3 class="card-title">Gen Z là thế hệ có tỷ lệ LGBTQ+ nhiều nhất từ trước đến nay!</h3>
+                                </a>         
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh567.png"class="card-image">
+                                    <h3 class="card-title">6 sự thật về thế giới khó tin đến nỗi chưa ai từng nghĩ đến</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh568.png"  class="card-image">
+                                    <h3 class="card-title">Giải mã biểu tượng địa vị bí mật của giới siêu giàu, nơi chiếc rèm cửa sổ trở thành công cụ khoe sự "xa xỉ thầm lặng"</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
             </div>
             <hr/>
             <div class="two">

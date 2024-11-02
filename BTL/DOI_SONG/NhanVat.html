@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenh14 </title>
-    <link rel="stylesheet" href="/BTL/styles.css">
+    <link rel="stylesheet" href="/BTL/CSS_1/styles.css">
     <link rel="import" href="component.html">
-    <script src="script.js"></script>
+    <script src="/BTL/Scrip.js/script.js"></script>
     <!-- Thêm liên kết Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+       <!-- Linking SwiperJS CSS -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+       <!-- Linking SwiperJS script -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
+
 
 <body>
     <header>
@@ -26,8 +31,9 @@
                     </ul>
                 </nav>
                 <div class="search-bar">
-                    <input type="text" placeholder="Tìm kiếm...">
-                    <button type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
                 </div>
             </div>
         </div>
@@ -216,6 +222,63 @@
                     <a href="#"><img src="/BTL/images/anh22.2.png"></a>
                     <p><b><a href="#">16 tuổi “ăn trọn” kỳ tích chấn động giới Pickleball - Sophia Phương...</a></b></p>
                 </aside>
+            </div>
+            <hr/><br>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh569.png" class="card-image">
+                                    <h3 class="card-title">Diệp Minh: “Cái gì bắt nguồn từ sở thích thì làm không khó lắm, trừ việc làm mẹ”</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh21.png"class="card-image">
+                                    <h3 class="card-title">"Chủ tịch" 9X bị đồn phá sản cưới tiểu thư Quận 3: Giờ mới biết cầu hôn cần nhẫn kim cương</h3>          
+                                </a>   
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh22.1.png"class="card-image">
+                                    <h3 class="card-title">Cựu sinh viên RMIT gửi email tới tất cả bảo tàng ở TP.HCM xin việc, chỉ “ông Bảo” gần 100 tuổi gật đầu và cái kết rớt nước mắt</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">   
+                                <a href="#" class="card-link">
+                                    <img src="/BTL/images/anh22.2.png"  class="card-image">
+                                    <h3 class="card-title">16 tuổi “ăn trọn” kỳ tích chấn động giới Pickleball - Sophia Phương Anh: Trong 60 giây, có rất nhiều điều để lật ngược cuộc chơi</h3>
+                                </a>                       
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh573.png "  class="card-image">
+                                    <h3 class="card-title">Hải Nam: Nếu được chọn Tấm hay Cám để yêu, tôi chọn cả 2</h3>
+                                </a>         
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh574.png"class="card-image">
+                                    <h3 class="card-title">Lần đầu ra mắt thấy bạn trai ở nhà cấp 4 xập xệ, cô gái quyết định "đánh đổi" sau kết hôn và cái kết</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="/BTL/images/anh575.png"  class="card-image">
+                                    <h3 class="card-title">Gen Z nhận "án tử" ung thư vì sống quá tệ với bản thân, quyết tâm làm 1 việc không tưởng ngay khi được hồi sinh</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
             </div>
             <hr/>
             <div class="two">
