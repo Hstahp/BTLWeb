@@ -91,3 +91,258 @@
     height:400px;
     
 }
+.share-link{
+    margin-top:10px;
+}
+.share-link span {
+    margin: 0;
+   
+    font-size: 15px;
+    margin-right:4px;
+}
+.share-link span a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #ffffff;
+
+
+}
+.box1{
+    margin-top: 20px ;
+}
+.box1 button{
+    background-color: rgb(0, 123, 255);
+    width: 85px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 123, 255);
+    
+}
+.box1 button a {
+    text-decoration: none;
+    font-weight:bold;
+    color: white;
+   
+}
+.box2{
+    margin-top: 20px ;
+}
+.box2 button{
+    background-color: #416cb5;
+    width: 95px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #416cb5;
+    
+}
+.box2 button a {
+    text-decoration: none;
+    font-weight:bold;
+    color: white;
+   
+}
+.box3{
+    margin-top: 20px ;
+}
+.box3 button{
+    background-color: #ffffff;
+    width: 140px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #b5b4b4;
+    
+}
+.box3 button a {
+    margin-left:-3px;
+    text-decoration: none;
+    font-weight:bold;
+    color: #2a4576;
+   
+}
+.box3 a:hover {
+    text-decoration: none; 
+}
+.box3 button:hover {
+    background-color: rgb(236, 235, 235); 
+}
+.box4{
+    margin-top: 20px ;
+}
+.box4 button{
+    background-color: #000000;
+    width: 30px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #b5b4b4;
+}
+.box5{
+    margin-top: 20px ;
+    padding-left:102px;
+}
+.box5 button{
+    background-color: #e6e5e5;
+    width: 290px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #e6e5e5;
+    
+}
+.box5 button a {
+    text-decoration: none;
+    font-weight:bold;
+    color: rgb(0, 0, 0);
+}
+.box6{
+    margin-top: 20px ;
+    padding-left:102px;
+}
+.box6 button{
+    background-color: #e6e5e5;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #e6e5e5;
+    
+}
+.box6 button a {
+    text-decoration: none;
+    font-weight:bold;
+    color: rgb(0, 0, 0);
+}
+.box7{
+    margin-top: 20px ;
+    padding-left:489px;
+}
+.box7 button{
+    background-color: #33eaf1;
+    width: 100px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #33eaf1;
+    
+}
+.box7 button a {
+    margin-left:-3px;
+    text-decoration: none;
+    font-weight:bold;
+    color: white;
+   
+}
+
+.box7 button:hover {
+    background-color: #03f5fd; 
+}
+.box8{
+    margin-top: 20px ;
+}
+.box8 button{
+    background-color: #eceaea;
+    width: 75px;
+    text-align: center;
+    border-radius: 3px;
+    border: 0.2px solid #eceaea;
+    
+}
+.box8 button a {
+    margin-left:-3px;
+    text-decoration: none;
+    
+    color: rgb(0, 0, 0);
+   
+}
+
+.box8 button:hover {
+    background-color: #b5b4b4; 
+}
+.box-circle1{
+    background-color: #ff7505;
+    width: 20px;
+    height: 20px;
+    border: 10px solid #ff7505;
+    border-radius: 50%;
+   margin-top:-18px;
+}
+.box-circle2{
+    background-color: #416cb5;
+    width: 20px;
+    height: 20px;
+    border: 10px solid #416cb5;
+    border-radius: 50%;
+    text-align:center;
+    margin-top:-10px;
+}
+.body-text{
+    margin: 0px 200px 0px 68px;
+    width: 685px;
+}
+
+.five {
+    height: 120px;
+    display: flex;
+}
+.five section {
+    padding-top: 15px;
+}
+
+.five aside h3 {
+    padding-left: 30px;
+    
+}
+
+.five aside a {
+    font-size: 130%;
+    text-decoration: none;
+    color: black;
+}
+.five h3{
+    margin-top:-2px;
+    padding-right:40px;
+    padding-left:-10px;
+}
+.five aside ul {
+   padding-left:-30px;
+}
+.five aside li{
+    color:#ff7505;
+    margin-bottom:5px;
+}
+
+.five aside a{
+ 
+    font-size:15px;
+}
+figcaption {
+    background-color: #b2b2b2;
+    border: 5px solid  #b2b2b2;
+    margin-top: -5px;
+    padding-left:10px;
+    padding-right:-32px;
+    font-size:13px;
+}
+
+.border{
+    border: 2px solid black;
+}
+.body-text p{
+    margin-top:3px;
+
+} 
+.hover-text span{
+    
+    color:#2b4b81;
+    font-size:20px;
+    
+}
+.hover-text a{
+    text-decoration: none;
+    color:#2b4b81;
+    font-size:20px;
+    font-weight:bold;
+}
+.hover-text a:hover {
+    text-decoration: none; 
+    color:#10192c
+}
+.space1{
+    padding-bottom: 300px;
+}
