@@ -14,765 +14,765 @@
            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
            <!-- Linking SwiperJS script -->
            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    </head>
+</head>
     
-    <body>
-        <header>
-            <div class="top-bar">
-                <div class="container">
-                    <nav>
-                        <ul>
-                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
-                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
-                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
-                            <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
-                        </ul>
-                    </nav>
-                    <div class="search-bar">
-                        <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
-                        <button type="button" onclick="CheckSearch()" style="background-color: black;">
-                        <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="main-header">
-                <div class="container">
-                    <div class="logo">
-                        <img src="../images/logo.png" alt="Kenh14 Logo">
-                        <div class="logo-text">
-                            <span class="logo-main">kenh14.vn</span>
-                            <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
-                        </div>
-                    </div>
-                    <div class="trending-topics">
-                        <span class="arrow-icon">&#x2197;</span>
-                        <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
-                        <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
-                        <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <nav class="main-nav">
-                <div class="container">
-                    <ul class="mains-menu">
-                        <li><a href="#"><i class="fas fa-home"></i></a></li>
-                        <li><a href="#">Star</a></li>
-                        <li><a href="#">Ciné</a></li>
-                        <li><a href="#">Musik</a></li>
-                        <li><a href="#">Beauty & Fashion</a></li>
-                        <li><a href="../DOI_SONG/DoiSong.html">Đời sống</a></li>
-                        <li><a href="../MONEY-Z/Money-Z.html">Money-Z</a></li>
-                        <li><a href="../AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a></li>
-                        <li><a href="../XA_HOI/XaHoi.html">Xã hội</a></li>
-                        <li><a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a></li>
-                        <li><a href="#">Tek-life</a></li>
-                        <li><a href="#">Học đường</a></li>
-                        <li><a href="#">Xem Mua Luôn</a></li>
-                        <li><a href="#">Video</a></li>
-                        <li class="main-menu">
-                            <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
-    
-                        </li>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
                     </ul>
-                </div>
-            </nav>
-            <div class="subs-menu">
-                <div class="container">
-                    <div class="menu-row">
-                        <div class="menu-column">
-                            <a href="../DOI_SONG/DoiSong.html">Đời sống</a>
-                            <div class="submenu">
-                                <a href="../DOI_SONG/NhanVat.html">Nhân vật</a>
-                                <a href="../DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
-                                <a href="../DOI_SONG/House_n_Home.html">House n Home</a>
-                            </div>
-                        </div>
-                        <div class="menu-column">
-                            <a href="#">Xem mua luôn</a>
-                            <div class="submenu">
-                                <a href="#">Thời trang</a>
-                                <a href="#">Đẹp</a>
-                                <a href="#">Mommy mua di</a>
-                            </div>
-                        </div>
-                        <div class="menu-column">
-                            <a href="#">Sport</a>
-                            <div class="submenu">
-                                <a href="#">Bóng đá</a>
-                                <a href="#">Bóng rổ</a>
-                                <a href="#">Bóng chuyền</a>
-                            </div>
-                        </div>
-                        <div class="menu-column">
-                            <a href="#">Musik</a>
-                            <div class="submenu">
-                                <a href="#">Âu-Mỹ</a>
-                                <a href="#">Châu Á</a>
-                                <a href="#">Việt Nam</a>
-                                <a href="#">Hip-hop neva die</a>
-                            </div>
-                        </div>
-                        <div class="menu-column">
-                            <a href="#">Ciné</a>
-                            <div class="submenu">
-                                <a href="#">Phim chiếu rạp</a>
-                                <a href="#">Phim Việt Nam</a>
-                                <a href="#">Series truyền hình</a>
-                                <a href="#">Hoa ngữ - Hàn Quốc</a>
-                            </div>
-                        </div>
-                        <div class="menu-column">
-                            <a href="#">Ciné</a>
-                            <div class="submenu">
-                                <a href="#">Metaverse</a>
-                                <a href="#">How-To</a>
-                                <a href="#">Wow</a>
-                                <a href="#">2-Mall</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu-row">
-                        <div class="menu-column">
-                            <a href="#">Star</a>
-                            <div class="submenu">
-                                <a href="#">Sao Việt</a>
-                                <a href="#">Hội bạn thân showbiz</a>
-                                <a href="#">TV Show</a>
-                            </div>
-                        </div>
-                        <div class="menu-column">
-                            <a href="../XA_HOI/XaHoi.html">Xã hội</a>
-                            <div class="submenu">
-                                <a href="../XA_HOI/PhapLuat.html">Pháp luật</a>
-                                <a href="../XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
-                                <a href="../XA_HOI/SongXanh.html">Sống xanh</a>
-                            </div>
-                        </div>
-                        <div class="menu-column">
-                            <a href="#">Học đường</a>
-                            <div class="submenu">
-                                <a href="../DOI_SONG/NhanVat.html">Nhân vật</a>
-                                <a href="">Du học</a>
-                                <a href="#">Bản tin 46'</a>
-                            </div>
-                        </div>
-                        <div class="menu-column">
-                            <a href="../DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
-                            <div class="submenu">
-                                <a href="../DOI_SONG/ChumAnh.html">Chùm ảnh</a>
-                                <a href="../DOI_SONG/KhamPha.html">Khám phá</a>
-                                <a href="../DOI_SONG/Di.html">Dị</a>
-                            </div>
-                        </div>
-                        <div class="menu-column">
-                            <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a>
-                            <div class="submenu">
-                                <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a>
-                                <a href="../SUC_KHOE/TinTuc.html">Tin tức</a>
-                                <a href="../SUC_KHOE/DinhDuong.html">Dinh dưỡng</a>
-                                <a href="../SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
-                                <a href="../SUC_KHOE/GioiTinh.html">Giới tính</a>
-                                <a href="../SUC_KHOE/CacBenh.html">Các bệnh</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="border-solid"></div>
-                <div class="web-info">
-                    <span class="title-mini-web">Tải app</span>
-                    <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BA%BB/id670518264?ls=1" target="_blank">IOS</a>
-                    <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
-                    <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
-                    <a class="title-mini-web" href="#">Liên hệ</a>
-                    <a class="mini-web" href="#">Quảng cáo</a>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
                 </div>
             </div>
-        </header>
         </div>
-        <div class="space">
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="Kenh14 Logo">
+                    <div class="logo-text">
+                        <span class="logo-main">kenh14.vn</span>
+                        <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                    </div>
+                </div>
+                <div class="trending-topics">
+                    <span class="arrow-icon">&#x2197;</span>
+                    <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                    <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                    <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                </div>
+            </div>
         </div>
-        <div id="page">
-            <div class="hi">
-                <ul>
-                    <li><a href="DoiSong.html"><b>ĐỜI SỐNG</b></a></li>
-                    <li><a href="NhanVat.html"><b>NHÂN VẬT</b></a></li>
-                    <li><a href="XemAnChoi.html"><b>XEM ĂN CHƠI</b></a></li>
-                    <li><a href="House_n_Home.html"><b>HOUSE N HOME</b></a></li>
-                    <li><a href="Mommy_Ez.html"><b>MOMMY-EZ</b></a></li>
-                    <li><a href="Di.html"><b>DỊ</b></a></li>
-                    <li><a href="KhamPha.html"><b>KHÁM PHÁ</b></a></li>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="mains-menu">
+                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#">Star</a></li>
+                    <li><a href="#">Ciné</a></li>
+                    <li><a href="#">Musik</a></li>
+                    <li><a href="#">Beauty & Fashion</a></li>
+                    <li><a href="../DOI_SONG/DoiSong.html">Đời sống</a></li>
+                    <li><a href="../MONEY-Z/Money-Z.html">Money-Z</a></li>
+                    <li><a href="../AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a></li>
+                    <li><a href="../XA_HOI/XaHoi.html">Xã hội</a></li>
+                    <li><a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a></li>
+                    <li><a href="#">Tek-life</a></li>
+                    <li><a href="#">Học đường</a></li>
+                    <li><a href="#">Xem Mua Luôn</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li class="main-menu">
+                        <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+
+                    </li>
                 </ul>
-            </div><br>
-            <hr/>
-            <div class="body">
-                <div class="one">
-                    <section>
-                        <a href="#"><img src="../images/anh21.png"width=570px></a>
-                        <p><b><a href="#">"Chủ tịch" 9X bị đồn phá sản cưới tiểu thư Quận 3: Giờ mới biết cầu hôn cần nhẫn kim cương</a></b></p>
-                        <p>Win.D hiện là chủ của 7 cửa hàng tại TP.HCM còn Bống vốn nổi danh là tiểu thư có gia thế khủng. Cặp đôi vừa có buổi cầu hôn lãng mạn vào cuối tháng 9 vừa qua.</a>
-                        </p>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh22.1.png"></a>
-                        <p><b><a href="#">Cựu sinh viên RMIT gửi email tới tất cả bảo tàng ở TP.HCM xin việc, chỉ...</a></b></p>
-                        <a href="#"><img src="../images/anh22.2.png"></a>
-                        <p><b><a href="#">16 tuổi “ăn trọn” kỳ tích chấn động giới Pickleball - Sophia Phương...</a></b></p>
-                    </aside>
-                </div>
-                <hr/><br>
-                <div class="container-margin">
-                    <div class="container swiper">
-                        <div class="card-wrapper">
-                            <div class="title">
-                                <h3>TIÊU ĐIỂM TUẦN</h3>
-                            </div>
-                            <ul class="card-list swiper-wrapper">
-                                <li class="card-item swiper-slide">
-                                    <a href="#" class="card-link">
-                                        <img src="../images/anh569.png" class="card-image">
-                                        <h3 class="card-title">Diệp Minh: “Cái gì bắt nguồn từ sở thích thì làm không khó lắm, trừ việc làm mẹ”</h3>
-                                    </a>
-                                </li>
-                                <li class="card-item swiper-slide">
-                                    <a href="#" class="card-link">
-                                        <img src="../images/anh21.png"class="card-image">
-                                        <h3 class="card-title">"Chủ tịch" 9X bị đồn phá sản cưới tiểu thư Quận 3: Giờ mới biết cầu hôn cần nhẫn kim cương</h3>          
-                                    </a>   
-                                </li>
-                                <li class="card-item swiper-slide">
-                                    <a href="#" class="card-link">
-                                        <img src="../images/anh22.1.png"class="card-image">
-                                        <h3 class="card-title">Cựu sinh viên RMIT gửi email tới tất cả bảo tàng ở TP.HCM xin việc, chỉ “ông Bảo” gần 100 tuổi gật đầu và cái kết rớt nước mắt</h3>
-                                    </a>
-                                </li>
-                                <li class="card-item swiper-slide">   
-                                    <a href="#" class="card-link">
-                                        <img src="../images/anh22.2.png"  class="card-image">
-                                        <h3 class="card-title">16 tuổi “ăn trọn” kỳ tích chấn động giới Pickleball - Sophia Phương Anh: Trong 60 giây, có rất nhiều điều để lật ngược cuộc chơi</h3>
-                                    </a>                       
-                                </li>
-                                <li class="card-item swiper-slide">
-                                    <a href="#"class="card-link">
-                                        <img src="../images/anh573.png "  class="card-image">
-                                        <h3 class="card-title">Hải Nam: Nếu được chọn Tấm hay Cám để yêu, tôi chọn cả 2</h3>
-                                    </a>         
-                                </li>
-                                <li class="card-item swiper-slide">
-                                    <a href="#"class="card-link">
-                                        <img src="../images/anh574.png"class="card-image">
-                                        <h3 class="card-title">Lần đầu ra mắt thấy bạn trai ở nhà cấp 4 xập xệ, cô gái quyết định "đánh đổi" sau kết hôn và cái kết</h3>
-                                    </a>
-                                </li>
-                                <li class="card-item swiper-slide">
-                                    <a href="#"class="card-link">
-                                        <img src="../images/anh575.png"  class="card-image">
-                                        <h3 class="card-title">Gen Z nhận "án tử" ung thư vì sống quá tệ với bản thân, quyết tâm làm 1 việc không tưởng ngay khi được hồi sinh</h3>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-slide-button swiper-button-prev"></div>
-                            <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </nav>
+        <div class="subs-menu">
+            <div class="container">
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="../DOI_SONG/DoiSong.html">Đời sống</a>
+                        <div class="submenu">
+                            <a href="../DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="../DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
+                            <a href="../DOI_SONG/House_n_Home.html">House n Home</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Xem mua luôn</a>
+                        <div class="submenu">
+                            <a href="#">Thời trang</a>
+                            <a href="#">Đẹp</a>
+                            <a href="#">Mommy mua di</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Sport</a>
+                        <div class="submenu">
+                            <a href="#">Bóng đá</a>
+                            <a href="#">Bóng rổ</a>
+                            <a href="#">Bóng chuyền</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Musik</a>
+                        <div class="submenu">
+                            <a href="#">Âu-Mỹ</a>
+                            <a href="#">Châu Á</a>
+                            <a href="#">Việt Nam</a>
+                            <a href="#">Hip-hop neva die</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Ciné</a>
+                        <div class="submenu">
+                            <a href="#">Phim chiếu rạp</a>
+                            <a href="#">Phim Việt Nam</a>
+                            <a href="#">Series truyền hình</a>
+                            <a href="#">Hoa ngữ - Hàn Quốc</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Ciné</a>
+                        <div class="submenu">
+                            <a href="#">Metaverse</a>
+                            <a href="#">How-To</a>
+                            <a href="#">Wow</a>
+                            <a href="#">2-Mall</a>
                         </div>
                     </div>
                 </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh23.png"></a>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh24.png" width="220px"></a>
-                        <p><b><a href="#">Hải Nam: Nếu được chọn Tấm hay Cám để yêu, tôi chọn cả 2</a></b></p>
-                        <p><b>Đời sống -</b><time> 25 ngày trước</time></p>
-                        <p>Hải Nam sẽ trở thành Thái tử tiếp theo của màn ảnh Việt</p>
-                    </aside>
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="#">Star</a>
+                        <div class="submenu">
+                            <a href="#">Sao Việt</a>
+                            <a href="#">Hội bạn thân showbiz</a>
+                            <a href="#">TV Show</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../XA_HOI/XaHoi.html">Xã hội</a>
+                        <div class="submenu">
+                            <a href="../XA_HOI/PhapLuat.html">Pháp luật</a>
+                            <a href="../XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
+                            <a href="../XA_HOI/SongXanh.html">Sống xanh</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Học đường</a>
+                        <div class="submenu">
+                            <a href="../DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="">Du học</a>
+                            <a href="#">Bản tin 46'</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
+                        <div class="submenu">
+                            <a href="../DOI_SONG/ChumAnh.html">Chùm ảnh</a>
+                            <a href="../DOI_SONG/KhamPha.html">Khám phá</a>
+                            <a href="../DOI_SONG/Di.html">Dị</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                        <div class="submenu">
+                            <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                            <a href="../SUC_KHOE/TinTuc.html">Tin tức</a>
+                            <a href="../SUC_KHOE/DinhDuong.html">Dinh dưỡng</a>
+                            <a href="../SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
+                            <a href="../SUC_KHOE/GioiTinh.html">Giới tính</a>
+                            <a href="../SUC_KHOE/CacBenh.html">Các bệnh</a>
+                        </div>
+                    </div>
                 </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh25.png"></a>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh26.png" width="130px"></a>
-                        <p><b><a href="#">Ấn tượng không tốt từ cái nhìn đầu tiên, cặp đôi Gen Z thông báo có em bé đầu lòng trước ngày dạm ngõ</a></b></p>
-                        <p><b>Đời sống -</b><time> 1 tháng trước</time></p>
-                        <p>Khởi đầu không xuôi lắm nhưng đuôi vẫn lọt, giờ đây cặp đôi đã về chung một nhà và sắp đón em bé đầu lòng.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh27.png"></a>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh26.png" width="130px"></a>
-                        <p><b><a href="#">Lần đầu ra mắt thấy bạn trai ở nhà cấp 4 xập xệ, cô gái quyết định "đánh đổi" sau kết hôn và cái kết</a></b></p>
-                        <p><b>Đời sống -</b><time> 1 tháng trước</time></p>
-                        <p>Chuyện tình của cặp đôi Gen Z này có nhiều điểm thú vị như trên phim.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><video autoplay loop muted playsinline width=250px><source src="../images/vd8.mp4" type="video/mp4"></video></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Hội gái xinh lên tiếng về những ác cảm vô lý với pickleball: Chơi chưa mà chê?</a></b></p>
-                        <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
-                        <p>Nếu vẫn còn đánh đồng mặc đồ sexy chỉ có sống ảo, không tập tành nghiêm túc thì có thể sẽ phải suy nghĩ lại khi gặp những hot girl dưới đây!</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh28.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Độc quyền "tóm dính" cặp đôi Pu - Chải: Lần đầu gặp, nói thật không muốn nhìn lần 2!</a></b></p>
-                        <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
-                        <p>Đọc đến đâu cười xỉu đến đấy, Pu và Chải ngoài đời cũng chí choé như trong phim thậm chí còn... hơn.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh29.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Hội gái xinh vẫn lên sân pickleball giữa bão thị phi: “Vui vẻ lên, ai mặc gì kệ đi”</a></b></p>
-                        <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
-                        <p>Mặc những tranh cãi đang rần rần trên MXH, tinh thần thể thao của hội gái xinh vẫn hừng hực lắm!</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh30.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Gen Z nhận "án tử" ung thư vì sống quá tệ với bản thân, quyết tâm làm 1 việc không tưởng ngay khi được hồi sinh</a></b></p>
-                        <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
-                        <p>Hành trình của chàng trai này đang nhận về nhiều phản hồi tích cực của cư dân mạng.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh31.png"></a>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh26.png" width="130px"></a>
-                        <p><b><a href="#">Chuyện tình fan girl - idol đỉnh như phim với câu hỏi: “Em có muốn sang Mỹ với anh không?”</a></b></p>
-                        <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
-                        <p>Câu chuyện tình này chắc chắn sẽ khiến bạn mỉm cười.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh32.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">MC mặc sexy lên sân chơi Pickleball giải mã sức hút "kịch trần" của gái đẹp mê thể thao</a></b></p>
-                        <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
-                        <p>“Đại diện” hội thích sống ảo khi chơi Pickleball lên tiếng giải oan cho bộ môn hot nhất mùa hè năm nay.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh33.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Lên sân Pickleball gặp "hot girl mặc đẹp sống ảo": Làm màu vài buổi đã giảm vèo 2kg</a></b></p>
-                        <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
-                        <p>"Thay vì lo sợ bị người khác nói rằng mình đu trend hay làm màu thì cứ tự tin cầm vợt ra sân, mình nghĩ các bạn sẽ 'nghiện' đó. Xu hướng tạo ra...</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh34.png"></a>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh35.png" width="150px"></a>
-                        <p><b><a href="#">Chuyện tình của cô gái yêu xa, lấy chồng xa, bị dè bỉu “ăn bám”</a></b></p>
-                        <p><b>Đời sống -</b><time> 3 tháng trước</time></p>
-                        <p>Sau khi sinh con, Như Thuỳ còn phải đối mặt với những điều khó nghe như “ở nhà chồng nuôi”, “ăn bám”,... Song cô vợ trẻ không mảy may...</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh36.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Mạnh Kiên - cây hài nhạt ở Đảo Thiên Đường: Tôi không phải gu của Thảo Nhi Lê, Diệu Nhi, chứ có nhiều người để ý nha!</a></b></p>
-                        <p><b>Đời sống -</b><time> 3 tháng trước</time></p>
-                        <p>Ở ngoài đời, tính cách của Mạnh Kiên cũng tưng tửng như trong show.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh37.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Hà Trúc - Quang Đạt: Đến một ngày, mình muốn con mình có mã gen của người này!!!</a></b></p>
-                        <p><b>Đời sống -</b><time> 3 tháng trước</time></p>
-                        <p>Lần đầu tiên, cặp đôi vàng của làng KOL Hà Trúc - Quang Đạt cùng ngồi xuống để kể lại câu chuyện về hành trình tình yêu tuyệt đẹp của mình.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh38.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Thiếu nữ GenZ trở thành người Việt đầu tiên làm việc cho thương hiệu bánh đình đám tại New York</a></b></p>
-                        <p><b>Đời sống -</b><time> 4 tháng trước</time></p>
-                        <p>Ước mơ trở thành "người kể chuyện thông thái", Trà My theo học chuyên ngành Art Director (Giám đốc nghệ thuật). Thiếu nữ GenZ mong muốn...</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh39.png"></a>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh40.png" width="200px"></a>
-                        <p><b><a href="#">Cô bạn 2k6 từ Sa Pa xuống Hà Nội livestream bán hàng: Toàn bộ tiền lương trong 2 - 3 tháng đầu chỉ dùng để chữa bệnh</a></b></p>
-                        <p><b>Đời sống -</b><time> 4 tháng trước</time></p>
-                        <p> 18 tuổi, Mỹ Lệ khăn gói xuống Hà Nội và choáng ngợp. Chính bản thân cô cũng không ngờ mình lại có thể vụt nổi lên như thế.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh41.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Cô gái 31 tuổi bỏ công việc văn phòng về Biên Hòa mở quán trà sữa: Được tập trung làm điều mình thích, ở nơi mình thấy vui vẻ là điều tuyệt nhất!</a></b></p>
-                        <p><b>Đời sống -</b><time> 4 tháng trước</time></p>
-                        <p>Hiện giờ, Huyền My đang sở hữu một quán chuyên về cafe và một quán chuyên về trà sữa. Lượng khách của hai quán đều đang ổn định và...</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh42.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Nữ tài xế Gen Z Thái Nguyên nặng 38kg lái xe tải 30 tấn khắp miền Bắc: Thời gian mình ở trên xe còn nhiều hơn ở nhà</a></b></p>
-                        <p><b>Đời sống -</b><time> 4 tháng trước</time></p>
-                        <p>Chỉ mới 25 tuổi nhưng nữ tài xế Ngô Thị Mỹ Hạnh đã có 4 năm hành nghề lái xe tải. Hạnh trở nên nổi tiếng với nhiều video triệu view gắn liền...</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh43.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Anh Tây điển trai liên tục xuất hiện cùng dàn sao Việt, hot rần rần trên mạng là ai?</a></b></p>
-                        <p><b>Đời sống -</b><time> 4 tháng trước</time></p>
-                        <p>Từ đầu năm 2022, có một gương mặt trẻ ngoại quốc liên tục xuất hiện trên mạng xã hội cùng với nhiều ngôi sao lớn Việt Nam khiến dân tình...</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><video autoplay loop muted playsinline width=250px><source src="../images/vd9.mp4" type="video/mp4"></video></a>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh26.png" width="130px"></a>
-                        <p><b><a href="#">Tình cờ gặp lại Hoa khôi trường cấp 3 giữa trời Âu, chàng trai "cưa đổ" chị đẹp</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Ngoài kia thế giới yêu nhau dễ thương kiểu này bảo sao nhiều người "xin vía" thế!</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh44.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">WeTalk #2 cùng Meichan: Overthinking cũng không quá tệ, tôi là người thuộc “hành tinh của những người nghĩ nhiều”</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>“Overthinking cũng không quá tệ đâu. Mình có chữ think ở trong đấy, có suy nghĩ mà. Thì có suy nghĩ sẽ luôn luôn vỡ ra điều này, điều kia để...</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh45.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Nàng "bánh bèo" xinh đẹp vượt qua nỗi sợ hãi để theo đuổi đam mê trên lưng ngựa: Chi phí không quá tốn kém như tưởng tượng, cần đầu tư nhất một thứ</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Minh Thùy là một cô nàng công sở chính hiệu, hàng ngày đi làm văn phòng, tối về tập luyện thể thao và cuối tuần dành thời gian thỏa mãn...</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh46.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">"Dung Bán Vàng" - mỹ nhân ngành kim hoàn xứ Bến Tre: Đẹp làm gì cũng dễ, nhưng showbiz đâu phải cứ muốn là vào!</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Tất tần tật về ngành kim hoàn, kể cả những góc khuất và điều thú vị đã được Dung Bán Vàng chia sẻ trong buổi trò chuyện này.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh47.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Trần Đường: Cô gái từng không chịu làm công việc bàn giấy, trở thành nghệ sĩ ruy băng "phiêu" trên nền vải được hợp tác với nhiều thương hiệu tên tuổi</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Từ chất liệu, đến đường nét... mỗi bông hoa mà Trần Đường tạo nên đều khiến mọi người phải mãn nhãn trước sự tinh xảo, mềm mại ấy.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><video autoplay loop muted playsinline width=250px><source src="../images/vd10.mp4" type="video/mp4"></video></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Xuất hiện thêm "cực phẩm phi công" sau em trai 2k1 Hà Còi: Sinh năm 2000, sáng đi huấn luyện bay chiều về làm mẫu ảnh với visual siêu bảnh</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Sau Hà Còi - "em trai phi công 2k1" làm các chị U30, U40 phải replay clip cả ngày thì netizen lại phát hiện thêm một cực phẩm mới. Đó là chàng...</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh48.png"></a>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh26.png" width="130px"></a>
-                        <p><b><a href="#">Bỏ app hẹn hò nhưng vẫn giữ tài khoản, tiểu thư Lilthu có cái kết khó ngờ với doanh nhân người Anh</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Sau 5 năm hẹn hò, chặng đường của cặp đôi đã bước sang một chương mới - trở thành bạn đời của nhau bằng màn cầu hôn vừa dễ thương...</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh49.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Lý do "mẹ ngoại" U50 của Doãn Hải My cứ mỗi lần xuất hiện đều trở thành tâm điểm, hot gì hot thế!</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Sau đám cưới của ái nữ, cô Mai Đoàn - mẹ vợ Đoàn Văn Hậu lại càng được nhiều người biết đến hơn.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><video autoplay loop muted playsinline width=250px><source src="../images/vd11.mp4" type="video/mp4"></video></a>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh40.png" width="200px"></a>
-                        <p><b><a href="#">Tất tần tật về mỹ nhân dân tộc Thái mặt như AI tạo ra, bất ngờ nổi tiếng sau sự cố nhớ đời trên livestream</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Ngoài ra Mỹ Lệ cũng thẳng thắn phản hồi những ý kiến trái chiều từ cư dân mạng.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh50.png"></a>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh40.png" width="200px"></a>
-                        <p><b><a href="#">“Bản hợp đồng số 1” Xoài Phạm: Lên mạng review 2 chiếc quần chật, bất ngờ được PewPew mời về làm vì "cùng tần số"</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Thời gian gần đây, Xoài Phạm còn được đích danh streamer PewPew gọi bằng cái tên ưu ái "bản hợp đồng số 1" khiến nhiều người tò mò...</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh51.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Khi người hâm mộ lên tiếng: Pam chỉ là em bé 2 tuổi, không cần phải có trách nhiệm làm ai thấy vui hay "được chữa lành"</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Hãy chậm lại, dù cho sự yêu thương mến mộ quá lớn của người xung quanh khiến bố mẹ cảm thấy tự hào, nhưng sự hồn nhiên và hành...</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><video autoplay loop muted playsinline width=250px><source src="../images/vd12.mp4" type="video/mp4"></video></a>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh40.png" width="200px"></a>
-                        <p><b><a href="#">Giải mã sức hút của Đại Bắc Kạn - anh nông dân có "giao diện" Võ Tòng, tiết kiệm 200 triệu/tháng nhờ livestream</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Với nhiều người, xem video của vợ chồng Đại Bắc Kạn cũng là một kiểu “chữa lành”.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh52.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Chàng trai 25 tuổi kinh nghiệm 7 năm leo cây gõ sầu chia sẻ về nghề độc lạ: Thu nhập ngang giám đốc, nhưng không phải ai cũng theo được vì lý do này</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Chỉ với một con dao sắc nhỏ, cán cứng, Tấn cùng các thành viên trong đội cắt sầu của mình có thể gõ và cắt tới hàng tấn quả trong ngày.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh53.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Founder Gen Z Nguyễn Đăng Vũ: "Dù có bao nhiêu fanpage khác về âm nhạc, Đài Phát Thanh vẫn luôn là độc bản"</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Đằng sau thành công của Đài Phát Thanh. là một hành trình đầy thú vị của chàng thanh niên Nguyễn Đăng Vũ - người sáng lập và phát...</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh54.png"></a>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh40.png" width="200px"></a>
-                        <p><b><a href="#">Từ chuyện "chốt đơn" 2 triệu đồng sau khi tĩnh tâm chỉ giữ lại món 133k: Thấy gì từ phiên livestream 100 tỷ của Quyền Leo Daily?</a></b></p>
-                        <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
-                        <p>Không dễ để lấy tiền từ túi người tiêu dùng - đó là sự thật!</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh55.png"></a>
-                    </section>
-                    <aside>
-                        <p><b><a href="#">Đổi đời nhờ clip xúc cơm thừa ở xưởng về ăn tối, anh công nhân bỏ việc về quê làm idol, sửa nhà cho ba</a></b></p>
-                        <p><b>Đời sống -</b><time> 6 tháng trước</time></p>
-                        <p>Nguyễn Đức Hòa quyết định nghỉ công việc đã gắn bó 10 năm để về quê, theo đuổi cuộc sống tự do.</p>
-                    </aside>
-                </div>
-                <hr/>
-                <div class="two">
-                    <section>
-                        <a href="#"><img src="../images/anh56.png"></a>
-                    </section>
-                    <aside>
-                        <a href="#"><img src="../images/anh57.png" width="200px"></a>
-                        <p><b><a href="#">Gặp KTS chuyên "độ" nhà cho giới thượng lưu: Công trình 1 - 2 triệu USD khách không theo dõi thi công, đến khi nhận nhà mới xuất hiện</a></b></p>
-                        <p><b>Đời sống -</b><time> 6 tháng trước</time></p>
-                        <p>Khoảng 20 năm trong nghề và đứng sau hàng loạt công trình cho giới thượng lưu, KTS Hoàng Quỳnh có góc nhìn rất rõ ràng về tệp khách...</p>
-                    </aside>
-                </div>
-                <hr/>
+
             </div>
-            <div class="footer-menu">
-                <a href="#">Star</a> | <a href="#">Ciné</a> | <a href="#">Musik</a> | <a href="#">Beauty & Fashion</a> | <a href="#">Sport</a> | <a href="../DOI_SONG/DoiSong.html">Đời sống</a> | <a href="../XA_HOI/XaHoi.html">Xã hội</a> | <a href="../AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a> | <a href="#">Xem Mua Luôn</a> | <a href="../DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a> | <a href="#">Tek-Life</a> | <a href="#">Học đường</a> | <a href="../MONEY-Z/Money-Z.html">Money-Z</a> | <a href="#">Video</a>
+            <div class="border-solid"></div>
+            <div class="web-info">
+                <span class="title-mini-web">Tải app</span>
+                <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BA%BB/id670518264?ls=1" target="_blank">IOS</a>
+                <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                <a class="title-mini-web" href="#">Liên hệ</a>
+                <a class="mini-web" href="#">Quảng cáo</a>
             </div>
-            <div class="footer-max">
-                <div class="footer-table1">
-                    <table>
-                        <tr>
-                            <td>
-                                <section>
-                                    <a href=""><img src="../images/logo1.png" ></img></a>
-                                </section>
-                                <aside>
-                                    <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
-                                    <div class="footer-table-mini">
-                                        <div class="footer-mini1">
-                                            <a href="#"><img src="../images/logodauHoi.png" width="20px"></a>
-                                            <input type="button" value="CÂU HỎI THƯỜNG GẶP">
-                                        </div>
-                                        <div class="footer-mini2">
-                                            <a href="#"><img src="../images/logoEmaildo.png" width="25px"></a>
-                                            <p><a href="#">bandoc@kenh14</a></p>
-                                        </div>
+        </div>
+    </header>
+    </div>
+    <div class="space">
+    </div>
+    <div id="page">
+        <div class="hi">
+            <ul>
+                <li><a href="DoiSong.html"><b>ĐỜI SỐNG</b></a></li>
+                <li><a href="NhanVat.html"><b>NHÂN VẬT</b></a></li>
+                <li><a href="XemAnChoi.html"><b>XEM ĂN CHƠI</b></a></li>
+                <li><a href="House_n_Home.html"><b>HOUSE N HOME</b></a></li>
+                <li><a href="Mommy_Ez.html"><b>MOMMY-EZ</b></a></li>
+                <li><a href="Di.html"><b>DỊ</b></a></li>
+                <li><a href="KhamPha.html"><b>KHÁM PHÁ</b></a></li>
+            </ul>
+        </div><br>
+        <hr/>
+        <div class="body">
+            <div class="one">
+                <section>
+                    <a href="#"><img src="../images/anh21.png"width=570px></a>
+                    <p><b><a href="#">"Chủ tịch" 9X bị đồn phá sản cưới tiểu thư Quận 3: Giờ mới biết cầu hôn cần nhẫn kim cương</a></b></p>
+                    <p>Win.D hiện là chủ của 7 cửa hàng tại TP.HCM còn Bống vốn nổi danh là tiểu thư có gia thế khủng. Cặp đôi vừa có buổi cầu hôn lãng mạn vào cuối tháng 9 vừa qua.</a>
+                    </p>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh22.1.png"></a>
+                    <p><b><a href="#">Cựu sinh viên RMIT gửi email tới tất cả bảo tàng ở TP.HCM xin việc, chỉ...</a></b></p>
+                    <a href="#"><img src="../images/anh22.2.png"></a>
+                    <p><b><a href="#">16 tuổi “ăn trọn” kỳ tích chấn động giới Pickleball - Sophia Phương...</a></b></p>
+                </aside>
+            </div>
+            <hr/><br>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../images/anh569.png" class="card-image">
+                                    <h3 class="card-title">Diệp Minh: “Cái gì bắt nguồn từ sở thích thì làm không khó lắm, trừ việc làm mẹ”</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../images/anh21.png"class="card-image">
+                                    <h3 class="card-title">"Chủ tịch" 9X bị đồn phá sản cưới tiểu thư Quận 3: Giờ mới biết cầu hôn cần nhẫn kim cương</h3>          
+                                </a>   
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../images/anh22.1.png"class="card-image">
+                                    <h3 class="card-title">Cựu sinh viên RMIT gửi email tới tất cả bảo tàng ở TP.HCM xin việc, chỉ “ông Bảo” gần 100 tuổi gật đầu và cái kết rớt nước mắt</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">   
+                                <a href="#" class="card-link">
+                                    <img src="../images/anh22.2.png"  class="card-image">
+                                    <h3 class="card-title">16 tuổi “ăn trọn” kỳ tích chấn động giới Pickleball - Sophia Phương Anh: Trong 60 giây, có rất nhiều điều để lật ngược cuộc chơi</h3>
+                                </a>                       
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../images/anh573.png "  class="card-image">
+                                    <h3 class="card-title">Hải Nam: Nếu được chọn Tấm hay Cám để yêu, tôi chọn cả 2</h3>
+                                </a>         
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../images/anh574.png"class="card-image">
+                                    <h3 class="card-title">Lần đầu ra mắt thấy bạn trai ở nhà cấp 4 xập xệ, cô gái quyết định "đánh đổi" sau kết hôn và cái kết</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../images/anh575.png"  class="card-image">
+                                    <h3 class="card-title">Gen Z nhận "án tử" ung thư vì sống quá tệ với bản thân, quyết tâm làm 1 việc không tưởng ngay khi được hồi sinh</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh23.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh24.png" width="220px"></a>
+                    <p><b><a href="#">Hải Nam: Nếu được chọn Tấm hay Cám để yêu, tôi chọn cả 2</a></b></p>
+                    <p><b>Đời sống -</b><time> 25 ngày trước</time></p>
+                    <p>Hải Nam sẽ trở thành Thái tử tiếp theo của màn ảnh Việt</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh25.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh26.png" width="130px"></a>
+                    <p><b><a href="#">Ấn tượng không tốt từ cái nhìn đầu tiên, cặp đôi Gen Z thông báo có em bé đầu lòng trước ngày dạm ngõ</a></b></p>
+                    <p><b>Đời sống -</b><time> 1 tháng trước</time></p>
+                    <p>Khởi đầu không xuôi lắm nhưng đuôi vẫn lọt, giờ đây cặp đôi đã về chung một nhà và sắp đón em bé đầu lòng.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh27.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh26.png" width="130px"></a>
+                    <p><b><a href="#">Lần đầu ra mắt thấy bạn trai ở nhà cấp 4 xập xệ, cô gái quyết định "đánh đổi" sau kết hôn và cái kết</a></b></p>
+                    <p><b>Đời sống -</b><time> 1 tháng trước</time></p>
+                    <p>Chuyện tình của cặp đôi Gen Z này có nhiều điểm thú vị như trên phim.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../images/vd8.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Hội gái xinh lên tiếng về những ác cảm vô lý với pickleball: Chơi chưa mà chê?</a></b></p>
+                    <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
+                    <p>Nếu vẫn còn đánh đồng mặc đồ sexy chỉ có sống ảo, không tập tành nghiêm túc thì có thể sẽ phải suy nghĩ lại khi gặp những hot girl dưới đây!</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh28.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Độc quyền "tóm dính" cặp đôi Pu - Chải: Lần đầu gặp, nói thật không muốn nhìn lần 2!</a></b></p>
+                    <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
+                    <p>Đọc đến đâu cười xỉu đến đấy, Pu và Chải ngoài đời cũng chí choé như trong phim thậm chí còn... hơn.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh29.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Hội gái xinh vẫn lên sân pickleball giữa bão thị phi: “Vui vẻ lên, ai mặc gì kệ đi”</a></b></p>
+                    <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
+                    <p>Mặc những tranh cãi đang rần rần trên MXH, tinh thần thể thao của hội gái xinh vẫn hừng hực lắm!</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh30.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Gen Z nhận "án tử" ung thư vì sống quá tệ với bản thân, quyết tâm làm 1 việc không tưởng ngay khi được hồi sinh</a></b></p>
+                    <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
+                    <p>Hành trình của chàng trai này đang nhận về nhiều phản hồi tích cực của cư dân mạng.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh31.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh26.png" width="130px"></a>
+                    <p><b><a href="#">Chuyện tình fan girl - idol đỉnh như phim với câu hỏi: “Em có muốn sang Mỹ với anh không?”</a></b></p>
+                    <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
+                    <p>Câu chuyện tình này chắc chắn sẽ khiến bạn mỉm cười.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh32.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">MC mặc sexy lên sân chơi Pickleball giải mã sức hút "kịch trần" của gái đẹp mê thể thao</a></b></p>
+                    <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
+                    <p>“Đại diện” hội thích sống ảo khi chơi Pickleball lên tiếng giải oan cho bộ môn hot nhất mùa hè năm nay.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh33.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Lên sân Pickleball gặp "hot girl mặc đẹp sống ảo": Làm màu vài buổi đã giảm vèo 2kg</a></b></p>
+                    <p><b>Đời sống -</b><time> 2 tháng trước</time></p>
+                    <p>"Thay vì lo sợ bị người khác nói rằng mình đu trend hay làm màu thì cứ tự tin cầm vợt ra sân, mình nghĩ các bạn sẽ 'nghiện' đó. Xu hướng tạo ra...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh34.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh35.png" width="150px"></a>
+                    <p><b><a href="#">Chuyện tình của cô gái yêu xa, lấy chồng xa, bị dè bỉu “ăn bám”</a></b></p>
+                    <p><b>Đời sống -</b><time> 3 tháng trước</time></p>
+                    <p>Sau khi sinh con, Như Thuỳ còn phải đối mặt với những điều khó nghe như “ở nhà chồng nuôi”, “ăn bám”,... Song cô vợ trẻ không mảy may...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh36.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Mạnh Kiên - cây hài nhạt ở Đảo Thiên Đường: Tôi không phải gu của Thảo Nhi Lê, Diệu Nhi, chứ có nhiều người để ý nha!</a></b></p>
+                    <p><b>Đời sống -</b><time> 3 tháng trước</time></p>
+                    <p>Ở ngoài đời, tính cách của Mạnh Kiên cũng tưng tửng như trong show.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh37.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Hà Trúc - Quang Đạt: Đến một ngày, mình muốn con mình có mã gen của người này!!!</a></b></p>
+                    <p><b>Đời sống -</b><time> 3 tháng trước</time></p>
+                    <p>Lần đầu tiên, cặp đôi vàng của làng KOL Hà Trúc - Quang Đạt cùng ngồi xuống để kể lại câu chuyện về hành trình tình yêu tuyệt đẹp của mình.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh38.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Thiếu nữ GenZ trở thành người Việt đầu tiên làm việc cho thương hiệu bánh đình đám tại New York</a></b></p>
+                    <p><b>Đời sống -</b><time> 4 tháng trước</time></p>
+                    <p>Ước mơ trở thành "người kể chuyện thông thái", Trà My theo học chuyên ngành Art Director (Giám đốc nghệ thuật). Thiếu nữ GenZ mong muốn...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh39.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh40.png" width="200px"></a>
+                    <p><b><a href="#">Cô bạn 2k6 từ Sa Pa xuống Hà Nội livestream bán hàng: Toàn bộ tiền lương trong 2 - 3 tháng đầu chỉ dùng để chữa bệnh</a></b></p>
+                    <p><b>Đời sống -</b><time> 4 tháng trước</time></p>
+                    <p> 18 tuổi, Mỹ Lệ khăn gói xuống Hà Nội và choáng ngợp. Chính bản thân cô cũng không ngờ mình lại có thể vụt nổi lên như thế.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh41.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cô gái 31 tuổi bỏ công việc văn phòng về Biên Hòa mở quán trà sữa: Được tập trung làm điều mình thích, ở nơi mình thấy vui vẻ là điều tuyệt nhất!</a></b></p>
+                    <p><b>Đời sống -</b><time> 4 tháng trước</time></p>
+                    <p>Hiện giờ, Huyền My đang sở hữu một quán chuyên về cafe và một quán chuyên về trà sữa. Lượng khách của hai quán đều đang ổn định và...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh42.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nữ tài xế Gen Z Thái Nguyên nặng 38kg lái xe tải 30 tấn khắp miền Bắc: Thời gian mình ở trên xe còn nhiều hơn ở nhà</a></b></p>
+                    <p><b>Đời sống -</b><time> 4 tháng trước</time></p>
+                    <p>Chỉ mới 25 tuổi nhưng nữ tài xế Ngô Thị Mỹ Hạnh đã có 4 năm hành nghề lái xe tải. Hạnh trở nên nổi tiếng với nhiều video triệu view gắn liền...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh43.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Anh Tây điển trai liên tục xuất hiện cùng dàn sao Việt, hot rần rần trên mạng là ai?</a></b></p>
+                    <p><b>Đời sống -</b><time> 4 tháng trước</time></p>
+                    <p>Từ đầu năm 2022, có một gương mặt trẻ ngoại quốc liên tục xuất hiện trên mạng xã hội cùng với nhiều ngôi sao lớn Việt Nam khiến dân tình...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../images/vd9.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh26.png" width="130px"></a>
+                    <p><b><a href="#">Tình cờ gặp lại Hoa khôi trường cấp 3 giữa trời Âu, chàng trai "cưa đổ" chị đẹp</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Ngoài kia thế giới yêu nhau dễ thương kiểu này bảo sao nhiều người "xin vía" thế!</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh44.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">WeTalk #2 cùng Meichan: Overthinking cũng không quá tệ, tôi là người thuộc “hành tinh của những người nghĩ nhiều”</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>“Overthinking cũng không quá tệ đâu. Mình có chữ think ở trong đấy, có suy nghĩ mà. Thì có suy nghĩ sẽ luôn luôn vỡ ra điều này, điều kia để...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh45.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nàng "bánh bèo" xinh đẹp vượt qua nỗi sợ hãi để theo đuổi đam mê trên lưng ngựa: Chi phí không quá tốn kém như tưởng tượng, cần đầu tư nhất một thứ</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Minh Thùy là một cô nàng công sở chính hiệu, hàng ngày đi làm văn phòng, tối về tập luyện thể thao và cuối tuần dành thời gian thỏa mãn...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh46.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">"Dung Bán Vàng" - mỹ nhân ngành kim hoàn xứ Bến Tre: Đẹp làm gì cũng dễ, nhưng showbiz đâu phải cứ muốn là vào!</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Tất tần tật về ngành kim hoàn, kể cả những góc khuất và điều thú vị đã được Dung Bán Vàng chia sẻ trong buổi trò chuyện này.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh47.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Trần Đường: Cô gái từng không chịu làm công việc bàn giấy, trở thành nghệ sĩ ruy băng "phiêu" trên nền vải được hợp tác với nhiều thương hiệu tên tuổi</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Từ chất liệu, đến đường nét... mỗi bông hoa mà Trần Đường tạo nên đều khiến mọi người phải mãn nhãn trước sự tinh xảo, mềm mại ấy.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../images/vd10.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Xuất hiện thêm "cực phẩm phi công" sau em trai 2k1 Hà Còi: Sinh năm 2000, sáng đi huấn luyện bay chiều về làm mẫu ảnh với visual siêu bảnh</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Sau Hà Còi - "em trai phi công 2k1" làm các chị U30, U40 phải replay clip cả ngày thì netizen lại phát hiện thêm một cực phẩm mới. Đó là chàng...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh48.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh26.png" width="130px"></a>
+                    <p><b><a href="#">Bỏ app hẹn hò nhưng vẫn giữ tài khoản, tiểu thư Lilthu có cái kết khó ngờ với doanh nhân người Anh</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Sau 5 năm hẹn hò, chặng đường của cặp đôi đã bước sang một chương mới - trở thành bạn đời của nhau bằng màn cầu hôn vừa dễ thương...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh49.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Lý do "mẹ ngoại" U50 của Doãn Hải My cứ mỗi lần xuất hiện đều trở thành tâm điểm, hot gì hot thế!</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Sau đám cưới của ái nữ, cô Mai Đoàn - mẹ vợ Đoàn Văn Hậu lại càng được nhiều người biết đến hơn.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../images/vd11.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh40.png" width="200px"></a>
+                    <p><b><a href="#">Tất tần tật về mỹ nhân dân tộc Thái mặt như AI tạo ra, bất ngờ nổi tiếng sau sự cố nhớ đời trên livestream</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Ngoài ra Mỹ Lệ cũng thẳng thắn phản hồi những ý kiến trái chiều từ cư dân mạng.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh50.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh40.png" width="200px"></a>
+                    <p><b><a href="#">“Bản hợp đồng số 1” Xoài Phạm: Lên mạng review 2 chiếc quần chật, bất ngờ được PewPew mời về làm vì "cùng tần số"</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Thời gian gần đây, Xoài Phạm còn được đích danh streamer PewPew gọi bằng cái tên ưu ái "bản hợp đồng số 1" khiến nhiều người tò mò...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh51.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Khi người hâm mộ lên tiếng: Pam chỉ là em bé 2 tuổi, không cần phải có trách nhiệm làm ai thấy vui hay "được chữa lành"</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Hãy chậm lại, dù cho sự yêu thương mến mộ quá lớn của người xung quanh khiến bố mẹ cảm thấy tự hào, nhưng sự hồn nhiên và hành...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../images/vd12.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh40.png" width="200px"></a>
+                    <p><b><a href="#">Giải mã sức hút của Đại Bắc Kạn - anh nông dân có "giao diện" Võ Tòng, tiết kiệm 200 triệu/tháng nhờ livestream</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Với nhiều người, xem video của vợ chồng Đại Bắc Kạn cũng là một kiểu “chữa lành”.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh52.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Chàng trai 25 tuổi kinh nghiệm 7 năm leo cây gõ sầu chia sẻ về nghề độc lạ: Thu nhập ngang giám đốc, nhưng không phải ai cũng theo được vì lý do này</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Chỉ với một con dao sắc nhỏ, cán cứng, Tấn cùng các thành viên trong đội cắt sầu của mình có thể gõ và cắt tới hàng tấn quả trong ngày.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh53.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Founder Gen Z Nguyễn Đăng Vũ: "Dù có bao nhiêu fanpage khác về âm nhạc, Đài Phát Thanh vẫn luôn là độc bản"</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Đằng sau thành công của Đài Phát Thanh. là một hành trình đầy thú vị của chàng thanh niên Nguyễn Đăng Vũ - người sáng lập và phát...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh54.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh40.png" width="200px"></a>
+                    <p><b><a href="#">Từ chuyện "chốt đơn" 2 triệu đồng sau khi tĩnh tâm chỉ giữ lại món 133k: Thấy gì từ phiên livestream 100 tỷ của Quyền Leo Daily?</a></b></p>
+                    <p><b>Đời sống -</b><time> 5 tháng trước</time></p>
+                    <p>Không dễ để lấy tiền từ túi người tiêu dùng - đó là sự thật!</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh55.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Đổi đời nhờ clip xúc cơm thừa ở xưởng về ăn tối, anh công nhân bỏ việc về quê làm idol, sửa nhà cho ba</a></b></p>
+                    <p><b>Đời sống -</b><time> 6 tháng trước</time></p>
+                    <p>Nguyễn Đức Hòa quyết định nghỉ công việc đã gắn bó 10 năm để về quê, theo đuổi cuộc sống tự do.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh56.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh57.png" width="200px"></a>
+                    <p><b><a href="#">Gặp KTS chuyên "độ" nhà cho giới thượng lưu: Công trình 1 - 2 triệu USD khách không theo dõi thi công, đến khi nhận nhà mới xuất hiện</a></b></p>
+                    <p><b>Đời sống -</b><time> 6 tháng trước</time></p>
+                    <p>Khoảng 20 năm trong nghề và đứng sau hàng loạt công trình cho giới thượng lưu, KTS Hoàng Quỳnh có góc nhìn rất rõ ràng về tệp khách...</p>
+                </aside>
+            </div>
+            <hr/>
+        </div>
+        <div class="footer-menu">
+            <a href="#">Star</a> | <a href="#">Ciné</a> | <a href="#">Musik</a> | <a href="#">Beauty & Fashion</a> | <a href="#">Sport</a> | <a href="../DOI_SONG/DoiSong.html">Đời sống</a> | <a href="../XA_HOI/XaHoi.html">Xã hội</a> | <a href="../AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a> | <a href="#">Xem Mua Luôn</a> | <a href="../DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a> | <a href="#">Tek-Life</a> | <a href="#">Học đường</a> | <a href="../MONEY-Z/Money-Z.html">Money-Z</a> | <a href="#">Video</a>
+        </div>
+        <div class="footer-max">
+            <div class="footer-table1">
+                <table>
+                    <tr>
+                        <td>
+                            <section>
+                                <a href=""><img src="../images/logo1.png" ></img></a>
+                            </section>
+                            <aside>
+                                <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                                <div class="footer-table-mini">
+                                    <div class="footer-mini1">
+                                        <a href="#"><img src="../images/logodauHoi.png" width="20px"></a>
+                                        <input type="button" value="CÂU HỎI THƯỜNG GẶP">
                                     </div>
-                                    <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
-                                </aside>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="footer-table2">
-                    <a href="#"><img src="../images/logo2.png" width="530px" height="130px"></img></a>
-                </div>
+                                    <div class="footer-mini2">
+                                        <a href="#"><img src="../images/logoEmaildo.png" width="25px"></a>
+                                        <p><a href="#">bandoc@kenh14</a></p>
+                                    </div>
+                                </div>
+                                <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                            </aside>
+                        </td>
+                    </tr>
+                </table>
             </div>
-        
-            <div class="footer">
-                <div class="footer-mini-one">
-                    <h4>TRỤ SỞ HÀ NỘI</h4>
-                    <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
-                    <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+            <div class="footer-table2">
+                <a href="#"><img src="../images/logo2.png" width="530px" height="130px"></img></a>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="footer-mini-one">
+                <h4>TRỤ SỞ HÀ NỘI</h4>
+                <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+                <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+                <div class="logo-mini">
+                    <a href="#"><img src="../images/logoDC.png" width="17px"></a>
+                    <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                </div>
+    
+                <div class="footer-mini-one-1">
+                    <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                    <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                    <span>Điện thoại: 028 7307 7979</span>
                     <div class="logo-mini">
-                        <a href="#"><img src="../images/logoDC.png" width="17px"></a>
+                        <a href="#"><img src="../images/logoDC.png" width="15px"></a>
                         <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
                     </div>
-        
-                    <div class="footer-mini-one-1">
-                        <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
-                        <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
-                        <span>Điện thoại: 028 7307 7979</span>
-                        <div class="logo-mini">
-                            <a href="#"><img src="../images/logoDC.png" width="15px"></a>
-                            <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
-                        </div>
-                    </div>    
+                </div>    
+            </div>
+            <hr/>
+            <div class="footer-mini-two">
+                <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+                <span>Bà Nguyễn Bích Minh</span><br>
+                <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+                <div class="logo-mini">
+                    <img src="../images/logoDT.png" width="20px"></a>
+                    <span>024.73095555 (máy lẻ 62.370)</span><br>
                 </div>
-                <hr/>
-                <div class="footer-mini-two">
-                    <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
-                    <span>Bà Nguyễn Bích Minh</span><br>
-                    <h4>HỢP TÁC TRUYỀN THÔNG</h4>
-                    <div class="logo-mini">
-                        <img src="../images/logoDT.png" width="20px"></a>
-                        <span>024.73095555 (máy lẻ 62.370)</span><br>
-                    </div>
-                    <div class="logo-mini-1">
-                        <a href="#"><img src="../images/logoThu.png" width="30px"></a>
-                        <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
-                    </div>
-                    <h4>LIÊN HỆ QUẢNG CÁO</h4>
-                    <div class="logo-mini">
-                        <img src="../images/logoDT.png" width="20px"></a>
-                        <span>02473007108</span>
-                    </div>
-                    <div class="logo-mini-1">
-                        <a href="#"><img src="../images/logoThu.png" width="30px"></a>
-                        <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
-                    </div>
-                    <div class="chat-table-1">
-                        <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
-                    </div>
-                    <div class="chat-table-2">
-                        <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
-                    </div>
-                    <div class="chat-table-3">
-                        <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
-                    </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="../images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
                 </div>
-                <hr class="DK"/>
-                <div class="footer-mini-three">
-                    <a href=""><img src="../images/logoVCCorp.png" width="120px" ></a>
-                    <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
-                    <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
-                    <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
-               
+                <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                <div class="logo-mini">
+                    <img src="../images/logoDT.png" width="20px"></a>
+                    <span>02473007108</span>
                 </div>
-        </div>
-    </body>
-        
+                <div class="logo-mini-1">
+                    <a href="#"><img src="../images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <div class="chat-table-1">
+                    <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+                </div>
+                <div class="chat-table-2">
+                    <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="chat-table-3">
+                    <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+                </div>
+            </div>
+            <hr class="DK"/>
+            <div class="footer-mini-three">
+                <a href=""><img src="../images/logoVCCorp.png" width="120px" ></a>
+                <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+                <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+                <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+            
+            </div>
+    </div>
+</body>
+    
 </html>
