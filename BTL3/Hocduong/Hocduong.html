@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenh14 </title>
+    <link rel="stylesheet" href="../CSS-2/styles2.css">
+    <link rel="import" href="component.html">
+    <script src="../scri/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+       <!-- Linking SwiperJS CSS -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+       <!-- Linking SwiperJS script -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="../EMAGAZINE/EMAGAZINE.html"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                        <li><a href="../XANHCHUA/XANHCHUA.html"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                        <li><a href="../SHOWLIVE/SHOWLIVE.html"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm...">
+                    <button type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="../../BTL1/demoBTL.html"><img src="../image/logo.png" alt="Kenh14 Logo"></a>
+                    <div class="logo-text">
+                        <span class="logo-main">kenh14.vn</span>
+                        <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                    </div>
+                </div>
+                <div class="trending-topics">
+                    <span class="arrow-icon">&#x2197;</span>
+                    <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                    <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                    <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="mains-menu">
+                    <li><a href="../../BTL1/demoBTL.html"><i class="fas fa-home"></i></a></li>
+                    <li><a href="../../BTL1/Star/WebStar.html">Star</a></li>
+                    <li><a href="../../BTL1/Ciné/WebCine.html">Ciné</a></li>
+                    <li><a href="../../BTL1/Musik/WebMusik.html">Musik</a></li>
+                    <li><a href="../../BTL1/Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a></li>
+                    <li><a href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a></li>
+                    <li><a href="../../BTL/MONEY-Z/Money-Z.html">Money-Z</a></li>
+                    <li><a href="../../BTL/AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a></li>
+                    <li><a href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a></li>
+                    <li><a href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a></li>
+                    <li><a href="../Tek-life/Tek-life.html">Tek-life</a></li>
+                    <li><a href="../Hocduong/Hocduong.html">Học đường</a></li>
+                    <li><a href="../Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a></li>
+                    <li><a href="../Video/Danghot.html">Video</a></li>
+                    <li class="main-menu">
+                        <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="subs-menu">
+            <div class="container">
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a class="title-menu" href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a>
+                        <div class="submenu">
+                            <a href="../../BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="../../BTL/DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
+                            <a href="../../BTL/DOI_SONG/House_n_Home.html">House n Home</a>
+                        </div>
+                    </div class="menu-column">
+                        <a href="../Xemmualuon/Xemmualuon.html">Xem mua luôn</a>
+                        <div class="submenu">
+                            <a href="../Xemmualuon/Thoitrang.html">Thời trang</a>
+                            <a href="../Xemmualuon/Dep.html">Đẹp</a>
+                            <a href="../Xemmualuon/MOMMYmuadi.html">Mommy mua di</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Sport</a>
+                        <div class="submenu">
+                            <a href="#">Bóng đá</a>
+                            <a href="#">Bóng rổ</a>
+                            <a href="#">Bóng chuyền</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a class="title-menu" href="..../../BTL1/Musik/WebMusik.html">Musik</a>
+                         <div class="submenu">
+                             <a href="../../BTL1/Musik/WebAuMy.html">Âu-Mỹ</a>
+                             <a href="../../BTL1/Musik/WebChauA.html">Châu Á</a>
+                             <a href="../../BTL1/Musik/WebVietNam.html">Việt Nam</a>
+                             <a href="../../BTL1/demoBTL.html">Hip-hop neva die</a>
+                         </div>
+                 </div>
+                 <div class="menu-column">
+                    <a class="title-menu" href="..../../BTL1/Ciné/WebCine.html">Ciné</a>
+                    <div class="submenu">
+                        <a href="../../BTL1/Ciné/WebPhimChieuRap.html">Phim chiếu rạp</a>
+                        <a href="../../BTL1/Ciné/WebPhimVietNam.html">Phim Việt Nam</a>
+                        <a href="../../BTL1/Ciné/WebSeriesTruyenHinh.html">Series truyền hình</a>
+                        <a href="../../BTL1/Ciné/WebHoaNguHanQuoc.html">Hoa ngữ - Hàn Quốc</a>
+                    </div>
+                </div>
+                    <div class="menu-column">
+                        <a href="../Tek-life/Tek-life.html"> Tek-life</a>
+                        <div class="submenu">
+                            <a href="../Tek-life/Metaverse.html">Metaverse</a>
+                            <a href="../Tek-life/How-to.html">How-To</a>
+                            <a href="../Tek-life/Wow.html">Wow</a>
+                            <a href="../Tek-life/2-Mall.html">2-Mall</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a class="title-menu" href="../../BTL1/Star/WebStar.html">Star</a>
+                        <div class="submenu">
+                            <a href="../../BTL1/Star/WebSaoViet.html">Sao Việt</a>
+                            <a href="../../BTL1/Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
+                            <a href="../../BTL1/Star/WebTVShow.html">TV Show</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a class="title-menu" href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a>
+                        <div class="submenu">
+                            <a href="../../BTL/XA_HOI/XaHoi.html">Pháp luật</a>
+                            <a href="../../BTL/XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
+                            <a href="../../BTL/XA_HOI/SongXanh.html">Sống xanh</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../Hocduong/Hocduong.html">Học đường</a>
+                        <div class="submenu">
+                            <a href="../Hocduong/Bantin46.html">Bản tin 46'</a>
+                            <a href="../Hocduong/Duhoc.html">Du học</a>
+                            <a href="../Hocduong/Nhanvat.html">Nhân vật </a>
+                            <a href="../Hocduong/Z-Schooltour.html">Z-School tour </a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../../BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
+                            <div class="submenu">
+                                <a href="../../BTL/DOI_SONG/ChumAnh.html">Chùm ảnh</a>
+                                <a href="../../BTL/DOI_SONG/KhamPha.html">Khám phá</a>
+                                <a href="../../BTL/DOI_SONG/Di.html">Dị</a>
+                            </div>
+                        </div>
+                    <div class="menu-column">
+                        <a href="../Video/Danghot.html"> Đang hot </a>
+                        <div class="submenu">
+                            <a href="../Video/Nongnhat.html">Nóng nhất</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-column">
+                    <a class="title-menu" href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                    <div class="submenu">
+                        <a href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                        <a href="../../BTL/SUC_KHOE/TinTuc.html">Tin tức</a>
+                        <a href="../../BTL/SUC_KHOE/DinhDuong.html">Dinh dưỡng</a>
+                        <a href="../../BTL/SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
+                        <a href="../../BTL/SUC_KHOE/GioiTinh.html">Giới tính</a>
+                        <a href="../../BTL/SUC_KHOE/Cacbenh/CacBenh.html">Các bệnh</a>
+                    </div>
+                </div>
+                </div>
+                <div class="border-solid"></div>
+                <div class="web-info">
+                    <span class="title-mini-web">Tải app</span>
+                    <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BA%BB/id670518264?ls=1" target="_blank">IOS</a>
+                    <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                    <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                    <a class="title-mini-web" href="#">Liên hệ</a>
+                    <a class="mini-web" href="#">Quảng cáo</a>
+                </div>
+        </div>
+    </header>
+    </div>
+</div>
+<div class="space">
+</div>
+    <div id="page">
+        <div class="hi">
+            <ul>
+                <li><a href="Hocduong.html"><b>Học đường</b></a></li>
+                <li><a href="Nhanvat.html"><b>Nhân vật</b></a></li>
+                <li><a href="Duhoc.html"><b>Du học</b></a></li>
+                <li><a href="Bantin46.html"><b>Bản tin 46'</b></a></li>
+                <li><a href="Z-Schooltour.html"><b>Z-School tour </b></a></li>
+                <li><a href="#"><b>DỊ</b></a></li>
+                <li><a href="#"><b>KHÁM PHÁ</b></a></li>
+            </ul>
+        </div><br>
+        <hr/>
+        <div class="body">
+            <div class="one">
+                <section>
+                    <a href="#"><img src="../image/anh1.png"></a>
+
+                    <p><b><a href="#">Nữ ca sĩ Việt lấy đại gia Ấn Độ, nuôi con "khác người" nhưng dạy dỗ cực đáng khen: Bật mí về chuyện học ngoại ngữ mới nể</a></b></p>
+                    <p>Cô được biết là bà mẹ dạy con rất khéo</p></a>
+                    </p>
+                </section>
+                <aside>
+                    <a href="#"><img src="../image/anh2.png" ></a>
+            
+                    <p><b><a href="#">Hàng nghìn sinh viên Trường ĐH Kinh doanh và Công nghệ Hà Nội chuyển học online do cháy</a></b></p>
+                    <p>Vụ cháy tối 16/10 tại kho chứa hoá chất, hoá mỹ phẩm gần Trường ĐH Kinh doanh và Công nghệ Hà Nội khiến hàng nghìn sinh viên chuyển...</p></a>
+                    </p>
+                    <a href="#"><img src="../image/anh3.png"></a>
+
+                        <p><b><a href="#">4 cách nhẹ nhàng giúp con trở thành đứa trẻ ngoan</a></b></p>
+                        <p>Theo nghiên cứu, dưới tác động của những lời nhắc nhở hoặc cảnh báo lâu dài từ cha mẹ, con cái sẽ giảm bớt khả năng "đi sai đường".</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../image/anh4.png" class="card-image">
+                                    <h3 class="card-title">Tiết lộ đặc biệt của GVCN về tân Quán quân Olympia: "Phú Đức vẫn là Phú Đức dù có vô địch hay không"</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../image/anh5.png"class="card-image">
+                                    <h3 class="card-title">Con làm phép tính "4 + 6 + 1 = 11" bị cô giáo gạch đỏ, phụ huynh tưởng cô chấm sai, tới lớp hỏi và cái kết "bức xúc tăng gấp bội"</h3>          
+                                </a>   
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../image/anh6.png"class="card-image">
+                                    <h3 class="card-title">Đến nhà người khác mang theo 3 "thứ" này chính là biểu hiện của EQ thấp</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">   
+                                <a href="#" class="card-link">
+                                    <img src="../image/anh7.png"  class="card-image">
+                                    <h3 class="card-title">Đề xuất tăng 1 bậc lương cho giáo viên xếp lương lần đầu: Thầy cô nói gì?</h3>
+                                </a>                       
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../image/anh8.png "  class="card-image">
+                                    <h3 class="card-title">Cái chết của vợ chồng vị giáo sư nổi tiếng trong viện dưỡng lão gây tranh cãi: Sau cùng, điều cha mẹ cần là gì?</h3>
+                                </a>         
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../image/anh9.png"class="card-image">
+                                    <h3 class="card-title">Bạn học lâu không liên lạc bỗng hỏi vay tiền, người EQ thấp nói "Tôi không cho mượn được" dễ làm mất lòng, người EQ cao trả lời cực khôn ngoan</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh4.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Tiết lộ đặc biệt của GVCN về tân Quán quân Olympia: "Phú Đức vẫn là Phú Đức dù có vô địch hay không"</a></b></p>
+                    <p><b>Học đường-</b> <time>1 giờ trước</time></p> 
+                    <p>Sau hành trình tại Đường Lên Đỉnh Olympia 2024, cuộc sống của Phú Đức đã quay trở lại với nhịp sống bình thường.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh5.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Con làm phép tính "4 + 6 + 1 = 11" bị cô giáo gạch đỏ, phụ huynh tưởng cô chấm sai, tới lớp hỏi và cái kết "bức xúc tăng gấp bội"</a></b></p>
+                    <p><b>Học đường -</b> <time>2 giờ trước</time></p> 
+                    <p>Phụ huynh đã nghĩ rằng giáo viên chấm nhầm khi gạch sai đáp án trong bài thi của con gái. Sau khi nghe cô giáo giải thích đáp án, phụ huynh...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd1.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Xôn xao đoạn clip cậu bé bị mẹ "gói" chặt bằng túi bóng rồi kéo vội lên xe?</a></b></p>
+                    <p><b>Học đường -</b> <time>3 giờ trước</time></p> 
+                    <p>Chuyện gì đã xảy ra?</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd2.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Mỹ nhân xuất hiện trong khuôn viên khiến cả trường náo loạn</a></b></p>
+                    <p><b>Học đường -</b><time>3 giờ trước</time></p> 
+                    <p>Sự xuất hiện của mỹ nhân này đã thu hút sự chú ý của tất cả sinh viên trong trường.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh6.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Đến nhà người khác mang theo 3 "thứ" này chính là biểu hiện của EQ thấp</a></b></p>
+                    <p><b>Học đường -</b> <time>4 giờ trước</time></p> 
+                    <p>Chú ý nhé, đến nhà người khác chơi mà mang theo 3 thứ này, bạn rất dễ bị gán mác EQ thấp, chẳng ai muốn chơi cùng.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd3.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Đoạn video 7 giây không lời thoại quay khung cảnh Ngoại thương lúc 2h sáng khiến ai xem xong cũng áp lực</a></b></p>
+                    <p><b>Học đường -</b><time>4 giờ trước</time></p> 
+                    <p>Đúng là sinh viên "Harvard Việt Nam". </p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh7.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#"></a></b></p>
+                    <p><b>Học đường -</b> <time>5 giờ trước</time></p> 
+                    <p>Bên cạnh đề xuất "lương cao nhất", "chi 9.200 tỷ miễn phí học cho con nhà giáo", dự thảo Luật Nhà giáo bổ sung nội dung "tăng 1 bậc lương...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh8.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cái chết của vợ chồng vị giáo sư nổi tiếng trong viện dưỡng lão gây tranh cãi: Sau cùng, điều cha mẹ cần là gì?</a></b></p>
+                    <p><b>Học đường -</b> <time>6 giờ trước</time></p> 
+                    <p>Đọc xong tin này, người ta không khỏi xót xa.
+                        </p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh9.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Bạn học lâu không liên lạc bỗng hỏi vay tiền, người EQ thấp nói "Tôi không cho mượn được" dễ làm mất lòng, người EQ cao trả lời cực khôn ngoan</a></b></p>
+                    <p><b>Học đường -</b><time>7 giờ trước</time></p> 
+                    <p>Trong trường hợp bạn học cũ lâu ngày không liên lạc, bỗng nhắn tin hỏi vay tiền bạn, bạn sẽ trả lời như thế nào?</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh10.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Xôn xao bảng dự kiến chi phí tặng quà cho giáo viên ngày 20/10 của một lớp học: Tổng 13,6 triệu đồng!</a></b></p>
+                    <p><b>Học đường -</b> <time>8 giờ trước</time></p> 
+                    <p>Một cô giáo đã thẳng thắn chia sẻ quan điểm về câu chuyện này.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd4.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Zoom cận màn bấm chuông chiến thuật của Quán quân Olympia, để lộ tư duy "đỉnh nóc kịch trần"!</a></b></p>
+                    <p><b>Học đường -</b> <time>9 giờ trước</time></p> 
+                    <p>Khoảnh khắc giành quyền trả lời của Phú Đức nhận về nhiều lời khen cho sự quyết đoán, nhanh nhạy.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh11.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Câu đố gây tranh cãi, chỉ 1% người tìm ra đáp án</a></b></p>
+                    <p><b>Học đường -</b> <time>10 giờ trước</time></p> 
+                    <p>Dưới đây là câu hỏi thử trí thông minh, ai sở hữu IQ cực cao mới có thể tìm ra câu trả lời.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd5.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Một tỉnh thành buộc phải đổi địa điểm đặt cầu truyền hình Olympia dù chỉ còn chưa đầy 24 tiếng đến Chung kết, chuyện gì đã xảy ra?</a></b></p>
+                    <p><b> Học đường-</b> <time>11 giờ trước</time></p> 
+                    <p>Vì lý do bất khả kháng, địa điểm đặt cầu truyền hình của tỉnh thành này buộc phải thay đổi.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh12.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Quán quân Đường Lên Đỉnh Olympia: “Em đọc những lời chỉ trích trên mạng chủ yếu để giải trí”</a></b></p>
+                    <p><b>Học đường -</b><time>12 giờ trước</time></p> 
+                    <p>Rất nhiều ý kiến trái chiều, thậm chí là chỉ trích có phần nặng nề dành cho Võ Quang Phú Đức xung quanh câu chuyện bấm chuông để giành...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh13.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">3 người quyết định cuộc đời một đứa trẻ: Thứ 1, thứ 2 là bố mẹ, thứ 3 KHÔNG PHẢI ông bà, hay bạn bè!</a></b></p>
+                    <p><b>Học đường -</b><time>13 giờ trước</time></p> 
+                    <p>
+                        Tục ngữ có câu: "Gần mực thì đen, gần đèn thì sáng". </p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh14.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Từng dính lùm xùm quảng cáo "lố", nhưng chuyện nuôi dạy con của sao Việt này thì đáng nể: Soi số tiền đầu tư cho con học mà choáng</a></b></p>
+                    <p><b>Học đường -</b> <time>14 giờ trước</time></p> 
+                    <p>Hiện cuộc sống của nữ MC đã tích cực hơn sau biến cố.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh15.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Chọn ngành Công nghệ thông tin, Gen Z “say bye” nỗi lo thất nghiệp</a></b></p>
+                    <p><b>Học đường -</b><time>14 giờ trước</time></p> 
+                    <p>Với tốc độ phát triển như vũ bão của khoa học kỹ thuật, Công nghệ thông tin giữ vai trò trọng yếu trong cuộc sống, đem tới sự tiến bộ vượt...</p>
+                </aside>
+            </div>
+            <hr/>
+
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh16.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Phụ huynh "kêu trời" một môn học ở trường tiểu học công lập tốn gần 5 triệu đồng: Sự thật thế nào?</a></b></p>
+                    <p><b>Học đường -</b> <time>15 giờ trước</time></p> 
+                    <p>Nhiều người cho biết, con mình cũng đang theo học chương trình này với mức phí tương tự.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh17.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Quán quân Đường Lên Đỉnh Olympia 2024 muốn trở thành lập trình viên máy tính</a></b></p>
+                    <p><b>Học đường-</b> <time>16 giờ trước</time></p> 
+                    <p>Quán quân Đường Lên Đỉnh Olympia 2024 mơ ước trở thành một lập trình viên máy tính để đóng góp thật nhiều cho xã hội, cho sự phát...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh18.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Tôi thật lòng khuyên cha mẹ đừng bao giờ làm 2 việc nếu không muốn mối quan hệ với con cái xấu đi</a></b></p>
+                    <p><b>Học đường -</b> <time>17 giờ trước</time></p> 
+                    <p>Mối quan hệ giữa cha mẹ và con cái là sự phát triển lâu dài.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh19.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cử tri kiến nghị bỏ thi tốt nghiệp THPT, Bộ trưởng GD&ĐT nói gì?</a></b></p>
+                    <p><b>Học đường -</b><time>18 giờ trước</time></p> 
+                    <p>Bộ trưởng GD&ĐT Nguyễn Kim Sơn trả lời cử tri tỉnh An Giang về đề nghị "xét tốt nghiệp cho học sinh THPT trên toàn quốc thay vì tổ chức thi...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh20.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Thi tuyển sinh năm 2025: Nhà trường, thí sinh ngóng Bộ GD&ĐT</a></b></p>
+                    <p><b>Học đường -</b> <time>19 giờ trước</time></p> 
+                    <p>Từ năm 2025, học sinh thi tốt nghiệp THPT sẽ thi theo cấu trúc dạng đề trắc nghiệm mới. Cùng với đó là số lượng môn thi giảm nên thí sinh,...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd6.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Chơi lớn như trường này: Một "anh trai" xuất hiện tại sự kiện chào tân SV, cả trường như bùng nổ!</a></b></p>
+                    <p><b>Học đường-</b> <time>20 giờ trước</time></p> 
+                    <p>Nhìn qua, netizen cứ tưởng fan đang đi "đu" concert idol.</p>
+                </aside>
+            </div>
+            <hr/>
+        </div>
+        <div class="footer-menu">
+            <a href="../../BTL1/Star/WebStar.html">Star</a> | <a href="../../BTL1/Ciné/WebCine.html">Ciné</a> | <a href="../../BTL1/Musik/WebMusik.html">Musik</a> | <a href="../../BTL1/Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | <a href="#">Sport</a> | <a href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a> |  <a href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a> |   <a href="../../BTL/AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | <a href="../Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a> |  <a href="../../BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> |<a href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | <a href="../Tek-life/Tek-life.html">Tek-Life</a> | <a href="../Hocduong/Hocduong.html">Học đường</a> |  <a href="../../BTL/MONEY-Z/Money-Z.html">Money-Z</a>| <a href="../Video/Danghot.html">Video</a>
+        </div>
+        <div class="footer-max">
+            <div class="footer-table1">
+                <table>
+                    <tr>
+                        <td>
+                            <section>
+                                <a href="../../BTL1/demoBTL.html"><img src="../image/logo1.jpg" ></img></a>
+                            </section>
+                            <aside>
+                                <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                                <div class="footer-table-mini">
+                                    <div class="footer-mini1">
+                                        <a href="#"><img src="../image/logodauHoi.jpg" width="20px"></a>
+                                        <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                    </div>
+                                    <div class="footer-mini2">
+                                        <a href="#"><img src="../image/logoEmaildo.jpg" width="25px"></a>
+                                        <p><a href="#">bandoc@kenh14</a></p>
+                                    </div>
+                                </div>
+                                <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                            </aside>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-table2">
+                <a href="#"><img src="../image/logo2.jpg" width="550px" height="130px"></img></a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-mini-one">
+                <h4>TRỤ SỞ HÀ NỘI</h4>
+                <p>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</p>
+                <p>Điện thoại: 024 7309 5555, máy lẻ 62.370</p>
+                <div class="logo-mini">
+                    <a href="#"><img src="../image/logoDC.jpg" width="17px"></a>
+                    <p><b><a href="#">XEM BẢN ĐỒ</a></b></p>
+                </div>
+
+                <div class="footer-mini-one-1">
+                    <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                    <p>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</p>
+                    <p>Điện thoại: 028 7307 7979</p>
+                    <div class="logo-mini">
+                        <a href="#"><img src="../image/logoDC.jpg" width="17px"></a>
+                        <p><b><a href="#">XEM BẢN ĐỒ</a></b></p>
+                    </div>
+                </div>    
+            </div>
+            <hr/>
+            <div class="footer-mini-two">
+                <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+                <p>Bà Nguyễn Bích Minh</p>
+                <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+                <div class="logo-mini">
+                    <img src="../image/logoDT.jpg" width="20px"></a>
+                    <p>024.73095555 (máy lẻ 62.370)</p>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="../image/logoThu.jpg" width="30px"></a>
+                    <p><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></p>
+                </div>
+                <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                <div class="logo-mini">
+                    <img src="../image/logoDT.jpg" width="20px"></a>
+                    <p>02473007108</p>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="../image/logoThu.jpg" width="30px"></a>
+                    <p><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></p>
+                </div>
+                <div class="chat-table-1">
+                    <h4><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></h4>
+                </div>
+                <div class="chat-table-2">
+                    <h4><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></h4>
+                </div>
+                <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+            </div>
+            <hr class="DK"/>
+            <div class="footer-mini-three">
+                <a href=""><img src="../image/logoVCCorp.jpg" width="120px" ></a>
+                <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+                <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+                <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+           
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>

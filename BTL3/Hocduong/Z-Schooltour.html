@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenh14 </title>
+    <link rel="stylesheet" href="../CSS-2/styles2.css">
+    <link rel="import" href="component.html">
+    <script src="../scri/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+       <!-- Linking SwiperJS CSS -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+       <!-- Linking SwiperJS script -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="../EMAGAZINE/EMAGAZINE.html"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                        <li><a href="../XANHCHUA/XANHCHUA.html"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                        <li><a href="../SHOWLIVE/SHOWLIVE.html"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm...">
+                    <button type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="../../BTL1/demoBTL.html"><img src="../image/logo.png" alt="Kenh14 Logo"></a>
+                    <div class="logo-text">
+                        <span class="logo-main">kenh14.vn</span>
+                        <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                    </div>
+                </div>
+                <div class="trending-topics">
+                    <span class="arrow-icon">&#x2197;</span>
+                    <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                    <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                    <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="mains-menu">
+                    <li><a href="../../BTL1/demoBTL.html"><i class="fas fa-home"></i></a></li>
+                    <li><a href="../../BTL1/Star/WebStar.html">Star</a></li>
+                    <li><a href="../../BTL1/Ciné/WebCine.html">Ciné</a></li>
+                    <li><a href="../../BTL1/Musik/WebMusik.html">Musik</a></li>
+                    <li><a href="../../BTL1/Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a></li>
+                    <li><a href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a></li>
+                    <li><a href="../../BTL/MONEY-Z/Money-Z.html">Money-Z</a></li>
+                    <li><a href="../../BTL/AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a></li>
+                    <li><a href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a></li>
+                    <li><a href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a></li>
+                    <li><a href="../Tek-life/Tek-life.html">Tek-life</a></li>
+                    <li><a href="../Hocduong/Hocduong.html">Học đường</a></li>
+                    <li><a href="../Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a></li>
+                    <li><a href="../Video/Danghot.html">Video</a></li>
+                    <li class="main-menu">
+                        <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="subs-menu">
+            <div class="container">
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a class="title-menu" href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a>
+                        <div class="submenu">
+                            <a href="../../BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="../../BTL/DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
+                            <a href="../../BTL/DOI_SONG/House_n_Home.html">House n Home</a>
+                        </div>
+                    </div class="menu-column">
+                        <a href="../Xemmualuon/Xemmualuon.html">Xem mua luôn</a>
+                        <div class="submenu">
+                            <a href="../Xemmualuon/Thoitrang.html">Thời trang</a>
+                            <a href="../Xemmualuon/Dep.html">Đẹp</a>
+                            <a href="../Xemmualuon/MOMMYmuadi.html">Mommy mua di</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Sport</a>
+                        <div class="submenu">
+                            <a href="#">Bóng đá</a>
+                            <a href="#">Bóng rổ</a>
+                            <a href="#">Bóng chuyền</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a class="title-menu" href="..../../BTL1/Musik/WebMusik.html">Musik</a>
+                         <div class="submenu">
+                             <a href="../../BTL1/Musik/WebAuMy.html">Âu-Mỹ</a>
+                             <a href="../../BTL1/Musik/WebChauA.html">Châu Á</a>
+                             <a href="../../BTL1/Musik/WebVietNam.html">Việt Nam</a>
+                             <a href="../../BTL1/demoBTL.html">Hip-hop neva die</a>
+                         </div>
+                 </div>
+                 <div class="menu-column">
+                    <a class="title-menu" href="..../../BTL1/Ciné/WebCine.html">Ciné</a>
+                    <div class="submenu">
+                        <a href="../../BTL1/Ciné/WebPhimChieuRap.html">Phim chiếu rạp</a>
+                        <a href="../../BTL1/Ciné/WebPhimVietNam.html">Phim Việt Nam</a>
+                        <a href="../../BTL1/Ciné/WebSeriesTruyenHinh.html">Series truyền hình</a>
+                        <a href="../../BTL1/Ciné/WebHoaNguHanQuoc.html">Hoa ngữ - Hàn Quốc</a>
+                    </div>
+                </div>
+                    <div class="menu-column">
+                        <a href="../Tek-life/Tek-life.html"> Tek-life</a>
+                        <div class="submenu">
+                            <a href="../Tek-life/Metaverse.html">Metaverse</a>
+                            <a href="../Tek-life/How-to.html">How-To</a>
+                            <a href="../Tek-life/Wow.html">Wow</a>
+                            <a href="../Tek-life/2-Mall.html">2-Mall</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a class="title-menu" href="../../BTL1/Star/WebStar.html">Star</a>
+                        <div class="submenu">
+                            <a href="../../BTL1/Star/WebSaoViet.html">Sao Việt</a>
+                            <a href="../../BTL1/Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
+                            <a href="../../BTL1/Star/WebTVShow.html">TV Show</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a class="title-menu" href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a>
+                        <div class="submenu">
+                            <a href="../../BTL/XA_HOI/XaHoi.html">Pháp luật</a>
+                            <a href="../../BTL/XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
+                            <a href="../../BTL/XA_HOI/SongXanh.html">Sống xanh</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../Hocduong/Hocduong.html">Học đường</a>
+                        <div class="submenu">
+                            <a href="../Hocduong/Bantin46.html">Bản tin 46'</a>
+                            <a href="../Hocduong/Duhoc.html">Du học</a>
+                            <a href="../Hocduong/Nhanvat.html">Nhân vật </a>
+                            <a href="../Hocduong/Z-Schooltour.html">Z-School tour </a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../../BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
+                            <div class="submenu">
+                                <a href="../../BTL/DOI_SONG/ChumAnh.html">Chùm ảnh</a>
+                                <a href="../../BTL/DOI_SONG/KhamPha.html">Khám phá</a>
+                                <a href="../../BTL/DOI_SONG/Di.html">Dị</a>
+                            </div>
+                        </div>
+                    <div class="menu-column">
+                        <a href="../Video/Danghot.html"> Đang hot </a>
+                        <div class="submenu">
+                            <a href="../Video/Nongnhat.html">Nóng nhất</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-column">
+                    <a class="title-menu" href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                    <div class="submenu">
+                        <a href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                        <a href="../../BTL/SUC_KHOE/TinTuc.html">Tin tức</a>
+                        <a href="../../BTL/SUC_KHOE/DinhDuong.html">Dinh dưỡng</a>
+                        <a href="../../BTL/SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
+                        <a href="../../BTL/SUC_KHOE/GioiTinh.html">Giới tính</a>
+                        <a href="../../BTL/SUC_KHOE/Cacbenh/CacBenh.html">Các bệnh</a>
+                    </div>
+                </div>
+                </div>
+                <div class="border-solid"></div>
+                <div class="web-info">
+                    <span class="title-mini-web">Tải app</span>
+                    <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BA%BB/id670518264?ls=1" target="_blank">IOS</a>
+                    <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                    <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                    <a class="title-mini-web" href="#">Liên hệ</a>
+                    <a class="mini-web" href="#">Quảng cáo</a>
+                </div>
+        </div>
+    </header>
+    </div>
+</div>
+<div class="space">
+</div>
+    <div id="page">
+        <div class="hi">
+            <ul>
+                <li><a href="Hocduong.html"><b>Học đường</b></a></li>
+                <li><a href="Nhanvat.html"><b>Nhân vật</b></a></li>
+                <li><a href="Duhoc.html"><b>Du học</b></a></li>
+                <li><a href="Bantin46.html"><b>Bản tin 46'</b></a></li>
+                <li><a href="Z-Schooltour.html"><b>Z-School tour </b></a></li>
+                <li><a href="#"><b>DỊ</b></a></li>
+                <li><a href="#"><b>KHÁM PHÁ</b></a></li>
+            </ul>
+        </div><br>
+        <hr/>
+            <div class="zero">
+                <section>
+                    <a href="#"><img src="../image/anh81.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Quốc học Huế "out trình" tại Olympia</a></b></p>
+                    <p><b>Học đường-</b> <time>1 giờ trước</time></p> 
+                    <p>"7 cầu 3 quế" là cụm từ mà netizen đang dùng để nói về trường THPT chuyên Quốc học - Huế</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh82.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Ngôi trường đang giữ kỷ lục "vô tiền khoáng hậu" tại Olympia, hơn 1,1 triệu người địa phương tự hào mỗi khi nhắc đến</a></b></p>
+                    <p><b>Học đường -</b> <time>3 giờ trước</time></p> 
+                    <p>Đó là ngôi trường nào?</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../image/anh83.png" class="card-image">
+                                    <h3 class="card-title">Ngôi trường của Việt Nam vừa lọt top bảng xếp hạng thế giới: Là đại học đầu ngành, nhìn danh sách cựu sinh viên mà ngưỡng mộ!</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../image/anh84.png"class="card-image">
+                                    <h3 class="card-title">Lần đầu tiên, trường ĐH này của Việt Nam xếp chung bảng với ĐH Oxford: Tuổi đời hơn 1 thế kỷ, thi 9 điểm/môn vẫn chưa thể đỗ</h3>          
+                                </a>   
+                            </li>
+                            <li class="card-item swiper-slide">   
+                                <a href="#" class="card-link">
+                                    <img src="../image/anh85.png"  class="card-image">
+                                    <h3 class="card-title">Ngôi trường lần đầu tiên có cầu truyền hình Olympia: Nằm gọn giữa lòng "thành phố ngủ ngon nhất Việt Nam"</h3>
+                                </a>                       
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../image/anh86.png"class="card-image">
+                                    <h3 class="card-title">Nam Định có ngôi trường làng được đầu tư 17 tỷ đồng: Kiến trúc "xinh ơi là xinh", phụ huynh, học sinh nhìn mê tít!</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd21.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Trường con gái nữ diễn viên "chảnh" nhất Hàn Quốc đang theo học: Học phí lên đến 11 tỷ, tỷ lệ chọi 1/100</a></b></p>
+                    <p><b>Học đường -</b> <time>4 giờ trước</time></p> 
+                    <p>Nhiều nghệ sĩ nổi tiếng xứ sở kim chi cũng cho con học trường này.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh83.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Ngôi trường của Việt Nam vừa lọt top bảng xếp hạng thế giới: Là đại học đầu ngành, nhìn danh sách cựu sinh viên mà ngưỡng mộ!</a></b></p>
+                    <p><b>Học đường -</b> <time>5 giờ trước</time></p> 
+                    <p>Đây là đại học đầu ngành về đào tạo kinh tế, kinh doanh và quản lý của Việt Nam.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh84.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Lần đầu tiên, trường ĐH này của Việt Nam xếp chung bảng với ĐH Oxford: Tuổi đời hơn 1 thế kỷ, thi 9 điểm/môn vẫn chưa thể đỗ</a></b></p>
+                    <p><b>Học đường -</b> <time>6 giờ trước</time></p> 
+                    <p>Đây là một trong những ngôi trường đại học "cổ" nhất ở nước ta.</p>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh85.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Ngôi trường lần đầu tiên có cầu truyền hình Olympia: Nằm gọn giữa lòng "thành phố ngủ ngon nhất Việt Nam"</a></b></p>
+                    <p><b>Học đường -</b> <time>7 giờ trước</time></p> 
+                    <p>Đây là lần đầu tiên ngôi trường này có học sinh lọt vào trận Chung kết ...
+                        </p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh86.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nam Định có ngôi trường làng được đầu tư 17 tỷ đồng: Kiến trúc "xinh ơi là xinh", phụ huynh, học sinh nhìn mê tít!</a></b></p>
+                    <p><b>Học đường -</b><time> 8 giờ trước</time></p> 
+                    <p>Ngôi trường làng có cơ sở vật chất khang trang, bề thế.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh87.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Ngôi trường không chuyên duy nhất có cầu truyền hình Olympia 2024: "Trường làng" gần 50 tuổi đời với loạt thành tích đầy tự hào</a></b></p>
+                    <p><b>Học đường -</b><time>9 giờ trước</time></p> 
+                    <p>Trong số 4 thí sinh góp mặt trong trận Chung kết năm Olympia 24...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd22.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cảnh tượng "lạ" bên trong thư viện Bách Khoa vào mùa thi, Harvard hay Thanh Hoa cũng chỉ cỡ này!</a></b></p>
+                    <p><b>Học đường -</b><time>10 giờ trước</time></p> 
+                    <p>Đúng là Bách khoa "danh bất hư truyền"!</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh88.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Ngôi trường mới nhất vừa đón cầu truyền hình Olympia 2024: Là "vựa" huy chương Olympic quốc tế, cựu học sinh toàn cái tên đỉnh</a></b></p>
+                    <p><b>Học đường -</b> <time>11 giờ trước</time></p> 
+                    <p>Đây là ngôi trường đã khẳng định vị thế về chất lượng đào tạo và giảng dạy.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh89.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Những hình ảnh khác lạ ở ngôi trường không sử dụng điện thoại tại TP HCM</a></b></p>
+                    <p><b>Học đường -</b><time>12 giờ trước</time></p> 
+                    <p>Năm học 2024- 2025 là năm thứ 2 liên tiếp Trường THPT Trường Chinh (quận 12) không cho học sinh sử dụng điện thoại ...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh90.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">
+                        5 trường công chất lượng cao có học phí "top đỉnh" nhất Hà Nội: Đứng đầu là ngôi trường ở quận Đống Đa</a></b></p>
+                    <p><b>Học đường -</b> <time>13 giờ trước</time></p> 
+                    <p>
+                        5 trường công có học phí cao nhất dao động từ 5,1 - 6,1 triệu đồng/tháng </p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh91.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">1 trường THCS công lập ở Đà Nẵng bỗng "biến hình" nhờ hành lang cực xinh: Nhìn xa cứ ngỡ là khu resort nào đó!</a></b></p>
+                    <p><b>Học đường -</b> <time>14 giờ trước</time></p> 
+                    <p>Hành lang phủ cây leo xanh đã đem lại diện mạo mới cực xinh cho ngôi trường.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh92.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Mê cái cách học sinh trường chuyên top 1 Hà Nội khoe tài năng nghệ thuật</a></b></p>
+                    <p><b>Học đường -</b> <time>14 giờ trước</time></p> 
+                    <p>Phải công nhận một điều các bạn học sinh thuộc CLB nghệ thuật của trường Ams quá tài năng.</p>
+                </aside>
+            </div>
+            <hr/>
+
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh93.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">
+                        Một ngôi trường nổi tiếng ở Hà Nội ủng hộ đồng bào vùng lũ hơn 1,5 tỷ đồng</a></b></p>
+                    <p><b>Học đường -</b> <time>15 giờ trước</time></p> 
+                    <p>Ngôi trường nào đây?</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh94.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Barron Trump là hậu bối của rich kid Chao và "người phụ nữ quyến rũ nhất hành tinh"</a></b></p>
+                    <p><b>Học đường -</b><time>16 giờ trước</time></p> 
+                    <p>"Cậu ấm" nhà cựu Tổng thống Mỹ Donald Trump theo học trường nào?</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh95.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Trường học duy nhất ở Việt Nam được công nhận là "di tích quốc gia đặc biệt", nhìn thành tích học tập mà nể phục!</a></b></p>
+                    <p><b>Học đường -</b> <time>17 giờ trước</time></p> 
+                    <p>Đây là một trong 3 trường THPT lâu đời nhất tại Việt Nam.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh96.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">
+                        Ngôi trường có đến 2 đội đại diện Việt Nam tham gia ABU Robocon 2024: Khuôn viên rộng thênh thang với 37,9 ha</a></b></p>
+                    <p><b>Học đường -</b><time>18 giờ trước</time></p> 
+                    <p>Cùng khám phá ngôi trường này xem có gì đặc biệt mà "ươm mầm" được nhiều tài năng về ...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../image/anh97.png" ></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cơ sở vật chất của trường Tiểu học Tây Mỗ 3 to đẹp ra sao mà phụ huynh háo hức, mong con được nhập học</a></b></p>
+                    <p><b>Học đường -</b> <time>19 giờ trước</time></p> 
+                    <p>Trên các hội nhóm mạng xã hội, nhiều phụ huynh bày tỏ sự thích thú trước ngôi trường...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd23.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Mẹ check camera lớp mầm non, đau xót cảnh Một khung cảnh tại trường học khiến gần 4,4 triệu người ngẩn ngơ, cả thanh xuân thu bé lại vừa bằng đoạn clip 21 giây</a></b></p>
+                    <p><b>Học đường-</b> <time>20 giờ trước</time></p> 
+                    <p>Ai cũng xuýt xoa sau khi xem đoạn clip này.</p>
+                </aside>
+            </div>
+            <hr/>
+        </div>
+        <div class="footer-menu">
+            <a href="../../BTL1/Star/WebStar.html">Star</a> | <a href="../../BTL1/Ciné/WebCine.html">Ciné</a> | <a href="../../BTL1/Musik/WebMusik.html">Musik</a> | <a href="../../BTL1/Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | <a href="#">Sport</a> | <a href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a> |  <a href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a> |   <a href="../../BTL/AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | <a href="../Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a> |  <a href="../../BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> |<a href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | <a href="../Tek-life/Tek-life.html">Tek-Life</a> | <a href="../Hocduong/Hocduong.html">Học đường</a> |  <a href="../../BTL/MONEY-Z/Money-Z.html">Money-Z</a>| <a href="../Video/Danghot.html">Video</a>
+        </div>
+        <div class="footer-max">
+            <div class="footer-table1">
+                <table>
+                    <tr>
+                        <td>
+                            <section>
+                                <a href="../../BTL1/demoBTL.html"><img src="../image/logo1.jpg" ></img></a>
+                            </section>
+                            <aside>
+                                <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                                <div class="footer-table-mini">
+                                    <div class="footer-mini1">
+                                        <a href="#"><img src="../image/logodauHoi.jpg" width="20px"></a>
+                                        <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                    </div>
+                                    <div class="footer-mini2">
+                                        <a href="#"><img src="../image/logoEmaildo.jpg" width="25px"></a>
+                                        <p><a href="#">bandoc@kenh14</a></p>
+                                    </div>
+                                </div>
+                                <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                            </aside>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-table2">
+                <a href="#"><img src="../image/logo2.jpg" width="550px" height="130px"></img></a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-mini-one">
+                <h4>TRỤ SỞ HÀ NỘI</h4>
+                <p>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</p>
+                <p>Điện thoại: 024 7309 5555, máy lẻ 62.370</p>
+                <div class="logo-mini">
+                    <a href="#"><img src="../image/logoDC.jpg" width="17px"></a>
+                    <p><b><a href="#">XEM BẢN ĐỒ</a></b></p>
+                </div>
+
+                <div class="footer-mini-one-1">
+                    <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                    <p>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</p>
+                    <p>Điện thoại: 028 7307 7979</p>
+                    <div class="logo-mini">
+                        <a href="#"><img src="../image/logoDC.jpg" width="17px"></a>
+                        <p><b><a href="#">XEM BẢN ĐỒ</a></b></p>
+                    </div>
+                </div>    
+            </div>
+            <hr/>
+            <div class="footer-mini-two">
+                <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+                <p>Bà Nguyễn Bích Minh</p>
+                <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+                <div class="logo-mini">
+                    <img src="../image/logoDT.jpg" width="20px"></a>
+                    <p>024.73095555 (máy lẻ 62.370)</p>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="../image/logoThu.jpg" width="30px"></a>
+                    <p><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></p>
+                </div>
+                <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                <div class="logo-mini">
+                    <img src="../image/logoDT.jpg" width="20px"></a>
+                    <p>02473007108</p>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="../image/logoThu.jpg" width="30px"></a>
+                    <p><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></p>
+                </div>
+                <div class="chat-table-1">
+                    <h4><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></h4>
+                </div>
+                <div class="chat-table-2">
+                    <h4><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></h4>
+                </div>
+                <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+            </div>
+            <hr class="DK"/>
+            <div class="footer-mini-three">
+                <a href=""><img src="../image/logoVCCorp.jpg" width="120px" ></a>
+                <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+                <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+                <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+           
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>
