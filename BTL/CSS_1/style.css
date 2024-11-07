@@ -1,0 +1,671 @@
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Căn chỉnh các phần tử trong top-bar, main-header và main-nav */
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Thiết kế cho thanh top-bar */
+.top-bar {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    font-size: 12px;
+    height: 25px;
+    /* Chiều cao khớp với input */
+}
+
+.top-bar nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar nav ul li {
+    margin-right: -1px;
+    margin-left: 20px;
+    font-size: 10px;
+
+}
+
+.top-bar nav ul li a {
+    color: #fbfbfb;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.search-bar input {
+    background-color: black;
+    padding: 5px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    width: 200px;
+    font-size: 10px;
+    height: 100%;
+    margin-left: 500px;
+
+}
+
+.search-bar button {
+    padding: 5px;
+    border: none;
+    background-color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    font-size: 10px;
+    margin-left: 7px;
+    height: 100%;
+}
+.body{
+    width:1500px;
+    height: 100%;
+    background-color: rgb(231, 218, 182);
+}
+.one{
+    width:1500px;
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+}
+.one section{
+    padding-left: 230px;
+    padding-right: 100px;
+}
+.one aside{
+    width: 400px;
+}
+.one aside p{
+    font-size: 22px;
+    color: #4e4545;
+}
+.two{
+    display: flex;
+    width:1500px;
+    height: 100%;
+    padding-left: 230px; 
+    padding-top: 100px;
+}
+.two section{
+    width: 510px;
+    margin-right: 30px;
+}
+.box_1 {
+    flex-direction: column;
+    width: 500px;
+    height: 310px;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.two section a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.two img{
+    padding: 5px 5px 5px 5px;
+}
+.two aside{
+    width: 450px;
+    height: 450px;
+}
+.box_2 {
+    margin-bottom: 20px;
+    margin-right: 15px;;
+    flex-direction: column;
+    width: 110px;
+    height: 130px;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.data{
+    align-items: flex-start;
+    display: flex;
+}
+.box_2_1{
+    padding-top: 0px;
+    width: 200px;
+}
+.box_2_1 span{
+    color: #4e4545;
+}
+.box_2_1 span a{
+    text-decoration: none;
+    color: black;
+}
+
+.two_1{
+    display: flex;
+    height: 700px;
+    padding-left: 230px; 
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.two_1 section{
+    width: 800px;
+    margin-right: 30px;
+}
+.box_1_1 {
+    flex-direction: column;
+    width: 790px;
+    height: 410px;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.two_1 section a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.two_1 img{
+    padding: 5px 5px 5px 5px;
+}
+.two_1 aside{
+    width: 300px;
+    height: 500px;
+}
+.box_2_2 {
+    margin-bottom: 10px;
+    margin-right: 15px;
+    height: 180px;
+    flex-direction: column;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box_2_2 span{
+    color: #4e4545;
+}
+.box_2_3 {
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    height: 180px;
+    flex-direction: column;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box_2_3 span{
+    color: #4e4545;
+}
+.two_1 aside span a{
+    text-decoration: none;
+    color: black;
+}
+.two_2{
+    display: flex;
+    height: 700px;
+    padding-left: 230px; 
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.two_2 section{
+    width: 600px;
+    margin-right: 50px;
+}
+.box_1_2 {
+    flex-direction: column;
+    width: 610px;
+    height: 410px;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.two_2 section a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.two_2 img{
+    padding: 5px 5px 5px 5px;
+}
+.two_2 aside{
+    width: 310px;
+    height: 500px;
+}
+.box_2_4 {
+    margin-bottom: 10px;
+    margin-right: 15px;
+    height: 180px;
+    flex-direction: column;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box_2_4 span{
+    color: #4e4545;
+}
+.box_2_5 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    height: 180px;
+    flex-direction: column;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box_2_5 span{
+    color: #4e4545;
+}
+.two_2 aside span a{
+    text-decoration: none;
+    color: black;
+}
+.three {
+    margin-top: 50px;
+    margin-left: 230px;
+    display: inline-flex;
+    width: 1100px;
+    height: 90px;
+    align-items: center;
+}
+
+.logo-1 img {
+    width: 240px; 
+    height: 60px;
+    vertical-align: middle; /* Đảm bảo ảnh được căn giữa theo chiều dọc */
+}
+.logo-1 {
+    margin-right: 25px;
+    width: 250px; 
+    height: 70px;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    box-sizing: border-box; /* Giữ padding bên trong kích thước khung */
+    display: flex; 
+    justify-content: center; /* Căn giữa hình ảnh theo chiều ngang */
+    align-items: center;    /* Căn giữa ảnh theo chiều dọc */
+    overflow: hidden;
+}
+.four{
+    width: 1100px;
+    height: 380px;
+    margin-top: 50px;
+    margin-left: 230px;
+    margin-bottom: 20px;
+    display: inline-flex;
+}
+.four section{
+    width: 400px; 
+    margin-right: 50px;
+}
+.four section .four_1 {
+    width: 400px; 
+    height: 240px; 
+    margin-bottom: 20px;
+    padding: 10px; 
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    box-sizing: border-box; /* Giữ padding bên trong kích thước khung */
+    display: flex; 
+    justify-content: center; /* Căn giữa hình ảnh theo chiều ngang */
+    align-items: center;    /* Căn giữa ảnh theo chiều dọc */
+    overflow: hidden;
+}
+.four section span{
+    color: #4e4545;
+    line-height: 1.2; /* Tăng khoảng cách giữa các dòng */
+    font-size: 20px;
+}
+.four section span a{
+    text-decoration: none;
+    color: black;
+}
+.four aside{
+    width: 400px; 
+    margin-right: 50px;
+}
+.four aside .four_1{
+    width: 400px; 
+    height: 240px;
+    margin-bottom: 20px;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center; /* Căn giữa hình ảnh theo chiều ngang */
+    align-items: center;    /* Căn giữa ảnh theo chiều dọc */
+    overflow: hidden;
+}
+.four aside span{
+    color: black;
+    line-height: 1.2; /* Tăng khoảng cách giữa các dòng */
+    font-size: 20px;
+}
+.four aside span a{
+    text-decoration: none;
+    color: black;
+}
+.four img{
+    vertical-align: middle; /* Đảm bảo ảnh được căn giữa theo chiều dọc */
+    width: 390px; 
+    height: 230px;
+}
+.table-max{
+    margin-top: 50px;
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-bottom: 50px;
+    width: 1100px;
+    height: 550px;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    justify-content: center; /* Căn giữa hình ảnh theo chiều ngang */
+    align-items: center;    /* Căn giữa ảnh theo chiều dọc */
+    overflow: hidden;
+}
+.table-max-1{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.table-max-1 span b{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 50px;
+}
+.table-max-2{
+    width: 1100px;
+    height: 300px;
+    display: inline-flex;
+}
+.table-max-2-1{
+    width: 1100px;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.table-max-2-2{
+    width: 310px; 
+    height: 210px;
+    margin-bottom: 10px;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center; /* Căn giữa hình ảnh theo chiều ngang */
+    align-items: center;    /* Căn giữa ảnh theo chiều dọc */
+    overflow: hidden;
+}
+.table-max-2 img{
+    vertical-align: middle; /* Đảm bảo ảnh được căn giữa theo chiều dọc */
+    width: 300px; 
+    height: 200px;
+}
+.table-max-2-1 p{
+    color: #4e4545;
+    line-height: 1.2; /* Tăng khoảng cách giữa các dòng */
+    font-size: 17px;
+}
+.table-max-2-1 span a{
+    line-height: 1.2; /* Tăng khoảng cách giữa các dòng */
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+}
+
+.five{
+    width: 1100px;
+    height: 300px; 
+    margin-left: 230px;
+    display: flex;
+}
+.five img{
+    vertical-align: middle; /* Đảm bảo ảnh được căn giữa theo chiều dọc */
+    width: 350px; 
+    height: 200px;
+}
+.five section{
+    width: 360px; 
+    height: 210px;
+    margin-right: 30px;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px;
+    box-sizing: border-box; /* Giữ padding bên trong kích thước khung */
+    display: flex; 
+    justify-content: center; /* Căn giữa hình ảnh theo chiều ngang */
+    align-items: center;    /* Căn giữa ảnh theo chiều dọc */
+    overflow: hidden;
+}
+.five aside{
+    width: 400px; 
+    height: 250px;
+}
+.five aside span{
+    color: #4e4545;
+    line-height: 1.2; /* Tăng khoảng cách giữa các dòng */
+    font-size: 17px;
+}
+.five aside span a{
+    text-decoration: none;
+    color: black;
+}
+.five aside p{
+    color: #4e4545;
+    font-size: 18px;
+}
+.five aside p a{
+    text-decoration: none;
+    color: black;
+}
+/* MENU phía dưới */
+.footer-menu {
+    width: 1510px;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.footer-menu a {
+    color: #766e6e; 
+    text-decoration: none; 
+    margin: 0 5px;
+}
+
+.footer-menu a:hover {
+    color:  rgba(190, 70, 70, 0.688); /* Đổi màu chữ khi trỏ vào */
+    text-decoration: underline;
+    text-decoration-color: rgba(190, 70, 70, 0.688); /* Màu gạch dưới */
+}
+.footer {
+    margin: 20px 200px 0px 200px;
+    width: 1100px;
+    height: 500px;
+    display: flex;
+}
+
+.footer-mini-one {
+    width: 300px;
+    font-size: 15px;
+    color: #4e4545;
+}
+
+.footer-mini-one span {
+    margin: 0;
+    padding-top: px;
+    font-size: 15px;
+}
+.footer-mini-one span a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #4e4545;
+
+}
+.footer-mini-one a:hover {
+    text-decoration: underline;
+}
+.footer-mini-one h4 {
+    margin-bottom: 7px; 
+}
+
+.footer-mini-one-1 {
+    padding-top: 50px;
+    width: 310px;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.footer-mini-two {
+    width: 300px;
+    font-size: 15px;
+    color: #4e4545;
+}
+.footer-mini-two span {
+    font-size: 15px;
+}
+.footer-mini-two span a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #4e4545;
+
+}
+.footer-mini-two a:hover {
+    text-decoration: underline;
+}
+.chat-table-1{
+    margin-top: 20px 
+}
+.chat-table-1 button {
+    background-color: rgb(7, 141, 219);
+    width: 200px;
+    text-align: center; 
+}
+.chat-table-1 button a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.chat-table-1 a:hover {
+    text-decoration: none;
+}
+.chat-table-1 button:hover {
+    background-color: rgb(77, 146, 225); 
+}
+.chat-table-2{
+    margin-top: 20px 
+}
+.chat-table-2 button{
+    background-color: rgb(233, 84, 121);
+    width: 150px;
+    text-align: center;
+}
+.chat-table-2 button a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+}
+.chat-table-2 a:hover {
+    text-decoration: none; 
+}
+.chat-table-2 button:hover {
+    background-color: black; 
+}
+.chat-table-3 a{
+    text-decoration: none; 
+    color: black;
+}
+.footer-mini-three {
+    width: 310px;
+    padding-top: 15px;
+    font-size: 15px;
+    color: #4e4545;
+}
+
+.footer-mini-three b {
+    font-size: 18px;
+}
+.DK{
+    height: 300px;
+}
+.logo-mini{
+    padding-top: 15px;
+    display: flex;
+}
+.logo-mini p{
+    padding-top: 2px;
+    padding-left: 5px;
+}
+.logo-mini-1{
+    padding-top: 20px;
+    display: flex;
+}
+.logo-mini-1 p{
+    padding-top: 2px;
+    padding-left: 5px;
+}
+.footer-max{
+    margin: 40px 200px 0px 200px;
+    width: 1100px;
+    height: 150px;
+    display: flex;
+}
+.footer-table1 td{
+    padding-left: 10px;
+    font-size: 10px;
+    display: flex;
+}
+.footer-table1 table{
+    border: 1px solid ;
+    width: 580px;
+}
+.footer-table1 table section{
+    padding: auto;
+}
+.footer-table1 table aside{
+    padding-left: 10px;
+}
+.footer-table-mini{
+    display:flex;
+    width: 60px;
+    height: 30px;
+}
+.footer-table1 aside p b{
+    font-size: 15px;
+}
+.footer-table1 aside p {
+    font-size: 13px;
+}
+.footer-mini1 {
+    padding-top: 10px;
+    display: flex;
+}
+.footer-mini2{
+    padding-left: 10px;
+    display: flex;
+}
+.footer-mini2 a{
+    text-decoration: none ;
+    color: #000000;
+    font-size: 13px;
+    padding-top: 10px;
+
+}
+.footer-mini2 a:hover {
+    text-decoration: underline;
+}
+.footer-table2{
+    width: 700px;
+    height:130px;
+    margin-left: 10px;
+}

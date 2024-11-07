@@ -1,0 +1,992 @@
+/* Thiết lập cơ bản cho body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container chung cho layout */
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Căn chỉnh các phần tử trong top-bar, main-header và main-nav */
+.top-bar .container,
+.main-header .container,
+.main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Thiết kế cho thanh top-bar */
+.top-bar {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    font-size: 12px;
+    height: 25px;
+    /* Chiều cao khớp với input */
+}
+
+.top-bar nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar nav ul li {
+    margin-right: -1px;
+    margin-left: 20px;
+    font-size: 10px;
+
+}
+
+.top-bar nav ul li a {
+    color: #fbfbfb;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.search-bar input {
+    background-color: black;
+    padding: 5px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    width: 200px;
+    font-size: 10px;
+    height: 100%;
+    margin-left: 500px;
+
+}
+
+.search-bar button {
+    padding: 5px;
+    border: none;
+    background-color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    font-size: 10px;
+    margin-left: 7px;
+    height: 100%;
+}
+
+
+.main-header {
+    background-color: #f0a52b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+    /* Giảm padding để làm cho header nhỏ hơn */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 250px;
+}
+
+.logo img {
+    height: 65px;
+    /* Điều chỉnh kích thước logo */
+    margin-right: 10px;
+    margin-left: -50px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.logo-main {
+    font-size: 24px;
+    /* Giảm kích thước chữ nếu cần */
+    font-weight: bold;
+}
+
+.logo-sub {
+    font-size: 6px;
+    /* Giảm kích thước chữ của dòng phụ */
+    color: rgb(229, 226, 226);
+}
+
+
+/* Kiểu dáng cho Điều hướng Chính */
+.main-nav {
+    background-color: #a00101;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.main-nav ul li {
+    padding: 7px 9px;
+    /* Giảm padding để thu hẹp khoảng cách */
+}
+
+.main-nav ul {
+    margin-left: 45px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: none;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav ul li:first-child {
+    background-color: #a00101;
+}
+
+.main-nav ul li:first-child a {
+    font-size: 15px;
+}
+
+.trending-topics a {
+    background-color: rgba(255, 255, 255, 0.082);
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: auto;
+    /* Giảm từ 20px xuống 15px */
+    margin-left: 5px;
+    /* Giảm từ 10px xuống 5px */
+    text-decoration: none;
+    padding: 5px 10px;
+    /* Tăng padding để có vùng nhấp chuột lớn hơn */
+    border-radius: 15px;
+    font-size: 11px;
+    white-space: nowrap;
+    border: 1px solid #eeecec;
+}
+
+.trending-topics {
+    font-size: 16px;
+    /* Tăng kích thước chữ */
+    line-height: 1.4;
+    /* Điều chỉnh chiều cao dòng để dễ đọc hơn */
+    margin-left: -110px;
+    /* Di chuyển chủ đề thịnh hành sang trái */
+    margin-right: 100px;
+}
+
+.arrow-icon {
+    display: inline-block;
+    font-size: 24px;
+    /* Điều chỉnh kích thước nếu cần */
+    color: #ffffff;
+    /* Màu trắng */
+
+    padding: 2px 6px;
+    border-radius: 4px;
+    transform: rotate(45deg);
+    /* Xoay để khớp với hình ảnh */
+}
+
+/* thay đổi màu sắc */
+.main-nav ul li a:hover {
+    padding: 7px 6px;
+    background-color: #800000;
+    /* Màu đỏ đậm hơn */
+}
+
+.main-menu {
+    position: relative;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+}
+
+.subs-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 10px;
+    /* Giảm padding-top từ 20px xuống 10px */
+}
+
+
+.subs-menu.active {
+    display: block;
+}
+
+.subs-menu .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    /* Giảm gap từ 20px xuống 15px */
+    padding: 10px 0;
+    /* Giảm padding-top từ 20px xuống 10px */
+}
+
+.menu-row {
+    display: contents;
+}
+
+.menu-column {
+    padding: 0 10px;
+    margin-top: -5px;
+    /* Thêm margin âm để di chuyển nội dung lên trên */
+    padding-left: 51px;
+    /* Thêm padding bên trái để thụt nội dung */
+}
+
+/* Nhắm vào tất cả các liên kết trực tiếp trong subs-menu */
+.subs-menu .container>a,
+.subs-menu .menu-row>a,
+.subs-menu .menu-column>a {
+    font-weight: bold;
+    font-size: 15px;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Kiểu dáng cụ thể cho các mục submenu */
+.submenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu a {
+    font-size: 13px;
+    font-weight: normal;
+    color: #484747;
+    padding: 3px 0;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    color: #000000;
+}
+
+
+/* Làm cho bảng menu hiện ra không bị nằm ở footer */
+header {
+    position: relative;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: #858383;
+}
+
+.border-solid {
+    border-top: 1px solid #e9e3e3bb;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.web-info span {
+    padding: 100px;
+    margin-left: 60px;
+    margin-right: -90px;
+
+}
+
+.mini-web,
+.title-mini-web {
+    text-decoration: none;
+
+}
+
+.title-mini-web {
+    font-weight: bold;
+    padding: 30px 0px;
+    color: #000000;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.mini-web {
+    margin-right: 10px;
+    padding: 5px 0;
+    color: #858383;
+    font-size: 13px;
+}
+
+.mini-web:hover {
+    color: #000000;
+}
+
+.space {
+    background-color: #ded6d6a0;
+    height: 30px;
+}
+
+.hi {
+    margin: 0px 0px 0px 200px;
+    margin-bottom: 1px;
+    width: 1200px;
+}
+
+.hi ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: -5px;
+}
+
+.hi ul li {
+    display: inline;
+    padding: 0px 2px;
+}
+
+.hi ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.hi a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(254, 20, 20);
+    text-decoration-thickness: 3px;
+}
+
+.hi ul li:nth-child(5) {
+    margin-right: 450px;
+}
+.hi_1 {
+    margin: 0px 0px 0px 200px;
+    margin-bottom: 1px;
+    width: 1200px;
+}
+
+.hi_1 ul {
+    padding: 0px;
+    margin-bottom: -5px;
+}
+
+.hi_1 ul li {
+    display: inline;
+    padding: 0px 2px;
+}
+
+.hi_1 ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.hi_1 a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(254, 20, 20);
+    text-decoration-thickness: 3px;
+}
+
+.hi_1 ul li:nth-child(4) {
+    margin-right: 500px;
+}
+.hi_2 {
+    margin: 0px 0px 0px 200px;
+    margin-bottom: 1px;
+    width: 1200px;
+}
+
+.hi_2 ul {
+    padding: 0px;
+    margin-bottom: -5px;
+}
+
+.hi_2 ul li {
+    display: inline;
+    padding: 0px 2px;
+}
+
+.hi_2 ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.hi_2 a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(254, 20, 20);
+    text-decoration-thickness: 3px;
+}
+
+.hi_2 ul li:nth-child(1) {
+    margin-right: 900px;
+}
+.hi_3{
+    margin: 0px 0px 0px 200px;
+    height: 30px;
+    margin-bottom: 2px;
+    width: 1200px;
+}
+.hi_3 img{
+    height:30px;
+}
+.hi_3 ul {
+    padding: 0px;
+}
+
+.hi_3 ul li {
+    display: inline;
+    padding: 0px 2px;
+}
+
+.hi_3 ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.hi_3 a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(254, 20, 20);
+    text-decoration-thickness: 3px;
+}
+
+.hi_3 ul li:nth-child(7) {
+    margin-right: 200px;
+}
+.hi_4{
+    margin-top: 0px;
+    height: 20px;
+    background-color: #dbd7d7;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left:  200px;
+    padding-right:  200px;
+}
+
+.hi_4 ul {
+    padding: 0px;
+}
+
+.hi_4 ul li {
+    display: inline;
+    padding: 0px 2px;
+}
+
+.hi_4 ul li a {
+    text-decoration: none;
+    color: rgb(75, 67, 67);
+    font-size: 13px;
+    margin-right: 15px;
+}
+.hi_4 a:hover {
+    color: rgb(0, 0, 0);
+}
+.hi_5{
+    margin-left: 150px;
+    height: 10px;
+    margin-bottom: 2px;
+    width: 1200px;
+}
+.hi_5 ul li {
+    display: inline;
+    padding-right: 30px;
+}
+.hi_5 ul li a {
+    text-decoration: none;
+    color: rgb(104, 151, 212);
+    font-size: 14px;
+    margin-right: 20px;
+}
+.hi_5 a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(104, 151, 212);
+    text-decoration-thickness: 3px;
+}
+.body {
+    margin: 0px 200px 0px 200px;
+    width: 780px;
+}
+
+.one {
+    padding-top: 15px;
+    display: flex;
+    height: 550px;
+    width: 750px;
+    margin-bottom: 20px;
+}
+
+.one section {
+    width: 550px;
+    padding-right: 50px;
+    font-size: 15px;
+}
+
+.one section p a {
+    padding-right: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.one aside p a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.one_2{
+    height: 300px;
+    width: 750px;
+    margin-bottom: -170px;
+}
+.one_2 p{
+    color: #766e6e;
+    font-size: 15px;
+}
+.one_2 #box1 {
+    margin-top: 10px;
+    color: #766e6e;
+    font-size: 50px;
+    color: tomato;
+}
+.two {
+    height: 220px;
+    display: flex;
+}
+
+.two section {
+    padding-top: 15px;
+}
+
+.two aside {
+    padding-left: 30px;
+    font-size: 15px;
+}
+
+.two aside a {
+    font-size: 130%;
+    text-decoration: none;
+    color: black;
+}
+.two_4 {
+    height: 320px;
+    display: flex;
+}
+
+.two_4 section {
+    padding-top: 15px;
+}
+
+.two_4 aside {
+    padding-left: 30px;
+    font-size: 15px;
+}
+
+.two_4 aside a {
+    font-size: 130%;
+    text-decoration: none;
+    color: black;
+}
+.one_1{
+    padding-top: 15px;
+    display: flex;
+    height: 650px;
+    width: 870px;
+}
+.one_1 section {
+    width: 550px;
+    padding-right: 50px;
+    font-size: 15px;
+}
+
+.one_1 section p a {  
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.one_1  aside span{
+    font-size: 14px;
+    color: #766e6e;
+    padding-right: 10px;
+}
+.one_1 aside span a {
+    color: black;
+    text-decoration: none;
+}
+.one_1_1{
+    display: flex;
+    padding-bottom: 50px;
+}
+.one_1_1 .text_1{
+    padding-left: 20px;
+}
+.two_2{
+    width:830px;
+    height: 220px;
+    display: flex;
+}
+.two_2 section {
+    padding-top: 15px;
+}
+.two_2 aside {
+    padding-left: 30px;
+    font-size: 15px;
+}
+.two_2 aside a {
+    font-size: 130%;
+    text-decoration: none;
+    color: black;
+}
+.two_2 aside b {
+    color: rgb(104, 151, 212);
+}
+.two_3{
+    width: 820px;
+}
+.two_3 h1{
+    color: rgb(104, 151, 212);;
+}
+.two_3_1{
+    display: flex;
+    padding-top: 10px;
+}
+.two_3_1 section a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    width: 600px;
+    padding-right: 30px;
+}
+.two_3_1 aside p a{
+    padding-right: 20px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    padding-right: 30px;
+}
+.double{
+    width:750px;
+    height: 700px;
+    display: flex;
+}
+.double h2 a{
+    text-decoration: none;
+    color: #000000;
+}
+.double_1{
+    width: 360px;
+    margin-right: 20px;
+}
+.double_1 p a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+.double_2{
+    width: 350px;
+}
+.double_2_1{
+    height: 400px;
+}
+.double_2 p a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+.double_1_2{
+    width: 360px;
+    display: flex;
+}
+.double_1_2 section{
+    margin-right: 20px;
+
+}
+.double_1_2 aside a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+/* MENU phía dưới */
+.footer-menu {
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.footer-menu a {
+    color: #766e6e; 
+    text-decoration: none; 
+    margin: 0 5px;
+}
+
+.footer-menu a:hover {
+    color:  rgba(190, 70, 70, 0.688); /* Đổi màu chữ khi trỏ vào */
+    text-decoration: underline;
+    text-decoration-color: rgba(190, 70, 70, 0.688); /* Màu gạch dưới */
+}
+.footer {
+    margin: 20px 200px 0px 200px;
+    width: 1100px;
+    height: 500px;
+    display: flex;
+}
+
+.footer-mini-one {
+    width: 300px;
+    font-size: 15px;
+    color: #4e4545;
+}
+
+.footer-mini-one span {
+    margin: 0;
+    padding-top: px;
+    font-size: 15px;
+}
+.footer-mini-one span a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #4e4545;
+
+}
+.footer-mini-one a:hover {
+    text-decoration: underline;
+}
+.footer-mini-one h4 {
+    margin-bottom: 7px; 
+}
+
+.footer-mini-one-1 {
+    padding-top: 50px;
+    width: 310px;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.footer-mini-two {
+    width: 300px;
+    font-size: 15px;
+    color: #4e4545;
+}
+.footer-mini-two span {
+    font-size: 15px;
+}
+.footer-mini-two span a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #4e4545;
+
+}
+.footer-mini-two a:hover {
+    text-decoration: underline;
+}
+.chat-table-1{
+    margin-top: 20px 
+}
+.chat-table-1 button {
+    background-color: rgb(7, 141, 219);
+    width: 200px;
+    text-align: center; 
+}
+.chat-table-1 button a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.chat-table-1 a:hover {
+    text-decoration: none;
+}
+.chat-table-1 button:hover {
+    background-color: rgb(77, 146, 225); 
+}
+.chat-table-2{
+    margin-top: 20px 
+}
+.chat-table-2 button{
+    background-color: rgb(233, 84, 121);
+    width: 150px;
+    text-align: center;
+}
+.chat-table-2 button a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+}
+.chat-table-2 a:hover {
+    text-decoration: none; 
+}
+.chat-table-2 button:hover {
+    background-color: black; 
+}
+.chat-table-3 a{
+    text-decoration: none; 
+    color: black;
+}
+.footer-mini-three {
+    width: 310px;
+    padding-top: 15px;
+    font-size: 15px;
+    color: #4e4545;
+}
+
+.footer-mini-three b {
+    font-size: 18px;
+}
+.DK{
+    height: 300px;
+}
+.logo-mini{
+    padding-top: 15px;
+    display: flex;
+}
+.logo-mini p{
+    padding-top: 2px;
+    padding-left: 5px;
+}
+.logo-mini-1{
+    padding-top: 20px;
+    display: flex;
+}
+.logo-mini-1 p{
+    padding-top: 2px;
+    padding-left: 5px;
+}
+.footer-max{
+    margin: 40px 200px 0px 200px;
+    width: 1100px;
+    height: 150px;
+    display: flex;
+}
+.footer-table1 td{
+    padding-left: 10px;
+    font-size: 10px;
+    display: flex;
+}
+.footer-table1 table{
+    border: 1px solid ;
+    width: 580px;
+}
+.footer-table1 table section{
+    padding: auto;
+}
+.footer-table1 table aside{
+    padding-left: 10px;
+}
+.footer-table-mini{
+    display:flex;
+    width: 60px;
+    height: 30px;
+}
+.footer-table1 aside p b{
+    font-size: 15px;
+}
+.footer-table1 aside p {
+    font-size: 13px;
+}
+.footer-mini1 {
+    padding-top: 10px;
+    display: flex;
+}
+.footer-mini2{
+    padding-left: 10px;
+    display: flex;
+}
+.footer-mini2 a{
+    text-decoration: none ;
+    color: #000000;
+    font-size: 13px;
+    padding-top: 10px;
+
+}
+.footer-mini2 a:hover {
+    text-decoration: underline;
+}
+.footer-table2{
+    width: 700px;
+    height:130px;
+    margin-left: 10px;
+}
+/* thanh tiêu điểm tuần */
+.container-margin{
+    margin-top:-120px;
+}
+.card-list .card-item{
+    list-style:none;
+}
+.card-list .card-item .card-link{
+    width: 250px; 
+    height: 155px;
+    display: block;
+    background: #fff;
+    border-radius:12px;
+    text-decoration: none;
+    padding:18px;
+}
+.card-list .card-link .card-image{
+    width:250px;
+    aspect-ratio: 16/9;
+    object-fit:cover;
+}
+.card-list .card-link .card-title{
+    font-size:14px;
+    color:#000;
+    font-weight: 10px;
+    word-wrap: break-word; 
+}
+.card-wrapper{
+    max-width:1100px;
+    margin: 60px 3px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+.card-wrapper .swiper-pagination-bullet{
+    height:8px;
+    width: 8px;
+    opacity: 0.5;
+    background: #ff7505;
+}
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity:1;
+}
+.card-wrapper .swiper-slide-button{
+    color: #ff7505;
+    margin-top: -35px;
+}
+.container-margin .title{
+    margin-top: -2px;
+    margin-left: -20px ;
+    padding-left:20px;
+    background-color: tomato;
+    width: 150px;
+}
+.container-margin .title h3{
+    color: white;
+    align-items: center;
+    font-size: 15px;
+}

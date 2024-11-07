@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenh14 </title>
+    <link rel="stylesheet" href="../CSS_1/styles.css">
+    <link rel="import" href="component.html">
+    <script src="../Scrip.js/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+       <!-- Linking SwiperJS CSS -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+       <!-- Linking SwiperJS script -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <nav>
+                    <ul>
+                       <li><a href="../../BTL3/EMAGAZINE/EMAGAZINE.html"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                        <li><a href="../../BTL3/XANHCHUA/XANHCHUA.html"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                        <li><a href="../../BTL3/SHOWLIVE/SHOWLIVE.html"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="../../BTL1/demoBTL.html"><img src="../images/logo.png" alt="Kenh14 Logo"></a>
+                    <div class="logo-text">
+                        <span class="logo-main">kenh14.vn</span>
+                        <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                    </div>
+                </div>
+                <div class="trending-topics">
+                    <span class="arrow-icon">&#x2197;</span>
+                    <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                    <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                    <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="mains-menu">
+                    <li><a href="../../BTL1/demoBTL.html"><i class="fas fa-home"></i></a></li>
+                    <li><a href="../../BTL1/Star/WebStar.html">Star</a></li>
+                    <li><a href="../../BTL1/Ciné/WebCine.html">Ciné</a></li>
+                    <li><a href="../../BTL1/Musik/WebMusik.html">Musik</a></li>
+                    <li><a href="../../BTL1/Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a></li>
+                    <li><a href="../DOI_SONG/DoiSong.html">Đời sống</a></li>
+                    <li><a href="../MONEY-Z/Money-Z.html">Money-Z</a></li>
+                    <li><a href="../AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a></li>
+                    <li><a href="../XA_HOI/XaHoi.html">Xã hội</a></li>
+                    <li><a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a></li>
+                    <li><a href="../../BTL3/Tek-life/Tek-Life.html">Tek-life</a></li>
+                    <li><a href="../../BTL3/Hocduong/Hocduong.html">Học đường</a></li>
+                    <li><a href="../../BTL3/Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a></li>
+                    <li><a href="../../BTL3/Video/Danghot.html">Video</a></li>
+                    <li class="main-menu">
+                        <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="subs-menu">
+            <div class="container">
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="../DOI_SONG/DoiSong.html">Đời sống</a>
+                        <div class="submenu">
+                            <a href="../DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="../DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
+                            <a href="../DOI_SONG/House_n_Home.html">House n Home</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a class="title-menu" href="../../BTL3/Xemmualuon/Xemmualuon.html">Xem mua luôn</a>
+                        <div class="submenu">
+                            <a href="../../BTL3/Xemmualuon/Thoitrang.html">Thời trang</a>
+                            <a href="../../BTL3/Xemmualuon/Dep.html">Đẹp</a>
+                            <a href="../../BTL3/Xemmualuon/MOMMYmuadi.html">Mommy mua di</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Sport</a>
+                        <div class="submenu">
+                            <a href="#">Bóng đá</a>
+                            <a href="#">Bóng rổ</a>
+                            <a href="#">Bóng chuyền</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                           <a class="title-menu" href="..../../BTL1/Musik/WebMusik.html">Musik</a>
+                            <div class="submenu">
+                                <a href="../../BTL1/Musik/WebAuMy.html">Âu-Mỹ</a>
+                                <a href="../../BTL1/Musik/WebChauA.html">Châu Á</a>
+                                <a href="../../BTL1/Musik/WebVietNam.html">Việt Nam</a>
+                                <a href="../../BTL1/demoBTL.html">Hip-hop neva die</a>
+                            </div>
+                    </div>
+                    <div class="menu-column">
+                        <a class="title-menu" href="..../../BTL1/Ciné/WebCine.html">Ciné</a>
+                        <div class="submenu">
+                            <a href="../../BTL1/Ciné/WebPhimChieuRap.html">Phim chiếu rạp</a>
+                            <a href="../../BTL1/Ciné/WebPhimVietNam.html">Phim Việt Nam</a>
+                            <a href="../../BTL1/Ciné/WebSeriesTruyenHinh.html">Series truyền hình</a>
+                            <a href="../../BTL1/Ciné/WebHoaNguHanQuoc.html">Hoa ngữ - Hàn Quốc</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a class="title-menu"href="../../BTL3/Tek-life/Tek-life.html">Tek-Life</a>
+                        <div class="submenu">
+                            <a href="../../BTL3/Tek-life/Metaverse.html">Metaverse</a>
+                            <a href="../../BTL3/Tek-life/How-to.html">How-To</a>
+                            <a href="../../BTL3/Tek-life/Wow.html">Wow</a>
+                            <a href="../../BTL3/Tek-life/2-Mall.html">2-Mall</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a class="title-menu" href="../../BTL1/Star/WebStar.html">Star</a>
+                        <div class="submenu">
+                            <a href="../../BTL1/Star/WebSaoViet.html">Sao Việt</a>
+                            <a href="../../BTL1/Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
+                            <a href="../../BTL1/Star/WebTVShow.html">TV Show</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../XA_HOI/XaHoi.html">Xã hội</a>
+                        <div class="submenu">
+                            <a href="../XA_HOI/PhapLuat.html">Pháp luật</a>
+                            <a href="../XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
+                            <a href="../XA_HOI/SongXanh.html">Sống xanh</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a class="title-menu" href="../../BTL3/Hocduong/Hocduong.html">Học đường</a>
+                        <div class="submenu">
+                            <a href="../DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="../../BTL3/Hocduong/Duhoc.html">Du học</a>
+                            <a href="../../BTL3/Hocduong/Bantin46.html">Bản tin 46'</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
+                        <div class="submenu">
+                            <a href="../DOI_SONG/ChumAnh.html">Chùm ảnh</a>
+                            <a href="../DOI_SONG/KhamPha.html">Khám phá</a>
+                            <a href="../DOI_SONG/Di.html">Dị</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                        <div class="submenu">
+                            <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                            <a href="../SUC_KHOE/TinTuc.html">Tin tức</a>
+                            <a href="../SUC_KHOE/DinhDuong.html">Dinh dưỡng</a>
+                            <a href="../SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
+                            <a href="../SUC_KHOE/GioiTinh.html">Giới tính</a>
+                            <a href="../SUC_KHOE/CacBenh.html">Các bệnh</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="border-solid"></div>
+            <div class="web-info">
+                <span class="title-mini-web">Tải app</span>
+                <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BB%A3/id670518264?ls=1" target="_blank">IOS</a>
+                <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                <a class="title-mini-web" href="#liên hệ" >Liên hệ</a>
+                <a class="mini-web" href="https://kenh14.vn/adv.chn">Quảng cáo</a>
+            </div>
+        </div>
+    </header>
+    </div>
+    <div class="space">
+    </div>
+    <div id="page">
+        <div class="hi_2">
+            <ul>
+                <li><a href="Money-Z.html"><b>MONEY-Z</b></a></li>
+                <li><a href="../DOI_SONG/House_n_Home.html"><b>HOUSE N HOME</b></a></li>
+            </ul>
+        </div><br>
+        <hr/>
+        <div class="body">
+            <div class="one">
+                <section>
+                    <a href="#"><img src="../images/anh223.png"width=570px></a>
+                    <p><b><a href="#">Vợ chồng kiếm 30-40 triệu/tháng nuôi 2 con vẫn có đất, có vàng tiết kiệm: Tiêu khéo quá, không có chỗ nào cần vén thêm!</a></b></p>
+                    <p>Cặp đôi này có cách quản lý tài chính đáng nể.</a></p>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh224.png"></a>
+                    <p><b><a href="#">8 cách sử dụng thẻ tín dụng có lợi nhất: Thời điểm chi tiêu, thanh...</a></b></p>
+                    <a href="#"><img src="../images/anh225.png"></a>
+                    <p><b><a href="#">Sổ tiết kiệm 7 tỷ của cụ bà U80 bỗng biến thành hợp đồng bảo hiểm, nhân...</a></b></p>
+                </aside>
+            </div>
+            <hr/><br>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../images/anh538.png" class="card-image">
+                                    <h3 class="card-title">Nghiện sống tối giản, cô gái lương 13 triệu nhưng tháng nào cũng mua được vàng: Tất cả nhờ 3 nguyên tắc đơn giản</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../images/anh539.png"class="card-image">
+                                    <h3 class="card-title">Mua 3 chỉ vàng để dành đến Tết tặng mẹ, mỗi tháng tiết kiệm 1 triệu để có 10 triệu biếu bố mẹ tiêu Tết!</h3>             
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../images/anh540.png"class="card-image">
+                                    <h3 class="card-title">Chưa tốt nghiệp Đại học đã kiếm 15-22 triệu/tháng, tháng nào cũng mua vàng đều như vắt tranh</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../images/anh541.png"  class="card-image">
+                                <h3 class="card-title">Dân văn phòng nói về khoản tiền “không đáng là bao” nhưng lại là thủ phạm khiến mình nghèo đi, ai cũng dễ mắc</h3>
+                                </a>                                   
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../images/anh542.png "  class="card-image">
+                                    <h3 class="card-title">Giá vàng chạm đỉnh, dân văn phòng than thở: Lương giảm nhưng vàng tăng bốc đầu</h3>
+                                </a>     
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../images/anh543.png"class="card-image">
+                                    <h3 class="card-title">Chàng trai kiếm hơn 20 triệu/ tháng nhưng không tiết kiệm được đồng nào: Nhìn bảng chi tiêu ai cũng lắc đầu</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../images/anh544.png"  class="card-image">
+                                    <h3 class="card-title">Từ giờ tới cuối năm không đi ăn ngoài để dành tiền tiêu Tết</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh226.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Vợ chồng trẻ thu nhập 30 triệu đồng/tháng nhưng tháng nào cũng “nhẵn túi”, CĐM thở dài: “Thế là vun vén rồi, không thể tiết kiệm hơn nữa”</a></b></p>
+                    <p><b>Money-Z  -</b><time> 8 giờ trước</time></p>
+                    <p>Ngoài cách gia tăng thu nhập, chị H. gần như không còn lựa chọn nào khác để giúp tài chính gia đình sớm ổn định.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh227.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cô gái 28 tuổi, thu nhập 80 triệu đồng/tháng vẫn than thở không tiết kiệm được đồng nào – Ngó qua bảng chi tiêu, CĐM tá hoả!</a></b></p>
+                    <p><b>Money-Z  -</b><time> 10 giờ trước</time></p>
+                    <p>Thói quen tiêu tiền của cô gái khiến nhiều người "xanh mặt".</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh228.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cô gái 27 tuổi từ thị trấn nhỏ lên thành phố, tiết kiệm được 1,5 tỷ đồng để mua nhà sau 3 năm tốt nghiệp</a></b></p>
+                    <p><b>Money-Z  -</b><time> 11 giờ trước</time></p>
+                    <p>3 năm sau khi tốt nghiệp đại học, Elene Gu Gu dựa vào nỗ lực của chính mình để đạt được sự độc lập về tài chính, sở hữu một chiếc ô tô và...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh229.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Sếp doanh nghiệp địa ốc nói: Từ năm 2026, bảng giá đất mới kéo theo thuế đất tăng sẽ khiến giá nhà không thể giảm như giai đoạn 2011-2013</a></b></p>
+                    <p><b>Money-Z  -</b><time> 12 giờ trước</time></p>
+                    <p>Ông Nguyễn Anh Quê - Chủ tịch Tập đoàn G6, Ủy viên Ban Chấp hành Hiệp hội Bất động sản Việt Nam cho rằng, giá nhà ở sẽ không thể...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh230.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">“Tôi chờ đến cuối năm để mua đất giá rẻ”</a></b></p>
+                    <p><b>Money-Z  -</b><time> 13 giờ trước</time></p>
+                    <p>Đó là tâm sự của một nhóm người mua vẫn trong trạng thái chờ đợi, nghe ngóng. Họ vẫn kì vọng từ nay đến cuối năm thị trường sẽ có thêm một...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh231.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Giá vàng hôm nay, 19-10: Tăng dữ dội, lập kỷ lục mới</a></b></p>
+                    <p><b>Money-Z  -</b><time> 14 giờ trước</time></p>
+                    <p>Giá vàng hôm nay lập kỷ lục mới khi nhà đầu tư lo ngại căng thẳng leo thang ở Trung Đông, sự khó lường xung quanh cuộc bầu cử tại Mỹ.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh232.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Làm việc quên cả ăn nhưng lương mãi chỉ 15 triệu đồng</a></b></p>
+                    <p><b>Money-Z  -</b><time> 21 giờ trước</time></p>
+                    <p>Biết cách làm việc hiệu quả không chỉ giúp bạn có cuộc sống thoải mái mà mức lương cũng tăng đáng kể.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh233.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Triển lãm ảnh thú vị nhất tại TP.HCM lúc này: Sự giao thoa giữa nghệ thuật và giá trị đầu tư</a></b></p>
+                    <p><b>Money-Z  -</b><time> 1 ngày trước</time></p>
+                    <p>Không gian triển lãm ảnh "Sống như nhà đầu tư" tại Bưu Điện Thành Phố TP. Hồ Chí Minh đang thu hút sự quan tâm đặc biệt từ cộng đồng....</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh234.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Lương 6 triệu vẫn tiết kiệm được 2-3 triệu: 1 năm shopping tối đa 2 lần, thèm trà sữa thì tự mua về pha</a></b></p>
+                    <p><b>Money-Z  -</b><time> 1 ngày trước</time></p>
+                    <p>Nhìn cách 2 cô gái này quản lý chi tiêu, tiết kiệm mà phải thốt lên một từ “nể”!</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh235.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cụ ông đến ngân hàng rút sổ tiết kiệm 7 tỷ đồng, nhân viên khẳng định: Sổ này là giả, tiền đã rút từ 25 năm trước</a></b></p>
+                    <p><b>Money-Z  -</b><time> 1 ngày trước</time></p>
+                    <p>Khi nhận được thông tin này, người đàn ông cảm thấy vô cùng hốt hoảng. Ông khẳng định chưa từng giao cuốn sổ này cho ai. Ông cũng...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh236.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nếu bạn còn chi nhiều tiền cho 5 thứ này thì xin khuyên thật: Tương lai khó mà "sáng" được</a></b></p>
+                    <p><b>Money-Z  -</b><time> 1 ngày trước</time></p>
+                    <p> Khi có mức thu nhập chưa cao, bạn hãy cân nhắc chi tiêu thật kỹ lưỡng, tránh lãng phí tiền bạc vào những khoản tiêu xài không cần thiết.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh237.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh237.1.png" width="200px"></a>
+                    <p><b><a href="#">Cô nhân viên văn phòng dùng tới 3 chiếc thẻ tín dụng cùng lúc, chia sẻ bí kíp sử dụng để được hoàn đến 1 triệu đồng mỗi tháng mà ai cũng áp dụng được</a></b></p>
+                    <p><b>Money-Z  -</b><time> 1 ngày trước</time></p>
+                    <p>Biết tận dụng các tính năng của thẻ tín dụng mà Ngọc không những không mất phí thường niên mà còn được hoàn kha khá tiền mỗi tháng.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh238.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cách tiết kiệm hiệu quả đến khó tin của 2 bà mẹ "khéo vén": Tăng xin giảm mua, mỗi tháng "tậu" 1 chỉ vàng</a></b></p>
+                    <p><b>Money-Z  -</b><time> 1 ngày trước</time></p>
+                    <p>Bí quyết tiết kiệm của 2 bà mẹ này quả thực đáng học hỏi.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh239.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Người đàn ông trúng độc đắc 35 tỷ đồng nhưng chỉ nhận được 10 tỷ đồng, đại lý khẳng định: Số tiền còn lại đã có người lấy hộ</a></b></p>
+                    <p><b>Money-Z  -</b><time> 1 ngày trước</time></p>
+                    <p> Người đàn ông cảm thấy vô cùng khó hiểu khi số tiền trúng giải lại chia thành 2 đợt nhận </p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh240.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Người phụ nữ chi hơn 351 triệu đồng mua bảo hiểm nhân thọ, 5 năm sau đi rút tiền thì được thông báo: "Chị muốn nhận đủ tiền thì phải chờ 99 năm nữa"</a></b></p>
+                    <p><b>Money-Z  -</b><time> 1 ngày trước</time></p>
+                    <p>Sau 5 năm mua bảo hiểm, người phụ nữ Trung Quốc mới phát hiện ra gói bảo hiểm của mình có thời hạn lên đến 104 năm.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh241.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Giá vàng hôm nay, 18-10: Lao lên lập kỷ lục mới</a></b></p>
+                    <p><b>Money-Z  -</b><time> 1 ngày trước</time></p>
+                    <p>Giá vàng hôm nay vọt lên đỉnh cao mới khi tình hình địa chính trị tiếp tục căng thẳng, nhà đầu tư tăng nhu cầu trú ẩn vốn vào kim loại quý.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh242.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Đang là Giám đốc doanh nghiệp lớn, đùng cái trở thành người thất nghiệp, tôi nhận ra: Tiền trong túi quyết định sự tự tin trong người!</a></b></p>
+                    <p><b>Money-Z  -</b><time> 2 ngày trước</time></p>
+                    <p> Không có công việc nào là mãi mãi, và làn sóng sa thải cũng chẳng chừa một ai, dù bạn là Giám đốc hay chỉ là một nhân viên thực tập.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh243.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Xin nói thật: Nếu còn giữ 1 trong những sai lầm này thì chỉ khiến bạn NGHÈO đi</a></b></p>
+                    <p><b>Money-Z  -</b><time> 2 ngày trước</time></p>
+                    <p>Ngày nay, khác biệt về nhận thức của một người sẽ tạo nên khác biệt về sự giàu có và khả năng kiếm tiền.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../images/vd29.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">“Chị bán gạo” kể chuyện livestream, bị nhân viên “bĩu môi” và hé lộ 1 nguyên tắc cứ xuống tiền là không lo lỗ</a></b></p>
+                    <p><b>Money-Z  -</b><time> 2 ngày trước</time></p>
+                    <p>CEO Linh Đặng được cộng đồng mạng ưu ái đặt nickname “chị bán gạo 10 điểm tinh tế”.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh244.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Triển lãm ảnh độc đáo tại Bưu Điện Thành Phố Hồ Chí Minh: Khơi dậy tinh thần "Sống Như Nhà Đầu Tư"</a></b></p>
+                    <p><b>Money-Z  -</b><time> 2 ngày trước</time></p>
+                    <p>Cuối tuần này, ở Bưu Điện Thành Phố Hồ Chí Minh, một biểu tượng lịch sử lâu đời ngay tại quận 1 trung tâm Sài Gòn, sẽ diễn ra sự kiện triển...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh245.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nên sống ở Thủ đô đắt đỏ hay về quê an yên trên mảnh đất 8 tỷ đồng? Người phụ nữ U40 xin tư vấn và cái kết bất ngờ!</a></b></p>
+                    <p><b>Money-Z  -</b><time> 2 ngày trước</time></p>
+                    <p>CĐM chỉ ra một điểm mấu chốt khiến chị D gặp phải bế tắc: Đó là mong muốn quá nhiều.</p>
+                </aside>
+            </div>
+            <hr/>
+        </div>
+        <div class="footer-menu">
+            <a href="../../BTL1/Star/WebStar.html">Star</a> | 
+            <a href="../../BTL1/Ciné/WebCine.html">Ciné</a> |
+            <a href="../../BTL1/Musik/WebMusik.html">Musik</a> | 
+            <a href="../../BTL1/Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | 
+            <a href="#">Sport</a> | 
+            <a href="../DOI_SONG/DoiSong.html">Đời sống</a> | 
+            <a href="../XA_HOI/XaHoi.html">Xã hội</a> | 
+            <a href="../AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a> | 
+            <a href="../../BTL3/Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a> | 
+            <a href="../DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | 
+            <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a> | 
+            <a href="../../Tek-life/Tek-life.html">Tek-Life</a> | 
+            <a href="../../BTL3/Hocduong/Hocduong.html">Học đường</a>  | 
+            <a href="../MONEY-Z/Money-Z.html">Money-Z</a> | 
+            <a href="../../BTL3/Video/Danghot.html">Video</a>
+        </div>
+        <div class="footer-max">
+            <div class="footer-table1">
+                <table>
+                    <tr>
+                        <td>
+                            <section>
+                                <a href="../../BTL1/demoBTL.html"><img src="../images/logo1.png" ></img></a>
+                            </section>
+                            <aside>
+                                <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                                <div class="footer-table-mini">
+                                    <div class="footer-mini1">
+                                        <a href="#"><img src="../images/logodauHoi.png" width="20px"></a>
+                                        <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                    </div>
+                                    <div class="footer-mini2">
+                                        <a href="#"><img src="../images/logoEmaildo.png" width="25px"></a>
+                                        <p><a href="#">bandoc@kenh14</a></p>
+                                    </div>
+                                </div>
+                                <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                            </aside>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-table2">
+                <a href="#"><img src="../images/logo2.png" width="530px" height="130px"></img></a>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="footer-mini-one">
+                <h4>TRỤ SỞ HÀ NỘI</h4>
+                <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+                <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+                <div class="logo-mini">
+                    <a href="#"><img src="../images/logoDC.png" width="17px"></a>
+                    <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                </div>
+    
+                <div class="footer-mini-one-1">
+                    <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                    <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                    <span>Điện thoại: 028 7307 7979</span>
+                    <div class="logo-mini">
+                        <a href="#"><img src="../images/logoDC.png" width="15px"></a>
+                        <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                    </div>
+                </div>    
+            </div>
+            <hr/>
+            <div class="footer-mini-two">
+                <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+                <span>Bà Nguyễn Bích Minh</span><br>
+                <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+                <div class="logo-mini">
+                    <img src="../images/logoDT.png" width="20px"></a>
+                    <span>024.73095555 (máy lẻ 62.370)</span><br>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="../images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <h4 id="liên hệ"> LIÊN HỆ QUẢNG CÁO</h4>
+                <div class="logo-mini">
+                    <img src="../images/logoDT.png" width="20px"></a>
+                    <span>02473007108</span>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="../images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <div class="chat-table-1">
+                    <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+                </div>
+                <div class="chat-table-2">
+                    <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="chat-table-3">
+                    <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+                </div>
+            </div>
+            <hr class="DK"/>
+            <div class="footer-mini-three">
+                <a href=""><img src="../images/logoVCCorp.png" width="120px" ></a>
+                <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+                <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+                <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+            
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

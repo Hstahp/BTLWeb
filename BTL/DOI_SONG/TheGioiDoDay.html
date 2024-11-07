@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenh14 </title>
+    <link rel="stylesheet" href="../CSS_1/styles.css">
+    <link rel="import" href="component.html">
+    <script src="../Scrip.js/script.js"></script>
+    <!-- Thêm liên kết Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+       <!-- Linking SwiperJS CSS -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+       <!-- Linking SwiperJS script -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <nav>
+                    <ul>
+                       <li><a href="../../BTL3/EMAGAZINE/EMAGAZINE.html"><span style="color: rgb(248, 137, 9);">&#9733;</span> EMAGAZINE</a></li>
+                        <li><a href="#"><span style="color: rgb(248, 137, 9);">&#9733;</span>GENZ AREA</a></li>
+                        <li><a href="../../BTL3/XANHCHUA/XANHCHUA.html"><span style="color: rgb(248, 137, 9);">&#9733;</span>XANH CHƯA - CHECK!!!</a></li>
+                        <li><a href="../../BTL3/SHOWLIVE/SHOWLIVE.html"><span style="color: rgb(248, 137, 9);">&#9733;</span>SHOWLIVE</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="../../BTL1/demoBTL.html"><img src="../images/logo.png" alt="Kenh14 Logo"></a>
+                    <div class="logo-text">
+                        <span class="logo-main">kenh14.vn</span>
+                        <span class="logo-sub">TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</span>
+                    </div>
+                </div>
+                <div class="trending-topics">
+                    <span class="arrow-icon">&#x2197;</span>
+                    <a href="#" style="font-size: 13px;">#Hà Nội 10 trên 10</a>
+                    <a href="#" style="font-size: 13px;">#bão Milton mạnh nhất 100 năm đổ bộ Mỹ</a>
+                    <a href="#" style="font-size: 13px;">#Dự hí Quán Đình Foodmarks</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="mains-menu">
+                    <li><a href="../../BTL1/demoBTL.html"><i class="fas fa-home"></i></a></li>
+                    <li><a href="../../BTL1/Star/WebStar.html">Star</a></li>
+                    <li><a href="../../BTL1/Ciné/WebCine.html">Ciné</a></li>
+                    <li><a href="../../BTL1/Musik/WebMusik.html">Musik</a></li>
+                    <li><a href="../../BTL1/Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a></li>
+                    <li><a href="../DOI_SONG/DoiSong.html">Đời sống</a></li>
+                    <li><a href="../MONEY-Z/Money-Z.html">Money-Z</a></li>
+                    <li><a href="../AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a></li>
+                    <li><a href="../XA_HOI/XaHoi.html">Xã hội</a></li>
+                    <li><a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a></li>
+                    <li><a href="../../BTL3/Tek-life/Tek-Life.html">Tek-life</a></li>
+                    <li><a href="../../BTL3/Hocduong/Hocduong.html">Học đường</a></li>
+                    <li><a href="../../BTL3/Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a></li>
+                    <li><a href="../../BTL3/Video/Danghot.html">Video</a></li>
+                    <li class="main-menu">
+                        <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="subs-menu">
+            <div class="container">
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a href="../DOI_SONG/DoiSong.html">Đời sống</a>
+                        <div class="submenu">
+                            <a href="../DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="../DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
+                            <a href="../DOI_SONG/House_n_Home.html">House n Home</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a class="title-menu" href="../../BTL3/Xemmualuon/Xemmualuon.html">Xem mua luôn</a>
+                        <div class="submenu">
+                            <a href="../../BTL3/Xemmualuon/Thoitrang.html">Thời trang</a>
+                            <a href="../../BTL3/Xemmualuon/Dep.html">Đẹp</a>
+                            <a href="../../BTL3/Xemmualuon/MOMMYmuadi.html">Mommy mua di</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="#">Sport</a>
+                        <div class="submenu">
+                            <a href="#">Bóng đá</a>
+                            <a href="#">Bóng rổ</a>
+                            <a href="#">Bóng chuyền</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                           <a class="title-menu" href="..../../BTL1/Musik/WebMusik.html">Musik</a>
+                            <div class="submenu">
+                                <a href="../../BTL1/Musik/WebAuMy.html">Âu-Mỹ</a>
+                                <a href="../../BTL1/Musik/WebChauA.html">Châu Á</a>
+                                <a href="../../BTL1/Musik/WebVietNam.html">Việt Nam</a>
+                                <a href="../../BTL1/demoBTL.html">Hip-hop neva die</a>
+                            </div>
+                    </div>
+                    <div class="menu-column">
+                        <a class="title-menu" href="..../../BTL1/Ciné/WebCine.html">Ciné</a>
+                        <div class="submenu">
+                            <a href="../../BTL1/Ciné/WebPhimChieuRap.html">Phim chiếu rạp</a>
+                            <a href="../../BTL1/Ciné/WebPhimVietNam.html">Phim Việt Nam</a>
+                            <a href="../../BTL1/Ciné/WebSeriesTruyenHinh.html">Series truyền hình</a>
+                            <a href="../../BTL1/Ciné/WebHoaNguHanQuoc.html">Hoa ngữ - Hàn Quốc</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a class="title-menu"href="../../BTL3/Tek-life/Tek-life.html">Tek-Life</a>
+                        <div class="submenu">
+                            <a href="../../BTL3/Tek-life/Metaverse.html">Metaverse</a>
+                            <a href="../../BTL3/Tek-life/How-to.html">How-To</a>
+                            <a href="../../BTL3/Tek-life/Wow.html">Wow</a>
+                            <a href="../../BTL3/Tek-life/2-Mall.html">2-Mall</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <a class="title-menu" href="../../BTL1/Star/WebStar.html">Star</a>
+                        <div class="submenu">
+                            <a href="../../BTL1/Star/WebSaoViet.html">Sao Việt</a>
+                            <a href="../../BTL1/Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
+                            <a href="../../BTL1/Star/WebTVShow.html">TV Show</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../XA_HOI/XaHoi.html">Xã hội</a>
+                        <div class="submenu">
+                            <a href="../XA_HOI/PhapLuat.html">Pháp luật</a>
+                            <a href="../XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
+                            <a href="../XA_HOI/SongXanh.html">Sống xanh</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a class="title-menu" href="../../BTL3/Hocduong/Hocduong.html">Học đường</a>
+                        <div class="submenu">
+                            <a href="../DOI_SONG/NhanVat.html">Nhân vật</a>
+                            <a href="../../BTL3/Hocduong/Duhoc.html">Du học</a>
+                            <a href="../../BTL3/Hocduong/Bantin46.html">Bản tin 46'</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
+                        <div class="submenu">
+                            <a href="../DOI_SONG/ChumAnh.html">Chùm ảnh</a>
+                            <a href="../DOI_SONG/KhamPha.html">Khám phá</a>
+                            <a href="../DOI_SONG/Di.html">Dị</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                        <div class="submenu">
+                            <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a>
+                            <a href="../SUC_KHOE/TinTuc.html">Tin tức</a>
+                            <a href="../SUC_KHOE/DinhDuong.html">Dinh dưỡng</a>
+                            <a href="../SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
+                            <a href="../SUC_KHOE/GioiTinh.html">Giới tính</a>
+                            <a href="../SUC_KHOE/CacBenh.html">Các bệnh</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="border-solid"></div>
+            <div class="web-info">
+                <span class="title-mini-web">Tải app</span>
+                <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BB%A3/id670518264?ls=1" target="_blank">IOS</a>
+                <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                <a class="title-mini-web" href="#liên hệ" >Liên hệ</a>
+                <a class="mini-web" href="https://kenh14.vn/adv.chn">Quảng cáo</a>
+            </div>
+        </div>
+    </header>
+    </div>
+    <div class="space">
+    </div>
+    <div id="page">
+        <div class="hi_1">
+            <ul>
+                <li><a href="TheGioiDoDay.html"><b>THẾ GIỚI GIÓ ĐÂY</b></a></li>
+                <li><a href="ChumAnh.html"><b>CHÙM ẢNH</b></a></li>
+                <li><a href="KhamPha.html"><b>KHÁM PHÁ</b></a></li>
+                <li><a href="Di.html"><b>DỊ</b></a></li>
+                <li><a href="../XA_HOI/XaHoi.html"><b>XÃ HỘI</b></a></li>
+                <li><a href="../DOI_SONG/DoiSong.html"><b>ĐỜI SỐNG</b></a></li>
+            </ul>
+        </div><br>
+        <hr/>
+        <div class="body">
+            <div class="one">
+                <section>
+                    <a href="#"><img src="../images/anh145.png"width=570px></a>
+                    <p><b><a href="#">Xác con vật trắng nhợt kỳ dị trôi dạt bờ biển khiến nhiều người kinh hãi đến "mất ngủ"</a></b></p>
+                    <p>Một sinh vật biển nhợt nhạt với hàm răng sắc nhọn trôi dạt vào bờ đã khiến nhiều người không khỏi hoang mang.</a></p>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh146.png"></a>
+                    <p><b><a href="#">Khoe cuộc sống được vợ 'bao nuôi', nam thanh niên gây tranh cãi</a></b></p>
+                    <a href="#"><video autoplay loop muted playsinline width=180px ><source src="../images/vd19.mp4" type="video/mp4"></video></a>
+                    <p><b><a href="#">Chuyên gia cảnh báo về 1 cơn bão đang hình thành, và đây là nơi có thể bị...</a></b></p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh147.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Ông Donald Trump tự công khai tiết lộ tình hình yêu đương của con trai Barron</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b><time> 29 phút trước</time></p>
+                    <p>Trong chia sẻ mới trên truyền thông, cựu Tổng thống Mỹ đã có những chia sẻ cởi mở về con trai út 18 tuổi.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh148.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cố tình mua gói mì hết hạn, người phụ nữ kiện siêu thị ra toà, đòi bồi thường 10 lần: Phán quyết của tòa gây bất ngờ</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 1 giờ trước</time>
+                    <p>Dù phát hiện gói mì đã hết hạn, cô Lý vẫn cố tình mua về ăn.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh149.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Vô Danh Thần Tăng ngưỡng mộ cao thủ có võ công hàng đầu này nhưng Kim Dung đã cố tình "giết" ông ta</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 1 giờ trước</time>
+                    <p>Vị cao thủ bí ẩn khiến Vô Danh Thần Tăng cũng phải kính nể là ai?</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh150.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Ám ảnh 1 sao đe doạ hàng chục triệu shipper: Quỳ gối cầu xin vì sợ muộn giờ, đập vỡ điện thoại khi bị đánh giá xấu, chạy xe bất chấp tính mạng… nhưng đồng lương ngày càng ít đi</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 2 giờ trước</time>
+                    <p>Hàng chục triệu nhân viên giao hàng ở Trung Quốc đang chịu áp lực khổng lồ từ phía khách hàng và từ phía nền tảng ứng dụng.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh151.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Hé lộ số phận tàu ngầm Anh chứa thi thể 64 thủy thủ</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 3 giờ trước</time>
+                    <p>Việc phát hiện ra xác tàu đắm trong Thế chiến thứ II đã giải quyết được bí ẩn kéo dài 81 năm về số phận của chiếc tàu ngầm HMS Trooper.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh152.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cuba mất điện toàn quốc</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 5 giờ trước</time>
+                    <p>Cuba mất điện toàn quốc sau khi một trong những nhà máy điện lớn của nước này gặp sự cố khiến lưới điện quốc gia phải ngừng hoạt động.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh153.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cô gái chứng minh truyện ngôn tình không nói quá, chỉ là trí tưởng tượng của chúng ta quá hạn chế</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 6 giờ trước</time>
+                    <p>Các nhân vật trong truyện đôi khi còn không "đuổi kịp" người thật ngoài đời.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh154.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Sinh vật 600 triệu tuổi "khó định nghĩa" hiện hình nguyên vẹn</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 7 giờ trước</time>
+                    <p>S mang dấu chấm hỏinh vật kỳ lại trên lưng là đại diện cho lớp động vật vĩ mô phức tạp đầu tiên xuất hiện trên địa cầu vào cuối liên đại Ẩn Sinh.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh155.png"></a>
+                </section>
+                <aside>
+                    <a href="#"><img src="../images/anh155.1.png" width="200px"></a>
+                    <p><b><a href="#">Thảm kịch của nhân loại khi “thiên nga xanh” vỗ cánh</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 7 giờ trước</time>
+                    <p>Chúng ta đã trở thành những nạn nhân của "thiên nga xanh" mà có thể không hề hay biết.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh156.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Tổn thất do bão Helene và Milton dự kiến vượt quá "mức thiệt hại lịch sử" 100 tỷ USD</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 8 giờ trước</time>
+                    <p>Bão Helene và Milton có thể tham gia danh sách cùng các siêu bão như Katrina, Sandy và Harvey, với mức thiệt hại lên tới hơn 50 tỷ USD cho...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh157.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Bố mẹ là người châu Á nhưng sinh ra con có nét lai tây: Xét nghiệm ADN hai lần, kết quả ngoài dự kiến</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 9 giờ trước</time>
+                    <p>Hóa ra, bà ngoại của đứa bé là người nắm giữ bí mật.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh158.png"></a>                
+                </section>
+                <aside>
+                    <p><b><a href="#">Va chạm xe nhưng ai cũng lo lắng cho tài xế ô tô thay vì cô gái xinh đẹp lái moto, tất cả chỉ bởi một chi tiết</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 16 giờ trước</time>
+                    <p>Vụ việc xảy ra tại tỉnh Sơn Tây (Trung Quốc) đã thu hút sự chú ý của nhiều người trên mạng xã hội.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh159.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Thanh niên thất nghiệp nhưng vẫn giàu nhất làng, chỉ ra ngoài 2 lần/ tháng để mua giấy trắng: Bí mật đằng sau bị cảnh sát vạch trần</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 17 giờ trước</time>
+                    <p>Nguồn gốc khối tài sản khủng của nam thanh niên 21 tuổi khiến cả dân làng phải tò mò, nghi vấn.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh160.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Hoàng gia Anh sở hữu ngôi nhà đắt nhất thế giới, trị giá hơn 120 nghìn tỷ với gần 800 phòng</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 18 giờ trước</time>
+                    <p>Nơi ở chính thức của các vị vua Anh từ năm 1837 được mệnh danh là ngôi nhà đắt nhất thế giới với giá trị ước tính lên tới 3,7 tỷ bảng Anh...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh161.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Quốc gia tăng trưởng nhanh nhất thế giới phát 50 triệu đồng cho mỗi người dân: GDP nhảy vọt 50% trong nửa đầu năm, sắp bước vào hàng ngũ 'ông lớn' dầu mỏ</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 19 giờ trước</time>
+                    <p>Quốc gia Nam Mỹ này đang tặng khoản tiền tương đương 2.000 USD cho mỗi hộ gia đình, trong bối cảnh nước này giàu lên nhờ các mỏ dầu mới...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../images/vd20.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nam sinh 15 tuổi trộm chìa khoá xe gây tai nạn kinh hoàng khiến 3 người tử vong tại chỗ: Một hành động ngay khi xuống xe khiến nhiều người rùng mình</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 20 giờ trước</time>
+                    <p>Nam sinh 15 tuổi tên Zeng tại Đài Bắc (Đài Loan, Trung Quốc) lén điều khiển xe của ông nội và gây ra tai nạn vào khoảng 6 giờ tối ngày...</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh162.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Cảnh tượng thiên văn hiếm có: Siêu Trăng tháng 10 kết hợp với Sao Chổi</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 21 giờ trước</time>
+                    <p>Siêu Trăng năm nay đạt đỉnh điểm vào đêm 17/10, diễn ra đúng thời điểm Sao Chổi Tsuchinshan-Atlas đang ở gần đó.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh163.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Nhận tin báo, ông lão 70 tuổi chi 8 tỷ đồng mua vàng rồi nói giao cho cảnh sát: Một tháng sau băng nhóm tội phạm bị bắt giữ</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 23 giờ trước</time>
+                    <p>Chỉ khoảng 1 tháng sau vụ việc của ông lão 70 tuổi, đường dây tội phạm đã bị cảnh sát vạch trần vì hành vi vi phạm pháp luật nghiêm trọng.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh164.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Loài hoa mới chưa từng có trên thế giới được phát hiện ở Việt Nam</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 23 giờ trước</time>
+                    <p>Các nhà khoa học cho biết, đây là loài thực vật đặc hữu của Việt Nam, trước đó chưa từng được con người biết đến.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh165.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Vợ chồng Harry và Meghan tiến gần hơn đến khả năng hàn gắn rạn nứt với Hoàng gia Anh sau động thái quan trọng</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 23 giờ trước</time>
+                    <p>Động thái bất ngờ này được kỳ vọng là bước tiến để hàn gắn mối quan hệ rạn nứt với Hoàng gia Anh.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../images/vd21.mp4" type="video/mp4"></video></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Tai nạn thót tim: Người phụ nữ bị bồn nước rơi trúng đầu giữa đường, những gì diễn ra sau đó còn sốc hơn</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b></p><time> 24 giờ trước</time>
+                    <p>Khi đang đi bộ giữa đường, một bồn nước lớn "từ trên trời rơi xuống" đã rơi trúng đầu người phụ nữ.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh166.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Đi rút tiền tiết kiệm sau 4 năm, cô gái được thông báo “tài khoản không còn xu nào”: Lý do rất bất ngờ, ngân hàng không hề sai</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b><time> 1 ngày trước</time></p>
+                    <p>Việc "tiền không cánh mà bay" khiến nữ khách hàng sốc và không thể hiểu nổi vì sao.</p>
+                </aside>
+            </div>
+            <hr/>
+            <div class="two">
+                <section>
+                    <a href="#"><img src="../images/anh167.png"></a>
+                </section>
+                <aside>
+                    <p><b><a href="#">Đưa con đi học, người đàn ông phát hiện cảnh tượng bất ngờ trên cây</a></b></p>
+                    <p><b>Thế Giới Đó Đây -</b><time> 1 ngày trước</time></p>
+                    <p>Một ông bố tin chắc rằng ông đã phát hiện một con "linh miêu hoặc báo đốm" dài 1,5m trên đường đến trường.</p>
+                </aside>
+            </div>
+            <hr/>
+        </div>
+        <div class="footer-menu">
+            <a href="../../BTL1/Star/WebStar.html">Star</a> | 
+            <a href="../../BTL1/Ciné/WebCine.html">Ciné</a> |
+            <a href="../../BTL1/Musik/WebMusik.html">Musik</a> | 
+            <a href="../../BTL1/Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | 
+            <a href="#">Sport</a> | 
+            <a href="../DOI_SONG/DoiSong.html">Đời sống</a> | 
+            <a href="../XA_HOI/XaHoi.html">Xã hội</a> | 
+            <a href="../AN_QUAY_DI/An.html">Ăn - Quẩy - Đi</a> | 
+            <a href="../../BTL3/Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a> | 
+            <a href="../DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | 
+            <a href="../SUC_KHOE/SucKhoe.html">Sức khỏe</a> | 
+            <a href="../../Tek-life/Tek-life.html">Tek-Life</a> | 
+            <a href="../../BTL3/Hocduong/Hocduong.html">Học đường</a>  | 
+            <a href="../MONEY-Z/Money-Z.html">Money-Z</a> | 
+            <a href="../../BTL3/Video/Danghot.html">Video</a>
+        </div>
+        <div class="footer-max">
+            <div class="footer-table1">
+                <table>
+                    <tr>
+                        <td>
+                            <section>
+                                <a href="../../BTL1/demoBTL.html"><img src="../images/logo1.png" ></img></a>
+                            </section>
+                            <aside>
+                                <p><b>ĐÓNG GÓP NỘI DUNG</b></p>
+                                <div class="footer-table-mini">
+                                    <div class="footer-mini1">
+                                        <a href="#"><img src="../images/logodauHoi.png" width="20px"></a>
+                                        <input type="button" value="CÂU HỎI THƯỜNG GẶP">
+                                    </div>
+                                    <div class="footer-mini2">
+                                        <a href="#"><img src="../images/logoEmaildo.png" width="25px"></a>
+                                        <p><a href="#">bandoc@kenh14</a></p>
+                                    </div>
+                                </div>
+                                <p>Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.</p>
+                            </aside>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-table2">
+                <a href="#"><img src="../images/logo2.png" width="530px" height="130px"></img></a>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="footer-mini-one">
+                <h4>TRỤ SỞ HÀ NỘI</h4>
+                <span>Tầng 21, Tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, Hà Nội.</span><br>
+                <span>Điện thoại: 024 7309 5555, máy lẻ 62.370</span>
+                <div class="logo-mini">
+                    <a href="#"><img src="../images/logoDC.png" width="17px"></a>
+                    <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                </div>
+    
+                <div class="footer-mini-one-1">
+                    <h4>TRỤ SỞ TP.HỒ CHÍ MINH</h4>
+                    <span>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần, phường 6, quận 3, TP. Hồ Chí Minh.</span><br>
+                    <span>Điện thoại: 028 7307 7979</span>
+                    <div class="logo-mini">
+                        <a href="#"><img src="../images/logoDC.png" width="15px"></a>
+                        <span><b><a href="#">XEM BẢN ĐỒ</a></b></span>
+                    </div>
+                </div>    
+            </div>
+            <hr/>
+            <div class="footer-mini-two">
+                <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+                <span>Bà Nguyễn Bích Minh</span><br>
+                <h4>HỢP TÁC TRUYỀN THÔNG</h4>
+                <div class="logo-mini">
+                    <img src="../images/logoDT.png" width="20px"></a>
+                    <span>024.73095555 (máy lẻ 62.370)</span><br>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="../images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <h4 id="liên hệ"> LIÊN HỆ QUẢNG CÁO</h4>
+                <div class="logo-mini">
+                    <img src="../images/logoDT.png" width="20px"></a>
+                    <span>02473007108</span>
+                </div>
+                <div class="logo-mini-1">
+                    <a href="#"><img src="../images/logoThu.png" width="30px"></a>
+                    <span><a href="mailto:giaitrixahoi@admicro.vn">giaitrixahoi@admicro.vn</a></span>
+                </div>
+                <div class="chat-table-1">
+                    <button><a href="https://www.messenger.com/t/K14vn">CHAT VỚI TƯ VẤN VIÊN</a></button>
+                </div>
+                <div class="chat-table-2">
+                    <button><a href="https://kenh14.vn/adv.chn">XEM CHI TIẾT</a></button>
+                </div>
+                <div class="chat-table-3">
+                    <h4><a href="">CHÍNH SÁCH BẢO MẬT</a></h4>
+                </div>
+            </div>
+            <hr class="DK"/>
+            <div class="footer-mini-three">
+                <a href=""><img src="../images/logoVCCorp.png" width="120px" ></a>
+                <p>© Copyright 2007 - 2024 – <b>Công ty Cổ phần VCCorp</b></p>
+                <p>Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.</p>
+                <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp trên mạng số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</p>
+            
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
