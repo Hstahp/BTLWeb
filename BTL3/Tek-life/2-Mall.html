@@ -10,7 +10,11 @@
     <script src="../scri/script.js"></script>
     <!-- Thêm liên kết Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link rel="shortcut icon" href="https://kenh14cdn.com/web_images/kenh14-favicon.ico" type="image/x-icon">
+       <!-- Linking SwiperJS CSS -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+       <!-- Linking SwiperJS script -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -26,8 +30,9 @@
                     </ul>
                 </nav>
                 <div class="search-bar">
-                    <input type="text" placeholder="Tìm kiếm...">
-                    <button type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                        <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
                 </div>
             </div>
         </div>
@@ -66,109 +71,110 @@
                     <li><a href="../Hocduong/Hocduong.html">Học đường</a></li>
                     <li><a href="../Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a></li>
                     <li><a href="../Video/Danghot.html">Video</a></li>
-                    <li class="main-menu">
-                        <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+                  <li class="main-menu">
+                      <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
 
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="subs-menu">
-            <div class="container">
-                <div class="menu-row">
-                    <div class="menu-column">
-                        <a class="title-menu" href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a>
-                        <div class="submenu">
-                            <a href="../../BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
-                            <a href="../../BTL/DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
-                            <a href="../../BTL/DOI_SONG/House_n_Home.html">House n Home</a>
-                        </div>
-                    </div class="menu-column">
-                        <a href="../Xemmualuon/Xemmualuon.html">Xem mua luôn</a>
-                        <div class="submenu">
-                            <a href="../Xemmualuon/Thoitrang.html">Thời trang</a>
-                            <a href="../Xemmualuon/Dep.html">Đẹp</a>
-                            <a href="../Xemmualuon/MOMMYmuadi.html">Mommy mua di</a>
-                        </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <div class="subs-menu">
+          <div class="container">
+              <div class="menu-row">
+                  <div class="menu-column">
+                    <a class="title-menu" href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a>
+                    <div class="submenu">
+                        <a href="../../BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
+                        <a href="../../BTL/DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
+                        <a href="../../BTL/DOI_SONG/House_n_Home.html">House n Home</a>
                     </div>
-                    <div class="menu-column">
-                        <a href="#">Sport</a>
-                        <div class="submenu">
-                            <a href="#">Bóng đá</a>
-                            <a href="#">Bóng rổ</a>
-                            <a href="#">Bóng chuyền</a>
-                        </div>
-                    </div>
-                    <div class="menu-column">
-                        <a class="title-menu" href="..../../BTL1/Musik/WebMusik.html">Musik</a>
-                         <div class="submenu">
-                             <a href="../../BTL1/Musik/WebAuMy.html">Âu-Mỹ</a>
-                             <a href="../../BTL1/Musik/WebChauA.html">Châu Á</a>
-                             <a href="../../BTL1/Musik/WebVietNam.html">Việt Nam</a>
-                             <a href="../../BTL1/demoBTL.html">Hip-hop neva die</a>
-                         </div>
-                 </div>
-                 <div class="menu-column">
+                </div>
+                  <div class="menu-column">
+                    <a href="../Xemmualuon/Xemmualuon.html">Xem mua luôn</a>
+                    <div class="submenu">
+                        <a href="../Xemmualuon/Thoitrang.html">Thời trang</a>
+                        <a href="../Xemmualuon/Dẹp.html">Đẹp</a>
+                        <a href="../Xemmualuon/MOMMYmuadi.html">Mommy mua di</a>
+                      </div>
+                  </div>
+                  <div  class="menu-column">
+                      <a class="title-menu" href="#">Sport</a>
+                      <div class="submenu">
+                          <a href="#">Bóng đá</a>
+                          <a href="#">Bóng rổ</a>
+                          <a href="#">Bóng chuyền</a>
+                      </div>
+                  </div>
+                  <div class="menu-column">
+                    <a class="title-menu" href="..../../BTL1/Musik/WebMusik.html">Musik</a>
+                     <div class="submenu">
+                         <a href="../../BTL1/Musik/WebAuMy.html">Âu-Mỹ</a>
+                         <a href="../../BTL1/Musik/WebChauA.html">Châu Á</a>
+                         <a href="../../BTL1/Musik/WebVietNam.html">Việt Nam</a>
+                         <a href="../../BTL1/demoBTL.html">Hip-hop neva die</a>
+                      </div>
+                  </div>
+                  
+                  <div class="menu-column">
                     <a class="title-menu" href="..../../BTL1/Ciné/WebCine.html">Ciné</a>
                     <div class="submenu">
                         <a href="../../BTL1/Ciné/WebPhimChieuRap.html">Phim chiếu rạp</a>
                         <a href="../../BTL1/Ciné/WebPhimVietNam.html">Phim Việt Nam</a>
                         <a href="../../BTL1/Ciné/WebSeriesTruyenHinh.html">Series truyền hình</a>
                         <a href="../../BTL1/Ciné/WebHoaNguHanQuoc.html">Hoa ngữ - Hàn Quốc</a>
+                      </div>
+                  </div>
+                  <div class="menu-column">
+                    <a href="../Video/Danghot.html"> Đang hot </a>
+                    <div class="submenu">
+                        <a href="../Video/Nongnhat.html">Nóng nhất</a>
                     </div>
                 </div>
-                    <div class="menu-column">
-                        <a href="../Tek-life/Tek-life.html"> Tek-life</a>
-                        <div class="submenu">
-                            <a href="../Tek-life/Metaverse.html">Metaverse</a>
-                            <a href="../Tek-life/How-to.html">How-To</a>
-                            <a href="../Tek-life/Wow.html">Wow</a>
-                            <a href="../Tek-life/2-Mall.html">2-Mall</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-row">
-                    <div class="menu-column">
-                        <a class="title-menu" href="../../BTL1/Star/WebStar.html">Star</a>
-                        <div class="submenu">
-                            <a href="../../BTL1/Star/WebSaoViet.html">Sao Việt</a>
-                            <a href="../../BTL1/Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
-                            <a href="../../BTL1/Star/WebTVShow.html">TV Show</a>
-                        </div>
-                    </div>
-                    <div class="menu-column">
-                        <a class="title-menu" href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a>
-                        <div class="submenu">
-                            <a href="../../BTL/XA_HOI/XaHoi.html">Pháp luật</a>
-                            <a href="../../BTL/XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
-                            <a href="../../BTL/XA_HOI/SongXanh.html">Sống xanh</a>
-                        </div>
-                    </div>
-                    <div class="menu-column">
-                        <a href="../Hocduong/Hocduong.html">Học đường</a>
-                        <div class="submenu">
-                            <a href="../Hocduong/Bantin46.html">Bản tin 46'</a>
-                            <a href="../Hocduong/Duhoc.html">Du học</a>
-                            <a href="../Hocduong/Nhanvat.html">Nhân vật </a>
-                            <a href="../Hocduong/Z-Schooltour.html">Z-School tour </a>
-                        </div>
-                    </div>
-                    <div class="menu-column">
-                        <a href="../../BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
-                            <div class="submenu">
-                                <a href="../../BTL/DOI_SONG/ChumAnh.html">Chùm ảnh</a>
-                                <a href="../../BTL/DOI_SONG/KhamPha.html">Khám phá</a>
-                                <a href="../../BTL/DOI_SONG/Di.html">Dị</a>
-                            </div>
-                        </div>
-                    <div class="menu-column">
-                        <a href="../Video/Danghot.html"> Đang hot </a>
-                        <div class="submenu">
-                            <a href="../Video/Nongnhat.html">Nóng nhất</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-column">
+                  <div class="menu-column">
+                    <a href="../Tek-life/Tek-life.html"> Tek-life</a>
+                    <div class="submenu">
+                        <a href="../Tek-life/Metaverse.html">Metaverse</a>
+                        <a href="../Tek-life/How-to.html">How-To</a>
+                        <a href="../Tek-life/Wow.html">Wow</a>
+                        <a href="../Tek-life/2-Mall.html">2-Mall</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="menu-row">
+                  <div class="menu-column">
+                    <a class="title-menu" href="../../BTL1/Star/WebStar.html">Star</a>
+                    <div class="submenu">
+                        <a href="../../BTL1/Star/WebSaoViet.html">Sao Việt</a>
+                        <a href="../../BTL1/Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
+                        <a href="../../BTL1/Star/WebTVShow.html">TV Show</a>
+                      </div>
+                  </div>
+                  <div class="menu-column">
+                      <a class="title-menu" href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a>
+                      <div class="submenu">
+                          <a href="../../BTL/XA_HOI/XaHoi.html">Pháp luật</a>
+                          <a href="../../BTL/XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
+                          <a href="../../BTL/XA_HOI/SongXanh.html">Sống xanh</a>
+                      </div>
+                  </div>
+                  <div class="menu-column">
+                    <a href="../Hocduong/Hocduong.html">Học đường</a>
+                    <div class="submenu">
+                        <a href="../Hocduong/Bantin46.html">Bản tin 46'</a>
+                        <a href="../Hocduong/Duhoc.html">Du học</a>
+                        <a href="../Hocduong/Nhanvat.html">Nhân vật </a>
+                        <a href="../Hocduong/Z-Schooltour.html">Z-School tour </a>
+                      </div>
+                  </div>
+                  <div class="menu-column">
+                    <a href="../../BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
+                    <div class="submenu">
+                        <a href="../../BTL/DOI_SONG/ChumAnh.html">Chùm ảnh</a>
+                        <a href="../../BTL/DOI_SONG/KhamPha.html">Khám phá</a>
+                        <a href="../../BTL/DOI_SONG/Di.html">Dị</a>
+                      </div>
+                  </div>
+                  <div class="menu-column">
                     <a class="title-menu" href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
                     <div class="submenu">
                         <a href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
@@ -177,21 +183,23 @@
                         <a href="../../BTL/SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
                         <a href="../../BTL/SUC_KHOE/GioiTinh.html">Giới tính</a>
                         <a href="../../BTL/SUC_KHOE/Cacbenh/CacBenh.html">Các bệnh</a>
-                    </div>
+                      </div>
+                  </div>
                 </div>
-                </div>
+
+            </div>
             <div class="border-solid"></div>
             <div class="web-info">
                 <span class="title-mini-web">Tải app</span>
-                <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BA%BB/id670518264?ls=1" target="_blank">IOS</a>
+                <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BB%A3/id670518264?ls=1" target="_blank">IOS</a>
                 <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
                 <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
-                <a class="title-mini-web" href="#">Liên hệ</a>
-                <a class="mini-web" href="#">Quảng cáo</a>
+                <a class="title-mini-web" href="#liên hệ" >Liên hệ</a>
+                <a class="mini-web" href="https://kenh14.vn/adv.chn">Quảng cáo</a>
             </div>
         </div>
     </header>
-    </div>
+</div>
     <div class="space">
     </div>
     <div id="page">
@@ -201,9 +209,9 @@
                 <li><a href="Metaverse.html"><b>Metaverse</b></a></li>
                 <li><a href="How-to.html"><b>How-to</b></a></li>
                 <li><a href="Wow.html"><b>Wow!</b></a></li>
-                <li><a href="2-Mall"><b>2-Mall</b></a></li>
-                <li><a href="#"><b>DỊ</b></a></li>
-                <li><a href="#"><b>KHÁM PHÁ</b></a></li>
+                <li><a href="2-Mall.html"><b>2-Mall</b></a></li>
+                <li><a href="../../BTL/DOI_SONG/KhamPha.html"><b>KHÁM PHÁ</b></a></li>
+                <li><a href="../../BTL/DOI_SONG/Di.html"><b>Dị</b></a></li>
             </ul>
         </div><br>
         <hr/>
@@ -225,6 +233,57 @@
                 </aside>
             </div>
             <hr/>
+            <div class="container-margin">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <div class="title">
+                            <h3>TIÊU ĐIỂM TUẦN</h3>
+                        </div>
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../image/anh180.png" class="card-image">
+                                    <h3 class="card-title">Sau 1 tuần mở bán tại Việt Nam, có lắm người khen kẻ chê, iPhone 16 thật sự "cháy hàng" hay "ế ẩm"?</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../image/anh181.png"class="card-image">
+                                    <h3 class="card-title">SEO tổng thể là gì? Tại sao nên chọn dịch vụ SEO tổng thể tại GTV SEO</h3>          
+                                </a>   
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="../image/anh182.png"class="card-image">
+                                    <h3 class="card-title">Mũ bảo hiểm Royal bùng nổ doanh số nhờ chất lượng đẳng cấp và an toàn</h3>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">   
+                                <a href="#" class="card-link">
+                                    <img src="../image/anh183.png"  class="card-image">
+                                    <h3 class="card-title">Tác phẩm nghệ thuật độc đáo vẽ từ than và bột gạo đạt giải UOB Painting of the Year năm thứ hai tại Việt Nam</h3>
+                                </a>                       
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../image/anh184.png "  class="card-image">
+                                    <h3 class="card-title">Trên tay iPhone 16 màu Xanh Lưu Ly chính hãng trước giờ mở bán: Đẹp, dễ nhận biết iPhone mới!</h3>
+                                </a>         
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#"class="card-link">
+                                    <img src="../image/anh185.png"class="card-image">
+                                    <h3 class="card-title">CellphoneS ưu đãi đến 7 triệu khi lên đời iPhone 16 series</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
             <div class="two">
                 <section>
                     <a href="#"><img src="../image/anh180.png" ></a>
@@ -244,50 +303,6 @@
                     <p><b><a href="#">SEO tổng thể là gì? Tại sao nên chọn dịch vụ SEO tổng thể tại GTV SEO</a></b></p>
                     <p><b>2-Mall -</b> <time>2 giờ trước</time></p>
                     <p>SEO tổng thể là chiến lược toàn diện nhằm tối ưu hóa website để nâng cao thứ hạng tìm kiếm, thu hút khách hàng tiềm năng và tăng...</p>
-                </aside>
-            </div>
-            <hr/>
-            <div class="two">
-                <section>
-                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd46.mp4" type="video/mp4"></video></a>
-                </section>
-                <aside>
-                    <p><b><a href="#">iPhone 16 có nâng cấp "đỉnh nóc, kịch trần", hình ảnh nét căng lộ chi tiết mới chưa từng có!</a></b></p>
-                    <p><b>2-Mall -</b> <time>3 giờ trước</time></p>
-                    <p>Ngày ra mắt dòng sản phẩm iPhone 16 đang đến rất gần, đây một trong những smartphone được người dùng mong đợi nhất năm 2024.</p>
-                </aside>
-            </div>
-            <hr/>
-            <div class="two">
-                <section>
-                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd47.mp4" type="video/mp4"></video></a>
-                </section>
-                <aside>
-                    <p><b><a href="#">Trước giờ iPhone 16 ra mắt, có 1 thay đổi đặc biệt được vén màn, nhiều người Việt sẽ rất thích</a></b></p>
-                    <p><b>2-Mall -</b><time>4 giờ trước</time></p>
-                    <p>Trước thời điểm iPhone 16 trình làng, có một thay đổi đặc biệt được vén màn mà nhiều người Việt hẳn sẽ thích.</p>
-                </aside>
-            </div>
-            <hr/>
-            <div class="two">
-                <section>
-                    <a href="#"><img src="../image/anh182.png" ></a>
-                </section>
-                <aside>
-                    <p><b><a href="#">Người Việt chi hơn 1 nghìn tỷ mua iPhone 16 ngay trong ngày đầu tiên mở bán</a></b></p>
-                    <p><b>2-Mall -</b> <time>5 giờ trước</time></p>
-                    <p>Đại diện một đơn vị nhập khẩu ước tính có ít nhất 37.000 chiếc iPhone 16 đã tới tay người dùng Việt Nam chỉ trong ngày đầu mở bán</p>
-                </aside>
-            </div>
-            <hr/>
-            <div class="two">
-                <section>
-                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd48.mp4" type="video/mp4"></video></a>
-                </section>
-                <aside>
-                    <p><b><a href="#">iPhone 16 tiếp tục lộ diện trước giờ ra mắt, sắc xanh lạ mắt!</a></b></p>
-                    <p><b>2-Mall -</b><time>6 giờ trước</time></p>
-                    <p> Hình ảnh iPhone 16 trong đoạn video hút 22 nghìn lượt "thả tim" trên Instagram gây ấn tượng bởi thiết kế camera mới toanh cùng màu...</p>
                 </aside>
             </div>
             <hr/>
@@ -338,34 +353,12 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd49.mp4" type="video/mp4"></video></a>
-                </section>
-                <aside>
-                    <p><b><a href="#">Cập nhật nhanh 4 món đồ rảnh tay cho hội người lười, giá chỉ từ 59.000đ mà dùng quá tiện</a></b></p>
-                    <p><b>2-Mall -</b> <time>11 giờ trước</time></p>
-                    <p>Nhờ sự phát triển của công nghệ, giấc mơ sở hữu cuộc sống nhàn nhã, có thể làm mọi việc mà chẳng cần động tay nay đã hoàn toàn trở...</p>
-                </aside>
-            </div>
-            <hr/>
-            <div class="two">
-                <section>
                     <a href="#"><img src="../image/anh187.png" ></a>
                 </section>
                 <aside>
                     <p><b><a href="#">So sánh iPhone 16 Pro Max và iPhone 15 Pro Max: Những điều trước khi "chốt đơn" ai cũng cần phải biết!</a></b></p>
                     <p><b>2-Mall -</b> <time>12 giờ trước</time></p>
                     <p>Liệu sự cải tiến sau 1 năm của Apple có đủ sức thuyết phục người dùng lên đời iPhone 16 Pro Max?</p>
-                </aside>
-            </div>
-            <hr/>
-            <div class="two">
-                <section>
-                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd50.mp4" type="video/mp4"></video></a>
-                </section>
-                <aside>
-                    <p><b><a href="#">Apple biến điểm yếu "tai thỏ" thành điểm mạnh trên iPhone 14 Pro như thế nào</a></b></p>
-                    <p><b> 2-Mall-</b> <time>13giờ trước</time></p>
-                    <p>Dù là kẻ đi sau nhưng Apple luôn biết cách biến sản phẩm của mình trở nên độc đáo theo một cách mới lạ.</p>
                 </aside>
             </div>
             <hr/>
@@ -470,20 +463,23 @@
                 </aside>
             </div>
             <hr/>
-            <div class="two">
-                <section>
-                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd50.mp4" type="video/mp4"></video></a>
-                </section>
-                <aside>
-                    <p><b><a href="#">Video hình ảnh thực tế của iPhone 14 Pro Max bị chê tơi tả, cụm camera nhìn quá "đáng sợ"?</a></b></p>
-                    <p><b>2-Mall -</b> <time>22 giờ trước</time></p>
-                    <p>Bạn sẽ xuống tiền cho mẫu iPhone 14 với thiết kế này không?</p>
-                </aside>
-            </div>
-            <hr/>
         </div>
         <div class="footer-menu">
-            <a href="../../BTL1/Star/WebStar.html">Star</a> | <a href="../../BTL1/Ciné/WebCine.html">Ciné</a> | <a href="../../BTL1/Musik/WebMusik.html">Musik</a> | <a href="../../BTL1/Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | <a href="#">Sport</a> | <a href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a> |  <a href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a> |   <a href="../../BTL/AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | <a href="../Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a> |  <a href="../../BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> |<a href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | <a href="../Tek-life/Tek-life.html">Tek-Life</a> | <a href="../Hocduong/Hocduong.html">Học đường</a> |  <a href="../../BTL/MONEY-Z/Money-Z.html">Money-Z</a>| <a href="../Video/Danghot.html">Video</a>
+            <a href="../../BTL1/Star/WebStar.html">Star</a> | 
+            <a href="../../BTL1/Ciné/WebCine.html">Ciné</a> | 
+            <a href="../../BTL1/Musik/WebMusik.html">Musik</a>  | 
+            <a href="../../BTL1/Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | 
+            <a href="#">Sport</a> | 
+            <a href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a> | 
+            <a href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a> | 
+            <a href="../../BTL/AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | 
+            <a href="../Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a> | 
+            <a href="../../BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | 
+            <a href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | 
+            <a href="../Tek-life/Tek-life.html">Tek-Life</a> | 
+            <a href="../Hocduong/Hocduong.html">Học đường</a> | 
+            <a href="../../BTL/MONEY-Z/Money-Z.html">Money-Z</a> | 
+            <a href="../Video/Danghot.html">Video</a>
         </div>
         <div class="footer-max">
             <div class="footer-table1">

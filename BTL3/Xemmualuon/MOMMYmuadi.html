@@ -29,8 +29,9 @@
                     </ul>
                 </nav>
                 <div class="search-bar">
-                    <input type="text" placeholder="Tìm kiếm...">
-                    <button type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                    <input type="text" id ="search" style="color:white" placeholder="Tìm kiếm...">
+                    <button type="button" onclick="CheckSearch()" style="background-color: black;">
+                        <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
                 </div>
             </div>
         </div>
@@ -69,109 +70,110 @@
                     <li><a href="../Hocduong/Hocduong.html">Học đường</a></li>
                     <li><a href="../Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a></li>
                     <li><a href="../Video/Danghot.html">Video</a></li>
-                    <li class="main-menu">
-                        <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
+                  <li class="main-menu">
+                      <a class="menu-toggle" onclick="changeIcon(this)">•••</a>
 
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="subs-menu">
-            <div class="container">
-                <div class="menu-row">
-                    <div class="menu-column">
-                        <a class="title-menu" href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a>
-                        <div class="submenu">
-                            <a href="../../BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
-                            <a href="../../BTL/DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
-                            <a href="../../BTL/DOI_SONG/House_n_Home.html">House n Home</a>
-                        </div>
-                    </div class="menu-column">
-                        <a href="../Xemmualuon/Xemmualuon.html">Xem mua luôn</a>
-                        <div class="submenu">
-                            <a href="../Xemmualuon/Thoitrang.html">Thời trang</a>
-                            <a href="../Xemmualuon/Dep.html">Đẹp</a>
-                            <a href="../Xemmualuon/MOMMYmuadi.html">Mommy mua di</a>
-                        </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <div class="subs-menu">
+          <div class="container">
+              <div class="menu-row">
+                  <div class="menu-column">
+                    <a class="title-menu" href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a>
+                    <div class="submenu">
+                        <a href="../../BTL/DOI_SONG/NhanVat.html">Nhân vật</a>
+                        <a href="../../BTL/DOI_SONG/XemAnChoi.html">Xem-Ăn-Chơi</a>
+                        <a href="../../BTL/DOI_SONG/House_n_Home.html">House n Home</a>
                     </div>
-                    <div class="menu-column">
-                        <a href="#">Sport</a>
-                        <div class="submenu">
-                            <a href="#">Bóng đá</a>
-                            <a href="#">Bóng rổ</a>
-                            <a href="#">Bóng chuyền</a>
-                        </div>
-                    </div>
-                    <div class="menu-column">
-                        <a class="title-menu" href="..../../BTL1/Musik/WebMusik.html">Musik</a>
-                         <div class="submenu">
-                             <a href="../../BTL1/Musik/WebAuMy.html">Âu-Mỹ</a>
-                             <a href="../../BTL1/Musik/WebChauA.html">Châu Á</a>
-                             <a href="../../BTL1/Musik/WebVietNam.html">Việt Nam</a>
-                             <a href="../../BTL1/demoBTL.html">Hip-hop neva die</a>
-                         </div>
-                 </div>
-                 <div class="menu-column">
+                </div>
+                  <div class="menu-column">
+                    <a href="../Xemmualuon/Xemmualuon.html">Xem mua luôn</a>
+                    <div class="submenu">
+                        <a href="../Xemmualuon/Thoitrang.html">Thời trang</a>
+                        <a href="../Xemmualuon/Dẹp.html">Đẹp</a>
+                        <a href="../Xemmualuon/MOMMYmuadi.html">Mommy mua di</a>
+                      </div>
+                  </div>
+                  <div  class="menu-column">
+                      <a class="title-menu" href="#">Sport</a>
+                      <div class="submenu">
+                          <a href="#">Bóng đá</a>
+                          <a href="#">Bóng rổ</a>
+                          <a href="#">Bóng chuyền</a>
+                      </div>
+                  </div>
+                  <div class="menu-column">
+                    <a class="title-menu" href="..../../BTL1/Musik/WebMusik.html">Musik</a>
+                     <div class="submenu">
+                         <a href="../../BTL1/Musik/WebAuMy.html">Âu-Mỹ</a>
+                         <a href="../../BTL1/Musik/WebChauA.html">Châu Á</a>
+                         <a href="../../BTL1/Musik/WebVietNam.html">Việt Nam</a>
+                         <a href="../../BTL1/demoBTL.html">Hip-hop neva die</a>
+                      </div>
+                  </div>
+                  
+                  <div class="menu-column">
                     <a class="title-menu" href="..../../BTL1/Ciné/WebCine.html">Ciné</a>
                     <div class="submenu">
                         <a href="../../BTL1/Ciné/WebPhimChieuRap.html">Phim chiếu rạp</a>
                         <a href="../../BTL1/Ciné/WebPhimVietNam.html">Phim Việt Nam</a>
                         <a href="../../BTL1/Ciné/WebSeriesTruyenHinh.html">Series truyền hình</a>
                         <a href="../../BTL1/Ciné/WebHoaNguHanQuoc.html">Hoa ngữ - Hàn Quốc</a>
+                      </div>
+                  </div>
+                  <div class="menu-column">
+                    <a href="../Video/Danghot.html"> Đang hot </a>
+                    <div class="submenu">
+                        <a href="../Video/Nongnhat.html">Nóng nhất</a>
                     </div>
                 </div>
-                    <div class="menu-column">
-                        <a href="../Tek-life/Tek-life.html"> Tek-life</a>
-                        <div class="submenu">
-                            <a href="../Tek-life/Metaverse.html">Metaverse</a>
-                            <a href="../Tek-life/How-to.html">How-To</a>
-                            <a href="../Tek-life/Wow.html">Wow</a>
-                            <a href="../Tek-life/2-Mall.html">2-Mall</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-row">
-                    <div class="menu-column">
-                        <a class="title-menu" href="../../BTL1/Star/WebStar.html">Star</a>
-                        <div class="submenu">
-                            <a href="../../BTL1/Star/WebSaoViet.html">Sao Việt</a>
-                            <a href="../../BTL1/Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
-                            <a href="../../BTL1/Star/WebTVShow.html">TV Show</a>
-                        </div>
-                    </div>
-                    <div class="menu-column">
-                        <a class="title-menu" href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a>
-                        <div class="submenu">
-                            <a href="../../BTL/XA_HOI/XaHoi.html">Pháp luật</a>
-                            <a href="../../BTL/XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
-                            <a href="../../BTL/XA_HOI/SongXanh.html">Sống xanh</a>
-                        </div>
-                    </div>
-                    <div class="menu-column">
-                        <a href="../Hocduong/Hocduong.html">Học đường</a>
-                        <div class="submenu">
-                            <a href="../Hocduong/Bantin46.html">Bản tin 46'</a>
-                            <a href="../Hocduong/Duhoc.html">Du học</a>
-                            <a href="../Hocduong/Nhanvat.html">Nhân vật </a>
-                            <a href="../Hocduong/Z-Schooltour.html">Z-School tour </a>
-                        </div>
-                    </div>
-                    <div class="menu-column">
-                        <a href="../../BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
-                            <div class="submenu">
-                                <a href="../../BTL/DOI_SONG/ChumAnh.html">Chùm ảnh</a>
-                                <a href="../../BTL/DOI_SONG/KhamPha.html">Khám phá</a>
-                                <a href="../../BTL/DOI_SONG/Di.html">Dị</a>
-                            </div>
-                        </div>
-                    <div class="menu-column">
-                        <a href="../Video/Danghot.html"> Đang hot </a>
-                        <div class="submenu">
-                            <a href="../Video/Nongnhat.html">Nóng nhất</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-column">
+                  <div class="menu-column">
+                    <a href="../Tek-life/Tek-life.html"> Tek-life</a>
+                    <div class="submenu">
+                        <a href="../Tek-life/Metaverse.html">Metaverse</a>
+                        <a href="../Tek-life/How-to.html">How-To</a>
+                        <a href="../Tek-life/Wow.html">Wow</a>
+                        <a href="../Tek-life/2-Mall.html">2-Mall</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="menu-row">
+                  <div class="menu-column">
+                    <a class="title-menu" href="../../BTL1/Star/WebStar.html">Star</a>
+                    <div class="submenu">
+                        <a href="../../BTL1/Star/WebSaoViet.html">Sao Việt</a>
+                        <a href="../../BTL1/Star/WebHoiBanThanShowbiz.html">Hội bạn thân showbiz</a>
+                        <a href="../../BTL1/Star/WebTVShow.html">TV Show</a>
+                      </div>
+                  </div>
+                  <div class="menu-column">
+                      <a class="title-menu" href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a>
+                      <div class="submenu">
+                          <a href="../../BTL/XA_HOI/XaHoi.html">Pháp luật</a>
+                          <a href="../../BTL/XA_HOI/NongTrenMang.html">Nóng trên mạng</a>
+                          <a href="../../BTL/XA_HOI/SongXanh.html">Sống xanh</a>
+                      </div>
+                  </div>
+                  <div class="menu-column">
+                    <a href="../Hocduong/Hocduong.html">Học đường</a>
+                    <div class="submenu">
+                        <a href="../Hocduong/Bantin46.html">Bản tin 46'</a>
+                        <a href="../Hocduong/Duhoc.html">Du học</a>
+                        <a href="../Hocduong/Nhanvat.html">Nhân vật </a>
+                        <a href="../Hocduong/Z-Schooltour.html">Z-School tour </a>
+                      </div>
+                  </div>
+                  <div class="menu-column">
+                    <a href="../../BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a>
+                    <div class="submenu">
+                        <a href="../../BTL/DOI_SONG/ChumAnh.html">Chùm ảnh</a>
+                        <a href="../../BTL/DOI_SONG/KhamPha.html">Khám phá</a>
+                        <a href="../../BTL/DOI_SONG/Di.html">Dị</a>
+                      </div>
+                  </div>
+                  <div class="menu-column">
                     <a class="title-menu" href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
                     <div class="submenu">
                         <a href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a>
@@ -180,21 +182,22 @@
                         <a href="../../BTL/SUC_KHOE/KhoeDep.html">Khỏe đẹp</a>
                         <a href="../../BTL/SUC_KHOE/GioiTinh.html">Giới tính</a>
                         <a href="../../BTL/SUC_KHOE/Cacbenh/CacBenh.html">Các bệnh</a>
-                    </div>
+                      </div>
+                  </div>
                 </div>
-                </div>
-                <div class="border-solid"></div>
-                <div class="web-info">
-                    <span class="title-mini-web">Tải app</span>
-                    <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BA%BB/id670518264?ls=1" target="_blank">IOS</a>
-                    <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
-                    <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
-                    <a class="title-mini-web" href="#">Liên hệ</a>
-                    <a class="mini-web" href="#">Quảng cáo</a>
-                </div>
+
+            </div>
+            <div class="border-solid"></div>
+            <div class="web-info">
+                <span class="title-mini-web">Tải app</span>
+                <a class="mini-web" href="https://apps.apple.com/us/app/kenh14-vn-tin-t%E1%BB%A9c-gi%E1%BB%9Bi-tr%E1%BB%A3/id670518264?ls=1" target="_blank">IOS</a>
+                <a class="mini-web" href="https://play.google.com/store/apps/details?id=vcc.mobilenewsreader.kenh14" target="_blank">Android</a>
+                <a class="title-mini-web" href="https://www.facebook.com/K14vn" target="_blank">Fanpage</a>
+                <a class="title-mini-web" href="#liên hệ" >Liên hệ</a>
+                <a class="mini-web" href="https://kenh14.vn/adv.chn">Quảng cáo</a>
+            </div>
         </div>
     </header>
-    </div>
 </div>
 <div class="space">
 </div>
@@ -203,10 +206,9 @@
             <ul>
                 <li><a href="Xemmualuon.html"><b>Xem mua luôn </b></a></li>
                 <li><a href="Thoitrang.html"><b>Thời trang </b></a></li>
-                <li><a href="Dep.html"><b>Dẹp</b></a></li>
+                <li><a href="Dẹp.html"><b>Đẹp</b></a></li>
                 <li><a href="MOMMYmuadi"><b>MOMMY mua đi</b></a></li>
-                <li><a href="#"><b>DỊ</b></a></li>
-                <li><a href="#"><b>KHÁM PHÁ</b></a></li>
+        
             </ul>
         </div><br>
         <hr/>
@@ -219,20 +221,20 @@
                     </p>
                 </section> 
                 <aside>     
-                    <a href="#"><video autoplay loop muted playsinline width=170px><source src="../image/vd81.mp4" type="video/mp4"></video></a>
-                        <p><b><a href="#">Doãn Hải My cho con dùng sữa công thức nào? </a></b></p>
-                        <p><b>Xem mua luôn-</b> 3 giờ trước</p>                   
-                        <a href="#"><video autoplay loop muted playsinline width=170px><source src="../image/vd82.mp4" type="video/mp4"></video></a>
-                        <p><b><a href="#">Tìm hiểu kĩ mới biết vì sao mẹ bỉm bị mê hoặc bởi chiếc tủ...</a></b></p>
-                        <p><b>Xem mua luôn-</b> 3 giờ trước</p> 
+                   <video autoplay loop muted playsinline width=170px><source src="https://kenh14cdn.com/203336854389633024/2024/10/31/2-ezgifcom-video-to-gif-converter-1730109070570434705300-1730359898163-1730359901413627721638-258-0-858-600-crop-17303619188461346576097.gif.mp4"></video>
+                        <p><b><a href="#">Bà xã Chi Bảo không tiếc tiền sắm đồ hiệu cho con nhưng riêng 4 món ..</a></b></p>
+                        <p><b>Xem mua luôn-</b> <time>1 giờ trước</time></p>                   
+                        <video autoplay loop muted playsinline width=170px><source src="https://kenh14cdn.com/203336854389633024/2024/10/29/videochattnctobngclipchamp-ezgifcom-video-to-gif-converter-8-17300870384401442762224-1730197579537-17301975798301796479052-152-0-752-600-crop-1730197630125786960823.gif.mp4"></video>
+                        <p><b><a href="#">Xem vợ kém 16 tuổi của Chi Bảo sắm đồ cho con</a></b></p>
+                        <p><b>Xem mua luôn-</b> <time>1 giờ trước</time></p> 
                 </aside>    
                 <aside>
-                    <a href="#"><video autoplay loop muted playsinline width=170px><source src="../image/vd83.mp4" type="video/mp4"></video></a>
-                    <p><b><a href="#">Góc bỉm sữa siêu chill của Ly Kute</a></b></p>
-                    <p><b>Xem mua luôn -</b> 3 giờ trước</p>  
+                    <video autoplay loop muted playsinline width=170px><source src="https://kenh14cdn.com/203336854389633024/2024/11/3/gifmakerme-1-17306017257511813011606-1730640976126-173064097732534140845-154-0-754-600-crop-17306411283271246487058.gif.mp4"></video>
+                    <p><b><a href="#">1 dòng son của Hàn đang làm mưa làm gió trên thị trường làm đẹp</a></b></p>
+                    <p><b>Xem mua luôn -</b><time>2 giờ trước</time></p>  
                     <a href="#"><img src="../image/anh244.png" ></a>
                     <p><b><a href="#">Mẹ bỉm liệt kê chi phí nuôi em bé 21 tháng tuổi...</a></b></p>
-                    <p><b>Xem mua luôn -</b> 3 giờ trước</p>  
+                    <p><b>Xem mua luôn -</b> <time>3 giờ trước</time></p>  
                 </aside>
             </div>
             <hr/>
@@ -287,7 +289,7 @@
                 </section>
                 <aside>
                     <p><b><a href="#">Mẹ nấu ngon thế này bảo sao em bé thích mê, khay cơm đầy ắp thức ăn mà hết veo trong vài nốt nhạc</a></b></p>
-                    <p><b>Xem mua luôn-</b> 1 giờ trước</p>
+                    <p><b>Xem mua luôn-</b> <time>4 giờ trước</time></p>
                     <p>Chỉ dành 30 phút vào bếp, những khay cơm mẹ làm cho con khiến ai cũng bất ngờ.</p>
                 </aside>
             </div>
@@ -298,7 +300,7 @@
                 </section>
                 <aside>
                     <p><b><a href="#">Trend chơi túi mù có gì hot mà thu hút loạt em bé, ngay cả mẹ bỉm cũng bị mê hoặc?</a></b></p>
-                    <p><b>Xem mua luôn-</b> 1 giờ trước</p>
+                    <p><b>Xem mua luôn-</b><time>5 giờ trước</time></p>
                     <p>Túi mù là gì mà khiến hội mẹ bỉm săn lùng "điên đảo" cho con trên MXH?</p>
                 </aside>
             </div>
@@ -309,7 +311,7 @@
                 </section>
                 <aside>
                     <p><b><a href="#">Nhìn tưởng Betta nhưng lại là Pigeon, mẹ bỉm nêu ưu - nhược điểm của bộ sưu tập mới, chốt lại có nên mua?</a></b></p>
-                    <p><b>Xem mua luôn -</b> 2 giờ trước</p>
+                    <p><b>Xem mua luôn -</b><time>6 giờ trước</time></p>
                     <p>Các mẹ thử cân nhắc xem có nên mua bộ sưu tập mới nhà Pigeon không nha.</p>
                 </aside>
             </div>
@@ -317,21 +319,21 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><video autoplay loop muted playsinline width=110px><source src="../image/vd92.mp4" type="video/mp4"></video></a>
+                    <video autoplay loop muted playsinline width=110px><source src="https://kenh14cdn.com/203336854389633024/2024/9/6/vid20240906145640899-17256100637061613814297.mp4"></video>
                 </section>
                     <aside>
                     <p><b><a href="#">Gigi Hương Giang lần đầu catwalk tại Seoul Fashion Week.</a></b></p>
-                    <p><b>Cái gì đang hot -</b> 2 giờ trước</p>
+                    <p><b>Cái gì đang hot -</b> <time>7 giờ trước</time></p>
                 </aside>
              
         
                 <section>
                     <aside>
-                        <a href="#"><video autoplay loop muted playsinline width=110px><source src="../image/vd93.mp4" type="video/mp4"></video></a>
+                        <video autoplay loop muted playsinline width=110px><source src="https://kenh14cdn.com/203336854389633024/2024/9/17/copy6211f845-7e47-4446-a6f8-11efda3b19f0-17265571986241970651371.mp4"></video>
                     </section> 
                     <aside>
                     <p><b><a href="#">Quỳnh Anh Shyn lần đầu catwalk tại London Fashion Week</a></b></p>
-                    <p><b>Cái gì đang hot  -</b> 2 giờ trước</p>
+                    <p><b>Cái gì đang hot  -</b> <time>8 giờ trước</time></p>
                     </p></aside>
                 </div>
                 <hr/>
@@ -341,19 +343,19 @@
                 </section>
                 <aside>
                     <p><b><a href="#">Nghe tin gió mùa về, Phương Oanh lập tức diện cho 2 con song sinh bộ đồ kín mít nhưng không ngờ đến điều này</a></b></p>
-                    <p><b>Xem mua luôn -</b> 4 giờ trước</p>
+                    <p><b>Xem mua luôn -</b> <time>9 giờ trước</time></p>
                     <p>Nghe chuyện mà ai nấy đều phì cười.</p>
                 </aside>
             </div>
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd84.mp4" type="video/mp4"></video></a>
+                    <video autoplay loop muted playsinline width=250px><source src="https://kenh14cdn.com/203336854389633024/2024/9/29/thang-7-am-lich-kieng-gi-32-17272559474741225070505-1727577121503-1727577121790475983210-1727582419660-1727582420184567603842.gif.mp4"></video>
                 </section>
                 <aside>
                     <p><b><a href="#">
                         Nhà có em bé, đồ đạc nhiều vô số mà không biết đến cách sắp xếp siêu gọn của mẹ bỉm này thì quá phí!</a></b></p>
-                    <p><b>Xem mua luôn-</b> 2 giờ trước</p>
+                    <p><b>Xem mua luôn-</b> <time>10 giờ trước</time></p>
                     <p>Đồ đạc của con được sắp xếp gọn gàng vừa giúp mẹ dễ dàng tìm kiếm lại khiến nhà cửa trông gọn gàng, sạch sẽ hơn.</p>
                 </aside>
             </div>
@@ -364,7 +366,7 @@
                 </section>
                 <aside>
                     <p><b><a href="#">"Mẹ bỉm thời nay quá mệt vì người nổi tiếng, KOL PR sản phẩm vô tội vạ": Làm sao để mẹ không bị "thao túng"?</a></b></p>
-                    <p><b>Xem mua luôn -</b> 7 giờ trước</p>
+                    <p><b>Xem mua luôn -</b><time>10 giờ trước</time></p>
                     <p>Đứng trước rất nhiều sản phẩm, mẹ bỉm đôi khi không biết phải chọn cái nào mới là tốt, thực sự phù hợp với con mình.</p>
                 </aside>
             </div>
@@ -374,49 +376,49 @@
                     <a href="#"><img src="../image/anh206.png" ></a>
                     <p><b><a href="#">
                         Sơ mi trắng là thứ mà các nàng Hậu mê nhất: Thùy Tiên điệu đà, Đỗ Hà sang như "nữ tổng tài"</a></b></p>
-                        <p><time>9 giờ trước</time></p>
+                        <p><time>11 giờ trước</time></p>
                         <a href="#"><img src="../image/anh207.png" ></a>
                     <p><b><a href="#">4 mỹ nhân Việt mặc váy siêu đẹp, ngắm là muốn sắm theo tặng nàng dịp 20/10</a></b></p>
-                    <p><time>10 giờ trước</time></p>
+                    <p><time>12 giờ trước</time></p>
                 </aside>
                 <aside>
                     <a href="#"><img src="../image/anh208.png" ></a>
                     <p><b><a href="#">Hội "tình đầu quốc dân" xứ Hàn ngoài 30 vẫn ngày càng trẻ sang, mấu chốt nằm ở 1 kiểu áo </a></b></p>
-                    <p><time>11 giờ trước</time></p>
+                    <p><time>13 giờ trước</time></p>
                     <a href="#"><img src="../image/anh209.png" ></a>
                     <p><b><a href="#">Cầm 500k, sắm ngay được 8 set đồ vừa xinh vừa sang để làm quà 20/10 tới</a></b></p>
-                    <p><time>12 giờ trước</time></p>
+                    <p><time>14 giờ trước</time></p>
                 </aside>
                 <aside>
                     <a href="#"><img src="../image/anh210.png" ></a>
                     <p><b><a href="#">4 mẫu chân váy phối kiểu gì cũng đẹp, xứng đáng làm quà tặng chị em </a></b></p>
-                    <p><time>13 giờ trước</time></p>
+                    <p><time>15 giờ trước</time></p>
                     <a href="#"><img src="../image/anh362.png" ></a>
                     <p><b><a href="#">8 chân váy dài giúp nàng công sở mặc đẹp và sang từ giờ đến hết Thu</a></b></p>
-                    <p><time>14 giờ trước</time></p>
+                    <p><time>16 giờ trước</time></p>
                 </aside>
             </div>
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd85.mp4" type="video/mp4"></video></a>
+                    <video autoplay loop muted playsinline width=250px><source src="https://kenh14cdn.com/203336854389633024/2024/9/23/thang-7-am-lich-kieng-gi-25-17270571824281915078681-1727057794667-17270577948352063827769-1727066736350-17270667364701628795849.gif.mp4"></video>
                 </section>
                 <aside>
                     <p><b><a href="#">
                         Chăm con khéo cỡ này bảo sao Phương Oanh được khen tới tấp, lo từng li từng tí nên review sản phẩm cực có tâm</a></b></p>
-                    <p><b>Xem mua luôn-</b> 2 giờ trước</p>
+                    <p><b>Xem mua luôn-</b> <time>17 giờ trước</time></p>
                     <p>Nghe chia sẻ của Phương Oanh, ai cũng khen mẹ bỉm đầu tư và nghiên cứu kĩ lưỡng thế nào cho công cuộc chăm con.</p>
                 </aside>
             </div>
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd86.mp4" type="video/mp4"></video></a>
+                    <video autoplay loop muted playsinline width=250px><source src="https://kenh14cdn.com/203336854389633024/2024/9/10/ezgif-3-a7d4820eda-1725985427680148753500-0-0-374-598-crop-1725985979755957983812.gif.mp4"></video>
                 </section>
                 <aside>
                     <p><b><a href="#">
                         Làm bố mẹ thời nay nhàn quá rồi không, cho con ngủ chẳng cần "động tay" nhờ các loại máy ru bé cực xịn</a></b></p>
-                    <p><b>Xem mua luôn-</b> 2 giờ trước</p>
+                    <p><b>Xem mua luôn-</b><time>18 giờ trước</time></p>
                     <p>Có công cụ hỗ trợ đắc lực thế này, việc nuôi con của các mẹ nhàn tênh thật rồi.</p>
                 </aside>
             </div>
@@ -427,7 +429,7 @@
                 </section>
                 <aside>
                     <p><b><a href="#">Ở cữ sướng như Đông Nhi, sáng nào cũng có người chăm tận nhà, bảo sao rạng rỡ, xinh đẹp</a></b></p>
-                    <p><b>Xem mua luôn-</b> 7 giờ trước</p>
+                    <p><b>Xem mua luôn-</b> <time>19 giờ trước</time></p>
                     <p>Sướng nhất mẹ bỉm Đông Nhi rồi!
                         </p>
                 </aside>
@@ -435,12 +437,12 @@
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd87.mp4" type="video/mp4"></video></a>
+                    <video autoplay loop muted playsinline width=250px><source src="https://kenh14cdn.com/203336854389633024/2024/8/21/ava-thuong-30-1724224308227705298701.gif.mp4"></video>
                 </section>
                 <aside>
                     <p><b><a href="#">
                         Sau 2 năm nuôi con cực kỳ tốn kém, mẹ bỉm phát hiện ra 5 món đồ bản thân không thể sống thiếu </a></b></p>
-                    <p><b>Xem mua luôn-</b> 2 giờ trước</p>
+                    <p><b>Xem mua luôn-</b><time>19 giờ trước</time></p>
                     <p>Những món đồ này sẽ giúp hành trình nuôi con trở nên nhàn nhã hơn.</p>
                 </aside>
             </div>
@@ -453,43 +455,43 @@
                 </section>
                 <aside>
                     <p><b><Triển href="#">Chuột Capybara có gì mà khiến tụi nhỏ mê mẩn: Từ gấu bông, kẹp tóc, bình sữa, sticker được các em bé săn lùng</a></b></p>
-                    <p><b>Xem mua luôn-</b> 9 giờ trước</p>
+                    <p><b>Xem mua luôn-</b><time>20 giờ trước</time></p>
                     <p>Hội mẹ bỉm sữa và các em bé cũng u mê không lối thoát với chiếc trend đáng yêu này.</p>
                 </aside>
             </div>
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd89.mp4" type="video/mp4"></video></a>
+                    <video autoplay loop muted playsinline width=250px><source src="https://kenh14cdn.com/203336854389633024/2024/8/20/ava-thuong-28-1724140194144990839210.gif.mp4"></video>
                 </section>
                 <aside>
                     <p><b><a href="#">
                         Dạo một vòng xem 4 loại sữa tắm an toàn mẹ bỉm chọn cho con, mẹ hiện đại nên chọn đồ cũng kĩ tính!</a></b></p>
-                    <p><b>Xem mua luôn-</b> 2 giờ trước</p>
+                    <p><b>Xem mua luôn-</b><time>20 giờ trước</time></p>
                     <p>Các mẹ thời nay chọn đồ cho con sẽ phải tham khảo cực kỳ kĩ càng, thậm chí sẽ mua nhiều loại để sử dụng, so sánh trước khi tìm ra món đồ...</p>
                 </aside>
             </div>
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd90.mp4" type="video/mp4"></video></a>
+                    <video autoplay loop muted playsinline width=250px><source src="https://kenh14cdn.com/203336854389633024/2024/8/16/ava-thuong-24-1723790020585904742787.gif.mp4"></video>
                 </section>
                 <aside>
                     <p><b><a href="#">
                         Phương Oanh kể chuyện chăm con thôi mà khiến các mẹ đồng loạt khen "quá khéo"</a></b></p>
-                    <p><b>Xem mua luôn-</b> 2 giờ trước</p>
+                    <p><b>Xem mua luôn-</b> <time>21 giờ trước</time></p>
                     <p>Nghe chia sẻ của Phương Oanh mới thấy mẹ bỉm đầu tư và nghiên cứu kĩ lưỡng thế nào cho công cuộc chăm con.</p>
                 </aside>
             </div>
             <hr/>
             <div class="two">
                 <section>
-                    <a href="#"><video autoplay loop muted playsinline width=250px><source src="../image/vd91.mp4" type="video/mp4"></video></a>
+                    <video autoplay loop muted playsinline width=250px><source src="https://kenh14cdn.com/203336854389633024/2024/8/15/ava-thuong-22-1723704139074714110609.gif.mp4"></video>
                 </section>
                 <aside>
                     <p><b><a href="#">
                         Món đồ này có gì mà hội chị em nức nở khen "phát minh vĩ đại, cứu tinh cho chiếc lưng đau của mẹ bỉm"</a></b></p>
-                    <p><b>Xem mua luôn-</b> 2 giờ trước</p>
+                    <p><b>Xem mua luôn-</b> <time>22 giờ trước</time></p>
                     <p>Em bé mà hay giãy giụa, không hợp tác khi đi tắm, đi vệ sinh thì món đồ này quả thực là "chân ái".</p>
                 </aside>
             </div>
@@ -500,7 +502,7 @@
                 </section>
                 <aside>
                     <p><b><a href="#">Lần sinh thứ 2, Đông Nhi chọn nơi thuộc top đầu trong các bệnh viện VIP tại TP HCM</a></b></p>
-                    <p><b>Xem mua luôn-</b> 10 giờ trước</p>
+                    <p><b>Xem mua luôn-</b> <time>22 giờ trước</time></p>
                     <p>Gia đình nhỏ đã có lựa chọn khác cho lần đi sinh thứ 2 này.</p>
                 </aside>
             </div>
@@ -509,7 +511,21 @@
         </div>
         
         <div class="footer-menu">
-            <a href="../../BTL1/Star/WebStar.html">Star</a> | <a href="../../BTL1/Ciné/WebCine.html">Ciné</a> | <a href="../../BTL1/Musik/WebMusik.html">Musik</a> | <a href="../../BTL1/Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | <a href="#">Sport</a> | <a href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a> |  <a href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a> |   <a href="../../BTL/AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | <a href="../Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a> |  <a href="../../BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> |<a href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | <a href="../Tek-life/Tek-life.html">Tek-Life</a> | <a href="../Hocduong/Hocduong.html">Học đường</a> |  <a href="../../BTL/MONEY-Z/Money-Z.html">Money-Z</a>| <a href="../Video/Danghot.html">Video</a>
+            <a href="../../BTL1/Star/WebStar.html">Star</a> | 
+            <a href="../../BTL1/Ciné/WebCine.html">Ciné</a> | 
+            <a href="../../BTL1/Musik/WebMusik.html">Musik</a>  | 
+            <a href="../../BTL1/Beauty&Fashion/WebBeautyFashion.html">Beauty & Fashion</a> | 
+            <a href="#">Sport</a> | 
+            <a href="../../BTL/DOI_SONG/DoiSong.html">Đời sống</a> | 
+            <a href="../../BTL/XA_HOI/XaHoi.html">Xã hội</a> | 
+            <a href="../../BTL/AN_QUAY_DI/AnQuayDi.html">Ăn - Quẩy - Đi</a> | 
+            <a href="../Xemmualuon/Xemmualuon.html">Xem Mua Luôn</a> | 
+            <a href="../../BTL/DOI_SONG/TheGioiDoDay.html">Thế giới đó đây</a> | 
+            <a href="../../BTL/SUC_KHOE/SucKhoe.html">Sức khỏe</a> | 
+            <a href="../Tek-life/Tek-life.html">Tek-Life</a> | 
+            <a href="../Hocduong/Hocduong.html">Học đường</a> | 
+            <a href="../../BTL/MONEY-Z/Money-Z.html">Money-Z</a> | 
+            <a href="../Video/Danghot.html">Video</a>
         </div>
         <div class="footer-max">
             <div class="footer-table1">
