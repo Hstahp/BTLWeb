@@ -1,4 +1,4 @@
- /* Thiết lập cơ bản cho body */
+/* Thiết lập cơ bản cho body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -166,7 +166,7 @@ body {
 
 .trending-topics a {
     background-color: rgba(255, 255, 255, 0.082);
-    color: #ffffff;
+color: #ffffff;
     text-decoration: none;
     margin-right: auto;
     /* Giảm từ 20px xuống 15px */
