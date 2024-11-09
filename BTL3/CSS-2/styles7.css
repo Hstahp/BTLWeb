@@ -1,36 +1,27 @@
 /* Thiết lập cơ bản cho body */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-
 /* Container chung cho layout */
-
 .container {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
-
 /* Căn chỉnh các phần tử trong top-bar, main-header và main-nav */
-
 .top-bar .container,
 .main-header .container,
-.main-nav .container ,
-.main-header1 .container,
-.main-nav1 .container{
+.main-nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
 /* Thiết kế cho thanh top-bar */
-
 .top-bar {
     background-color: black;
     color: #fff;
@@ -54,6 +45,7 @@ body {
     margin-right: -1px;
     margin-left: 20px;
     font-size: 10px;
+
 }
 
 .top-bar nav ul li a {
@@ -77,6 +69,7 @@ body {
     font-size: 10px;
     height: 100%;
     margin-left: 500px;
+
 }
 
 .search-bar button {
@@ -99,14 +92,7 @@ body {
     padding: 0px 0px;
     /* Giảm padding để làm cho header nhỏ hơn */
 }
-.main-header1 {
-    background-color: #1b1a1a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 0px;
-    /* Giảm padding để làm cho header nhỏ hơn */
-}
+
 .logo {
     display: flex;
     align-items: center;
@@ -140,14 +126,11 @@ body {
 
 
 /* Kiểu dáng cho Điều hướng Chính */
-
 .main-nav {
     background-color: #a00101;
 }
-.main-nav1 {
-    background-color: #3c3b3b;
-}
-.main-nav ul, .main-nav1 ul {
+
+.main-nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -156,16 +139,16 @@ body {
     white-space: nowrap;
 }
 
-.main-nav ul li, .main-nav1 ul li {
+.main-nav ul li {
     padding: 7px 9px;
     /* Giảm padding để thu hẹp khoảng cách */
 }
 
-.main-nav ul, .main-nav1 ul {
+.main-nav ul {
     margin-left: 45px;
 }
 
-.main-nav ul li a, .main-nav1 ul li a {
+.main-nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
@@ -177,21 +160,13 @@ body {
     background-color: #a00101;
 }
 
-.main-nav1 ul li:first-child {
-    background-color: #3c3b3b;
-}
-.main-nav1 ul li:first-child a {
-    font-size: 15px;
-}
 .main-nav ul li:first-child a {
     font-size: 15px;
 }
-.main-nav1 ul li:first-child a {
-    font-size: 15px;
-}
+
 .trending-topics a {
     background-color: rgba(255, 255, 255, 0.082);
-    color: #ffffff;
+color: #ffffff;
     text-decoration: none;
     margin-right: auto;
     /* Giảm từ 20px xuống 15px */
@@ -219,29 +194,23 @@ body {
 .arrow-icon {
     display: inline-block;
     font-size: 24px;
-    /* Điều chỉnh kích thưc nếu cần */
+    /* Điều chỉnh kích thước nếu cần */
     color: #ffffff;
     /* Màu trắng */
+
     padding: 2px 6px;
     border-radius: 4px;
     transform: rotate(45deg);
     /* Xoay để khớp với hình ảnh */
 }
 
-
 /* thay đổi màu sắc */
-
 .main-nav ul li a:hover {
     padding: 7px 6px;
     background-color: #800000;
     /* Màu đỏ đậm hơn */
 }
 
-.main-nav1 ul li a:hover {
-    padding: 7px 6px;
-    background-color: #000000;
-    /* Màu đỏ đậm hơn */
-}
 .main-menu {
     position: relative;
 }
@@ -252,10 +221,7 @@ body {
     width: 25px;
     text-align: center;
 }
-.title-menu {
-    border-left: 3px solid #f34905;
-    padding-left: 5px;
-}   
+
 .subs-menu {
     display: none;
     position: absolute;
@@ -268,6 +234,7 @@ body {
     padding: 10px 10px;
     /* Giảm padding-top từ 20px xuống 10px */
 }
+
 
 .subs-menu.active {
     display: block;
@@ -294,9 +261,7 @@ body {
     /* Thêm padding bên trái để thụt nội dung */
 }
 
-
 /* Nhắm vào tất cả các liên kết trực tiếp trong subs-menu */
-
 .subs-menu .container>a,
 .subs-menu .menu-row>a,
 .subs-menu .menu-column>a {
@@ -308,9 +273,7 @@ body {
     display: block;
 }
 
-
 /* Kiểu dáng cụ thể cho các mục submenu */
-
 .submenu {
     display: flex;
     flex-direction: column;
@@ -331,7 +294,6 @@ body {
 
 
 /* Làm cho bảng menu hiện ra không bị nằm ở footer */
-
 header {
     position: relative;
 }
@@ -340,14 +302,8 @@ header {
     text-decoration: none;
     color: #858383;
 }
-.border-solid1 {
-    border-top: 3px solid #fb5f05bb;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
 
-.border-solid2 {
+.border-solid {
     border-top: 1px solid #e9e3e3bb;
     width: 75%;
     margin: 0 auto;
@@ -358,11 +314,13 @@ header {
     padding: 100px;
     margin-left: 60px;
     margin-right: -90px;
+
 }
 
 .mini-web,
 .title-mini-web {
     text-decoration: none;
+
 }
 
 .title-mini-web {
@@ -389,6 +347,7 @@ header {
     background-color: #ded6d6a0;
     height: 30px;
 }
+
 .hi {
     margin: 0px 0px 0px 200px;
     margin-bottom: 1px;
@@ -418,111 +377,23 @@ header {
     text-decoration-thickness: 3px;
 }
 
-.hi ul li:nth-child(4) {
-    margin-right: 400px;
-    /* Khoảng cách lớn hơn sau 'TV-SHOW' */
-}
-
-.hi1 {
-    margin: 0px 0px 0px 200px;
-    margin-bottom: 1px;
-    width: 1200px;
-}
-
-.hi1 ul {
-    padding: 0px;
-    margin-bottom: -5px;
-}
-
-.hi1 ul li {
-    display: inline;
-    padding: 0px 2px;
-}
-
-.hi1 ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    margin-right: 15px;
-}
-
-.hi1 a:hover {
-    text-decoration: underline;
-    text-decoration-color: rgb(254, 20, 20);
-    text-decoration-thickness: 3px;
-}
-
-
-.hi1 {
-    margin: 0px 0px 0px 200px;
-    margin-bottom: 1px;
-    width: 1200px;
-}
-
-.hi1 ul {
-    padding: 0px;
-    margin-bottom: -5px;
-}
-
-.hi1 ul li {
-    display: inline;
-    padding: 0px 2px;
-}
-
-.hi1 ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    margin-right: 15px;
-}
-
-.hi1 a:hover {
-    text-decoration: underline;
-    text-decoration-color: rgb(254, 20, 20);
-    text-decoration-thickness: 3px;
-}
-
-.hi1 ul li:nth-child(5) {
-    margin-right: 250px;
-    /* Khoảng cách lớn hơn sau 'TV-SHOW' */
+.hi ul li:nth-child(1) {
+    margin-right: 450px;
+    /* Khoảng cách lớn hơn sau 'MOMY-EZ' */
 }
 
 .body {
-    margin: 0px 200px 0px 200px;
+    margin: 0px 300px 0px 200px;
     width: 780px;
 }
-.zero{
-    height: 290px;
-    display: flex;
-    margin-bottom:-20px;   
- }
- .zero section p a{
-    padding-top: 15px;
 
- }
- 
- .zero aside {
-    padding-left: 30px;
-    font-size: 15px;
- }
- 
- .zero aside a {
-    font-size: 130%;
-    text-decoration: none;
-    color: black;
- }
- 
 .one {
     padding-top: 15px;
     display: flex;
     height: 530px;
     width: 730px;
 }
-.img-hot {
-    width: 240px;
-    height: 150px;
-   
-}
+
 .one section {
     width: 550px;
     padding-right: 50px;
@@ -543,11 +414,11 @@ header {
     font-size: 14px;
 }
 
-
 .two {
-    height: 220px;
+    height: 350px;
     display: flex;
 }
+
 .two section {
     padding-top: 15px;
 }
@@ -562,95 +433,17 @@ header {
     text-decoration: none;
     color: black;
 }
-.three {
-   
-    padding-top: 9px;
-    display: flex;
-    height: 530px;
-    width: 640px;
-}
-.three section {
-    width: 550px;
-    padding-right:10px;
-    font-size: 15px;
-}
 
-.three section p a {
-    padding-right: 10px;
-    font-size: 25px;
-    text-decoration: none;
-    color: black;
-}
-
-.three aside p a {
-    padding-right: 0px;
-    text-decoration: none;
-    color: black;
-    font-size: 17px;
-    width:-40px;
-}
-
-.three aside {
-    padding-left: 15px;
-    font-size: 15px;
-}
-.three span{
-    font-size:14px;
-}
-.four{
-    padding-top: 9px;
-    display:contents;
-    height: 530px;
-    width: 640px;
-}
-.four aside p a{
-    
-    font-size:30px;
-    text-decoration: none;
-    color: black;
-}
-.four img{
-    margin-bottom:10px;
-    width:780px;
-    height:400px;
-}
-.size-normal  {
-    font-size:14.5px;
-    text-decoration:none;
-    color:#000;
-}
-.text{
-    position: absolute;
-    left:100px;
-    right:100px;
-    width:340px;
-    bottom: 5px;
-    margin-left:100px; 
-    padding:380px 0px 25px 41px;
-    font-family: SFD-Light;
-    font-size: 28px;
-    color: #ffff;
-    text-decoration:none;
-    line-height: 30px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), #000);
-    content: '';
-    font-weight: normal;
-    
-
-}
-
-/* MENU phía dưới */
 .footer-menu {
-    margin-top: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 13px;
+    font-size: 12px;
     background-color: #e0e0e0;
     text-align: center;
 }
 
 .footer-menu a {
-    color: #766e6e; 
+    color: #333; 
     text-decoration: none; 
     margin: 0 5px;
 }
@@ -663,25 +456,25 @@ header {
 .footer {
     margin: 20px 200px 0px 200px;
     width: 1100px;
-    height: 500px;
+    height: 440px;
     display: flex;
 }
 
 .footer-mini-one {
-    width: 300px;
+    width: 370px;
     font-size: 15px;
-    color: #4e4545;
+    padding-right: 15px;
 }
 
-.footer-mini-one span {
+.footer-mini-one p {
     margin: 0;
-    padding-top: px;
+    padding-top: 5px;
     font-size: 15px;
 }
-.footer-mini-one span a {
+.footer-mini-one p a {
     font-size: 10px;
     text-decoration: none;
-    color: #4e4545;
+    color: black;
 
 }
 .footer-mini-one a:hover {
@@ -693,27 +486,33 @@ header {
 
 .footer-mini-one-1 {
     padding-top: 50px;
-    width: 310px;
+    width: 370px;
     font-size: 15px;
     padding-right: 10px;
 }
 
 .footer-mini-two {
-    width: 300px;
-    font-size: 15px;
-    color: #4e4545;
-}
-.footer-mini-two span {
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 330px;
     font-size: 15px;
 }
-.footer-mini-two span a {
+.footer-mini-two p {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 15px;
+}
+.footer-mini-two a {
     font-size: 15px;
     text-decoration: none;
-    color: #4e4545;
+    color: black;
 
 }
 .footer-mini-two a:hover {
     text-decoration: underline;
+}
+.footer-mini-two h4 {
+    margin-bottom: 7px; 
 }
 .chat-table-1{
     margin-top: 20px 
@@ -723,13 +522,12 @@ header {
     width: 200px;
     text-align: center; 
 }
-.chat-table-1 button a {
-    text-decoration: none;
+.chat-table-1 a {
     color: white;
     font-size: 13px;
 }
 .chat-table-1 a:hover {
-    text-decoration: none;
+    text-decoration: none; 
 }
 .chat-table-1 button:hover {
     background-color: rgb(77, 146, 225); 
@@ -742,8 +540,7 @@ header {
     width: 150px;
     text-align: center;
 }
-.chat-table-2 button a {
-    text-decoration: none;
+.chat-table-2 a {
     font-size: 13px;
     color: white;
 }
@@ -753,15 +550,12 @@ header {
 .chat-table-2 button:hover {
     background-color: black; 
 }
-.chat-table-3 a{
-    text-decoration: none; 
-    color: black;
-}
 .footer-mini-three {
-    width: 310px;
+    width: 380px;
     padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
     font-size: 15px;
-    color: #4e4545;
 }
 
 .footer-mini-three b {
@@ -787,7 +581,7 @@ header {
     padding-left: 5px;
 }
 .footer-max{
-    margin: 40px 200px 0px 200px;
+    margin: 50px 200px 0px 200px;
     width: 1100px;
     height: 150px;
     display: flex;
@@ -799,7 +593,7 @@ header {
 }
 .footer-table1 table{
     border: 1px solid ;
-    width: 580px;
+    width: 550px;
 }
 .footer-table1 table section{
     padding: auto;
@@ -840,179 +634,4 @@ header {
     width: 700px;
     height:130px;
     margin-left: 10px;
-}
-.img-aside {
-    padding-left: -5px;
-    width: 225px; 
-    height: 290px;
-    display: block; /* Loại bỏ khoảng trống dưới ảnh */
-    margin-bottom: 10px; /* Thêm khoảng cách giữa ảnh và văn bản */
-    object-fit: cover;
-   
-}
-.text0{
-    position: absolute;
-    margin-top:-16px;
-    margin-right:482px;
-    margin-left:0px;
-    padding:3px 0px 5px 1px;
-    line-height:30px;
-    font-size: 14px;
-    background-color: #e4e4e4fe;
-}
- 
-.img-aside2-container {
-    width: 100%;
-    max-width: 600px; 
-    margin-bottom: 10px;
-}
-
-.img-aside2 {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-.img-aside3 {
-    padding-right:10px;
-    padding-left: -5px;
-    width: 200px; 
-    height: auto;
-    display: block; /* Loại bỏ khoảng trống dưới ảnh */
-    margin-bottom: -10px; /* Thêm khoảng cách giữa ảnh và văn bản */
-    object-fit: cover;
-}
-.img-aside4{
-    padding-right:10px;
-    padding-left: -10px;
-    width: 200px; 
-    height: 118px;
-    display: block; /* Loại bỏ khoảng trống dưới ảnh */
-    margin-bottom: -10px; /* Thêm khoảng cách giữa ảnh và văn bản */
-    object-fit: cover;
-}
-.img-aside5{
-    top: 0px;
-    padding-right:20px;
-    padding-left: -20px;
-    width: 400px 0px; 
-    height: 500px ;
-    display: block; /* Loại bỏ khoảng trống dưới ảnh */
-    margin-bottom: -10px; /* Thêm khoảng cách giữa ảnh và văn bản */
-    object-fit: cover;
-    display: block;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none;
-    z-index: 0;
-    
-}
-.img-normal {
-    padding-left: 0; /* Giảm padding bên trái */
-    margin-left: 0px; /* Thêm margin âm để đưa ảnh sang trái */
-    width: 250px; 
-    height: 155px;
-    display: block; /* Loại bỏ khoảng trống dưới ảnh */
-    margin-bottom: 10px; /* Thêm khoảng cách giữa ảnh và văn bản */
-    object-fit: cover; /* Đảm bảo ảnh không bị méo */
-}
-.img-mini{
-    height: 25px;
-    margin-bottom:-5px;
-}
-.img-mini1{
-    height: 25px;
-    margin-bottom:-5px;
-    margin-left:-10px;
-}
-.img-big{
- 
-    width:100px;
-    height:200px;
-}
-.pre-footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 200px;
-    width: 780px;
-  }
-  
-  .pre-footer-section {
-    width: 48%; /* Adjust as needed */
-  }
-  
-  .pre-footer-section h2 {
-    color: #000000;
-    font-size: 20px;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    font-weight: bold;
-  }
-  .pre-footer-section h2{
-    border-left: 5px solid #f34905;
-    padding-left: 10px;
-   
-  }
-  .pre-footer-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .pre-footer-item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-  }
-  
-  .pre-footer-item img {
-    width: 350px;
-    height: 200px;
-    object-fit: cover; /* Đảm bảo ảnh được hiển thị đầy đủ trong khung, cắt bớt nếu cần thiết để giữ tỷ lệ */
-    margin-right: 10px;
-  }
-  
-  .pre-footer-item1 p {
-    margin: auto;
-    font-size: 17px;
-    margin-bottom: 10px;
-  }
-  
-  .pre-footer-item a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .pre-footer-item2 {
-    margin-top: auto;
-    font-size: 14px;
-    color: #605f5f;
-    font-weight: normal;
-  }
-  .pre-footer-item3 {
-    margin-top: auto;
-    font-size: 15px;
-    color: #000000;
-    font-weight: bold;
-  }
-  .pre-footer-item4{
-    margin-top: auto;
-    font-size: 14px;
-    color: #605f5f;
-    font-weight: normal;
-    margin-bottom: 28px;
-  }
-  .pre-footer-item5{
-    margin-top: auto;
-    font-size: 14px;
-    color: #605f5f;
-    font-weight: normal;
-    margin-bottom: -6px;
-  }
-  .border-solid2 {
-    border-top: 1px solid #e9e3e3bb;
-    width: 100%;
-    margin-top: -20px;
-}
-.pre-footer-section h2.no-underline {
-    text-decoration: none;
 }

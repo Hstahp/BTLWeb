@@ -1,36 +1,27 @@
 /* Thiết lập cơ bản cho body */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-
 /* Container chung cho layout */
-
 .container {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
-
 /* Căn chỉnh các phần tử trong top-bar, main-header và main-nav */
-
 .top-bar .container,
 .main-header .container,
-.main-nav .container ,
-.main-header1 .container,
-.main-nav1 .container{
+.main-nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
 /* Thiết kế cho thanh top-bar */
-
 .top-bar {
     background-color: black;
     color: #fff;
@@ -54,6 +45,7 @@ body {
     margin-right: -1px;
     margin-left: 20px;
     font-size: 10px;
+
 }
 
 .top-bar nav ul li a {
@@ -77,6 +69,7 @@ body {
     font-size: 10px;
     height: 100%;
     margin-left: 500px;
+
 }
 
 .search-bar button {
@@ -99,14 +92,7 @@ body {
     padding: 0px 0px;
     /* Giảm padding để làm cho header nhỏ hơn */
 }
-.main-header1 {
-    background-color: #1b1a1a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 0px;
-    /* Giảm padding để làm cho header nhỏ hơn */
-}
+
 .logo {
     display: flex;
     align-items: center;
@@ -140,14 +126,11 @@ body {
 
 
 /* Kiểu dáng cho Điều hướng Chính */
-
 .main-nav {
     background-color: #a00101;
 }
-.main-nav1 {
-    background-color: #3c3b3b;
-}
-.main-nav ul, .main-nav1 ul {
+
+.main-nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -156,16 +139,16 @@ body {
     white-space: nowrap;
 }
 
-.main-nav ul li, .main-nav1 ul li {
+.main-nav ul li {
     padding: 7px 9px;
     /* Giảm padding để thu hẹp khoảng cách */
 }
 
-.main-nav ul, .main-nav1 ul {
+.main-nav ul {
     margin-left: 45px;
 }
 
-.main-nav ul li a, .main-nav1 ul li a {
+.main-nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
@@ -177,21 +160,13 @@ body {
     background-color: #a00101;
 }
 
-.main-nav1 ul li:first-child {
-    background-color: #3c3b3b;
-}
-.main-nav1 ul li:first-child a {
-    font-size: 15px;
-}
 .main-nav ul li:first-child a {
     font-size: 15px;
 }
-.main-nav1 ul li:first-child a {
-    font-size: 15px;
-}
+
 .trending-topics a {
     background-color: rgba(255, 255, 255, 0.082);
-    color: #ffffff;
+color: #ffffff;
     text-decoration: none;
     margin-right: auto;
     /* Giảm từ 20px xuống 15px */
@@ -219,29 +194,23 @@ body {
 .arrow-icon {
     display: inline-block;
     font-size: 24px;
-    /* Điều chỉnh kích thưc nếu cần */
+    /* Điều chỉnh kích thước nếu cần */
     color: #ffffff;
     /* Màu trắng */
+
     padding: 2px 6px;
     border-radius: 4px;
     transform: rotate(45deg);
     /* Xoay để khớp với hình ảnh */
 }
 
-
 /* thay đổi màu sắc */
-
 .main-nav ul li a:hover {
     padding: 7px 6px;
     background-color: #800000;
     /* Màu đỏ đậm hơn */
 }
 
-.main-nav1 ul li a:hover {
-    padding: 7px 6px;
-    background-color: #000000;
-    /* Màu đỏ đậm hơn */
-}
 .main-menu {
     position: relative;
 }
@@ -252,10 +221,7 @@ body {
     width: 25px;
     text-align: center;
 }
-.title-menu {
-    border-left: 3px solid #f34905;
-    padding-left: 5px;
-}   
+
 .subs-menu {
     display: none;
     position: absolute;
@@ -268,6 +234,7 @@ body {
     padding: 10px 10px;
     /* Giảm padding-top từ 20px xuống 10px */
 }
+
 
 .subs-menu.active {
     display: block;
@@ -294,9 +261,7 @@ body {
     /* Thêm padding bên trái để thụt nội dung */
 }
 
-
 /* Nhắm vào tất cả các liên kết trực tiếp trong subs-menu */
-
 .subs-menu .container>a,
 .subs-menu .menu-row>a,
 .subs-menu .menu-column>a {
@@ -308,9 +273,7 @@ body {
     display: block;
 }
 
-
 /* Kiểu dáng cụ thể cho các mục submenu */
-
 .submenu {
     display: flex;
     flex-direction: column;
@@ -331,7 +294,6 @@ body {
 
 
 /* Làm cho bảng menu hiện ra không bị nằm ở footer */
-
 header {
     position: relative;
 }
@@ -340,14 +302,8 @@ header {
     text-decoration: none;
     color: #858383;
 }
-.border-solid1 {
-    border-top: 3px solid #fb5f05bb;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
 
-.border-solid2 {
+.border-solid {
     border-top: 1px solid #e9e3e3bb;
     width: 75%;
     margin: 0 auto;
@@ -358,11 +314,13 @@ header {
     padding: 100px;
     margin-left: 60px;
     margin-right: -90px;
+
 }
 
 .mini-web,
 .title-mini-web {
     text-decoration: none;
+
 }
 
 .title-mini-web {
@@ -389,6 +347,7 @@ header {
     background-color: #ded6d6a0;
     height: 30px;
 }
+
 .hi {
     margin: 0px 0px 0px 200px;
     margin-bottom: 1px;
@@ -418,75 +377,10 @@ header {
     text-decoration-thickness: 3px;
 }
 
-.hi ul li:nth-child(4) {
-    margin-right: 400px;
-    /* Khoảng cách lớn hơn sau 'TV-SHOW' */
+.hi ul li:nth-child(5) {
+    margin-right: 450px;
+    /* Khoảng cách lớn hơn sau 'MOMY-EZ' */
 }
-
-.hi1 {
-    margin: 0px 0px 0px 200px;
-    margin-bottom: 1px;
-    width: 1200px;
-}
-
-.hi1 ul {
-    padding: 0px;
-    margin-bottom: -5px;
-}
-
-.hi1 ul li {
-    display: inline;
-    padding: 0px 2px;
-}
-
-.hi1 ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    margin-right: 15px;
-}
-
-.hi1 a:hover {
-    text-decoration: underline;
-    text-decoration-color: rgb(254, 20, 20);
-    text-decoration-thickness: 3px;
-}
-
-
-.hi1 {
-    margin: 0px 0px 0px 200px;
-    margin-bottom: 1px;
-    width: 1200px;
-}
-
-.hi1 ul {
-    padding: 0px;
-    margin-bottom: -5px;
-}
-
-.hi1 ul li {
-    display: inline;
-    padding: 0px 2px;
-}
-
-.hi1 ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    margin-right: 15px;
-}
-
-.hi1 a:hover {
-    text-decoration: underline;
-    text-decoration-color: rgb(254, 20, 20);
-    text-decoration-thickness: 3px;
-}
-
-.hi1 ul li:nth-child(5) {
-    margin-right: 250px;
-    /* Khoảng cách lớn hơn sau 'TV-SHOW' */
-}
-
 .body {
     margin: 0px 200px 0px 200px;
     width: 780px;
@@ -1015,4 +909,63 @@ header {
 }
 .pre-footer-section h2.no-underline {
     text-decoration: none;
+}
+
+/* thanh tiêu điểm tuần */
+.container-margin{
+    margin-top:-120px;
+}
+.card-list .card-item{
+    list-style:none;
+}
+.card-list .card-item .card-link{
+    width: 250px; 
+    height: 155px;
+    display: block;
+    background: #fff;
+    border-radius:12px;
+    text-decoration: none;
+    padding:18px;
+}
+.card-list .card-link .card-image{
+    width:250px;
+    aspect-ratio: 16/9;
+    object-fit:cover;
+}
+.card-list .card-link .card-title{
+    font-size:14px;
+    color:#000;
+    font-weight: 10px;
+    word-wrap: break-word; 
+}
+.card-wrapper{
+    max-width:1100px;
+    margin: 60px 3px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+.card-wrapper .swiper-pagination-bullet{
+    height:8px;
+    width: 8px;
+    opacity: 0.5;
+    background: #ff7505;
+}
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity:1;
+}
+.card-wrapper .swiper-slide-button{
+    color: #ff7505;
+    margin-top: -35px;
+}
+.container-margin .title{
+    margin-top: -2px;
+    margin-left: -20px ;
+    padding-left:20px;
+    background-color: tomato;
+    width: 150px;
+}
+.container-margin .title h3{
+    color: white;
+    align-items: center;
+    font-size: 15px;
 }
