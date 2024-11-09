@@ -13,6 +13,7 @@
 
 /* Thiết kế cho thanh top-bar */
 .top-bar {
+    width:1490px;
     background-color: black;
     color: #fff;
     display: flex;
