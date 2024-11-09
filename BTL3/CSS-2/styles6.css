@@ -351,7 +351,7 @@ header {
 .hi {
     margin: 0px 0px 0px 200px;
     margin-bottom: 1px;
-    width: 1200px;
+    width: 700px;
 }
 
 .hi ul {
@@ -379,7 +379,7 @@ header {
 
 .hi ul li:nth-child(1) {
     margin-right: 450px;
-    /* Khoảng cách lớn hơn sau 'MOMY-EZ' */
+  
 }
 
 .body {
@@ -395,7 +395,7 @@ header {
 }
 
 .one section {
-    width: 1500px;
+    width: 700px;
     padding-right: 50px;
     font-size: 15px;
 }
