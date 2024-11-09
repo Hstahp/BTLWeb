@@ -453,17 +453,19 @@ header {
     color: black;
 }
 
+/* MENU phía dưới */
 .footer-menu {
+    width: 1510px;
     margin-top: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 13px;
+    font-size: 14px;
     background-color: #e0e0e0;
     text-align: center;
 }
 
 .footer-menu a {
-    color: #333; 
+    color: #766e6e; 
     text-decoration: none; 
     margin: 0 5px;
 }
@@ -476,25 +478,25 @@ header {
 .footer {
     margin: 20px 200px 0px 200px;
     width: 1100px;
-    height: 470px;
+    height: 500px;
     display: flex;
 }
 
 .footer-mini-one {
     width: 300px;
     font-size: 15px;
-    padding-right: 10px;
+    color: #4e4545;
 }
 
-.footer-mini-one p {
+.footer-mini-one span {
     margin: 0;
-    padding-top: 5px;
-    font-size: 13px;
+    padding-top: px;
+    font-size: 15px;
 }
-.footer-mini-one p a {
+.footer-mini-one span a {
     font-size: 10px;
     text-decoration: none;
-    color: black;
+    color: #4e4545;
 
 }
 .footer-mini-one a:hover {
@@ -514,22 +516,19 @@ header {
 .footer-mini-two {
     width: 300px;
     font-size: 15px;
+    color: #4e4545;
 }
-.footer-mini-two p {
-    margin: 0;
-    padding-top: 5px;
-    font-size: 13px;
+.footer-mini-two span {
+    font-size: 15px;
 }
-.footer-mini-two a {
+.footer-mini-two span a {
+    font-size: 15px;
     text-decoration: none;
-    color: black;
+    color: #4e4545;
 
 }
 .footer-mini-two a:hover {
     text-decoration: underline;
-}
-.footer-mini-two h4 {
-    margin-bottom: 7px; 
 }
 .chat-table-1{
     margin-top: 20px 
@@ -539,12 +538,13 @@ header {
     width: 200px;
     text-align: center; 
 }
-.chat-table-1 a {
+.chat-table-1 button a {
+    text-decoration: none;
     color: white;
     font-size: 13px;
 }
 .chat-table-1 a:hover {
-    text-decoration: none; 
+    text-decoration: none;
 }
 .chat-table-1 button:hover {
     background-color: rgb(77, 146, 225); 
@@ -557,7 +557,8 @@ header {
     width: 150px;
     text-align: center;
 }
-.chat-table-2 a {
+.chat-table-2 button a {
+    text-decoration: none;
     font-size: 13px;
     color: white;
 }
@@ -567,10 +568,15 @@ header {
 .chat-table-2 button:hover {
     background-color: black; 
 }
+.chat-table-3 a{
+    text-decoration: none; 
+    color: black;
+}
 .footer-mini-three {
     width: 310px;
     padding-top: 15px;
-    font-size: 13px;
+    font-size: 15px;
+    color: #4e4545;
 }
 
 .footer-mini-three b {
@@ -629,7 +635,7 @@ header {
 }
 .footer-mini1 {
     padding-top: 10px;
-display: flex;
+    display: flex;
 }
 .footer-mini2{
     padding-left: 10px;
