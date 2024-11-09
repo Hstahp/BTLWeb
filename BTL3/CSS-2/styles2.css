@@ -409,7 +409,7 @@ header {
 .one {
     padding-top: 15px;
     display: flex;
-    height: 530px;
+    height: 580px;
     width: 730px;
 }
 .img-hot {
@@ -491,23 +491,7 @@ header {
 .three span{
     font-size:14px;
 }
-.four{
-    padding-top: 9px;
-    display:contents;
-    height: 530px;
-    width: 640px;
-}
-.four aside p a{
-    
-    font-size:30px;
-    text-decoration: none;
-    color: black;
-}
-.four img{
-    margin-bottom:10px;
-    width:780px;
-    height:400px;
-}
+
 .size-normal  {
     font-size:14.5px;
     text-decoration:none;

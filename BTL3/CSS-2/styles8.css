@@ -349,7 +349,7 @@ header {
 }
 
 .hi {
-    margin: 0px 0px 0px 200px;
+    margin:  0px 0px 200px;
     margin-bottom: 1px;
     width: 1200px;
 }
@@ -366,8 +366,8 @@ header {
 
 .hi ul li a {
     text-decoration: none;
-    color: black;
-    font-size: 14px;
+    color: red;
+    font-size: 20px;
     margin-right: 15px;
 }
 
