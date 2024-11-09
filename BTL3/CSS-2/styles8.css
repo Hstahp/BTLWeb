@@ -655,3 +655,61 @@ header {
     height:130px;
     margin-left: 10px;
 }
+/* thanh tiêu điểm tuần */
+.container-margin{
+    margin-top:-120px;
+}
+.card-list .card-item{
+    list-style:none;
+}
+.card-list .card-item .card-link{
+    width: 250px; 
+    height: 155px;
+    display: block;
+    background: #fff;
+    border-radius:12px;
+    text-decoration: none;
+    padding:18px;
+}
+.card-list .card-link .card-image{
+    width:250px;
+    aspect-ratio: 16/9;
+    object-fit:cover;
+}
+.card-list .card-link .card-title{
+    font-size:14px;
+    color:#000;
+    font-weight: 10px;
+    word-wrap: break-word; 
+}
+.card-wrapper{
+    max-width:1100px;
+    margin: 60px 3px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+.card-wrapper .swiper-pagination-bullet{
+    height:8px;
+    width: 8px;
+    opacity: 0.5;
+    background: #ff7505;
+}
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity:1;
+}
+.card-wrapper .swiper-slide-button{
+    color: #ff7505;
+    margin-top: -35px;
+}
+.container-margin .title{
+    margin-top: -2px;
+    margin-left: -20px ;
+    padding-left:20px;
+    background-color: tomato;
+    width: 150px;
+}
+.container-margin .title h3{
+    color: white;
+    align-items: center;
+    font-size: 15px;
+}
