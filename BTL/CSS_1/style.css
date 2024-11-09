@@ -1,3 +1,8 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 .container {
     max-width: 1180px;
     margin: 0 auto;
@@ -5,7 +10,9 @@
 }
 
 /* Căn chỉnh các phần tử trong top-bar, main-header và main-nav */
-.top-bar .container {
+.top-bar .container,
+.main-header .container,
+.main-nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,12 +80,10 @@
     height: 100%;
 }
 .body{
-    width:1500px;
     height: 100%;
     background-color: rgb(231, 218, 182);
 }
 .one{
-    width:1500px;
     height: 100%;
     padding-top: 30px;
     display: flex;
@@ -96,7 +101,6 @@
 }
 .two{
     display: flex;
-    width:1500px;
     height: 100%;
     padding-left: 230px; 
     padding-top: 100px;
@@ -468,7 +472,6 @@
 }
 /* MENU phía dưới */
 .footer-menu {
-    width: 1510px;
     margin-top: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
