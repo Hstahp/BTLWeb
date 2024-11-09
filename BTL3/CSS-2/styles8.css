@@ -349,7 +349,7 @@ header {
 }
 
 .hi {
-    margin: 0px 0px 0px 200px;
+    margin:  0px 0px 200px;
     margin-bottom: 1px;
     width: 1200px;
 }
@@ -366,8 +366,8 @@ header {
 
 .hi ul li a {
     text-decoration: none;
-    color: black;
-    font-size: 14px;
+    color: red;
+    font-size: 20px;
     margin-right: 15px;
 }
 
@@ -415,7 +415,7 @@ header {
 }
 
 .two {
-    height: 300px;
+    height: 350px;
     display: flex;
 }
 
@@ -480,17 +480,16 @@ header {
 }
 
 .footer-mini-one {
-    width: 300px;
+    width: 370px;
     font-size: 15px;
-    padding-right: 10px;
+    padding-right: 15px;
 }
-
-.footer-mini-one p {
+.footer-mini-one span {
     margin: 0;
     padding-top: 5px;
     font-size: 13px;
 }
-.footer-mini-one p a {
+.footer-mini-one span a {
     font-size: 10px;
     text-decoration: none;
     color: black;
@@ -505,21 +504,24 @@ header {
 
 .footer-mini-one-1 {
     padding-top: 50px;
-    width: 310px;
+    width: 370px;
     font-size: 15px;
     padding-right: 10px;
 }
 
 .footer-mini-two {
-    width: 300px;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 330px;
     font-size: 15px;
 }
 .footer-mini-two p {
     margin: 0;
     padding-top: 5px;
-    font-size: 13px;
+    font-size: 15px;
 }
 .footer-mini-two a {
+    font-size: 15px;
     text-decoration: none;
     color: black;
 

@@ -497,12 +497,12 @@ header {
     padding-right: 15px;
 }
 
-.footer-mini-one p {
+.footer-mini-one span {
     margin: 0;
     padding-top: 5px;
-    font-size: 15px;
+    font-size: 13px;
 }
-.footer-mini-one p a {
+.footer-mini-one span a {
     font-size: 10px;
     text-decoration: none;
     color: black;

@@ -349,25 +349,24 @@ header {
 }
 
 .hi {
-    margin: 0px 0px 0px 200px;
     margin-bottom: 1px;
-    width: 1200px;
+    width: 700px;
 }
 
 .hi ul {
     padding: 0px;
     margin-bottom: -5px;
+    margin-left: 200px;
 }
 
 .hi ul li {
     display: inline;
-    padding: 0px 2px;
 }
 
 .hi ul li a {
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    font-size: 20px;
     margin-right: 15px;
 }
 
@@ -375,11 +374,6 @@ header {
     text-decoration: underline;
     text-decoration-color: rgb(254, 20, 20);
     text-decoration-thickness: 3px;
-}
-
-.hi ul li:nth-child(1) {
-    margin-right: 450px;
-    /* Khoảng cách lớn hơn sau 'MOMY-EZ' */
 }
 
 .body {
@@ -395,7 +389,7 @@ header {
 }
 
 .one section {
-    width: 1500px;
+    width: 700px;
     padding-right: 50px;
     font-size: 15px;
 }
@@ -484,13 +478,12 @@ header {
     font-size: 15px;
     padding-right: 10px;
 }
-
-.footer-mini-one p {
+.footer-mini-one span {
     margin: 0;
     padding-top: 5px;
     font-size: 13px;
 }
-.footer-mini-one p a {
+.footer-mini-one span a {
     font-size: 10px;
     text-decoration: none;
     color: black;
