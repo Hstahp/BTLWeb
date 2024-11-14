@@ -384,12 +384,12 @@ header {
 .one {
     padding-top: 15px;
     display: flex;
-    height: 800px;
+    height: 700px;
     width: 730px;
 }
 
 .one section {
-    width: 700px;
+    width: 400px;
     padding-right: 50px;
     font-size: 15px;
 }

@@ -414,24 +414,32 @@ header {
     font-size: 14px;
 }
 .zero {
-    height: 280px;
+    padding-top: 15px;
     display: flex;
+    height: 280px;
+    width: 730px;
 }
 
 .zero section {
-    padding-top: 15px;
-}
-
-.zero aside {
-    padding-left: 30px;
+    width: 550px;
+    padding-right: 50px;
     font-size: 15px;
 }
 
-.zero aside a {
-    font-size: 130%;
+.zero section p a {
+    padding-right: 20px;
+    font-size: 25px;
     text-decoration: none;
     color: black;
 }
+
+.zero aside p a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
 
 .two {
     height: 230px;
