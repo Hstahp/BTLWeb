@@ -1,9 +1,9 @@
-// Hàm để toggle icon và lớp 'active' trên phần tử subs-menu
+
 function changeIcon(icon) {
-    // Toggle giữa '•••' và '✕'
+    // thay đổi giữa '•••' và '✕'
     icon.textContent = icon.textContent === '•••' ? '✕' : '•••';
     
-    // Toggle lớp 'active' trên phần tử subs-menu
+    // Chuyển đổi trạng thái của menu con
     const subsMenu = document.querySelector('.subs-menu');
     subsMenu.classList.toggle('active');
 }
